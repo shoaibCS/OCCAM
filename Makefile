@@ -134,6 +134,7 @@ zippity:
 clean:
 	$(MAKE) -C src clean
 	$(MAKE) -C test clean
+	$(MAKE) -C examples clean
 	rm -rf razor/proto
 	rm -rf dist
 

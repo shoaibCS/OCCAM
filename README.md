@@ -79,7 +79,7 @@ make -f Makefile develop
 This may require sudo priviliges. Either way you can now use `slash`:
 
 ```
-slash [--work-dir=<dir>]  [--force] [--no-strip] [--no-specialize] <manifest>
+slash [--work-dir=<dir>]  [--force] [--no-strip] [--devirt] [--no-specialize] <manifest>
 ```
 
 `slash` also accepts the following new command line option:
@@ -95,6 +95,8 @@ your `PATH`, and be the currently supported version (3.5). Like `wllvm`, `slash`
 the environment variables `LLVM_OPT_NAME` and `LLVM_CXX_NAME`
 if your version of these tools are adorned with suffixes.
 
+To use the option `--devirt` you need to type `make develop` to use
+the local install of razor.
 
 The Manifest(o)
 ===============

@@ -16,6 +16,7 @@ LLVM_CFG = $(LLVM_HOME)/bin/$(LLVM_CONFIG)
 LLVM_INCLUDE = $(shell ${LLVM_CFG} --includedir)
 
 CXX_FLAGS += $(shell  ${LLVM_CFG} --cxxflags) -I${LLVM_INCLUDE} -I../include -I/usr/local/include  -DGOOGLE_PROTOBUF_NO_RTTI -fPIC
+CXX_FLAGS += -I../include/dsa-sea
 
 C_FLAGS = $(shell  ${LLVM_CFG} --cflags)
 
@@ -50,20 +51,22 @@ SOURCES = $(wildcard *.cpp)
 
 OBJECTS := proto/Previrt.pb.o proto/Watch.pb.o $(patsubst %.cpp,%.o,${SOURCES}) 
 
+DSA_ASSIST_OBJECTS := $(patsubst %.cpp,%.o,$(wildcard dsa-sea/AssistDS/*.cpp))
+DSA_OBJECTS := ${DSA_ASSIST_OBJECTS}
+DSA_OBJECTS += $(patsubst %.cpp,%.o,$(wildcard dsa-sea/DSA/*.cpp))
+
 INSTALL = install
 
 all: ${LIBRARY}
 
 ${LIBRARY}: ${SOURCES}
 	echo "The source is being built according to ${LLVM_CFG}"
+	$(MAKE) dsa
 	$(MAKE) protoc 
 	$(MAKE) lib
 
-lib: ${OBJECTS} 
-	$(CXX) ${OBJECTS} ${LIBFLAGS} -o ${LIBRARY} ${CXX_FLAGS} ${LD_FLAGS} ${OTHERLIBS}
-
-%.o: %.cpp
-	$(CXX) -I. ${CXX_FLAGS} $< -c 
+lib: ${OBJECTS} ${DSA_OBJECTS}
+	$(CXX) ${OBJECTS} ${DSA_OBJECTS} ${LIBFLAGS} -o ${LIBRARY} ${CXX_FLAGS} ${LD_FLAGS} ${OTHERLIBS}
 
 proto/%.o: proto/%.cc proto/%.h 
 	$(CXX)  ${CXX_FLAGS} $< -c -o $@
@@ -73,9 +76,19 @@ protoc: Watch.proto Previrt.proto
 	${PROTOC} Watch.proto --cpp_out=proto
 	${PROTOC} Previrt.proto --cpp_out=proto
 
-clean: 
-	rm -rf ${OBJECTS} proto ${LIBRARY}
+dsa-sea/AssistDS/%.o: dsa-sea/AssistDS/%.cpp 
+	$(CXX) ${CXX_FLAGS} $< -c -o $@
 
+dsa-sea/DSA/%.o: dsa-sea/DSA/%.cpp 
+	$(CXX) ${CXX_FLAGS} $< -c -o $@
+
+dsa: ${DSA_OBJECTS}
+
+%.o: %.cpp
+	$(CXX) -I. ${CXX_FLAGS} $< -c 
+
+clean: 
+	rm -rf ${OBJECTS} proto ${LIBRARY} ${DSA_OBJECTS}
 
 install: check-occam-lib ${LIBRARY}
 	$(INSTALL) -m 664 ${LIBRARY} $(OCCAM_LIB)
