@@ -1,8 +1,0 @@
--b
-00:0c:29:52:aa:56
--a
-wpa
--s
--w
-dictionary.lst
-chargen-tcp.pcap

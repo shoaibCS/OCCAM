@@ -1,4 +1,0 @@
-"__assert_fail"__ctype_b_loc"__errno_location"alarm"atof"atoi"bind"close"connect"exit"feof"fflush"fopen"fprintf"fread"free"freeaddrinfo"fwrite"gai_strerror"getaddrinfo"getopt"getpid"getprotobyname"
-getsockopt"gettimeofday"htonl"htons"	inet_ntop"lseek"malloc"ntohl"ntohs"open"optarg"optind"perror"printf"rand"read"recv"rewind"sched_setaffinity"select"send"sendfile"sendto"
-setsockopt"shutdown"	sigaction"	sigaddset"sigemptyset"sleep"snprintf"socket"sqrt"srand"stat"stderr"stdout"
-strcasecmp"strchr"strcmp"strcpy"strerror"strlen"strncpy"strstr"strtoul"sysconf

@@ -1,8 +1,0 @@
--H
-localhost
--t
-TCP_RR
--D
-5,G
--i
-15,1
