@@ -1,0 +1,4 @@
+"__ctype_b_loc"__errno_location"__isoc99_sscanf"accept"alarm"	alphasort"atoi"atol"bind"chdir"chroot"close"closelog"crypt"daemon"dup2"execve"exit"fchown"fclose"fcntl"fflush"fgets"fileno"fopen"fork"fprintf"fread"freeaddrinfo"gai_strerror"getaddrinfo"getcwd"getenv"gethostname"getnameinfo"getpid"getpwnam"getsockname"getuid"gmtime"htonl"
+initgroups"listen"	localtime"lstat"malloc"nice"open"openlog"perror"pipe"printf"qsort"read"realloc"scandir"select"sendfile"setgid"	setgroups"setsid"
+setsockopt"setuid"shutdown"signal"sleep"snprintf"socket"sprintf"stat"stderr"
+strcasecmp"strcat"strchr"strcmp"strcpy"strcspn"strdup"strftime"strlen"strncasecmp"strncmp"strncpy"strpbrk"strrchr"strspn"strstr"syslog"time"tolower"tzset"waitpid"write

@@ -1,0 +1,2222 @@
+>> /usr/local/bin/slash --inter-spec-policy=none --intra-spec-policy=aggressive --no-strip --stats --work-dir=slash totd.manifest
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/totd/slash/totd.bc -o=/dev/null -Pprofiler -profile-verbose=false -profile-loops=true -profile-safe-pointers=true -profile-outfile=/tmp/tmp_52OQ5
+
+EXECUTED: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/totd/slash/totd.bc -o=/dev/null -Pprofiler -profile-verbose=false -profile-loops=true -profile-safe-pointers=true -profile-outfile=/tmp/tmp_52OQ5 WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/totd/slash/totd.bc -o=/occam/examples/trimmer/totd/slash/totd.a.bc -Pfull-cmdline-spec -Pfull-cmdline-spec-input arguments -Pfull-cmdline-spec-name totd
+
+Read 3 command line arguments:
+	-c
+	totdipv4.conf
+	-d2
+EXECUTED: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/totd/slash/totd.bc -o=/occam/examples/trimmer/totd/slash/totd.a.bc -Pfull-cmdline-spec -Pfull-cmdline-spec-input arguments -Pfull-cmdline-spec-name totd WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/totd/slash/totd.a.bc -o=/dev/null -Pinterface -Pinterface-output totd.01.iface
+
+GatherInterfacePass::runOnModule: /occam/examples/trimmer/totd/slash/totd.a.bc
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to strlen
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+Added reference to function syslog
+Added reference to function strlen
+Added reference to function malloc
+Added reference to function htons
+Added reference to function free
+Added reference to function time
+Added reference to function shutdown
+Added reference to function close
+Added reference to function random
+Added reference to function srandom
+Added reference to function ntohs
+Added reference to function memcmp
+Added reference to function strncasecmp
+Added reference to function sprintf
+Added reference to function strcpy
+Added reference to function inet_pton
+Added reference to function strstr
+Added reference to function __isoc99_sscanf
+Added reference to function strncpy
+Added reference to function __ctype_b_loc
+Added reference to function snprintf
+Added reference to function accept
+Added reference to function inet_ntop
+Added reference to function strchr
+Added reference to function inet_aton
+Added reference to function getaddrinfo
+Added reference to function gai_strerror
+Added reference to function freeaddrinfo
+Added reference to function fopen
+Added reference to function fgets
+Added reference to function strtok
+Added reference to function strcasecmp
+Added reference to function atoi
+Added reference to function strdup
+Added reference to function strcmp
+Added reference to function fclose
+Added reference to function socket
+Added reference to function ioctl
+Added reference to function connect
+Added reference to function __errno_location
+Added reference to function getsockopt
+Added reference to function read
+Added reference to function write
+Added reference to function signal
+Added reference to function recvfrom
+Added reference to function setsockopt
+Added reference to function bind
+Added reference to function listen
+Added reference to function sendto
+Added reference to function htonl
+Added reference to function printf
+Added reference to function unlink
+Added reference to function fprintf
+Added reference to function exit
+Added reference to function getuid
+Added reference to function getgid
+Added reference to function strncmp
+Added reference to function openlog
+Added reference to function setlogmask
+Added reference to function getpwnam
+Added reference to function getpwuid
+Added reference to function getgrnam
+Added reference to function endpwent
+Added reference to function endgrent
+Added reference to function chroot
+Added reference to function chdir
+Added reference to function __isoc99_fscanf
+Added reference to function kill
+Added reference to function setgid
+Added reference to function setuid
+Added reference to function daemon
+Added reference to function getpid
+Added reference to function select
+Added reference to function sleep
+Added reference to global in6addr_any
+Added reference to global stderr
+Generated interface for /occam/examples/trimmer/totd/slash/totd.a.bc
+## External calls:
+	syslog(0x7,S:244B0FC0,?)
+	syslog(0x6,S:6578FC41,?)
+	syslog(0x6,S:6578FC41,?)
+	syslog(0x6,S:5E261B1D,?,?)
+	syslog(0x7,S:3167F6AF,?,?)
+	syslog(0x7,S:57B271A5,?,?)
+	syslog(0x7,S:7870473E,?,?)
+	syslog(0x3,S:56BB5090,?)
+	syslog(0x6,S:36A6CE07,?)
+	strlen(?)
+## External symbols:
+	__ctype_b_loc
+	__errno_location
+	__isoc99_fscanf
+	__isoc99_sscanf
+	accept
+	atoi
+	bind
+	chdir
+	chroot
+	close
+	connect
+	daemon
+	endgrent
+	endpwent
+	exit
+	fclose
+	fgets
+	fopen
+	fprintf
+	free
+	freeaddrinfo
+	gai_strerror
+	getaddrinfo
+	getgid
+	getgrnam
+	getpid
+	getpwnam
+	getpwuid
+	getsockopt
+	getuid
+	htonl
+	htons
+	in6addr_any
+	inet_aton
+	inet_ntop
+	inet_pton
+	ioctl
+	kill
+	listen
+	malloc
+	memcmp
+	ntohs
+	openlog
+	printf
+	random
+	read
+	recvfrom
+	select
+	sendto
+	setgid
+	setlogmask
+	setsockopt
+	setuid
+	shutdown
+	signal
+	sleep
+	snprintf
+	socket
+	sprintf
+	srandom
+	stderr
+	strcasecmp
+	strchr
+	strcmp
+	strcpy
+	strdup
+	strlen
+	strncasecmp
+	strncmp
+	strncpy
+	strstr
+	strtok
+	syslog
+	time
+	unlink
+	write
+
+EXECUTED: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/totd/slash/totd.a.bc -o=/dev/null -Pinterface -Pinterface-output totd.01.iface WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/totd/slash/totd.a.bc -o=/occam/examples/trimmer/totd/slash/totd.a.i.bc -Pinternalize -Pinternalize-wrt-interfaces main.iface
+
+InternalizePass
+Reading file 'main.iface'...success
+Done reading.
+InternalizePass::runOnModule: /occam/examples/trimmer/totd/slash/totd.a.bc
+Internalizing 'request_start' ExternalLinkage DefaultVisibility
+Internalizing 'do_forward' ExternalLinkage DefaultVisibility
+Internalizing 'recursive_process' ExternalLinkage DefaultVisibility
+Internalizing 'response_abort' ExternalLinkage DefaultVisibility
+Internalizing 'assemble_response' ExternalLinkage DefaultVisibility
+Internalizing 'make_random_permutation' ExternalLinkage DefaultVisibility
+Internalizing 'mesg_id' ExternalLinkage DefaultVisibility
+Internalizing 'mesg_make_query' ExternalLinkage DefaultVisibility
+Internalizing 'string_rtype' ExternalLinkage DefaultVisibility
+Internalizing 'labellen' ExternalLinkage DefaultVisibility
+Internalizing 'mesg_skip_dname' ExternalLinkage DefaultVisibility
+Internalizing 'mesg_dname_cmp' ExternalLinkage DefaultVisibility
+Internalizing 'mesg_write_rrset_list' ExternalLinkage DefaultVisibility
+Internalizing 'mesg_assemble' ExternalLinkage DefaultVisibility
+Internalizing 'mesg_extract_rr' ExternalLinkage DefaultVisibility
+Internalizing 'dname_decompress' ExternalLinkage DefaultVisibility
+Internalizing 'mesg_parse' ExternalLinkage DefaultVisibility
+Internalizing 'string_rclass' ExternalLinkage DefaultVisibility
+Internalizing 'conv_trick_list' ExternalLinkage DefaultVisibility
+Internalizing 'search_name' ExternalLinkage DefaultVisibility
+Internalizing 'conv_trick_ptr' ExternalLinkage DefaultVisibility
+Internalizing 'conv_trick_newptr' ExternalLinkage DefaultVisibility
+Internalizing 'conv_trick_conf' ExternalLinkage DefaultVisibility
+Internalizing 'conv_trick_is_tot_ptr' ExternalLinkage DefaultVisibility
+Internalizing 'conv_trick_ptr_rq' ExternalLinkage DefaultVisibility
+Internalizing 'conv_trick_is_tot_newptr' ExternalLinkage DefaultVisibility
+Internalizing 'conv_trick_newptr_rq' ExternalLinkage DefaultVisibility
+Internalizing 'ev_tcp_srv_accept' ExternalLinkage DefaultVisibility
+Internalizing 'ev_tcp_common_init' ExternalLinkage DefaultVisibility
+Internalizing 'ev_tcp_common_register' ExternalLinkage DefaultVisibility
+Internalizing 'ev_tcp_common_remove' ExternalLinkage DefaultVisibility
+Internalizing 'ev_tcp_common_fds' ExternalLinkage DefaultVisibility
+Internalizing 'ev_tcp_common_fd_check' ExternalLinkage DefaultVisibility
+Internalizing 'ev_tcp_conn_in_init' ExternalLinkage DefaultVisibility
+Internalizing 'ev_tcp_conn_in_finish' ExternalLinkage DefaultVisibility
+Internalizing 'ev_tcp_conn_in_remove' ExternalLinkage DefaultVisibility
+Internalizing 'ev_tcp_conn_in_fds' ExternalLinkage DefaultVisibility
+Internalizing 'ev_tcp_conn_in_fd_check' ExternalLinkage DefaultVisibility
+Internalizing 'ev_tcp_out_init' ExternalLinkage DefaultVisibility
+Internalizing 'ev_tcp_out_finish' ExternalLinkage DefaultVisibility
+Internalizing 'ev_tcp_out_remove' ExternalLinkage DefaultVisibility
+Internalizing 'ev_tcp_out_fds' ExternalLinkage DefaultVisibility
+Internalizing 'ev_tcp_out_fd_check' ExternalLinkage DefaultVisibility
+Internalizing 'sprint_inet' ExternalLinkage DefaultVisibility
+Internalizing 'parse_and_alloc_addr' ExternalLinkage DefaultVisibility
+Internalizing 'fwd_free' ExternalLinkage DefaultVisibility
+Internalizing 'fwd_alloc' ExternalLinkage DefaultVisibility
+Internalizing 'fwd_init' ExternalLinkage DefaultVisibility
+Internalizing 'fwd_add' ExternalLinkage DefaultVisibility
+Internalizing 'fwd_select' ExternalLinkage DefaultVisibility
+Internalizing 'fwd_mark' ExternalLinkage DefaultVisibility
+Internalizing 'fwd_socketlist' ExternalLinkage DefaultVisibility
+Internalizing 'queue_create' ExternalLinkage DefaultVisibility
+Internalizing 'enqueue' ExternalLinkage DefaultVisibility
+Internalizing 'dequeue' ExternalLinkage DefaultVisibility
+Internalizing 'queue_peek' ExternalLinkage DefaultVisibility
+Internalizing 'queue_disable' ExternalLinkage DefaultVisibility
+Internalizing 'queue_destroy' ExternalLinkage DefaultVisibility
+Internalizing 'read_config' ExternalLinkage DefaultVisibility
+Internalizing 'tcp_response_start' ExternalLinkage DefaultVisibility
+Internalizing 'tcp_response_finish' ExternalLinkage DefaultVisibility
+Internalizing 'ev_dup_init' ExternalLinkage DefaultVisibility
+Internalizing 'ev_dup' ExternalLinkage DefaultVisibility
+Internalizing 'list_init' ExternalLinkage DefaultVisibility
+Internalizing 'list_add' ExternalLinkage DefaultVisibility
+Internalizing 'list_add_tail' ExternalLinkage DefaultVisibility
+Internalizing 'list_search' ExternalLinkage DefaultVisibility
+Internalizing 'list_delete' ExternalLinkage DefaultVisibility
+Internalizing 'list_destroy' ExternalLinkage DefaultVisibility
+Internalizing 'list_dup' ExternalLinkage DefaultVisibility
+Internalizing 'list_cat' ExternalLinkage DefaultVisibility
+Internalizing 'rr_alloc' ExternalLinkage DefaultVisibility
+Internalizing 'rr_list_alloc' ExternalLinkage DefaultVisibility
+Internalizing 'rr_list_free' ExternalLinkage DefaultVisibility
+Internalizing 'rr_list_add' ExternalLinkage DefaultVisibility
+Internalizing 'rrset_get_rr_f' ExternalLinkage DefaultVisibility
+Internalizing 'rr_list_of_rrset' ExternalLinkage DefaultVisibility
+Internalizing 'rrset_alloc' ExternalLinkage DefaultVisibility
+Internalizing 'rrset_create' ExternalLinkage DefaultVisibility
+Internalizing 'rrset_free' ExternalLinkage DefaultVisibility
+Internalizing 'rrset_create_single' ExternalLinkage DefaultVisibility
+Internalizing 'rrset_copy' ExternalLinkage DefaultVisibility
+Internalizing 'rrset_copyv' ExternalLinkage DefaultVisibility
+Internalizing 'rrset_dupv' ExternalLinkage DefaultVisibility
+Internalizing 'rrset_dup' ExternalLinkage DefaultVisibility
+Internalizing 'rrset_couple_free' ExternalLinkage DefaultVisibility
+Internalizing 'ev_to_init' ExternalLinkage DefaultVisibility
+Internalizing 'ev_to_register' ExternalLinkage DefaultVisibility
+Internalizing 'ev_timeout_process' ExternalLinkage DefaultVisibility
+Internalizing 'ev_to_data_free' ExternalLinkage DefaultVisibility
+Internalizing 'ev_to_finish' ExternalLinkage DefaultVisibility
+Internalizing 'ev_to_flush' ExternalLinkage DefaultVisibility
+Internalizing 'ev_to_register_ifcheck' ExternalLinkage DefaultVisibility
+Internalizing 'udp_response_start' ExternalLinkage DefaultVisibility
+Internalizing 'udp_response_finish' ExternalLinkage DefaultVisibility
+Internalizing 'ev_signal_init' ExternalLinkage DefaultVisibility
+Internalizing 'ev_signal_process' ExternalLinkage DefaultVisibility
+Internalizing 'ev_signal_finish' ExternalLinkage DefaultVisibility
+Internalizing 'ev_udp_in_data_free' ExternalLinkage DefaultVisibility
+Internalizing 'ev_udp_in_init' ExternalLinkage DefaultVisibility
+Internalizing 'ev_udp_in_finish' ExternalLinkage DefaultVisibility
+Internalizing 'ev_udp_in_remove' ExternalLinkage DefaultVisibility
+Internalizing 'ev_udp_in_read' ExternalLinkage DefaultVisibility
+Internalizing 'nia_free' ExternalLinkage DefaultVisibility
+Internalizing 'nia_copy' ExternalLinkage DefaultVisibility
+Internalizing 'nia_find_by_sock' ExternalLinkage DefaultVisibility
+Internalizing 'nia_fds_set' ExternalLinkage DefaultVisibility
+Internalizing 'nia_fds_isset' ExternalLinkage DefaultVisibility
+Internalizing 'net_init_socketlist' ExternalLinkage DefaultVisibility
+Internalizing 'net_reinit_socketlist' ExternalLinkage DefaultVisibility
+Internalizing 'net_bind_socketlist' ExternalLinkage DefaultVisibility
+Internalizing 'net_mesg_socket' ExternalLinkage DefaultVisibility
+Internalizing 'net_stream_socket' ExternalLinkage DefaultVisibility
+Internalizing 'net_delete_socketlist' ExternalLinkage DefaultVisibility
+Internalizing 'net_mesg_send' ExternalLinkage DefaultVisibility
+Internalizing 'conv_scoped_list' ExternalLinkage DefaultVisibility
+Internalizing 'conv_scoped_conf' ExternalLinkage DefaultVisibility
+Internalizing 'conv_scoped_ptr' ExternalLinkage DefaultVisibility
+Internalizing 'conv_is_scoped_ptr' ExternalLinkage DefaultVisibility
+Internalizing 'conv_scoped_ptr_rq' ExternalLinkage DefaultVisibility
+Internalizing 'conv_stf_owner_rrset' ExternalLinkage DefaultVisibility
+Internalizing 'conv_stf_ns_list' ExternalLinkage DefaultVisibility
+Internalizing 'conv_stf_ptr' ExternalLinkage DefaultVisibility
+Internalizing 'conv_stf_is_stf_ptr' ExternalLinkage DefaultVisibility
+Internalizing 'strlcpy' ExternalLinkage DefaultVisibility
+Internalizing 'strlcat' ExternalLinkage DefaultVisibility
+Internalizing 'usage' ExternalLinkage DefaultVisibility
+Internalizing 'totd_exit' ExternalLinkage DefaultVisibility
+Internalizing '' ExternalLinkage DefaultVisibility
+Internalizing 'totd_eventloop' ExternalLinkage DefaultVisibility
+Internalizing 'Ev_matrix' ExternalLinkage DefaultVisibility
+Internalizing 'version' ExternalLinkage DefaultVisibility
+Internalizing 'hex' ExternalLinkage DefaultVisibility
+...progress...
+Progress: internalized functions = 130 internalized globals = 3
+/usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/totd/slash/totd.a.bc -o=/occam/examples/trimmer/totd/slash/totd.a.i.bc -Pinternalize -Pinternalize-wrt-interfaces main.iface => 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -disable-simplify-libcalls --disable-slp-vectorization /occam/examples/trimmer/totd/slash/totd.a.i.bc -o /tmp/tmpJMz17h.bc -O3
+
+EXECUTED: /usr/lib/llvm-10/bin/opt -disable-simplify-libcalls --disable-slp-vectorization /occam/examples/trimmer/totd/slash/totd.a.i.bc -o /tmp/tmpJMz17h.bc -O3 WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /tmp/tmpemClId.bc -o=/tmp/tmpT2ftVy.bc -Ppeval -Ppeval-policy=aggressive -Ppeval-opt
+
+=== Begin intra-module specialization ===
+Intra-specializing call to 'do_forward' in function 'request_start' on arguments [4=(i32 0)]
+Intra-specializing call to 'dname_decompress' in function 'request_start' on arguments [1=(i32 256),3=(i8* null),4=(i8* null),5=(i32* null)]
+Intra-specializing call to 'dname_decompress' in function 'request_start' on arguments [1=(i32 256),3=(i8* null),4=(i8* null),5=(i32* null)]
+Intra-specializing call to 'dname_decompress' in function 'request_start' on arguments [1=(i32 256),3=(i8* null),4=(i8* null),5=(i32* null)]
+Intra-specializing call to 'dname_decompress' in function 'request_start' on arguments [1=(i32 256),3=(i8* null),4=(i8* null),5=(i32* null)]
+Intra-specializing call to 'dname_decompress' in function 'do_forward' on arguments [1=(i32 256),3=(i8* null),4=(i8* null),5=(i32* null)]
+Intra-specializing call to 'dname_decompress' in function 'do_forward' on arguments [1=(i32 256),3=(i8* null),4=(i8* null),5=(i32* null)]
+Intra-specializing call to 'response_abort' in function 'request_abort' on arguments [1=(i32 -2)]
+Intra-specializing call to 'dname_decompress' in function 'request_retry' on arguments [1=(i32 256),3=(i8* null),4=(i8* null),5=(i32* null)]
+Intra-specializing call to 'fwd_mark' in function 'request_retry' on arguments [1=(i32 1)]
+Intra-specializing call to 'list_destroy' in function 'recursive_process' on arguments [1=(@rrset_freev)]
+Intra-specializing call to 'list_destroy' in function 'recursive_process' on arguments [1=(@rrset_freev)]
+Intra-specializing call to 'list_destroy' in function 'recursive_process' on arguments [1=(@rrset_freev)]
+Intra-specializing call to 'dname_decompress' in function 'recursive_process' on arguments [1=(i32 256),3=(i8* null),4=(i8* null),5=(i32* null)]
+Intra-specializing call to 'conv_trick_list' in function 'recursive_process' on arguments [1=(i32 28),2=(i32 1)]
+Intra-specializing call to 'conv_trick_list' in function 'recursive_process' on arguments [1=(i32 28),2=(i32 1)]
+Intra-specializing call to 'do_forward' in function 'recursive_process' on arguments [4=(i32 1)]
+Intra-specializing call to 'do_forward' in function 'recursive_process' on arguments [4=(i32 0)]
+Intra-specializing call to 'dname_decompress' in function 'recursive_process' on arguments [1=(i32 256),3=(i8* null),4=(i8* null),5=(i32* null)]
+Intra-specializing call to 'dname_decompress' in function 'recursive_process' on arguments [1=(i32 256),3=(i8* null),4=(i8* null),5=(i32* null)]
+Intra-specializing call to 'conv_trick_list' in function 'recursive_process' on arguments [2=(i32 0)]
+Intra-specializing call to 'conv_trick_list' in function 'recursive_process' on arguments [2=(i32 0)]
+Intra-specializing call to 'mesg_dname_cmp' in function 'cname_without_crecord' on arguments [0=(i8* null)]
+Intra-specializing call to 'fwd_mark' in function 'request_finish' on arguments [1=(i32 -1)]
+Intra-specializing call to 'list_destroy' in function 'request_finish' on arguments [1=(@rrset_freev)]
+Intra-specializing call to 'list_destroy' in function 'request_finish' on arguments [1=(@rrset_freev)]
+Intra-specializing call to 'list_destroy' in function 'request_finish' on arguments [1=(@rrset_freev)]
+Intra-specializing call to 'nia_free' in function 'context_destroy' on arguments [1=(i32 0)]
+Intra-specializing call to 'list_destroy' in function 'context_destroy' on arguments [1=(@free)]
+Intra-specializing call to 'list_destroy' in function 'context_destroy' on arguments [1=(@rrset_freev)]
+Intra-specializing call to 'list_destroy' in function 'context_destroy' on arguments [1=(@rrset_freev)]
+Intra-specializing call to 'list_destroy' in function 'context_destroy' on arguments [1=(@rrset_freev)]
+Intra-specializing call to 'dname_decompress' in function 'mesg_extract_rr' on arguments [1=(i32 512)]
+Intra-specializing call to 'dname_decompress' in function 'mesg_extract_rr' on arguments [1=(i32 510)]
+Intra-specializing call to 'dname_decompress' in function 'mesg_extract_rr' on arguments [1=(i32 512)]
+Intra-specializing call to 'dname_decompress' in function 'mesg_extract_rr' on arguments [1=(i32 512)]
+Intra-specializing call to 'list_destroy' in function 'mesg_read_sec' on arguments [1=(@rrset_couple_freev)]
+Intra-specializing call to 'list_destroy' in function 'mesg_read_sec' on arguments [1=(@rrset_couple_freev)]
+Intra-specializing call to 'rrset_create' in function 'mesg_read_sec' on arguments [4=(%struct.rr_list* null)]
+Intra-specializing call to 'dname_decompress' in function 'mesg_read_sec' on arguments [1=(i32 512)]
+Intra-specializing call to 'dname_decompress' in function 'conv_trick_list' on arguments [1=(i32 256),3=(i8* null),4=(i8* null),5=(i32* null)]
+Intra-specializing call to 'dname_decompress' in function 'conv_trick_list' on arguments [1=(i32 256),3=(i8* null),4=(i8* null),5=(i32* null)]
+Intra-specializing call to 'dname_decompress' in function 'conv_trick_list' on arguments [1=(i32 256),3=(i8* null),4=(i8* null),5=(i32* null)]
+Intra-specializing call to 'dname_decompress' in function 'conv_trick_list' on arguments [1=(i32 256),3=(i8* null),4=(i8* null),5=(i32* null)]
+Intra-specializing call to 'dname_decompress' in function 'conv_trick_list' on arguments [1=(i32 256),3=(i8* null),4=(i8* null),5=(i32* null)]
+Intra-specializing call to 'dname_decompress' in function 'conv_trick_list' on arguments [1=(i32 256),3=(i8* null),4=(i8* null),5=(i32* null)]
+Intra-specializing call to 'mesg_dname_cmp' in function 'search_name' on arguments [0=(i8* null)]
+Intra-specializing call to 'strlcat' in function 'conv_trick_ptr_rq' on arguments [1=(i8* getelementptr inbounds ([14 x i8], [14 x i8]* @.str.22.163, i64 0, i64 0))]
+Intra-specializing call to 'list_search' in function 'ev_tcp_common_remove' on arguments [2=(@ev_tcp_common_eq)]
+Intra-specializing call to 'list_destroy' in function 'ev_tcp_conn_in_finish' on arguments [1=(@free)]
+Intra-specializing call to 'list_destroy' in function 'ev_tcp_out_finish' on arguments [1=(@free)]
+Intra-specializing call to 'fwd_free' in function 'fwd_alloc' on arguments [0=(%struct.fwd* null)]
+Intra-specializing call to 'list_destroy' in function 'tcp_request_readlen_retry' on arguments [1=(@rrset_freev)]
+Intra-specializing call to 'list_destroy' in function 'tcp_request_readlen_retry' on arguments [1=(@rrset_freev)]
+Intra-specializing call to 'list_destroy' in function 'tcp_request_readlen_retry' on arguments [1=(@rrset_freev)]
+Intra-specializing call to 'response_abort' in function 'tcp_response_start' on arguments [1=(i32 -1)]
+Intra-specializing call to 'response_abort' in function 'tcp_response_start' on arguments [0=(%struct.context* null),1=(i32 -1)]
+Intra-specializing call to 'response_abort' in function 'tcp_response_readlen_process' on arguments [1=(i32 -1)]
+Intra-specializing call to 'response_abort' in function 'tcp_response_readlen_process' on arguments [1=(i32 -1)]
+Intra-specializing call to 'response_abort' in function 'tcp_response_readlen_process' on arguments [1=(i32 -1)]
+Intra-specializing call to 'response_abort' in function 'tcp_response_readlen_retry' on arguments [1=(i32 -1)]
+Intra-specializing call to 'response_abort' in function 'tcp_response_reading_process' on arguments [1=(i32 -1)]
+Intra-specializing call to 'response_abort' in function 'tcp_response_reading_process' on arguments [1=(i32 -1)]
+Intra-specializing call to 'response_abort' in function 'tcp_response_reading_process' on arguments [1=(i32 -1)]
+Intra-specializing call to 'response_abort' in function 'tcp_response_reading_retry' on arguments [1=(i32 -1)]
+Intra-specializing call to 'response_abort' in function 'tcp_response_recursive_process' on arguments [1=(i32 -1)]
+Intra-specializing call to 'response_abort' in function 'tcp_response_recursive_process' on arguments [1=(i32 -1)]
+Intra-specializing call to 'response_abort' in function 'tcp_response_recursive_process' on arguments [1=(i32 -1)]
+Intra-specializing call to 'response_abort' in function 'tcp_response_recursive_process' on arguments [1=(i32 1)]
+Intra-specializing call to 'response_abort' in function 'tcp_response_recursive_retry' on arguments [1=(i32 -1)]
+Intra-specializing call to 'response_abort' in function 'tcp_response_writing_process' on arguments [1=(i32 -1)]
+Intra-specializing call to 'response_abort' in function 'tcp_response_writing_process' on arguments [1=(i32 -1)]
+Intra-specializing call to 'response_abort' in function 'tcp_response_writing_retry' on arguments [1=(i32 -1)]
+Intra-specializing call to 'response_abort' in function 'tcp_response_waiting_client_close_process' on arguments [1=(i32 -1)]
+Intra-specializing call to 'response_abort' in function 'tcp_response_waiting_client_close_process' on arguments [1=(i32 -1)]
+Intra-specializing call to 'response_abort' in function 'tcp_response_waiting_client_close_process' on arguments [1=(i32 -1)]
+Intra-specializing call to 'response_abort' in function 'tcp_response_waiting_client_close_retry' on arguments [1=(i32 0)]
+Intra-specializing call to 'net_mesg_send' in function 'udp_request_start' on arguments [0=(%struct.nia* null)]
+Intra-specializing call to 'net_mesg_send' in function 'udp_request_retry' on arguments [0=(%struct.nia* null)]
+Intra-specializing call to 'list_destroy' in function 'udp_request_retry' on arguments [1=(@rrset_freev)]
+Intra-specializing call to 'list_destroy' in function 'udp_request_retry' on arguments [1=(@rrset_freev)]
+Intra-specializing call to 'list_destroy' in function 'udp_request_retry' on arguments [1=(@rrset_freev)]
+Intra-specializing call to 'queue_destroy' in function 'ev_to_finish' on arguments [1=(@ev_to_data_free_v)]
+Intra-specializing call to 'net_reinit_socketlist' in function 'ev_to_handler_ifcheck' on arguments [1=(i32 0)]
+Intra-specializing call to 'response_abort' in function 'udp_response_start' on arguments [0=(%struct.context* null),1=(i32 -1)]
+Intra-specializing call to 'response_abort' in function 'udp_response_recursive_retry' on arguments [1=(i32 0)]
+Intra-specializing call to 'response_abort' in function 'udp_response_finish' on arguments [1=(i32 -1)]
+Intra-specializing call to 'response_abort' in function 'udp_response_finish' on arguments [1=(i32 1)]
+Intra-specializing call to 'list_destroy' in function 'udp_response_finish' on arguments [1=(@rrset_freev)]
+Intra-specializing call to 'list_destroy' in function 'udp_response_finish' on arguments [1=(@rrset_freev)]
+Intra-specializing call to 'list_destroy' in function 'udp_response_finish' on arguments [1=(@rrset_freev)]
+Intra-specializing call to 'totd_exit' in function 'ev_handler_cleanup' on arguments [0=(i32 0)]
+Intra-specializing call to 'queue_destroy' in function 'ev_signal_finish' on arguments [1=(@free)]
+Intra-specializing call to 'list_destroy' in function 'ev_udp_in_finish' on arguments [1=(@ev_udp_in_data_free_v)]
+Intra-specializing call to 'list_search' in function 'ev_udp_in_remove' on arguments [2=(@ev_udp_in_eq)]
+Intra-specializing call to 'list_search' in function 'ev_udp_in_read' on arguments [2=(@ev_udp_in_eq)]
+Intra-specializing call to 'nia_free' in function 'nia_free_closev' on arguments [1=(i32 1)]
+Intra-specializing call to 'nia_set_wildsock' in function 'net_init_socketlist' on arguments [1=(i32 0)]
+Intra-specializing call to 'nia_free' in function 'nia_set_wildsock' on arguments [1=(i32 0)]
+Intra-specializing call to 'nia_alloc' in function 'nia_set_wildsock' on arguments [1=(i32 -1),2=(i32 -1)]
+Intra-specializing call to 'nia_free' in function 'nia_set_wildsock' on arguments [1=(i32 0)]
+Intra-specializing call to 'nia_alloc' in function 'nia_set_wildsock' on arguments [1=(i32 -1),2=(i32 -1)]
+Intra-specializing call to 'nia_alloc' in function 'net_get_ifaddrs' on arguments [1=(i32 -1),2=(i32 -1)]
+Intra-specializing call to 'nia_set_wildsock' in function 'net_reinit_socketlist' on arguments [1=(i32 0)]
+Intra-specializing call to 'list_destroy' in function 'nia_list_destroy' on arguments [1=(@nia_free_closev)]
+Intra-specializing call to 'rrset_create' in function 'conv_scoped_rrset' on arguments [0=(i16 28)]
+Intra-specializing call to 'rr_alloc' in function 'conv_scoped_rrset' on arguments [1=(i32 16)]
+Intra-specializing call to 'totd_exit' in function 'usage' on arguments [0=(i32 1)]
+Intra-specializing call to 'list_destroy' in function 'totd_exit' on arguments [1=(@fwd_freev)]
+Intra-specializing call to 'totd_exit' in function 'totd_eventloop' on arguments [0=(i32 1)]
+Intra-specializing call to 'net_reinit_socketlist' in function 'totd_eventloop' on arguments [1=(i32 1)]
+Intra-specializing call to 'totd_exit' in function 'main' on arguments [0=(i32 1)]
+Intra-specializing call to 'totd_exit' in function 'main' on arguments [0=(i32 1)]
+Intra-specializing call to 'totd_exit' in function 'main' on arguments [0=(i32 1)]
+Intra-specializing call to 'totd_exit' in function 'main' on arguments [0=(i32 1)]
+Intra-specializing call to 'totd_exit' in function 'main' on arguments [0=(i32 1)]
+Intra-specializing call to 'totd_exit' in function 'main' on arguments [0=(i32 1)]
+Intra-specializing call to 'totd_exit' in function 'main' on arguments [0=(i32 1)]
+Intra-specializing call to 'totd_exit' in function 'main' on arguments [0=(i32 1)]
+Intra-specializing call to 'totd_exit' in function 'main' on arguments [0=(i32 1)]
+Intra-specializing call to 'totd_exit' in function 'main' on arguments [0=(i32 1)]
+Intra-specializing call to 'totd_exit' in function 'main' on arguments [0=(i32 1)]
+Intra-specializing call to 'totd_exit' in function 'main' on arguments [0=(i32 1)]
+Intra-specializing call to 'totd_exit' in function 'main' on arguments [0=(i32 1)]
+Intra-specializing call to 'totd_exit' in function 'main' on arguments [0=(i32 1)]
+Intra-specializing call to 'totd_exit' in function 'main' on arguments [0=(i32 1)]
+Intra-specializing call to 'totd_exit' in function 'main' on arguments [0=(i32 1)]
+Intra-specializing call to 'totd_exit' in function 'main' on arguments [0=(i32 1)]
+Intra-specializing call to 'totd_exit' in function 'main' on arguments [0=(i32 1)]
+Intra-specializing call to 'totd_exit' in function 'main' on arguments [0=(i32 1)]
+Intra-specializing call to 'totd_exit' in function 'main' on arguments [0=(i32 1)]
+Intra-specializing call to 'totd_exit' in function 'main' on arguments [0=(i32 1)]
+Intra-specializing call to 'totd_exit' in function 'main' on arguments [0=(i32 1)]
+Intra-specializing call to 'dname_decompress' in function '__occam_spec.do_forward(?,?,?,?,0x0)' on arguments [1=(i32 256),3=(i8* null),4=(i8* null),5=(i32* null)]
+Intra-specializing call to 'dname_decompress' in function '__occam_spec.do_forward(?,?,?,?,0x0)' on arguments [1=(i32 256),3=(i8* null),4=(i8* null),5=(i32* null)]
+Intra-specializing call to 'dname_decompress' in function '__occam_spec.conv_trick_list(?,0x1C,0x1)' on arguments [1=(i32 256),3=(i8* null),4=(i8* null),5=(i32* null)]
+Intra-specializing call to 'dname_decompress' in function '__occam_spec.conv_trick_list(?,0x1C,0x1)' on arguments [1=(i32 256),3=(i8* null),4=(i8* null),5=(i32* null)]
+Intra-specializing call to 'dname_decompress' in function '__occam_spec.conv_trick_list(?,0x1C,0x1)' on arguments [1=(i32 256),3=(i8* null),4=(i8* null),5=(i32* null)]
+Intra-specializing call to 'search_name' in function '__occam_spec.conv_trick_list(?,0x1C,0x1)' on arguments [3=(i32 28)]
+Intra-specializing call to 'dname_decompress' in function '__occam_spec.conv_trick_list(?,0x1C,0x1)' on arguments [1=(i32 256),3=(i8* null),4=(i8* null),5=(i32* null)]
+Intra-specializing call to 'dname_decompress' in function '__occam_spec.conv_trick_list(?,0x1C,0x1)' on arguments [1=(i32 256),3=(i8* null),4=(i8* null),5=(i32* null)]
+Intra-specializing call to 'dname_decompress' in function '__occam_spec.conv_trick_list(?,0x1C,0x1)' on arguments [1=(i32 256),3=(i8* null),4=(i8* null),5=(i32* null)]
+Intra-specializing call to 'search_name' in function '__occam_spec.conv_trick_list(?,0x1C,0x1)' on arguments [3=(i32 28)]
+Intra-specializing call to 'dname_decompress' in function '__occam_spec.conv_trick_list(?,?,0x0)' on arguments [1=(i32 256),3=(i8* null),4=(i8* null),5=(i32* null)]
+Intra-specializing call to 'dname_decompress' in function '__occam_spec.conv_trick_list(?,?,0x0)' on arguments [1=(i32 256),3=(i8* null),4=(i8* null),5=(i32* null)]
+Intra-specializing call to 'dname_decompress' in function '__occam_spec.conv_trick_list(?,?,0x0)' on arguments [1=(i32 256),3=(i8* null),4=(i8* null),5=(i32* null)]
+Intra-specializing call to 'dname_decompress' in function '__occam_spec.conv_trick_list(?,?,0x0)' on arguments [1=(i32 256),3=(i8* null),4=(i8* null),5=(i32* null)]
+Intra-specializing call to 'dname_decompress' in function '__occam_spec.conv_trick_list(?,?,0x0)' on arguments [1=(i32 256),3=(i8* null),4=(i8* null),5=(i32* null)]
+Intra-specializing call to 'dname_decompress' in function '__occam_spec.conv_trick_list(?,?,0x0)' on arguments [1=(i32 256),3=(i8* null),4=(i8* null),5=(i32* null)]
+Intra-specializing call to 'dname_redirect' in function '__occam_spec.mesg_dname_cmp(null,?,?)' on arguments [1=(i8* null)]
+Intra-specializing call to 'dname_redirect' in function '__occam_spec.mesg_dname_cmp(null,?,?)' on arguments [1=(i8* null)]
+Intra-specializing call to 'nia_set_wildsock' in function '__occam_spec.net_reinit_socketlist(?,0x0)' on arguments [1=(i32 0)]
+Intra-specializing call to 'list_destroy' in function '__occam_spec.totd_exit(0x0)' on arguments [1=(@fwd_freev)]
+Intra-specializing call to 'nia_free' in function '__occam_spec.nia_set_wildsock(?,0x0)' on arguments [1=(i32 0)]
+Intra-specializing call to 'nia_alloc' in function '__occam_spec.nia_set_wildsock(?,0x0)' on arguments [1=(i32 -1),2=(i32 -1)]
+Intra-specializing call to 'nia_free' in function '__occam_spec.nia_set_wildsock(?,0x0)' on arguments [1=(i32 0)]
+Intra-specializing call to 'nia_alloc' in function '__occam_spec.nia_set_wildsock(?,0x0)' on arguments [1=(i32 -1),2=(i32 -1)]
+Intra-specializing call to 'string_rtype' in function '__occam_spec.rrset_create(0x1C,?,?,?,?)' on arguments [0=(i16 28)]
+Intra-specializing call to 'list_destroy' in function '__occam_spec.totd_exit(0x1)' on arguments [1=(@fwd_freev)]
+...progress...
+Specialized 0 functions.
+ === End intra-module specialization ===
+/usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /tmp/tmpemClId.bc -o=/tmp/tmpT2ftVy.bc -Ppeval -Ppeval-policy=aggressive -Ppeval-opt => 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -disable-simplify-libcalls --disable-slp-vectorization /tmp/tmpJMz17h.bc -o /tmp/tmpemClId.bc -O3
+
+EXECUTED: /usr/lib/llvm-10/bin/opt -disable-simplify-libcalls --disable-slp-vectorization /tmp/tmpJMz17h.bc -o /tmp/tmpemClId.bc -O3 WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /tmp/tmpemClId.bc -o=/tmp/tmpT2ftVy.bc -Ppeval -Ppeval-policy=aggressive -Ppeval-opt
+
+=== Begin intra-module specialization ===
+Intra-specializing call to 'conv_trick_rrset' in function '__occam_spec.conv_trick_list(?,0x1C,0x1)' on arguments [1=(i16 28)]
+Intra-specializing call to 'rrset_create' in function '__occam_spec.conv_trick_rrset(?,0x1C,?)' on arguments [0=(i16 28)]
+...progress...
+Specialized 0 functions.
+ === End intra-module specialization ===
+/usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /tmp/tmpemClId.bc -o=/tmp/tmpT2ftVy.bc -Ppeval -Ppeval-policy=aggressive -Ppeval-opt => 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -disable-simplify-libcalls --disable-slp-vectorization /tmp/tmpJMz17h.bc -o /tmp/tmpemClId.bc -O3
+
+EXECUTED: /usr/lib/llvm-10/bin/opt -disable-simplify-libcalls --disable-slp-vectorization /tmp/tmpJMz17h.bc -o /tmp/tmpemClId.bc -O3 WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /tmp/tmpemClId.bc -o=/tmp/tmpT2ftVy.bc -Ppeval -Ppeval-policy=aggressive -Ppeval-opt
+
+=== Begin intra-module specialization ===
+Intra-specializing call to '__occam_spec.rrset_create(0x1C,?,?,?,?)' in function 'conv_scoped_rrset' on arguments [3=(%struct.rr_list* null)]
+Intra-specializing call to 'rr_alloc' in function '__occam_spec.conv_trick_rrset(?,0x1C,?)' on arguments [1=(i32 16)]
+...progress...
+Specialized 0 functions.
+ === End intra-module specialization ===
+/usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /tmp/tmpemClId.bc -o=/tmp/tmpT2ftVy.bc -Ppeval -Ppeval-policy=aggressive -Ppeval-opt => 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -disable-simplify-libcalls --disable-slp-vectorization /tmp/tmpJMz17h.bc -o /tmp/tmpemClId.bc -O3
+
+EXECUTED: /usr/lib/llvm-10/bin/opt -disable-simplify-libcalls --disable-slp-vectorization /tmp/tmpJMz17h.bc -o /tmp/tmpemClId.bc -O3 WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /tmp/tmpemClId.bc -o=/tmp/tmpT2ftVy.bc -Ppeval -Ppeval-policy=aggressive -Ppeval-opt
+
+=== Begin intra-module specialization ===
+...no progress...
+No specialization took place
+ === End intra-module specialization ===
+/usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /tmp/tmpemClId.bc -o=/tmp/tmpT2ftVy.bc -Ppeval -Ppeval-policy=aggressive -Ppeval-opt => 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/totd/slash/totd.a.i.p.bc -o=/dev/null -Pinterface -Pinterface-output /tmp/tmpemL1X3.iface -Pinterface-entry /tmp/tmpemL1X3.iface
+
+GatherInterfacePass::runOnModule: /occam/examples/trimmer/totd/slash/totd.a.i.p.bc
+Reading interface from '/tmp/tmpemL1X3.iface'...success
+External call to malloc
+External call to getuid
+External call to getgid
+External call to exit
+External call to strncmp
+External call to atoi
+External call to syslog
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strdup
+External call to strcmp
+External call to syslog
+External call to strcmp
+External call to atoi
+External call to syslog
+External call to strcmp
+External call to strdup
+External call to strcmp
+External call to strdup
+External call to strcmp
+External call to strdup
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to syslog
+External call to openlog
+External call to syslog
+External call to setlogmask
+External call to __ctype_b_loc
+External call to atoi
+External call to getpwnam
+External call to getpwuid
+External call to syslog
+External call to syslog
+External call to syslog
+External call to __ctype_b_loc
+External call to atoi
+External call to getgrnam
+External call to syslog
+External call to getgid
+External call to endpwent
+External call to endgrent
+External call to chroot
+External call to syslog
+External call to syslog
+External call to chdir
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to fopen
+External call to __isoc99_fscanf
+External call to syslog
+External call to unlink
+External call to kill
+External call to unlink
+External call to syslog
+External call to syslog
+External call to syslog
+External call to fclose
+External call to fclose
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to setgid
+External call to syslog
+External call to setuid
+External call to syslog
+External call to syslog
+External call to daemon
+External call to syslog
+External call to fopen
+External call to syslog
+External call to getpid
+External call to fprintf
+External call to getpid
+External call to syslog
+External call to fclose
+External call to syslog
+External call to syslog
+External call to malloc
+External call to syslog
+Added reference to function syslog
+Added reference to function strlen
+Added reference to function malloc
+Added reference to function htons
+Added reference to function free
+Added reference to function time
+Added reference to function shutdown
+Added reference to function close
+Added reference to function random
+Added reference to function srandom
+Added reference to function ntohs
+Added reference to function memcmp
+Added reference to function strncasecmp
+Added reference to function sprintf
+Added reference to function strcpy
+Added reference to function inet_pton
+Added reference to function strstr
+Added reference to function __isoc99_sscanf
+Added reference to function strncpy
+Added reference to function __ctype_b_loc
+Added reference to function snprintf
+Added reference to function accept
+Added reference to function inet_ntop
+Added reference to function strchr
+Added reference to function inet_aton
+Added reference to function getaddrinfo
+Added reference to function gai_strerror
+Added reference to function freeaddrinfo
+Added reference to function fopen
+Added reference to function fgets
+Added reference to function strtok
+Added reference to function strcasecmp
+Added reference to function atoi
+Added reference to function strdup
+Added reference to function strcmp
+Added reference to function fclose
+Added reference to function socket
+Added reference to function ioctl
+Added reference to function connect
+Added reference to function __errno_location
+Added reference to function getsockopt
+Added reference to function read
+Added reference to function write
+Added reference to function signal
+Added reference to function recvfrom
+Added reference to function setsockopt
+Added reference to function bind
+Added reference to function listen
+Added reference to function sendto
+Added reference to function htonl
+Added reference to function printf
+Added reference to function unlink
+Added reference to function fprintf
+Added reference to function exit
+Added reference to function getuid
+Added reference to function getgid
+Added reference to function strncmp
+Added reference to function openlog
+Added reference to function setlogmask
+Added reference to function getpwnam
+Added reference to function getpwuid
+Added reference to function getgrnam
+Added reference to function endpwent
+Added reference to function endgrent
+Added reference to function chroot
+Added reference to function chdir
+Added reference to function __isoc99_fscanf
+Added reference to function kill
+Added reference to function setgid
+Added reference to function setuid
+Added reference to function daemon
+Added reference to function getpid
+Added reference to function select
+Added reference to function sleep
+Added reference to global in6addr_any
+Added reference to global stderr
+Generated interface for /occam/examples/trimmer/totd/slash/totd.a.i.p.bc
+## External calls:
+	setgid(?)
+	__ctype_b_loc()
+	__ctype_b_loc()
+	syslog(0x6,S:521C1613,?)
+	syslog(0x3,S:13FA110B,?)
+	syslog(0x3,S:62668205,?)
+	syslog(0x3,S:D916FF81,?)
+	syslog(0x5,S:AC38,S:530C4599)
+	syslog(0x6,S:45A80C3E,?,?,?)
+	syslog(0x3,S:7A88F6B7,?)
+	syslog(0x6,S:AFD2E719,?)
+	syslog(0x3,S:419E645C,?)
+	syslog(0x3,S:A2962BF8,?)
+	syslog(0x6,S:65238453,?)
+	syslog(0x3,S:3CF2331F)
+	syslog(0x3,S:45CA65A0)
+	syslog(0x6,S:F55CEB93)
+	syslog(0x4,S:1D5E7138)
+	syslog(0x5,S:ED97590)
+	syslog(0x5,S:236F6194)
+	syslog(0x3,S:5F7B8B77,?)
+	syslog(0x6,S:A8AD8019,?)
+	syslog(0x3,S:A6337F14)
+	syslog(0x6,S:867B05D0)
+	syslog(0x3,S:BC192BE3)
+	syslog(0x6,S:5918EB5E)
+	syslog(0x7,S:8FEF87)
+	syslog(0x6,S:9539BB38)
+	syslog(0x6,S:F72075FA)
+	syslog(0x3,S:81EFFEA9)
+	syslog(0x3,S:1DCE6147)
+	syslog(0x3,S:FDF2225C)
+	syslog(0x3,S:A8D8B525)
+	syslog(0x3,S:88AAAC0E)
+	syslog(0x3,S:A9B57E66)
+	syslog(0x3,S:D6E5A17E)
+	syslog(0x4,S:D6E5A17E)
+	syslog(0x4,S:61227941)
+	syslog(0x3,S:FB19E7E0)
+	syslog(0x3,S:97567855)
+	syslog(0x3,S:B55BF791,?)
+	syslog(0x3,S:BD46539F,?)
+	syslog(0x3,S:6B454519)
+	syslog(0x6,S:AC183800)
+	syslog(0x3,S:21A83558,?)
+	syslog(0x6,S:2875B5B2,?,?)
+	syslog(0x6,S:AFD18B72)
+	syslog(0x3,S:BC128576)
+	syslog(0x7,S:B88387A7,S:3A28DB00,?)
+	getuid()
+	getpwnam(?)
+	getpwuid(?)
+	kill(?,0x0)
+	__isoc99_fscanf(?,S:AA49,?)
+	chroot(?)
+	setuid(?)
+	openlog(S:871F2DB,?,0x18)
+	getgrnam(?)
+	fopen(?,S:EB2)
+	fopen(?,S:F57)
+	strcmp(?,S:C663)
+	strcmp(?,S:C621)
+	strcmp(?,S:199137)
+	strcmp(?,S:199977)
+	strcmp(?,S:36C7F3E)
+	strcmp(?,S:36C7F80)
+	strcmp(?,S:CC30)
+	strcmp(?,S:CDDD)
+	strcmp(?,S:A6ABF5F)
+	strcmp(?,S:CE82)
+	strcmp(?,S:CCB4)
+	strcmp(?,S:CE61)
+	strcmp(?,S:CCD5)
+	strcmp(?,S:CEA3)
+	strcmp(?,S:CDFE)
+	fprintf(?,S:AA49,?)
+	fclose(?)
+	fclose(?)
+	fclose(?)
+	strdup(?)
+	strdup(?)
+	strdup(?)
+	strdup(?)
+	endpwent()
+	strncmp(?,S:CC51,0x2)
+	chdir(S:60F)
+	atoi(?)
+	atoi(?)
+	atoi(?)
+	atoi(?)
+	unlink(?)
+	unlink(?)
+	getgid()
+	getgid()
+	daemon(0x0,0x0)
+	endgrent()
+	malloc(0x20)
+	malloc(0x18)
+	exit(0x1)
+	setlogmask(?)
+	getpid()
+	getpid()
+## External symbols:
+	__ctype_b_loc
+	__errno_location
+	__isoc99_fscanf
+	__isoc99_sscanf
+	accept
+	atoi
+	bind
+	chdir
+	chroot
+	close
+	connect
+	daemon
+	endgrent
+	endpwent
+	exit
+	fclose
+	fgets
+	fopen
+	fprintf
+	free
+	freeaddrinfo
+	gai_strerror
+	getaddrinfo
+	getgid
+	getgrnam
+	getpid
+	getpwnam
+	getpwuid
+	getsockopt
+	getuid
+	htonl
+	htons
+	in6addr_any
+	inet_aton
+	inet_ntop
+	inet_pton
+	ioctl
+	kill
+	listen
+	malloc
+	memcmp
+	ntohs
+	openlog
+	printf
+	random
+	read
+	recvfrom
+	select
+	sendto
+	setgid
+	setlogmask
+	setsockopt
+	setuid
+	shutdown
+	signal
+	sleep
+	snprintf
+	socket
+	sprintf
+	srandom
+	stderr
+	strcasecmp
+	strchr
+	strcmp
+	strcpy
+	strdup
+	strlen
+	strncasecmp
+	strncmp
+	strncpy
+	strstr
+	strtok
+	syslog
+	time
+	unlink
+	write
+
+EXECUTED: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/totd/slash/totd.a.i.p.bc -o=/dev/null -Pinterface -Pinterface-output /tmp/tmpemL1X3.iface -Pinterface-entry /tmp/tmpemL1X3.iface WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/totd/slash/totd.a.i.p.bc -o=/dev/null -Pinterface -Pinterface-output /tmp/tmpemL1X3.iface -Pinterface-entry /tmp/tmpemL1X3.iface
+
+GatherInterfacePass::runOnModule: /occam/examples/trimmer/totd/slash/totd.a.i.p.bc
+Reading interface from '/tmp/tmpemL1X3.iface'...success
+External call to malloc
+External call to getuid
+External call to getgid
+External call to exit
+External call to strncmp
+External call to atoi
+External call to syslog
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strdup
+External call to strcmp
+External call to syslog
+External call to strcmp
+External call to atoi
+External call to syslog
+External call to strcmp
+External call to strdup
+External call to strcmp
+External call to strdup
+External call to strcmp
+External call to strdup
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to syslog
+External call to openlog
+External call to syslog
+External call to setlogmask
+External call to __ctype_b_loc
+External call to atoi
+External call to getpwnam
+External call to getpwuid
+External call to syslog
+External call to syslog
+External call to syslog
+External call to __ctype_b_loc
+External call to atoi
+External call to getgrnam
+External call to syslog
+External call to getgid
+External call to endpwent
+External call to endgrent
+External call to chroot
+External call to syslog
+External call to syslog
+External call to chdir
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to fopen
+External call to __isoc99_fscanf
+External call to syslog
+External call to unlink
+External call to kill
+External call to unlink
+External call to syslog
+External call to syslog
+External call to syslog
+External call to fclose
+External call to fclose
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to setgid
+External call to syslog
+External call to setuid
+External call to syslog
+External call to syslog
+External call to daemon
+External call to syslog
+External call to fopen
+External call to syslog
+External call to getpid
+External call to fprintf
+External call to getpid
+External call to syslog
+External call to fclose
+External call to syslog
+External call to syslog
+External call to malloc
+External call to syslog
+Added reference to function syslog
+Added reference to function strlen
+Added reference to function malloc
+Added reference to function htons
+Added reference to function free
+Added reference to function time
+Added reference to function shutdown
+Added reference to function close
+Added reference to function random
+Added reference to function srandom
+Added reference to function ntohs
+Added reference to function memcmp
+Added reference to function strncasecmp
+Added reference to function sprintf
+Added reference to function strcpy
+Added reference to function inet_pton
+Added reference to function strstr
+Added reference to function __isoc99_sscanf
+Added reference to function strncpy
+Added reference to function __ctype_b_loc
+Added reference to function snprintf
+Added reference to function accept
+Added reference to function inet_ntop
+Added reference to function strchr
+Added reference to function inet_aton
+Added reference to function getaddrinfo
+Added reference to function gai_strerror
+Added reference to function freeaddrinfo
+Added reference to function fopen
+Added reference to function fgets
+Added reference to function strtok
+Added reference to function strcasecmp
+Added reference to function atoi
+Added reference to function strdup
+Added reference to function strcmp
+Added reference to function fclose
+Added reference to function socket
+Added reference to function ioctl
+Added reference to function connect
+Added reference to function __errno_location
+Added reference to function getsockopt
+Added reference to function read
+Added reference to function write
+Added reference to function signal
+Added reference to function recvfrom
+Added reference to function setsockopt
+Added reference to function bind
+Added reference to function listen
+Added reference to function sendto
+Added reference to function htonl
+Added reference to function printf
+Added reference to function unlink
+Added reference to function fprintf
+Added reference to function exit
+Added reference to function getuid
+Added reference to function getgid
+Added reference to function strncmp
+Added reference to function openlog
+Added reference to function setlogmask
+Added reference to function getpwnam
+Added reference to function getpwuid
+Added reference to function getgrnam
+Added reference to function endpwent
+Added reference to function endgrent
+Added reference to function chroot
+Added reference to function chdir
+Added reference to function __isoc99_fscanf
+Added reference to function kill
+Added reference to function setgid
+Added reference to function setuid
+Added reference to function daemon
+Added reference to function getpid
+Added reference to function select
+Added reference to function sleep
+Added reference to global in6addr_any
+Added reference to global stderr
+Generated interface for /occam/examples/trimmer/totd/slash/totd.a.i.p.bc
+## External calls:
+	setgid(?)
+	__ctype_b_loc()
+	__ctype_b_loc()
+	syslog(0x6,S:521C1613,?)
+	syslog(0x3,S:13FA110B,?)
+	syslog(0x3,S:62668205,?)
+	syslog(0x3,S:D916FF81,?)
+	syslog(0x5,S:AC38,S:530C4599)
+	syslog(0x6,S:45A80C3E,?,?,?)
+	syslog(0x3,S:7A88F6B7,?)
+	syslog(0x6,S:AFD2E719,?)
+	syslog(0x3,S:419E645C,?)
+	syslog(0x3,S:A2962BF8,?)
+	syslog(0x6,S:65238453,?)
+	syslog(0x3,S:3CF2331F)
+	syslog(0x3,S:45CA65A0)
+	syslog(0x6,S:F55CEB93)
+	syslog(0x4,S:1D5E7138)
+	syslog(0x5,S:ED97590)
+	syslog(0x5,S:236F6194)
+	syslog(0x3,S:5F7B8B77,?)
+	syslog(0x6,S:A8AD8019,?)
+	syslog(0x3,S:A6337F14)
+	syslog(0x6,S:867B05D0)
+	syslog(0x3,S:BC192BE3)
+	syslog(0x6,S:5918EB5E)
+	syslog(0x7,S:8FEF87)
+	syslog(0x6,S:9539BB38)
+	syslog(0x6,S:F72075FA)
+	syslog(0x3,S:81EFFEA9)
+	syslog(0x3,S:1DCE6147)
+	syslog(0x3,S:FDF2225C)
+	syslog(0x3,S:A8D8B525)
+	syslog(0x3,S:88AAAC0E)
+	syslog(0x3,S:A9B57E66)
+	syslog(0x3,S:D6E5A17E)
+	syslog(0x4,S:D6E5A17E)
+	syslog(0x4,S:61227941)
+	syslog(0x3,S:FB19E7E0)
+	syslog(0x3,S:97567855)
+	syslog(0x3,S:B55BF791,?)
+	syslog(0x3,S:BD46539F,?)
+	syslog(0x3,S:6B454519)
+	syslog(0x6,S:AC183800)
+	syslog(0x3,S:21A83558,?)
+	syslog(0x6,S:2875B5B2,?,?)
+	syslog(0x6,S:AFD18B72)
+	syslog(0x3,S:BC128576)
+	syslog(0x7,S:B88387A7,S:3A28DB00,?)
+	getuid()
+	getpwnam(?)
+	getpwuid(?)
+	kill(?,0x0)
+	__isoc99_fscanf(?,S:AA49,?)
+	chroot(?)
+	setuid(?)
+	openlog(S:871F2DB,?,0x18)
+	getgrnam(?)
+	fopen(?,S:EB2)
+	fopen(?,S:F57)
+	strcmp(?,S:C663)
+	strcmp(?,S:C621)
+	strcmp(?,S:199137)
+	strcmp(?,S:199977)
+	strcmp(?,S:36C7F3E)
+	strcmp(?,S:36C7F80)
+	strcmp(?,S:CC30)
+	strcmp(?,S:CDDD)
+	strcmp(?,S:A6ABF5F)
+	strcmp(?,S:CE82)
+	strcmp(?,S:CCB4)
+	strcmp(?,S:CE61)
+	strcmp(?,S:CCD5)
+	strcmp(?,S:CEA3)
+	strcmp(?,S:CDFE)
+	fprintf(?,S:AA49,?)
+	fclose(?)
+	fclose(?)
+	fclose(?)
+	strdup(?)
+	strdup(?)
+	strdup(?)
+	strdup(?)
+	endpwent()
+	strncmp(?,S:CC51,0x2)
+	chdir(S:60F)
+	atoi(?)
+	atoi(?)
+	atoi(?)
+	atoi(?)
+	unlink(?)
+	unlink(?)
+	getgid()
+	getgid()
+	daemon(0x0,0x0)
+	endgrent()
+	malloc(0x20)
+	malloc(0x18)
+	exit(0x1)
+	setlogmask(?)
+	getpid()
+	getpid()
+## External symbols:
+	__ctype_b_loc
+	__errno_location
+	__isoc99_fscanf
+	__isoc99_sscanf
+	accept
+	atoi
+	bind
+	chdir
+	chroot
+	close
+	connect
+	daemon
+	endgrent
+	endpwent
+	exit
+	fclose
+	fgets
+	fopen
+	fprintf
+	free
+	freeaddrinfo
+	gai_strerror
+	getaddrinfo
+	getgid
+	getgrnam
+	getpid
+	getpwnam
+	getpwuid
+	getsockopt
+	getuid
+	htonl
+	htons
+	in6addr_any
+	inet_aton
+	inet_ntop
+	inet_pton
+	ioctl
+	kill
+	listen
+	malloc
+	memcmp
+	ntohs
+	openlog
+	printf
+	random
+	read
+	recvfrom
+	select
+	sendto
+	setgid
+	setlogmask
+	setsockopt
+	setuid
+	shutdown
+	signal
+	sleep
+	snprintf
+	socket
+	sprintf
+	srandom
+	stderr
+	strcasecmp
+	strchr
+	strcmp
+	strcpy
+	strdup
+	strlen
+	strncasecmp
+	strncmp
+	strncpy
+	strstr
+	strtok
+	syslog
+	time
+	unlink
+	write
+
+EXECUTED: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/totd/slash/totd.a.i.p.bc -o=/dev/null -Pinterface -Pinterface-output /tmp/tmpemL1X3.iface -Pinterface-entry /tmp/tmpemL1X3.iface WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/totd/slash/totd.a.i.p.bc -o=/dev/null -Pinterface -Pinterface-output totd.02.iface
+
+GatherInterfacePass::runOnModule: /occam/examples/trimmer/totd/slash/totd.a.i.p.bc
+Added reference to function syslog
+Added reference to function strlen
+Added reference to function malloc
+Added reference to function htons
+Added reference to function free
+Added reference to function time
+Added reference to function shutdown
+Added reference to function close
+Added reference to function random
+Added reference to function srandom
+Added reference to function ntohs
+Added reference to function memcmp
+Added reference to function strncasecmp
+Added reference to function sprintf
+Added reference to function strcpy
+Added reference to function inet_pton
+Added reference to function strstr
+Added reference to function __isoc99_sscanf
+Added reference to function strncpy
+Added reference to function __ctype_b_loc
+Added reference to function snprintf
+Added reference to function accept
+Added reference to function inet_ntop
+Added reference to function strchr
+Added reference to function inet_aton
+Added reference to function getaddrinfo
+Added reference to function gai_strerror
+Added reference to function freeaddrinfo
+Added reference to function fopen
+Added reference to function fgets
+Added reference to function strtok
+Added reference to function strcasecmp
+Added reference to function atoi
+Added reference to function strdup
+Added reference to function strcmp
+Added reference to function fclose
+Added reference to function socket
+Added reference to function ioctl
+Added reference to function connect
+Added reference to function __errno_location
+Added reference to function getsockopt
+Added reference to function read
+Added reference to function write
+Added reference to function signal
+Added reference to function recvfrom
+Added reference to function setsockopt
+Added reference to function bind
+Added reference to function listen
+Added reference to function sendto
+Added reference to function htonl
+Added reference to function printf
+Added reference to function unlink
+Added reference to function fprintf
+Added reference to function exit
+Added reference to function getuid
+Added reference to function getgid
+Added reference to function strncmp
+Added reference to function openlog
+Added reference to function setlogmask
+Added reference to function getpwnam
+Added reference to function getpwuid
+Added reference to function getgrnam
+Added reference to function endpwent
+Added reference to function endgrent
+Added reference to function chroot
+Added reference to function chdir
+Added reference to function __isoc99_fscanf
+Added reference to function kill
+Added reference to function setgid
+Added reference to function setuid
+Added reference to function daemon
+Added reference to function getpid
+Added reference to function select
+Added reference to function sleep
+Added reference to global in6addr_any
+Added reference to global stderr
+Generated interface for /occam/examples/trimmer/totd/slash/totd.a.i.p.bc
+## External calls:
+## External symbols:
+	__ctype_b_loc
+	__errno_location
+	__isoc99_fscanf
+	__isoc99_sscanf
+	accept
+	atoi
+	bind
+	chdir
+	chroot
+	close
+	connect
+	daemon
+	endgrent
+	endpwent
+	exit
+	fclose
+	fgets
+	fopen
+	fprintf
+	free
+	freeaddrinfo
+	gai_strerror
+	getaddrinfo
+	getgid
+	getgrnam
+	getpid
+	getpwnam
+	getpwuid
+	getsockopt
+	getuid
+	htonl
+	htons
+	in6addr_any
+	inet_aton
+	inet_ntop
+	inet_pton
+	ioctl
+	kill
+	listen
+	malloc
+	memcmp
+	ntohs
+	openlog
+	printf
+	random
+	read
+	recvfrom
+	select
+	sendto
+	setgid
+	setlogmask
+	setsockopt
+	setuid
+	shutdown
+	signal
+	sleep
+	snprintf
+	socket
+	sprintf
+	srandom
+	stderr
+	strcasecmp
+	strchr
+	strcmp
+	strcpy
+	strdup
+	strlen
+	strncasecmp
+	strncmp
+	strncpy
+	strstr
+	strtok
+	syslog
+	time
+	unlink
+	write
+
+EXECUTED: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/totd/slash/totd.a.i.p.bc -o=/dev/null -Pinterface -Pinterface-output totd.02.iface WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/totd/slash/totd.a.i.p.bc -o=/occam/examples/trimmer/totd/slash/totd.a.i.p.i.bc -Pinternalize -Pinternalize-wrt-interfaces main.iface
+
+InternalizePass
+Reading file 'main.iface'...success
+Done reading.
+InternalizePass::runOnModule: /occam/examples/trimmer/totd/slash/totd.a.i.p.bc
+Internalizing 'request_abort' ExternalLinkage DefaultVisibility
+Internalizing 'request_retry' ExternalLinkage DefaultVisibility
+Internalizing 'request_finish' ExternalLinkage DefaultVisibility
+Internalizing 'context_timeout_register' ExternalLinkage DefaultVisibility
+Internalizing 'context_create' ExternalLinkage DefaultVisibility
+Internalizing 'context_destroy' ExternalLinkage DefaultVisibility
+Internalizing 'ev_tcp_common_eq' ExternalLinkage DefaultVisibility
+Internalizing 'ev_tcp_conn_in_register' ExternalLinkage DefaultVisibility
+Internalizing 'ev_tcp_out_register' ExternalLinkage DefaultVisibility
+Internalizing 'fwd_freev' ExternalLinkage DefaultVisibility
+Internalizing 'tcp_request_start' ExternalLinkage DefaultVisibility
+Internalizing 'tcp_writemesg' ExternalLinkage DefaultVisibility
+Internalizing 'rrset_freev' ExternalLinkage DefaultVisibility
+Internalizing 'rrset_couple_freev' ExternalLinkage DefaultVisibility
+Internalizing 'udp_request_start' ExternalLinkage DefaultVisibility
+Internalizing 'ev_to_data_free_v' ExternalLinkage DefaultVisibility
+Internalizing 'ev_udp_in_eq' ExternalLinkage DefaultVisibility
+Internalizing 'ev_udp_in_data_free_v' ExternalLinkage DefaultVisibility
+Internalizing 'ev_udp_in_register' ExternalLinkage DefaultVisibility
+Internalizing 'nia_free_closev' ExternalLinkage DefaultVisibility
+Internalizing 'conv_scoped_query' ExternalLinkage DefaultVisibility
+...progress...
+Progress: internalized functions = 21 internalized globals = 0
+/usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/totd/slash/totd.a.i.p.bc -o=/occam/examples/trimmer/totd/slash/totd.a.i.p.i.bc -Pinternalize -Pinternalize-wrt-interfaces main.iface => 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/totd/slash/totd.a.i.p.i.bc -o=/dev/null -Pinterface -Pinterface-output /tmp/tmpH9Vvhb.iface -Pinterface-entry /tmp/tmpH9Vvhb.iface
+
+GatherInterfacePass::runOnModule: /occam/examples/trimmer/totd/slash/totd.a.i.p.i.bc
+Reading interface from '/tmp/tmpH9Vvhb.iface'...success
+External call to malloc
+External call to getuid
+External call to getgid
+External call to exit
+External call to strncmp
+External call to atoi
+External call to syslog
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strdup
+External call to strcmp
+External call to syslog
+External call to strcmp
+External call to atoi
+External call to syslog
+External call to strcmp
+External call to strdup
+External call to strcmp
+External call to strdup
+External call to strcmp
+External call to strdup
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to syslog
+External call to openlog
+External call to syslog
+External call to setlogmask
+External call to __ctype_b_loc
+External call to atoi
+External call to getpwnam
+External call to getpwuid
+External call to syslog
+External call to syslog
+External call to syslog
+External call to __ctype_b_loc
+External call to atoi
+External call to getgrnam
+External call to syslog
+External call to getgid
+External call to endpwent
+External call to endgrent
+External call to chroot
+External call to syslog
+External call to syslog
+External call to chdir
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to fopen
+External call to __isoc99_fscanf
+External call to syslog
+External call to unlink
+External call to kill
+External call to unlink
+External call to syslog
+External call to syslog
+External call to syslog
+External call to fclose
+External call to fclose
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to setgid
+External call to syslog
+External call to setuid
+External call to syslog
+External call to syslog
+External call to daemon
+External call to syslog
+External call to fopen
+External call to syslog
+External call to getpid
+External call to fprintf
+External call to getpid
+External call to syslog
+External call to fclose
+External call to syslog
+External call to syslog
+External call to malloc
+External call to syslog
+Added reference to function syslog
+Added reference to function strlen
+Added reference to function malloc
+Added reference to function htons
+Added reference to function free
+Added reference to function time
+Added reference to function shutdown
+Added reference to function close
+Added reference to function random
+Added reference to function srandom
+Added reference to function ntohs
+Added reference to function memcmp
+Added reference to function strncasecmp
+Added reference to function sprintf
+Added reference to function strcpy
+Added reference to function inet_pton
+Added reference to function strstr
+Added reference to function __isoc99_sscanf
+Added reference to function strncpy
+Added reference to function __ctype_b_loc
+Added reference to function snprintf
+Added reference to function accept
+Added reference to function inet_ntop
+Added reference to function strchr
+Added reference to function inet_aton
+Added reference to function getaddrinfo
+Added reference to function gai_strerror
+Added reference to function freeaddrinfo
+Added reference to function fopen
+Added reference to function fgets
+Added reference to function strtok
+Added reference to function strcasecmp
+Added reference to function atoi
+Added reference to function strdup
+Added reference to function strcmp
+Added reference to function fclose
+Added reference to function socket
+Added reference to function ioctl
+Added reference to function connect
+Added reference to function __errno_location
+Added reference to function getsockopt
+Added reference to function read
+Added reference to function write
+Added reference to function signal
+Added reference to function recvfrom
+Added reference to function setsockopt
+Added reference to function bind
+Added reference to function listen
+Added reference to function sendto
+Added reference to function htonl
+Added reference to function printf
+Added reference to function unlink
+Added reference to function fprintf
+Added reference to function exit
+Added reference to function getuid
+Added reference to function getgid
+Added reference to function strncmp
+Added reference to function openlog
+Added reference to function setlogmask
+Added reference to function getpwnam
+Added reference to function getpwuid
+Added reference to function getgrnam
+Added reference to function endpwent
+Added reference to function endgrent
+Added reference to function chroot
+Added reference to function chdir
+Added reference to function __isoc99_fscanf
+Added reference to function kill
+Added reference to function setgid
+Added reference to function setuid
+Added reference to function daemon
+Added reference to function getpid
+Added reference to function select
+Added reference to function sleep
+Added reference to global in6addr_any
+Added reference to global stderr
+Generated interface for /occam/examples/trimmer/totd/slash/totd.a.i.p.i.bc
+## External calls:
+	setgid(?)
+	__ctype_b_loc()
+	__ctype_b_loc()
+	syslog(0x6,S:521C1613,?)
+	syslog(0x3,S:13FA110B,?)
+	syslog(0x3,S:62668205,?)
+	syslog(0x3,S:D916FF81,?)
+	syslog(0x5,S:AC38,S:530C4599)
+	syslog(0x6,S:45A80C3E,?,?,?)
+	syslog(0x3,S:7A88F6B7,?)
+	syslog(0x6,S:AFD2E719,?)
+	syslog(0x3,S:419E645C,?)
+	syslog(0x3,S:A2962BF8,?)
+	syslog(0x6,S:65238453,?)
+	syslog(0x3,S:3CF2331F)
+	syslog(0x3,S:45CA65A0)
+	syslog(0x6,S:F55CEB93)
+	syslog(0x4,S:1D5E7138)
+	syslog(0x5,S:ED97590)
+	syslog(0x5,S:236F6194)
+	syslog(0x3,S:5F7B8B77,?)
+	syslog(0x6,S:A8AD8019,?)
+	syslog(0x3,S:A6337F14)
+	syslog(0x6,S:867B05D0)
+	syslog(0x3,S:BC192BE3)
+	syslog(0x6,S:5918EB5E)
+	syslog(0x7,S:8FEF87)
+	syslog(0x6,S:9539BB38)
+	syslog(0x6,S:F72075FA)
+	syslog(0x3,S:81EFFEA9)
+	syslog(0x3,S:1DCE6147)
+	syslog(0x3,S:FDF2225C)
+	syslog(0x3,S:A8D8B525)
+	syslog(0x3,S:88AAAC0E)
+	syslog(0x3,S:A9B57E66)
+	syslog(0x3,S:D6E5A17E)
+	syslog(0x4,S:D6E5A17E)
+	syslog(0x4,S:61227941)
+	syslog(0x3,S:FB19E7E0)
+	syslog(0x3,S:97567855)
+	syslog(0x3,S:B55BF791,?)
+	syslog(0x3,S:BD46539F,?)
+	syslog(0x3,S:6B454519)
+	syslog(0x6,S:AC183800)
+	syslog(0x3,S:21A83558,?)
+	syslog(0x6,S:2875B5B2,?,?)
+	syslog(0x6,S:AFD18B72)
+	syslog(0x3,S:BC128576)
+	syslog(0x7,S:B88387A7,S:3A28DB00,?)
+	getuid()
+	getpwnam(?)
+	getpwuid(?)
+	kill(?,0x0)
+	__isoc99_fscanf(?,S:AA49,?)
+	chroot(?)
+	setuid(?)
+	openlog(S:871F2DB,?,0x18)
+	getgrnam(?)
+	fopen(?,S:EB2)
+	fopen(?,S:F57)
+	strcmp(?,S:C663)
+	strcmp(?,S:C621)
+	strcmp(?,S:199137)
+	strcmp(?,S:199977)
+	strcmp(?,S:36C7F3E)
+	strcmp(?,S:36C7F80)
+	strcmp(?,S:CC30)
+	strcmp(?,S:CDDD)
+	strcmp(?,S:A6ABF5F)
+	strcmp(?,S:CE82)
+	strcmp(?,S:CCB4)
+	strcmp(?,S:CE61)
+	strcmp(?,S:CCD5)
+	strcmp(?,S:CEA3)
+	strcmp(?,S:CDFE)
+	fprintf(?,S:AA49,?)
+	fclose(?)
+	fclose(?)
+	fclose(?)
+	strdup(?)
+	strdup(?)
+	strdup(?)
+	strdup(?)
+	endpwent()
+	strncmp(?,S:CC51,0x2)
+	chdir(S:60F)
+	atoi(?)
+	atoi(?)
+	atoi(?)
+	atoi(?)
+	unlink(?)
+	unlink(?)
+	getgid()
+	getgid()
+	daemon(0x0,0x0)
+	endgrent()
+	malloc(0x20)
+	malloc(0x18)
+	exit(0x1)
+	setlogmask(?)
+	getpid()
+	getpid()
+## External symbols:
+	__ctype_b_loc
+	__errno_location
+	__isoc99_fscanf
+	__isoc99_sscanf
+	accept
+	atoi
+	bind
+	chdir
+	chroot
+	close
+	connect
+	daemon
+	endgrent
+	endpwent
+	exit
+	fclose
+	fgets
+	fopen
+	fprintf
+	free
+	freeaddrinfo
+	gai_strerror
+	getaddrinfo
+	getgid
+	getgrnam
+	getpid
+	getpwnam
+	getpwuid
+	getsockopt
+	getuid
+	htonl
+	htons
+	in6addr_any
+	inet_aton
+	inet_ntop
+	inet_pton
+	ioctl
+	kill
+	listen
+	malloc
+	memcmp
+	ntohs
+	openlog
+	printf
+	random
+	read
+	recvfrom
+	select
+	sendto
+	setgid
+	setlogmask
+	setsockopt
+	setuid
+	shutdown
+	signal
+	sleep
+	snprintf
+	socket
+	sprintf
+	srandom
+	stderr
+	strcasecmp
+	strchr
+	strcmp
+	strcpy
+	strdup
+	strlen
+	strncasecmp
+	strncmp
+	strncpy
+	strstr
+	strtok
+	syslog
+	time
+	unlink
+	write
+
+EXECUTED: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/totd/slash/totd.a.i.p.i.bc -o=/dev/null -Pinterface -Pinterface-output /tmp/tmpH9Vvhb.iface -Pinterface-entry /tmp/tmpH9Vvhb.iface WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/totd/slash/totd.a.i.p.i.bc -o=/dev/null -Pinterface -Pinterface-output /tmp/tmpH9Vvhb.iface -Pinterface-entry /tmp/tmpH9Vvhb.iface
+
+GatherInterfacePass::runOnModule: /occam/examples/trimmer/totd/slash/totd.a.i.p.i.bc
+Reading interface from '/tmp/tmpH9Vvhb.iface'...success
+External call to malloc
+External call to getuid
+External call to getgid
+External call to exit
+External call to strncmp
+External call to atoi
+External call to syslog
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strdup
+External call to strcmp
+External call to syslog
+External call to strcmp
+External call to atoi
+External call to syslog
+External call to strcmp
+External call to strdup
+External call to strcmp
+External call to strdup
+External call to strcmp
+External call to strdup
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to syslog
+External call to openlog
+External call to syslog
+External call to setlogmask
+External call to __ctype_b_loc
+External call to atoi
+External call to getpwnam
+External call to getpwuid
+External call to syslog
+External call to syslog
+External call to syslog
+External call to __ctype_b_loc
+External call to atoi
+External call to getgrnam
+External call to syslog
+External call to getgid
+External call to endpwent
+External call to endgrent
+External call to chroot
+External call to syslog
+External call to syslog
+External call to chdir
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to fopen
+External call to __isoc99_fscanf
+External call to syslog
+External call to unlink
+External call to kill
+External call to unlink
+External call to syslog
+External call to syslog
+External call to syslog
+External call to fclose
+External call to fclose
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to syslog
+External call to setgid
+External call to syslog
+External call to setuid
+External call to syslog
+External call to syslog
+External call to daemon
+External call to syslog
+External call to fopen
+External call to syslog
+External call to getpid
+External call to fprintf
+External call to getpid
+External call to syslog
+External call to fclose
+External call to syslog
+External call to syslog
+External call to malloc
+External call to syslog
+Added reference to function syslog
+Added reference to function strlen
+Added reference to function malloc
+Added reference to function htons
+Added reference to function free
+Added reference to function time
+Added reference to function shutdown
+Added reference to function close
+Added reference to function random
+Added reference to function srandom
+Added reference to function ntohs
+Added reference to function memcmp
+Added reference to function strncasecmp
+Added reference to function sprintf
+Added reference to function strcpy
+Added reference to function inet_pton
+Added reference to function strstr
+Added reference to function __isoc99_sscanf
+Added reference to function strncpy
+Added reference to function __ctype_b_loc
+Added reference to function snprintf
+Added reference to function accept
+Added reference to function inet_ntop
+Added reference to function strchr
+Added reference to function inet_aton
+Added reference to function getaddrinfo
+Added reference to function gai_strerror
+Added reference to function freeaddrinfo
+Added reference to function fopen
+Added reference to function fgets
+Added reference to function strtok
+Added reference to function strcasecmp
+Added reference to function atoi
+Added reference to function strdup
+Added reference to function strcmp
+Added reference to function fclose
+Added reference to function socket
+Added reference to function ioctl
+Added reference to function connect
+Added reference to function __errno_location
+Added reference to function getsockopt
+Added reference to function read
+Added reference to function write
+Added reference to function signal
+Added reference to function recvfrom
+Added reference to function setsockopt
+Added reference to function bind
+Added reference to function listen
+Added reference to function sendto
+Added reference to function htonl
+Added reference to function printf
+Added reference to function unlink
+Added reference to function fprintf
+Added reference to function exit
+Added reference to function getuid
+Added reference to function getgid
+Added reference to function strncmp
+Added reference to function openlog
+Added reference to function setlogmask
+Added reference to function getpwnam
+Added reference to function getpwuid
+Added reference to function getgrnam
+Added reference to function endpwent
+Added reference to function endgrent
+Added reference to function chroot
+Added reference to function chdir
+Added reference to function __isoc99_fscanf
+Added reference to function kill
+Added reference to function setgid
+Added reference to function setuid
+Added reference to function daemon
+Added reference to function getpid
+Added reference to function select
+Added reference to function sleep
+Added reference to global in6addr_any
+Added reference to global stderr
+Generated interface for /occam/examples/trimmer/totd/slash/totd.a.i.p.i.bc
+## External calls:
+	setgid(?)
+	__ctype_b_loc()
+	__ctype_b_loc()
+	syslog(0x6,S:521C1613,?)
+	syslog(0x3,S:13FA110B,?)
+	syslog(0x3,S:62668205,?)
+	syslog(0x3,S:D916FF81,?)
+	syslog(0x5,S:AC38,S:530C4599)
+	syslog(0x6,S:45A80C3E,?,?,?)
+	syslog(0x3,S:7A88F6B7,?)
+	syslog(0x6,S:AFD2E719,?)
+	syslog(0x3,S:419E645C,?)
+	syslog(0x3,S:A2962BF8,?)
+	syslog(0x6,S:65238453,?)
+	syslog(0x3,S:3CF2331F)
+	syslog(0x3,S:45CA65A0)
+	syslog(0x6,S:F55CEB93)
+	syslog(0x4,S:1D5E7138)
+	syslog(0x5,S:ED97590)
+	syslog(0x5,S:236F6194)
+	syslog(0x3,S:5F7B8B77,?)
+	syslog(0x6,S:A8AD8019,?)
+	syslog(0x3,S:A6337F14)
+	syslog(0x6,S:867B05D0)
+	syslog(0x3,S:BC192BE3)
+	syslog(0x6,S:5918EB5E)
+	syslog(0x7,S:8FEF87)
+	syslog(0x6,S:9539BB38)
+	syslog(0x6,S:F72075FA)
+	syslog(0x3,S:81EFFEA9)
+	syslog(0x3,S:1DCE6147)
+	syslog(0x3,S:FDF2225C)
+	syslog(0x3,S:A8D8B525)
+	syslog(0x3,S:88AAAC0E)
+	syslog(0x3,S:A9B57E66)
+	syslog(0x3,S:D6E5A17E)
+	syslog(0x4,S:D6E5A17E)
+	syslog(0x4,S:61227941)
+	syslog(0x3,S:FB19E7E0)
+	syslog(0x3,S:97567855)
+	syslog(0x3,S:B55BF791,?)
+	syslog(0x3,S:BD46539F,?)
+	syslog(0x3,S:6B454519)
+	syslog(0x6,S:AC183800)
+	syslog(0x3,S:21A83558,?)
+	syslog(0x6,S:2875B5B2,?,?)
+	syslog(0x6,S:AFD18B72)
+	syslog(0x3,S:BC128576)
+	syslog(0x7,S:B88387A7,S:3A28DB00,?)
+	getuid()
+	getpwnam(?)
+	getpwuid(?)
+	kill(?,0x0)
+	__isoc99_fscanf(?,S:AA49,?)
+	chroot(?)
+	setuid(?)
+	openlog(S:871F2DB,?,0x18)
+	getgrnam(?)
+	fopen(?,S:EB2)
+	fopen(?,S:F57)
+	strcmp(?,S:C663)
+	strcmp(?,S:C621)
+	strcmp(?,S:199137)
+	strcmp(?,S:199977)
+	strcmp(?,S:36C7F3E)
+	strcmp(?,S:36C7F80)
+	strcmp(?,S:CC30)
+	strcmp(?,S:CDDD)
+	strcmp(?,S:A6ABF5F)
+	strcmp(?,S:CE82)
+	strcmp(?,S:CCB4)
+	strcmp(?,S:CE61)
+	strcmp(?,S:CCD5)
+	strcmp(?,S:CEA3)
+	strcmp(?,S:CDFE)
+	fprintf(?,S:AA49,?)
+	fclose(?)
+	fclose(?)
+	fclose(?)
+	strdup(?)
+	strdup(?)
+	strdup(?)
+	strdup(?)
+	endpwent()
+	strncmp(?,S:CC51,0x2)
+	chdir(S:60F)
+	atoi(?)
+	atoi(?)
+	atoi(?)
+	atoi(?)
+	unlink(?)
+	unlink(?)
+	getgid()
+	getgid()
+	daemon(0x0,0x0)
+	endgrent()
+	malloc(0x20)
+	malloc(0x18)
+	exit(0x1)
+	setlogmask(?)
+	getpid()
+	getpid()
+## External symbols:
+	__ctype_b_loc
+	__errno_location
+	__isoc99_fscanf
+	__isoc99_sscanf
+	accept
+	atoi
+	bind
+	chdir
+	chroot
+	close
+	connect
+	daemon
+	endgrent
+	endpwent
+	exit
+	fclose
+	fgets
+	fopen
+	fprintf
+	free
+	freeaddrinfo
+	gai_strerror
+	getaddrinfo
+	getgid
+	getgrnam
+	getpid
+	getpwnam
+	getpwuid
+	getsockopt
+	getuid
+	htonl
+	htons
+	in6addr_any
+	inet_aton
+	inet_ntop
+	inet_pton
+	ioctl
+	kill
+	listen
+	malloc
+	memcmp
+	ntohs
+	openlog
+	printf
+	random
+	read
+	recvfrom
+	select
+	sendto
+	setgid
+	setlogmask
+	setsockopt
+	setuid
+	shutdown
+	signal
+	sleep
+	snprintf
+	socket
+	sprintf
+	srandom
+	stderr
+	strcasecmp
+	strchr
+	strcmp
+	strcpy
+	strdup
+	strlen
+	strncasecmp
+	strncmp
+	strncpy
+	strstr
+	strtok
+	syslog
+	time
+	unlink
+	write
+
+EXECUTED: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/totd/slash/totd.a.i.p.i.bc -o=/dev/null -Pinterface -Pinterface-output /tmp/tmpH9Vvhb.iface -Pinterface-entry /tmp/tmpH9Vvhb.iface WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/totd/slash/totd.a.i.p.i.bc -o=/occam/examples/trimmer/totd/slash/totd.a.i.p.i.h.bc -Pinternalize -Pinternalize-wrt-interfaces interface_after.01.iface
+
+InternalizePass
+Reading file 'interface_after.01.iface'...success
+Done reading.
+InternalizePass::runOnModule: /occam/examples/trimmer/totd/slash/totd.a.i.p.i.bc
+...no progress...
+/usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/totd/slash/totd.a.i.p.i.bc -o=/occam/examples/trimmer/totd/slash/totd.a.i.p.i.h.bc -Pinternalize -Pinternalize-wrt-interfaces interface_after.01.iface => 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/totd/slash/totd.a.i.p.i.h.bc -o=/dev/null -Pprofiler -profile-verbose=false -profile-loops=true -profile-safe-pointers=true -profile-outfile=/tmp/tmpU5I6fQ
+
+EXECUTED: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/totd/slash/totd.a.i.p.i.h.bc -o=/dev/null -Pprofiler -profile-verbose=false -profile-loops=true -profile-safe-pointers=true -profile-outfile=/tmp/tmpU5I6fQ WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/clang++ /occam/examples/trimmer/totd/slash/totd.a.i.p.i.h.bc -o totd_fin -O3
+
+EXECUTED: /usr/lib/llvm-10/bin/clang++ /occam/examples/trimmer/totd/slash/totd.a.i.p.i.h.bc -o totd_fin -O3 WHICH RETURNED 0
+

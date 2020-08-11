@@ -1,0 +1,7 @@
+{"binary": "totd_fin", 
+"native_libs": [], 
+"name": "totd", 
+"args": ["-c", "totdipv4.conf", "-d2"],
+"modules": [], 
+"ldflags": ["-O3"], 
+"main": "totd.bc"}

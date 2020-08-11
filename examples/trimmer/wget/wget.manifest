@@ -1,0 +1,7 @@
+{"binary": "wget_fin", 
+"native_libs":[],
+"name": "wget", 
+"args": ["--config=wgetrc","_" ], 
+"modules": [], 
+"ldflags": ["-luuid","-lgnutls","-lpcre", "-lnettle", "-lidn", "-lz", "-lpthread","-O3"], 
+"main": "wget.bc"}

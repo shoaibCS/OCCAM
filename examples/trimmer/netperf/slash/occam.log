@@ -1,0 +1,1378 @@
+>> /usr/local/bin/slash --inter-spec-policy=none --intra-spec-policy=nonrec-aggressive --no-strip --stats --work-dir=slash netperf.manifest
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/netperf/slash/netperf.bc -o=/dev/null -Pprofiler -profile-verbose=false -profile-loops=true -profile-safe-pointers=true -profile-outfile=/tmp/tmpS2qErW
+
+EXECUTED: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/netperf/slash/netperf.bc -o=/dev/null -Pprofiler -profile-verbose=false -profile-loops=true -profile-safe-pointers=true -profile-outfile=/tmp/tmpS2qErW WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/netperf/slash/netperf.bc -o=/occam/examples/trimmer/netperf/slash/netperf.a.bc -Pfull-cmdline-spec -Pfull-cmdline-spec-input arguments -Pfull-cmdline-spec-name netperf
+
+Read 8 command line arguments:
+	-H
+	localhost
+	-t
+	TCP_RR
+	-D
+	5,G
+	-i
+	15,1
+EXECUTED: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/netperf/slash/netperf.bc -o=/occam/examples/trimmer/netperf/slash/netperf.a.bc -Pfull-cmdline-spec -Pfull-cmdline-spec-input arguments -Pfull-cmdline-spec-name netperf WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/netperf/slash/netperf.a.bc -o=/dev/null -Pinterface -Pinterface-output netperf.01.iface
+
+GatherInterfacePass::runOnModule: /occam/examples/trimmer/netperf/slash/netperf.a.bc
+External call to printf
+External call to fflush
+External call to strcasecmp
+External call to strcasecmp
+External call to strcasecmp
+External call to strcasecmp
+External call to strcasecmp
+External call to strcasecmp
+External call to strcasecmp
+External call to strcasecmp
+External call to strcasecmp
+External call to strcasecmp
+External call to printf
+External call to printf
+External call to printf
+External call to exit
+Added reference to function printf
+Added reference to function fflush
+Added reference to function strcasecmp
+Added reference to function exit
+Added reference to function sysconf
+Added reference to function snprintf
+Added reference to function __errno_location
+Added reference to function ntohl
+Added reference to function htonl
+Added reference to function fprintf
+Added reference to function sigemptyset
+Added reference to function sigaction
+Added reference to function sigaddset
+Added reference to function alarm
+Added reference to function atoi
+Added reference to function strstr
+Added reference to function strcmp
+Added reference to function fopen
+Added reference to function perror
+Added reference to function __assert_fail
+Added reference to function malloc
+Added reference to function fread
+Added reference to function feof
+Added reference to function rewind
+Added reference to function strlen
+Added reference to function open
+Added reference to function stat
+Added reference to function strcpy
+Added reference to function shutdown
+Added reference to function select
+Added reference to function recv
+Added reference to function getpid
+Added reference to function sched_setaffinity
+Added reference to function fcntl
+Added reference to function send
+Added reference to function setsockopt
+Added reference to function getsockopt
+Added reference to function getaddrinfo
+Added reference to function sleep
+Added reference to function gai_strerror
+Added reference to function socket
+Added reference to function bind
+Added reference to function connect
+Added reference to function strerror
+Added reference to function close
+Added reference to function freeaddrinfo
+Added reference to function uname
+Added reference to function gettimeofday
+Added reference to function sqrt
+Added reference to function strchr
+Added reference to function strncpy
+Added reference to function fwrite
+Added reference to function getopt
+Added reference to function __ctype_b_loc
+Added reference to function atof
+Added reference to function sprintf
+Added reference to function htons
+Added reference to function getprotobyname
+Added reference to function ntohs
+Added reference to function inet_ntop
+Added reference to function sendfile
+Added reference to function listen
+Added reference to function getsockname
+Added reference to function accept
+Added reference to function sendto
+Added reference to function recvfrom
+Added reference to function srand
+Added reference to function rand
+Added reference to function free
+Added reference to function lseek
+Added reference to function read
+Added reference to function strtoul
+Added reference to global stdout
+Added reference to global stderr
+Added reference to global optarg
+Added reference to global optind
+Generated interface for /occam/examples/trimmer/netperf/slash/netperf.a.bc
+## External calls:
+	printf(S:A0D90EF8,?,?)
+	printf(S:94596B23)
+	printf(S:2E6F040B)
+	printf(S:F7649207)
+	strcasecmp(?,S:A3869A12)
+	strcasecmp(?,S:A8735D92)
+	strcasecmp(?,S:91D566F0)
+	strcasecmp(?,S:E442B92A)
+	strcasecmp(?,S:6C91AF4D)
+	strcasecmp(?,S:E442776C)
+	strcasecmp(?,S:2CEDE074)
+	strcasecmp(?,S:33921E8C)
+	strcasecmp(?,S:87EAC905)
+	strcasecmp(?,S:2702FD0B)
+	fflush(?)
+	exit(0x1)
+## External symbols:
+	__assert_fail
+	__ctype_b_loc
+	__errno_location
+	accept
+	alarm
+	atof
+	atoi
+	bind
+	close
+	connect
+	exit
+	fcntl
+	feof
+	fflush
+	fopen
+	fprintf
+	fread
+	free
+	freeaddrinfo
+	fwrite
+	gai_strerror
+	getaddrinfo
+	getopt
+	getpid
+	getprotobyname
+	getsockname
+	getsockopt
+	gettimeofday
+	htonl
+	htons
+	inet_ntop
+	listen
+	lseek
+	malloc
+	ntohl
+	ntohs
+	open
+	optarg
+	optind
+	perror
+	printf
+	rand
+	read
+	recv
+	recvfrom
+	rewind
+	sched_setaffinity
+	select
+	send
+	sendfile
+	sendto
+	setsockopt
+	shutdown
+	sigaction
+	sigaddset
+	sigemptyset
+	sleep
+	snprintf
+	socket
+	sprintf
+	sqrt
+	srand
+	stat
+	stderr
+	stdout
+	strcasecmp
+	strchr
+	strcmp
+	strcpy
+	strerror
+	strlen
+	strncpy
+	strstr
+	strtoul
+	sysconf
+	uname
+
+EXECUTED: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/netperf/slash/netperf.a.bc -o=/dev/null -Pinterface -Pinterface-output netperf.01.iface WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/netperf/slash/netperf.a.bc -o=/occam/examples/trimmer/netperf/slash/netperf.a.i.bc -Pinternalize -Pinternalize-wrt-interfaces main.iface
+
+InternalizePass
+Reading file 'main.iface'...success
+Done reading.
+InternalizePass::runOnModule: /occam/examples/trimmer/netperf/slash/netperf.a.bc
+Internalizing '' ExternalLinkage DefaultVisibility
+Internalizing 'netlib_get_page_size' ExternalLinkage DefaultVisibility
+Internalizing 'inet_ttos' ExternalLinkage DefaultVisibility
+Internalizing 'inet_ptos' ExternalLinkage DefaultVisibility
+Internalizing 'inet_ftos' ExternalLinkage DefaultVisibility
+Internalizing 'inet_nton' ExternalLinkage DefaultVisibility
+Internalizing 'ntohd' ExternalLinkage DefaultVisibility
+Internalizing 'htond' ExternalLinkage DefaultVisibility
+Internalizing 'get_num_cpus' ExternalLinkage DefaultVisibility
+Internalizing 'start_timer' ExternalLinkage DefaultVisibility
+Internalizing 'netlib_init_cpu_map' ExternalLinkage DefaultVisibility
+Internalizing 'convert' ExternalLinkage DefaultVisibility
+Internalizing 'convert_timespec' ExternalLinkage DefaultVisibility
+Internalizing 'access_buffer' ExternalLinkage DefaultVisibility
+Internalizing 'dump_request' ExternalLinkage DefaultVisibility
+Internalizing 'dump_response' ExternalLinkage DefaultVisibility
+Internalizing 'format_number' ExternalLinkage DefaultVisibility
+Internalizing 'format_cpu_method' ExternalLinkage DefaultVisibility
+Internalizing 'bind_to_specific_processor' ExternalLinkage DefaultVisibility
+Internalizing 'set_nonblock' ExternalLinkage DefaultVisibility
+Internalizing 'recv_request' ExternalLinkage DefaultVisibility
+Internalizing 'recv_response_timed' ExternalLinkage DefaultVisibility
+Internalizing 'libmain' ExternalLinkage DefaultVisibility
+Internalizing 'set_sock_buffer' ExternalLinkage DefaultVisibility
+Internalizing 'dump_addrinfo' ExternalLinkage DefaultVisibility
+Internalizing 'establish_control_internal' ExternalLinkage DefaultVisibility
+Internalizing 'establish_control' ExternalLinkage DefaultVisibility
+Internalizing 'get_id' ExternalLinkage DefaultVisibility
+Internalizing 'identify_local' ExternalLinkage DefaultVisibility
+Internalizing 'identify_remote' ExternalLinkage DefaultVisibility
+Internalizing 'cpu_start' ExternalLinkage DefaultVisibility
+Internalizing 'cpu_stop' ExternalLinkage DefaultVisibility
+Internalizing 'calc_thruput_interval' ExternalLinkage DefaultVisibility
+Internalizing 'calc_thruput' ExternalLinkage DefaultVisibility
+Internalizing 'calc_cpu_util' ExternalLinkage DefaultVisibility
+Internalizing 'calc_service_demand' ExternalLinkage DefaultVisibility
+Internalizing 'calibrate_local_cpu' ExternalLinkage DefaultVisibility
+Internalizing 'msec_sleep' ExternalLinkage DefaultVisibility
+Internalizing 'HIST_timestamp' ExternalLinkage DefaultVisibility
+Internalizing 'delta_micro' ExternalLinkage DefaultVisibility
+Internalizing 'confid' ExternalLinkage DefaultVisibility
+Internalizing 'calculate_confidence' ExternalLinkage DefaultVisibility
+Internalizing 'retrieve_confident_values' ExternalLinkage DefaultVisibility
+Internalizing 'break_args' ExternalLinkage DefaultVisibility
+Internalizing 'break_args_explicit' ExternalLinkage DefaultVisibility
+Internalizing 'parse_address_family' ExternalLinkage DefaultVisibility
+Internalizing 'print_netserver_usage' ExternalLinkage DefaultVisibility
+Internalizing 'print_netperf_usage' ExternalLinkage DefaultVisibility
+Internalizing 'scan_cmd_line' ExternalLinkage DefaultVisibility
+Internalizing 'nf_to_af' ExternalLinkage DefaultVisibility
+Internalizing 'af_to_nf' ExternalLinkage DefaultVisibility
+Internalizing 'complete_addrinfo' ExternalLinkage DefaultVisibility
+Internalizing 'complete_addrinfos' ExternalLinkage DefaultVisibility
+Internalizing 'set_hostname_and_port' ExternalLinkage DefaultVisibility
+Internalizing 'set_port_number' ExternalLinkage DefaultVisibility
+Internalizing 'create_data_socket' ExternalLinkage DefaultVisibility
+Internalizing 'print_top_test_header' ExternalLinkage DefaultVisibility
+Internalizing 'send_tcp_stream' ExternalLinkage DefaultVisibility
+Internalizing 'send_tcp_maerts' ExternalLinkage DefaultVisibility
+Internalizing 'sendfile_tcp_stream' ExternalLinkage DefaultVisibility
+Internalizing 'recv_tcp_stream' ExternalLinkage DefaultVisibility
+Internalizing 'recv_tcp_maerts' ExternalLinkage DefaultVisibility
+Internalizing 'send_tcp_rr' ExternalLinkage DefaultVisibility
+Internalizing 'send_udp_stream' ExternalLinkage DefaultVisibility
+Internalizing 'recv_udp_stream' ExternalLinkage DefaultVisibility
+Internalizing 'send_udp_rr' ExternalLinkage DefaultVisibility
+Internalizing 'recv_udp_rr' ExternalLinkage DefaultVisibility
+Internalizing 'recv_tcp_rr' ExternalLinkage DefaultVisibility
+Internalizing 'send_tcp_conn_rr' ExternalLinkage DefaultVisibility
+Internalizing 'recv_tcp_conn_rr' ExternalLinkage DefaultVisibility
+Internalizing 'send_tcp_cc' ExternalLinkage DefaultVisibility
+Internalizing 'recv_tcp_cc' ExternalLinkage DefaultVisibility
+Internalizing 'print_sockets_usage' ExternalLinkage DefaultVisibility
+Internalizing 'scan_sockets_args' ExternalLinkage DefaultVisibility
+Internalizing 'cpu_util_init' ExternalLinkage DefaultVisibility
+Internalizing 'cpu_util_terminate' ExternalLinkage DefaultVisibility
+Internalizing 'calibrate_idle_rate' ExternalLinkage DefaultVisibility
+Internalizing 'get_cpu_idle' ExternalLinkage DefaultVisibility
+Internalizing 'measure_cpu_start' ExternalLinkage DefaultVisibility
+Internalizing 'measure_cpu_stop' ExternalLinkage DefaultVisibility
+Internalizing 'calc_cpu_util_internal' ExternalLinkage DefaultVisibility
+Internalizing 'cpu_start_internal' ExternalLinkage DefaultVisibility
+Internalizing 'cpu_stop_internal' ExternalLinkage DefaultVisibility
+Internalizing 'netperf_id' ExternalLinkage DefaultVisibility
+Internalizing 'netlib_id' ExternalLinkage DefaultVisibility
+Internalizing 'netlib_control' ExternalLinkage DefaultVisibility
+Internalizing 'server_sock' ExternalLinkage DefaultVisibility
+Internalizing 'remote_proc_affinity' ExternalLinkage DefaultVisibility
+Internalizing 'local_data_address' ExternalLinkage DefaultVisibility
+Internalizing 'remote_data_address' ExternalLinkage DefaultVisibility
+Internalizing 'local_data_family' ExternalLinkage DefaultVisibility
+Internalizing 'remote_data_family' ExternalLinkage DefaultVisibility
+Internalizing 'libfmt' ExternalLinkage DefaultVisibility
+Internalizing 'result_confid' ExternalLinkage DefaultVisibility
+Internalizing 'loc_cpu_confid' ExternalLinkage DefaultVisibility
+Internalizing 'rem_cpu_confid' ExternalLinkage DefaultVisibility
+Internalizing 'measured_sum_result' ExternalLinkage DefaultVisibility
+Internalizing 'measured_square_sum_result' ExternalLinkage DefaultVisibility
+Internalizing 'measured_mean_result' ExternalLinkage DefaultVisibility
+Internalizing 'measured_var_result' ExternalLinkage DefaultVisibility
+Internalizing 'measured_sum_local_cpu' ExternalLinkage DefaultVisibility
+Internalizing 'measured_square_sum_local_cpu' ExternalLinkage DefaultVisibility
+Internalizing 'measured_mean_local_cpu' ExternalLinkage DefaultVisibility
+Internalizing 'measured_var_local_cpu' ExternalLinkage DefaultVisibility
+Internalizing 'measured_sum_remote_cpu' ExternalLinkage DefaultVisibility
+Internalizing 'measured_square_sum_remote_cpu' ExternalLinkage DefaultVisibility
+Internalizing 'measured_mean_remote_cpu' ExternalLinkage DefaultVisibility
+Internalizing 'measured_var_remote_cpu' ExternalLinkage DefaultVisibility
+Internalizing 'measured_sum_local_service_demand' ExternalLinkage DefaultVisibility
+Internalizing 'measured_square_sum_local_service_demand' ExternalLinkage DefaultVisibility
+Internalizing 'measured_mean_local_service_demand' ExternalLinkage DefaultVisibility
+Internalizing 'measured_var_local_service_demand' ExternalLinkage DefaultVisibility
+Internalizing 'measured_sum_remote_service_demand' ExternalLinkage DefaultVisibility
+Internalizing 'measured_square_sum_remote_service_demand' ExternalLinkage DefaultVisibility
+Internalizing 'measured_mean_remote_service_demand' ExternalLinkage DefaultVisibility
+Internalizing 'measured_var_remote_service_demand' ExternalLinkage DefaultVisibility
+Internalizing 'measured_sum_local_time' ExternalLinkage DefaultVisibility
+Internalizing 'measured_square_sum_local_time' ExternalLinkage DefaultVisibility
+Internalizing 'measured_mean_local_time' ExternalLinkage DefaultVisibility
+Internalizing 'measured_var_local_time' ExternalLinkage DefaultVisibility
+Internalizing 'measured_mean_remote_time' ExternalLinkage DefaultVisibility
+Internalizing 'confidence' ExternalLinkage DefaultVisibility
+Internalizing 'netsh_id' ExternalLinkage DefaultVisibility
+Internalizing 'result_brand' ExternalLinkage DefaultVisibility
+Internalizing 'shell_num_cpus' ExternalLinkage DefaultVisibility
+Internalizing 'local_send_offset' ExternalLinkage DefaultVisibility
+Internalizing 'local_recv_offset' ExternalLinkage DefaultVisibility
+Internalizing 'remote_send_offset' ExternalLinkage DefaultVisibility
+Internalizing 'remote_recv_offset' ExternalLinkage DefaultVisibility
+Internalizing 'af' ExternalLinkage DefaultVisibility
+Internalizing 'cpu_binding_requested' ExternalLinkage DefaultVisibility
+Internalizing 'no_control' ExternalLinkage DefaultVisibility
+Internalizing 'netserver_usage' ExternalLinkage DefaultVisibility
+Internalizing 'netperf_usage1' ExternalLinkage DefaultVisibility
+Internalizing 'netperf_usage2' ExternalLinkage DefaultVisibility
+Internalizing 'nettest_id' ExternalLinkage DefaultVisibility
+Internalizing 'req_size' ExternalLinkage DefaultVisibility
+Internalizing 'rsp_size' ExternalLinkage DefaultVisibility
+Internalizing 'loc_tcpcork' ExternalLinkage DefaultVisibility
+Internalizing 'rem_tcpcork' ExternalLinkage DefaultVisibility
+Internalizing 'local_connected' ExternalLinkage DefaultVisibility
+Internalizing 'remote_connected' ExternalLinkage DefaultVisibility
+Internalizing 'sockets_usage' ExternalLinkage DefaultVisibility
+Internalizing 'nettest_sctp' ExternalLinkage DefaultVisibility
+Internalizing 'netcpu_procstat_id' ExternalLinkage DefaultVisibility
+...progress...
+Progress: internalized functions = 83 internalized globals = 62
+/usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/netperf/slash/netperf.a.bc -o=/occam/examples/trimmer/netperf/slash/netperf.a.i.bc -Pinternalize -Pinternalize-wrt-interfaces main.iface => 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -disable-simplify-libcalls --disable-slp-vectorization /occam/examples/trimmer/netperf/slash/netperf.a.i.bc -o /tmp/tmpVEFZKj.bc -O3
+
+EXECUTED: /usr/lib/llvm-10/bin/opt -disable-simplify-libcalls --disable-slp-vectorization /occam/examples/trimmer/netperf/slash/netperf.a.i.bc -o /tmp/tmpVEFZKj.bc -O3 WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /tmp/tmpzMJUQw.bc -o=/tmp/tmpuldO3Y.bc -Ppeval -Ppeval-policy=nonrec-aggressive -Ppeval-opt
+
+=== Begin intra-module specialization ===
+Intra-specializing call to 'recv_response_timed' in function 'recv_response' on arguments [0=(i32 0)]
+Intra-specializing call to 'recv_response_timed' in function 'calibrate_remote_cpu' on arguments [0=(i32 40)]
+Intra-specializing call to 'complete_addrinfo' in function 'complete_addrinfos' on arguments [0=(i8* getelementptr inbounds ([18 x i8], [18 x i8]* @.str.17.208, i64 0, i64 0)),6=(i32 1)]
+Intra-specializing call to 'complete_addrinfo' in function 'complete_addrinfos' on arguments [6=(i32 0)]
+Intra-specializing call to 'set_sock_buffer' in function 'create_data_socket' on arguments [1=(i32 1)]
+Intra-specializing call to 'set_sock_buffer' in function 'create_data_socket' on arguments [1=(i32 0)]
+Intra-specializing call to 'calc_service_demand' in function 'send_tcp_stream' on arguments [1=(float 0.000000e+00),2=(i32 0)]
+Intra-specializing call to 'print_top_test_header' in function 'send_tcp_stream' on arguments [0=(i8* getelementptr inbounds ([16 x i8], [16 x i8]* @.str.46.239, i64 0, i64 0))]
+Intra-specializing call to 'complete_addrinfos' in function 'send_tcp_stream' on arguments [2=(i32 1),3=(i32 6)]
+Intra-specializing call to 'calc_service_demand' in function 'send_tcp_maerts' on arguments [1=(float 0.000000e+00),2=(i32 0)]
+Intra-specializing call to 'print_top_test_header' in function 'send_tcp_maerts' on arguments [0=(i8* getelementptr inbounds ([16 x i8], [16 x i8]* @.str.61.256, i64 0, i64 0))]
+Intra-specializing call to 'complete_addrinfos' in function 'send_tcp_maerts' on arguments [2=(i32 1),3=(i32 6)]
+Intra-specializing call to 'calc_service_demand' in function 'sendfile_tcp_stream' on arguments [1=(float 0.000000e+00),2=(i32 0)]
+Intra-specializing call to 'print_top_test_header' in function 'sendfile_tcp_stream' on arguments [0=(i8* getelementptr inbounds ([18 x i8], [18 x i8]* @.str.73.270, i64 0, i64 0))]
+Intra-specializing call to 'complete_addrinfos' in function 'sendfile_tcp_stream' on arguments [2=(i32 1),3=(i32 6)]
+Intra-specializing call to 'calc_service_demand' in function 'send_tcp_rr' on arguments [1=(float 0.000000e+00),2=(i32 0)]
+Intra-specializing call to 'print_top_test_header' in function 'send_tcp_rr' on arguments [0=(i8* getelementptr inbounds ([26 x i8], [26 x i8]* @.str.104.303, i64 0, i64 0))]
+Intra-specializing call to 'complete_addrinfos' in function 'send_tcp_rr' on arguments [2=(i32 1),3=(i32 6)]
+Intra-specializing call to 'calc_service_demand' in function 'send_udp_stream' on arguments [1=(float 0.000000e+00),2=(i32 0)]
+Intra-specializing call to 'print_top_test_header' in function 'send_udp_stream' on arguments [0=(i8* getelementptr inbounds ([29 x i8], [29 x i8]* @.str.117.318, i64 0, i64 0))]
+Intra-specializing call to 'complete_addrinfos' in function 'send_udp_stream' on arguments [2=(i32 2),3=(i32 17)]
+Intra-specializing call to 'calc_service_demand' in function 'send_udp_rr' on arguments [1=(float 0.000000e+00),2=(i32 0)]
+Intra-specializing call to 'print_top_test_header' in function 'send_udp_rr' on arguments [0=(i8* getelementptr inbounds ([26 x i8], [26 x i8]* @.str.140, i64 0, i64 0))]
+Intra-specializing call to 'complete_addrinfos' in function 'send_udp_rr' on arguments [2=(i32 2),3=(i32 17)]
+Intra-specializing call to 'calibrate_local_cpu' in function 'loc_cpu_rate' on arguments [0=(float 0.000000e+00)]
+Intra-specializing call to 'calc_service_demand' in function 'send_tcp_conn_rr' on arguments [1=(float 0.000000e+00),2=(i32 0)]
+Intra-specializing call to 'print_top_test_header' in function 'send_tcp_conn_rr' on arguments [0=(i8* getelementptr inbounds ([34 x i8], [34 x i8]* @.str.173, i64 0, i64 0))]
+Intra-specializing call to 'complete_addrinfos' in function 'send_tcp_conn_rr' on arguments [2=(i32 1),3=(i32 6)]
+Intra-specializing call to 'calc_service_demand' in function 'send_tcp_cc' on arguments [1=(float 0.000000e+00),2=(i32 0)]
+Intra-specializing call to 'print_top_test_header' in function 'send_tcp_cc' on arguments [0=(i8* getelementptr inbounds ([23 x i8], [23 x i8]* @.str.205, i64 0, i64 0))]
+Intra-specializing call to 'complete_addrinfos' in function 'send_tcp_cc' on arguments [2=(i32 1),3=(i32 6)]
+Intra-specializing call to '__occam_spec.complete_addrinfo(S:DE1A0273,?,?,?,?,?,0x1)' in function '__occam_spec.complete_addrinfos(?,?,0x1,0x6)' on arguments [3=(i32 1),4=(i32 6)]
+Intra-specializing call to '__occam_spec.complete_addrinfo(?,?,?,?,?,?,0x0)' in function '__occam_spec.complete_addrinfos(?,?,0x1,0x6)' on arguments [4=(i32 1),5=(i32 6)]
+Intra-specializing call to '__occam_spec.complete_addrinfo(S:DE1A0273,?,?,?,?,?,0x1)' in function '__occam_spec.complete_addrinfos(?,?,0x2,0x11)' on arguments [3=(i32 2),4=(i32 17)]
+Intra-specializing call to '__occam_spec.complete_addrinfo(?,?,?,?,?,?,0x0)' in function '__occam_spec.complete_addrinfos(?,?,0x2,0x11)' on arguments [4=(i32 2),5=(i32 17)]
+Intra-specializing call to 'inet_ptos' in function '__occam_spec.complete_addrinfo(S:DE1A0273,?,?,?,0x1,0x6,0x1)' on arguments [0=(i32 6)]
+Intra-specializing call to 'inet_ttos' in function '__occam_spec.complete_addrinfo(S:DE1A0273,?,?,?,0x1,0x6,0x1)' on arguments [0=(i32 1)]
+Intra-specializing call to 'inet_ptos' in function '__occam_spec.complete_addrinfo(?,?,?,?,0x1,0x6,0x0)' on arguments [0=(i32 6)]
+Intra-specializing call to 'inet_ttos' in function '__occam_spec.complete_addrinfo(?,?,?,?,0x1,0x6,0x0)' on arguments [0=(i32 1)]
+Intra-specializing call to 'inet_ptos' in function '__occam_spec.complete_addrinfo(S:DE1A0273,?,?,?,0x2,0x11,0x1)' on arguments [0=(i32 17)]
+Intra-specializing call to 'inet_ttos' in function '__occam_spec.complete_addrinfo(S:DE1A0273,?,?,?,0x2,0x11,0x1)' on arguments [0=(i32 2)]
+Intra-specializing call to 'inet_ptos' in function '__occam_spec.complete_addrinfo(?,?,?,?,0x2,0x11,0x0)' on arguments [0=(i32 17)]
+Intra-specializing call to 'inet_ttos' in function '__occam_spec.complete_addrinfo(?,?,?,?,0x2,0x11,0x0)' on arguments [0=(i32 2)]
+...progress...
+Specialized 0 functions.
+ === End intra-module specialization ===
+/usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /tmp/tmpzMJUQw.bc -o=/tmp/tmpuldO3Y.bc -Ppeval -Ppeval-policy=nonrec-aggressive -Ppeval-opt => 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -disable-simplify-libcalls --disable-slp-vectorization /tmp/tmpVEFZKj.bc -o /tmp/tmpzMJUQw.bc -O3
+
+EXECUTED: /usr/lib/llvm-10/bin/opt -disable-simplify-libcalls --disable-slp-vectorization /tmp/tmpVEFZKj.bc -o /tmp/tmpzMJUQw.bc -O3 WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /tmp/tmpzMJUQw.bc -o=/tmp/tmpuldO3Y.bc -Ppeval -Ppeval-policy=nonrec-aggressive -Ppeval-opt
+
+=== Begin intra-module specialization ===
+...no progress...
+No specialization took place
+ === End intra-module specialization ===
+/usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /tmp/tmpzMJUQw.bc -o=/tmp/tmpuldO3Y.bc -Ppeval -Ppeval-policy=nonrec-aggressive -Ppeval-opt => 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/netperf/slash/netperf.a.i.p.bc -o=/dev/null -Pinterface -Pinterface-output /tmp/tmpgraP2h.iface -Pinterface-entry /tmp/tmpgraP2h.iface
+
+GatherInterfacePass::runOnModule: /occam/examples/trimmer/netperf/slash/netperf.a.i.p.bc
+Reading interface from '/tmp/tmpgraP2h.iface'...success
+External call to malloc
+External call to printf
+External call to fflush
+External call to strcasecmp
+External call to strcasecmp
+External call to strcasecmp
+External call to strcasecmp
+External call to strcasecmp
+External call to strcasecmp
+External call to strcasecmp
+External call to strcasecmp
+External call to strcasecmp
+External call to strcasecmp
+External call to printf
+External call to printf
+External call to printf
+External call to exit
+External call to fprintf
+External call to fprintf
+External call to fflush
+Added reference to function printf
+Added reference to function fflush
+Added reference to function strcasecmp
+Added reference to function exit
+Added reference to function sysconf
+Added reference to function snprintf
+Added reference to function __errno_location
+Added reference to function ntohl
+Added reference to function htonl
+Added reference to function fprintf
+Added reference to function sigemptyset
+Added reference to function sigaction
+Added reference to function sigaddset
+Added reference to function alarm
+Added reference to function atoi
+Added reference to function strstr
+Added reference to function strcmp
+Added reference to function fopen
+Added reference to function perror
+Added reference to function __assert_fail
+Added reference to function malloc
+Added reference to function fread
+Added reference to function feof
+Added reference to function rewind
+Added reference to function strlen
+Added reference to function open
+Added reference to function stat
+Added reference to function strcpy
+Added reference to function shutdown
+Added reference to function select
+Added reference to function recv
+Added reference to function getpid
+Added reference to function sched_setaffinity
+Added reference to function send
+Added reference to function setsockopt
+Added reference to function getsockopt
+Added reference to function getaddrinfo
+Added reference to function sleep
+Added reference to function gai_strerror
+Added reference to function socket
+Added reference to function bind
+Added reference to function connect
+Added reference to function strerror
+Added reference to function close
+Added reference to function freeaddrinfo
+Added reference to function gettimeofday
+Added reference to function sqrt
+Added reference to function strchr
+Added reference to function strncpy
+Added reference to function fwrite
+Added reference to function getopt
+Added reference to function __ctype_b_loc
+Added reference to function atof
+Added reference to function htons
+Added reference to function getprotobyname
+Added reference to function ntohs
+Added reference to function inet_ntop
+Added reference to function sendfile
+Added reference to function sendto
+Added reference to function srand
+Added reference to function rand
+Added reference to function free
+Added reference to function lseek
+Added reference to function read
+Added reference to function strtoul
+Added reference to global stdout
+Added reference to global stderr
+Added reference to global optarg
+Added reference to global optind
+Generated interface for /occam/examples/trimmer/netperf/slash/netperf.a.i.p.bc
+## External calls:
+	printf(S:A0D90EF8,?,?)
+	printf(S:94596B23)
+	printf(S:2E6F040B)
+	printf(S:F7649207)
+	strcasecmp(?,S:A3869A12)
+	strcasecmp(?,S:A8735D92)
+	strcasecmp(?,S:91D566F0)
+	strcasecmp(?,S:E442B92A)
+	strcasecmp(?,S:6C91AF4D)
+	strcasecmp(?,S:E442776C)
+	strcasecmp(?,S:2CEDE074)
+	strcasecmp(?,S:33921E8C)
+	strcasecmp(?,S:87EAC905)
+	strcasecmp(?,S:2702FD0B)
+	malloc(0x48)
+	fflush(?)
+	fflush(?)
+	exit(0x1)
+	fprintf(?,S:7D7C7BA6,?)
+	fprintf(?,S:D4ED262C,?)
+## External symbols:
+	__assert_fail
+	__ctype_b_loc
+	__errno_location
+	alarm
+	atof
+	atoi
+	bind
+	close
+	connect
+	exit
+	feof
+	fflush
+	fopen
+	fprintf
+	fread
+	free
+	freeaddrinfo
+	fwrite
+	gai_strerror
+	getaddrinfo
+	getopt
+	getpid
+	getprotobyname
+	getsockopt
+	gettimeofday
+	htonl
+	htons
+	inet_ntop
+	lseek
+	malloc
+	ntohl
+	ntohs
+	open
+	optarg
+	optind
+	perror
+	printf
+	rand
+	read
+	recv
+	rewind
+	sched_setaffinity
+	select
+	send
+	sendfile
+	sendto
+	setsockopt
+	shutdown
+	sigaction
+	sigaddset
+	sigemptyset
+	sleep
+	snprintf
+	socket
+	sqrt
+	srand
+	stat
+	stderr
+	stdout
+	strcasecmp
+	strchr
+	strcmp
+	strcpy
+	strerror
+	strlen
+	strncpy
+	strstr
+	strtoul
+	sysconf
+
+EXECUTED: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/netperf/slash/netperf.a.i.p.bc -o=/dev/null -Pinterface -Pinterface-output /tmp/tmpgraP2h.iface -Pinterface-entry /tmp/tmpgraP2h.iface WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/netperf/slash/netperf.a.i.p.bc -o=/dev/null -Pinterface -Pinterface-output /tmp/tmpgraP2h.iface -Pinterface-entry /tmp/tmpgraP2h.iface
+
+GatherInterfacePass::runOnModule: /occam/examples/trimmer/netperf/slash/netperf.a.i.p.bc
+Reading interface from '/tmp/tmpgraP2h.iface'...success
+External call to malloc
+External call to printf
+External call to fflush
+External call to strcasecmp
+External call to strcasecmp
+External call to strcasecmp
+External call to strcasecmp
+External call to strcasecmp
+External call to strcasecmp
+External call to strcasecmp
+External call to strcasecmp
+External call to strcasecmp
+External call to strcasecmp
+External call to printf
+External call to printf
+External call to printf
+External call to exit
+External call to fprintf
+External call to fprintf
+External call to fflush
+Added reference to function printf
+Added reference to function fflush
+Added reference to function strcasecmp
+Added reference to function exit
+Added reference to function sysconf
+Added reference to function snprintf
+Added reference to function __errno_location
+Added reference to function ntohl
+Added reference to function htonl
+Added reference to function fprintf
+Added reference to function sigemptyset
+Added reference to function sigaction
+Added reference to function sigaddset
+Added reference to function alarm
+Added reference to function atoi
+Added reference to function strstr
+Added reference to function strcmp
+Added reference to function fopen
+Added reference to function perror
+Added reference to function __assert_fail
+Added reference to function malloc
+Added reference to function fread
+Added reference to function feof
+Added reference to function rewind
+Added reference to function strlen
+Added reference to function open
+Added reference to function stat
+Added reference to function strcpy
+Added reference to function shutdown
+Added reference to function select
+Added reference to function recv
+Added reference to function getpid
+Added reference to function sched_setaffinity
+Added reference to function send
+Added reference to function setsockopt
+Added reference to function getsockopt
+Added reference to function getaddrinfo
+Added reference to function sleep
+Added reference to function gai_strerror
+Added reference to function socket
+Added reference to function bind
+Added reference to function connect
+Added reference to function strerror
+Added reference to function close
+Added reference to function freeaddrinfo
+Added reference to function gettimeofday
+Added reference to function sqrt
+Added reference to function strchr
+Added reference to function strncpy
+Added reference to function fwrite
+Added reference to function getopt
+Added reference to function __ctype_b_loc
+Added reference to function atof
+Added reference to function htons
+Added reference to function getprotobyname
+Added reference to function ntohs
+Added reference to function inet_ntop
+Added reference to function sendfile
+Added reference to function sendto
+Added reference to function srand
+Added reference to function rand
+Added reference to function free
+Added reference to function lseek
+Added reference to function read
+Added reference to function strtoul
+Added reference to global stdout
+Added reference to global stderr
+Added reference to global optarg
+Added reference to global optind
+Generated interface for /occam/examples/trimmer/netperf/slash/netperf.a.i.p.bc
+## External calls:
+	printf(S:A0D90EF8,?,?)
+	printf(S:94596B23)
+	printf(S:2E6F040B)
+	printf(S:F7649207)
+	strcasecmp(?,S:A3869A12)
+	strcasecmp(?,S:A8735D92)
+	strcasecmp(?,S:91D566F0)
+	strcasecmp(?,S:E442B92A)
+	strcasecmp(?,S:6C91AF4D)
+	strcasecmp(?,S:E442776C)
+	strcasecmp(?,S:2CEDE074)
+	strcasecmp(?,S:33921E8C)
+	strcasecmp(?,S:87EAC905)
+	strcasecmp(?,S:2702FD0B)
+	malloc(0x48)
+	fflush(?)
+	fflush(?)
+	exit(0x1)
+	fprintf(?,S:7D7C7BA6,?)
+	fprintf(?,S:D4ED262C,?)
+## External symbols:
+	__assert_fail
+	__ctype_b_loc
+	__errno_location
+	alarm
+	atof
+	atoi
+	bind
+	close
+	connect
+	exit
+	feof
+	fflush
+	fopen
+	fprintf
+	fread
+	free
+	freeaddrinfo
+	fwrite
+	gai_strerror
+	getaddrinfo
+	getopt
+	getpid
+	getprotobyname
+	getsockopt
+	gettimeofday
+	htonl
+	htons
+	inet_ntop
+	lseek
+	malloc
+	ntohl
+	ntohs
+	open
+	optarg
+	optind
+	perror
+	printf
+	rand
+	read
+	recv
+	rewind
+	sched_setaffinity
+	select
+	send
+	sendfile
+	sendto
+	setsockopt
+	shutdown
+	sigaction
+	sigaddset
+	sigemptyset
+	sleep
+	snprintf
+	socket
+	sqrt
+	srand
+	stat
+	stderr
+	stdout
+	strcasecmp
+	strchr
+	strcmp
+	strcpy
+	strerror
+	strlen
+	strncpy
+	strstr
+	strtoul
+	sysconf
+
+EXECUTED: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/netperf/slash/netperf.a.i.p.bc -o=/dev/null -Pinterface -Pinterface-output /tmp/tmpgraP2h.iface -Pinterface-entry /tmp/tmpgraP2h.iface WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/netperf/slash/netperf.a.i.p.bc -o=/dev/null -Pinterface -Pinterface-output netperf.02.iface
+
+GatherInterfacePass::runOnModule: /occam/examples/trimmer/netperf/slash/netperf.a.i.p.bc
+Added reference to function printf
+Added reference to function fflush
+Added reference to function strcasecmp
+Added reference to function exit
+Added reference to function sysconf
+Added reference to function snprintf
+Added reference to function __errno_location
+Added reference to function ntohl
+Added reference to function htonl
+Added reference to function fprintf
+Added reference to function sigemptyset
+Added reference to function sigaction
+Added reference to function sigaddset
+Added reference to function alarm
+Added reference to function atoi
+Added reference to function strstr
+Added reference to function strcmp
+Added reference to function fopen
+Added reference to function perror
+Added reference to function __assert_fail
+Added reference to function malloc
+Added reference to function fread
+Added reference to function feof
+Added reference to function rewind
+Added reference to function strlen
+Added reference to function open
+Added reference to function stat
+Added reference to function strcpy
+Added reference to function shutdown
+Added reference to function select
+Added reference to function recv
+Added reference to function getpid
+Added reference to function sched_setaffinity
+Added reference to function send
+Added reference to function setsockopt
+Added reference to function getsockopt
+Added reference to function getaddrinfo
+Added reference to function sleep
+Added reference to function gai_strerror
+Added reference to function socket
+Added reference to function bind
+Added reference to function connect
+Added reference to function strerror
+Added reference to function close
+Added reference to function freeaddrinfo
+Added reference to function gettimeofday
+Added reference to function sqrt
+Added reference to function strchr
+Added reference to function strncpy
+Added reference to function fwrite
+Added reference to function getopt
+Added reference to function __ctype_b_loc
+Added reference to function atof
+Added reference to function htons
+Added reference to function getprotobyname
+Added reference to function ntohs
+Added reference to function inet_ntop
+Added reference to function sendfile
+Added reference to function sendto
+Added reference to function srand
+Added reference to function rand
+Added reference to function free
+Added reference to function lseek
+Added reference to function read
+Added reference to function strtoul
+Added reference to global stdout
+Added reference to global stderr
+Added reference to global optarg
+Added reference to global optind
+Generated interface for /occam/examples/trimmer/netperf/slash/netperf.a.i.p.bc
+## External calls:
+## External symbols:
+	__assert_fail
+	__ctype_b_loc
+	__errno_location
+	alarm
+	atof
+	atoi
+	bind
+	close
+	connect
+	exit
+	feof
+	fflush
+	fopen
+	fprintf
+	fread
+	free
+	freeaddrinfo
+	fwrite
+	gai_strerror
+	getaddrinfo
+	getopt
+	getpid
+	getprotobyname
+	getsockopt
+	gettimeofday
+	htonl
+	htons
+	inet_ntop
+	lseek
+	malloc
+	ntohl
+	ntohs
+	open
+	optarg
+	optind
+	perror
+	printf
+	rand
+	read
+	recv
+	rewind
+	sched_setaffinity
+	select
+	send
+	sendfile
+	sendto
+	setsockopt
+	shutdown
+	sigaction
+	sigaddset
+	sigemptyset
+	sleep
+	snprintf
+	socket
+	sqrt
+	srand
+	stat
+	stderr
+	stdout
+	strcasecmp
+	strchr
+	strcmp
+	strcpy
+	strerror
+	strlen
+	strncpy
+	strstr
+	strtoul
+	sysconf
+
+EXECUTED: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/netperf/slash/netperf.a.i.p.bc -o=/dev/null -Pinterface -Pinterface-output netperf.02.iface WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/netperf/slash/netperf.a.i.p.bc -o=/occam/examples/trimmer/netperf/slash/netperf.a.i.p.i.bc -Pinternalize -Pinternalize-wrt-interfaces main.iface
+
+InternalizePass
+Reading file 'main.iface'...success
+Done reading.
+InternalizePass::runOnModule: /occam/examples/trimmer/netperf/slash/netperf.a.i.p.bc
+Internalizing 'install_signal_catchers' ExternalLinkage DefaultVisibility
+Internalizing 'stop_timer' ExternalLinkage DefaultVisibility
+Internalizing 'netlib_init' ExternalLinkage DefaultVisibility
+Internalizing 'allocate_buffer_ring' ExternalLinkage DefaultVisibility
+Internalizing 'alloc_sendfile_buf_ring' ExternalLinkage DefaultVisibility
+Internalizing 'format_units' ExternalLinkage DefaultVisibility
+Internalizing 'shutdown_control' ExternalLinkage DefaultVisibility
+Internalizing 'send_request' ExternalLinkage DefaultVisibility
+Internalizing 'send_response' ExternalLinkage DefaultVisibility
+Internalizing 'recv_response' ExternalLinkage DefaultVisibility
+Internalizing 'calibrate_remote_cpu' ExternalLinkage DefaultVisibility
+Internalizing 'init_stat' ExternalLinkage DefaultVisibility
+Internalizing 'display_confidence' ExternalLinkage DefaultVisibility
+Internalizing 'set_defaults' ExternalLinkage DefaultVisibility
+Internalizing 'dump_globals' ExternalLinkage DefaultVisibility
+Internalizing 'loc_cpu_rate' ExternalLinkage DefaultVisibility
+Internalizing 'rem_cpu_rate' ExternalLinkage DefaultVisibility
+Internalizing 'get_cpu_method' ExternalLinkage DefaultVisibility
+...progress...
+Progress: internalized functions = 18 internalized globals = 0
+/usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/netperf/slash/netperf.a.i.p.bc -o=/occam/examples/trimmer/netperf/slash/netperf.a.i.p.i.bc -Pinternalize -Pinternalize-wrt-interfaces main.iface => 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/netperf/slash/netperf.a.i.p.i.bc -o=/dev/null -Pinterface -Pinterface-output /tmp/tmp4FRySF.iface -Pinterface-entry /tmp/tmp4FRySF.iface
+
+GatherInterfacePass::runOnModule: /occam/examples/trimmer/netperf/slash/netperf.a.i.p.i.bc
+Reading interface from '/tmp/tmp4FRySF.iface'...success
+External call to malloc
+External call to printf
+External call to fflush
+External call to strcasecmp
+External call to strcasecmp
+External call to strcasecmp
+External call to strcasecmp
+External call to strcasecmp
+External call to strcasecmp
+External call to strcasecmp
+External call to strcasecmp
+External call to strcasecmp
+External call to strcasecmp
+External call to printf
+External call to printf
+External call to printf
+External call to exit
+External call to fprintf
+External call to fprintf
+External call to fflush
+Added reference to function printf
+Added reference to function fflush
+Added reference to function strcasecmp
+Added reference to function exit
+Added reference to function sysconf
+Added reference to function snprintf
+Added reference to function __errno_location
+Added reference to function ntohl
+Added reference to function htonl
+Added reference to function fprintf
+Added reference to function sigemptyset
+Added reference to function sigaction
+Added reference to function sigaddset
+Added reference to function alarm
+Added reference to function atoi
+Added reference to function strstr
+Added reference to function strcmp
+Added reference to function fopen
+Added reference to function perror
+Added reference to function __assert_fail
+Added reference to function malloc
+Added reference to function fread
+Added reference to function feof
+Added reference to function rewind
+Added reference to function strlen
+Added reference to function open
+Added reference to function stat
+Added reference to function strcpy
+Added reference to function shutdown
+Added reference to function select
+Added reference to function recv
+Added reference to function getpid
+Added reference to function sched_setaffinity
+Added reference to function send
+Added reference to function setsockopt
+Added reference to function getsockopt
+Added reference to function getaddrinfo
+Added reference to function sleep
+Added reference to function gai_strerror
+Added reference to function socket
+Added reference to function bind
+Added reference to function connect
+Added reference to function strerror
+Added reference to function close
+Added reference to function freeaddrinfo
+Added reference to function gettimeofday
+Added reference to function sqrt
+Added reference to function strchr
+Added reference to function strncpy
+Added reference to function fwrite
+Added reference to function getopt
+Added reference to function __ctype_b_loc
+Added reference to function atof
+Added reference to function htons
+Added reference to function getprotobyname
+Added reference to function ntohs
+Added reference to function inet_ntop
+Added reference to function sendfile
+Added reference to function sendto
+Added reference to function srand
+Added reference to function rand
+Added reference to function free
+Added reference to function lseek
+Added reference to function read
+Added reference to function strtoul
+Added reference to global stdout
+Added reference to global stderr
+Added reference to global optarg
+Added reference to global optind
+Generated interface for /occam/examples/trimmer/netperf/slash/netperf.a.i.p.i.bc
+## External calls:
+	printf(S:A0D90EF8,?,?)
+	printf(S:94596B23)
+	printf(S:2E6F040B)
+	printf(S:F7649207)
+	strcasecmp(?,S:A3869A12)
+	strcasecmp(?,S:A8735D92)
+	strcasecmp(?,S:91D566F0)
+	strcasecmp(?,S:E442B92A)
+	strcasecmp(?,S:6C91AF4D)
+	strcasecmp(?,S:E442776C)
+	strcasecmp(?,S:2CEDE074)
+	strcasecmp(?,S:33921E8C)
+	strcasecmp(?,S:87EAC905)
+	strcasecmp(?,S:2702FD0B)
+	malloc(0x48)
+	fflush(?)
+	fflush(?)
+	exit(0x1)
+	fprintf(?,S:7D7C7BA6,?)
+	fprintf(?,S:D4ED262C,?)
+## External symbols:
+	__assert_fail
+	__ctype_b_loc
+	__errno_location
+	alarm
+	atof
+	atoi
+	bind
+	close
+	connect
+	exit
+	feof
+	fflush
+	fopen
+	fprintf
+	fread
+	free
+	freeaddrinfo
+	fwrite
+	gai_strerror
+	getaddrinfo
+	getopt
+	getpid
+	getprotobyname
+	getsockopt
+	gettimeofday
+	htonl
+	htons
+	inet_ntop
+	lseek
+	malloc
+	ntohl
+	ntohs
+	open
+	optarg
+	optind
+	perror
+	printf
+	rand
+	read
+	recv
+	rewind
+	sched_setaffinity
+	select
+	send
+	sendfile
+	sendto
+	setsockopt
+	shutdown
+	sigaction
+	sigaddset
+	sigemptyset
+	sleep
+	snprintf
+	socket
+	sqrt
+	srand
+	stat
+	stderr
+	stdout
+	strcasecmp
+	strchr
+	strcmp
+	strcpy
+	strerror
+	strlen
+	strncpy
+	strstr
+	strtoul
+	sysconf
+
+EXECUTED: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/netperf/slash/netperf.a.i.p.i.bc -o=/dev/null -Pinterface -Pinterface-output /tmp/tmp4FRySF.iface -Pinterface-entry /tmp/tmp4FRySF.iface WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/netperf/slash/netperf.a.i.p.i.bc -o=/dev/null -Pinterface -Pinterface-output /tmp/tmp4FRySF.iface -Pinterface-entry /tmp/tmp4FRySF.iface
+
+GatherInterfacePass::runOnModule: /occam/examples/trimmer/netperf/slash/netperf.a.i.p.i.bc
+Reading interface from '/tmp/tmp4FRySF.iface'...success
+External call to malloc
+External call to printf
+External call to fflush
+External call to strcasecmp
+External call to strcasecmp
+External call to strcasecmp
+External call to strcasecmp
+External call to strcasecmp
+External call to strcasecmp
+External call to strcasecmp
+External call to strcasecmp
+External call to strcasecmp
+External call to strcasecmp
+External call to printf
+External call to printf
+External call to printf
+External call to exit
+External call to fprintf
+External call to fprintf
+External call to fflush
+Added reference to function printf
+Added reference to function fflush
+Added reference to function strcasecmp
+Added reference to function exit
+Added reference to function sysconf
+Added reference to function snprintf
+Added reference to function __errno_location
+Added reference to function ntohl
+Added reference to function htonl
+Added reference to function fprintf
+Added reference to function sigemptyset
+Added reference to function sigaction
+Added reference to function sigaddset
+Added reference to function alarm
+Added reference to function atoi
+Added reference to function strstr
+Added reference to function strcmp
+Added reference to function fopen
+Added reference to function perror
+Added reference to function __assert_fail
+Added reference to function malloc
+Added reference to function fread
+Added reference to function feof
+Added reference to function rewind
+Added reference to function strlen
+Added reference to function open
+Added reference to function stat
+Added reference to function strcpy
+Added reference to function shutdown
+Added reference to function select
+Added reference to function recv
+Added reference to function getpid
+Added reference to function sched_setaffinity
+Added reference to function send
+Added reference to function setsockopt
+Added reference to function getsockopt
+Added reference to function getaddrinfo
+Added reference to function sleep
+Added reference to function gai_strerror
+Added reference to function socket
+Added reference to function bind
+Added reference to function connect
+Added reference to function strerror
+Added reference to function close
+Added reference to function freeaddrinfo
+Added reference to function gettimeofday
+Added reference to function sqrt
+Added reference to function strchr
+Added reference to function strncpy
+Added reference to function fwrite
+Added reference to function getopt
+Added reference to function __ctype_b_loc
+Added reference to function atof
+Added reference to function htons
+Added reference to function getprotobyname
+Added reference to function ntohs
+Added reference to function inet_ntop
+Added reference to function sendfile
+Added reference to function sendto
+Added reference to function srand
+Added reference to function rand
+Added reference to function free
+Added reference to function lseek
+Added reference to function read
+Added reference to function strtoul
+Added reference to global stdout
+Added reference to global stderr
+Added reference to global optarg
+Added reference to global optind
+Generated interface for /occam/examples/trimmer/netperf/slash/netperf.a.i.p.i.bc
+## External calls:
+	printf(S:A0D90EF8,?,?)
+	printf(S:94596B23)
+	printf(S:2E6F040B)
+	printf(S:F7649207)
+	strcasecmp(?,S:A3869A12)
+	strcasecmp(?,S:A8735D92)
+	strcasecmp(?,S:91D566F0)
+	strcasecmp(?,S:E442B92A)
+	strcasecmp(?,S:6C91AF4D)
+	strcasecmp(?,S:E442776C)
+	strcasecmp(?,S:2CEDE074)
+	strcasecmp(?,S:33921E8C)
+	strcasecmp(?,S:87EAC905)
+	strcasecmp(?,S:2702FD0B)
+	malloc(0x48)
+	fflush(?)
+	fflush(?)
+	exit(0x1)
+	fprintf(?,S:7D7C7BA6,?)
+	fprintf(?,S:D4ED262C,?)
+## External symbols:
+	__assert_fail
+	__ctype_b_loc
+	__errno_location
+	alarm
+	atof
+	atoi
+	bind
+	close
+	connect
+	exit
+	feof
+	fflush
+	fopen
+	fprintf
+	fread
+	free
+	freeaddrinfo
+	fwrite
+	gai_strerror
+	getaddrinfo
+	getopt
+	getpid
+	getprotobyname
+	getsockopt
+	gettimeofday
+	htonl
+	htons
+	inet_ntop
+	lseek
+	malloc
+	ntohl
+	ntohs
+	open
+	optarg
+	optind
+	perror
+	printf
+	rand
+	read
+	recv
+	rewind
+	sched_setaffinity
+	select
+	send
+	sendfile
+	sendto
+	setsockopt
+	shutdown
+	sigaction
+	sigaddset
+	sigemptyset
+	sleep
+	snprintf
+	socket
+	sqrt
+	srand
+	stat
+	stderr
+	stdout
+	strcasecmp
+	strchr
+	strcmp
+	strcpy
+	strerror
+	strlen
+	strncpy
+	strstr
+	strtoul
+	sysconf
+
+EXECUTED: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/netperf/slash/netperf.a.i.p.i.bc -o=/dev/null -Pinterface -Pinterface-output /tmp/tmp4FRySF.iface -Pinterface-entry /tmp/tmp4FRySF.iface WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/netperf/slash/netperf.a.i.p.i.bc -o=/occam/examples/trimmer/netperf/slash/netperf.a.i.p.i.h.bc -Pinternalize -Pinternalize-wrt-interfaces interface_after.01.iface
+
+InternalizePass
+Reading file 'interface_after.01.iface'...success
+Done reading.
+InternalizePass::runOnModule: /occam/examples/trimmer/netperf/slash/netperf.a.i.p.i.bc
+...no progress...
+/usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/netperf/slash/netperf.a.i.p.i.bc -o=/occam/examples/trimmer/netperf/slash/netperf.a.i.p.i.h.bc -Pinternalize -Pinternalize-wrt-interfaces interface_after.01.iface => 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/netperf/slash/netperf.a.i.p.i.h.bc -o=/dev/null -Pprofiler -profile-verbose=false -profile-loops=true -profile-safe-pointers=true -profile-outfile=/tmp/tmp6MhVA9
+
+EXECUTED: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/netperf/slash/netperf.a.i.p.i.h.bc -o=/dev/null -Pprofiler -profile-verbose=false -profile-loops=true -profile-safe-pointers=true -profile-outfile=/tmp/tmp6MhVA9 WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/clang++ /occam/examples/trimmer/netperf/slash/netperf.a.i.p.i.h.bc -o netperf_fin -lm -O3
+
+EXECUTED: /usr/lib/llvm-10/bin/clang++ /occam/examples/trimmer/netperf/slash/netperf.a.i.p.i.h.bc -o netperf_fin -lm -O3 WHICH RETURNED 0
+

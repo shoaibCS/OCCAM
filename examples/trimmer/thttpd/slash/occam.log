@@ -1,0 +1,5083 @@
+>> /usr/local/bin/slash --inter-spec-policy=none --intra-spec-policy=nonrec-aggressive --no-strip --stats --work-dir=slash thttpd.manifest
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/thttpd/slash/thttpd.bc -o=/dev/null -Pprofiler -profile-verbose=false -profile-loops=true -profile-safe-pointers=true -profile-outfile=/tmp/tmpeiONE0
+
+EXECUTED: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/thttpd/slash/thttpd.bc -o=/dev/null -Pprofiler -profile-verbose=false -profile-loops=true -profile-safe-pointers=true -profile-outfile=/tmp/tmpeiONE0 WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/thttpd/slash/thttpd.bc -o=/occam/examples/trimmer/thttpd/slash/thttpd.a.bc -Pfull-cmdline-spec -Pfull-cmdline-spec-input arguments -Pfull-cmdline-spec-name thttpd
+
+Read 2 command line arguments:
+	-C
+	thttpd.conf
+EXECUTED: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/thttpd/slash/thttpd.bc -o=/occam/examples/trimmer/thttpd/slash/thttpd.a.bc -Pfull-cmdline-spec -Pfull-cmdline-spec-input arguments -Pfull-cmdline-spec-name thttpd WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/thttpd/slash/thttpd.a.bc -o=/dev/null -Pinterface -Pinterface-output thttpd.01.iface
+
+GatherInterfacePass::runOnModule: /occam/examples/trimmer/thttpd/slash/thttpd.a.bc
+External call to strrchr
+External call to openlog
+External call to strcmp
+External call to puts
+External call to exit
+External call to strcmp
+External call to fopen
+External call to fgets_unlocked
+External call to perror
+External call to exit
+External call to fgets_unlocked
+External call to strchr
+External call to strspn
+External call to strcspn
+External call to strlen
+External call to strlen
+External call to strchr
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strtol
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strtol
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strtol
+External call to fprintf
+External call to exit
+External call to strspn
+External call to fclose
+External call to strcmp
+External call to strtol
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strtol
+External call to strcmp
+External call to tzset
+External call to snprintf
+External call to getaddrinfo
+External call to gai_strerror
+External call to syslog
+External call to gai_strerror
+External call to fprintf
+External call to exit
+External call to syslog
+External call to exit
+External call to syslog
+External call to exit
+External call to freeaddrinfo
+External call to syslog
+External call to fprintf
+External call to exit
+External call to fopen
+External call to syslog
+External call to perror
+External call to exit
+External call to gettimeofday
+External call to fgets_unlocked
+External call to strchr
+External call to strlen
+External call to __isoc99_sscanf
+External call to __isoc99_sscanf
+External call to syslog
+External call to fprintf
+External call to fgets_unlocked
+External call to strcpy
+External call to strstr
+External call to strcpy
+External call to strstr
+External call to malloc
+External call to realloc
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to fclose
+External call to getuid
+External call to getpwnam
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcmp
+External call to strcmp
+External call to fopen
+External call to syslog
+External call to perror
+External call to exit
+External call to syslog
+External call to fprintf
+External call to fileno
+External call to fcntl
+External call to getuid
+External call to fileno
+External call to fchown
+External call to syslog
+External call to perror
+External call to chdir
+External call to syslog
+External call to perror
+External call to exit
+External call to getcwd
+External call to strlen
+External call to strlen
+External call to fclose
+External call to fclose
+External call to fclose
+External call to daemon
+External call to syslog
+External call to exit
+External call to setsid
+External call to fopen
+External call to syslog
+External call to exit
+External call to getpid
+External call to fprintf
+External call to fclose
+External call to syslog
+External call to exit
+External call to chroot
+External call to syslog
+External call to perror
+External call to exit
+External call to strcmp
+External call to strlen
+External call to strncmp
+External call to strcpy
+External call to syslog
+External call to fprintf
+External call to chdir
+External call to syslog
+External call to perror
+External call to exit
+External call to chdir
+External call to syslog
+External call to perror
+External call to exit
+External call to alarm
+External call to exit
+External call to syslog
+External call to exit
+External call to syslog
+External call to exit
+External call to syslog
+External call to exit
+External call to syslog
+External call to exit
+External call to time
+External call to getuid
+External call to setgroups
+External call to syslog
+External call to exit
+External call to setgid
+External call to syslog
+External call to exit
+External call to initgroups
+External call to syslog
+External call to setuid
+External call to syslog
+External call to exit
+External call to syslog
+External call to malloc
+External call to syslog
+External call to exit
+External call to gettimeofday
+External call to strcmp
+External call to syslog
+External call to fopen
+External call to syslog
+External call to fileno
+External call to fcntl
+External call to __errno_location
+External call to syslog
+External call to exit
+External call to gettimeofday
+External call to read
+External call to __errno_location
+External call to syslog
+External call to write
+External call to writev
+External call to __errno_location
+External call to syslog
+External call to syslog
+External call to exit
+External call to syslog
+External call to syslog
+External call to syslog
+External call to exit
+External call to read
+External call to __errno_location
+External call to syslog
+External call to closelog
+External call to exit
+External call to fprintf
+External call to exit
+Added reference to function strrchr
+Added reference to function openlog
+Added reference to function strcmp
+Added reference to function puts
+Added reference to function exit
+Added reference to function fopen
+Added reference to function fgets_unlocked
+Added reference to function perror
+Added reference to function strchr
+Added reference to function strspn
+Added reference to function strcspn
+Added reference to function strlen
+Added reference to function strcasecmp
+Added reference to function fprintf
+Added reference to function strtol
+Added reference to function strdup
+Added reference to function syslog
+Added reference to function fclose
+Added reference to function tzset
+Added reference to function snprintf
+Added reference to function getaddrinfo
+Added reference to function gai_strerror
+Added reference to function freeaddrinfo
+Added reference to function gettimeofday
+Added reference to function __isoc99_sscanf
+Added reference to function strcpy
+Added reference to function strstr
+Added reference to function malloc
+Added reference to function realloc
+Added reference to function getuid
+Added reference to function getpwnam
+Added reference to function fileno
+Added reference to function fcntl
+Added reference to function fchown
+Added reference to function chdir
+Added reference to function getcwd
+Added reference to function daemon
+Added reference to function setsid
+Added reference to function getpid
+Added reference to function chroot
+Added reference to function strncmp
+Added reference to function sigset
+Added reference to function alarm
+Added reference to function time
+Added reference to function setgroups
+Added reference to function setgid
+Added reference to function initgroups
+Added reference to function setuid
+Added reference to function __errno_location
+Added reference to function read
+Added reference to function write
+Added reference to function writev
+Added reference to function closelog
+Added reference to function free
+Added reference to function shutdown
+Added reference to function abort
+Added reference to function waitpid
+Added reference to function gethostname
+Added reference to function qsort
+Added reference to function getnameinfo
+Added reference to function bcmp
+Added reference to function socket
+Added reference to function setsockopt
+Added reference to function bind
+Added reference to function close
+Added reference to function listen
+Added reference to function sleep
+Added reference to function gmtime
+Added reference to function strftime
+Added reference to function fread_unlocked
+Added reference to function vsnprintf
+Added reference to function accept
+Added reference to function strpbrk
+Added reference to function strncasecmp
+Added reference to function __ctype_b_loc
+Added reference to function strcat
+Added reference to function strtoll
+Added reference to function getsockname
+Added reference to function __ctype_tolower_loc
+Added reference to function __xstat
+Added reference to function strncpy
+Added reference to function readlink
+Added reference to function localtime
+Added reference to function fflush
+Added reference to function opendir
+Added reference to function closedir
+Added reference to function fork
+Added reference to function nice
+Added reference to function fdopen
+Added reference to function readdir
+Added reference to function memchr
+Added reference to function sprintf
+Added reference to function __lxstat
+Added reference to function ctime
+Added reference to function fwrite
+Added reference to function dup2
+Added reference to function getenv
+Added reference to function pipe
+Added reference to function execve
+Added reference to function kill
+Added reference to function crypt
+Added reference to function getdtablesize
+Added reference to function getrlimit
+Added reference to function setrlimit
+Added reference to function printf
+Added reference to function poll
+Added reference to function open
+Added reference to function mmap
+Added reference to function munmap
+Added reference to global stderr
+Added reference to global stdout
+Added reference to global stdin
+Generated interface for /occam/examples/trimmer/thttpd/slash/thttpd.a.bc
+## External calls:
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:512BEA50,?,?)
+	syslog(0x2,S:9376100A,?,0x80,?)
+	syslog(0x2,S:9376100A,?,0x80,?)
+	syslog(0x3,S:10EDE6EC)
+	syslog(0x2,S:AA2BCDCD,?)
+	syslog(0x2,S:18E5E5D5,?,?)
+	syslog(0x2,S:71B92A12)
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:33FB1978,?)
+	syslog(0x2,S:AA2BCDCD,?)
+	syslog(0x4,S:7A82AAFC)
+	syslog(0x4,S:7885D4E6)
+	syslog(0x2,S:34162A89)
+	syslog(0x2,S:AA4F89D3)
+	syslog(0x2,S:AA2BCDCD,?)
+	syslog(0x2,S:FFF6A891)
+	syslog(0x2,S:A44CE6E)
+	syslog(0x4,S:768D7B85)
+	syslog(0x2,S:F12199F8)
+	syslog(0x2,S:907098E1)
+	syslog(0x2,S:A0020458)
+	syslog(0x2,S:F0451A9A)
+	syslog(0x2,S:D5B36487)
+	syslog(0x2,S:9A3AABEB)
+	syslog(0x2,S:2413BEB)
+	syslog(0x2,S:9467559F)
+	syslog(0x4,S:C0A986F3)
+	syslog(0x2,S:F33583AD)
+	syslog(0x4,S:869200E)
+	syslog(0x2,S:6088F026)
+	syslog(0x5,S:4B325F36)
+	syslog(0x2,S:1AA20181,?)
+	syslog(0x3,S:FE6E5240)
+	syslog(0x3,S:AA5E50A7)
+	syslog(0x3,S:DA0701D6)
+	syslog(0x2,S:A509D398)
+	syslog(0x3,S:30F19000,?)
+	syslog(0x3,S:DA0701D6)
+	syslog(0x2,S:A509D398)
+	syslog(0x5,S:48A1B0B8)
+	gettimeofday(?,null)
+	gettimeofday(?,null)
+	gettimeofday(?,null)
+	getpwnam(?)
+	writev(?,?,0x2)
+	strcpy(?,?)
+	strcpy(?,?)
+	strcpy(?,?)
+	strspn(?,S:2482BC0)
+	strspn(?,S:2482BC0)
+	puts(S:50185BEC)
+	alarm(0x168)
+	time(null)
+	strstr(?,S:2158B)
+	strstr(?,S:2158B)
+	gai_strerror(?)
+	gai_strerror(?)
+	initgroups(?,?)
+	setgroups(0x0,null)
+	closelog()
+	strcmp(?,S:CA83)
+	strcmp(?,S:C810)
+	strcmp(?,S:CDDD)
+	strcmp(?,S:CC51)
+	strcmp(?,S:CE1F)
+	strcmp(?,S:36C873C)
+	strcmp(?,S:1A6355)
+	strcmp(?,S:CE40)
+	strcmp(?,S:36C875D)
+	strcmp(?,S:CE82)
+	strcmp(?,S:CC30)
+	strcmp(?,S:CE61)
+	strcmp(?,S:CCD5)
+	strcmp(?,S:CD59)
+	strcmp(?,S:CEA3)
+	strcmp(?,S:36C87C0)
+	strcmp(?,S:CCB4)
+	strcmp(?,S:36C85D1)
+	strcmp(?,S:CCF6)
+	strcmp(?,S:CA41)
+	strcmp(?,S:C9BD)
+	strcmp(?,S:C95A)
+	strcmp(?,S:C831)
+	strcmp(?,S:6588C5D8)
+	strcmp(?,S:5CD)
+	strcmp(?,S:5CD)
+	strcmp(?,S:5CD)
+	strtol(?,null,0xA)
+	strtol(?,null,0xA)
+	strtol(?,null,0xA)
+	strtol(?,null,0xA)
+	strtol(?,null,0xA)
+	chdir(?)
+	chdir(?)
+	chdir(?)
+	write(?,?,?)
+	fgets_unlocked(?,0x2710,?)
+	fgets_unlocked(?,0x2710,?)
+EXECUTED: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/thttpd/slash/thttpd.a.bc -o=/dev/null -Pinterface -Pinterface-output thttpd.01.iface WHICH RETURNED 0
+
+	fgets_unlocked(?,0x1388,?)
+	fgets_unlocked(?,0x1388,?)
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/thttpd/slash/thttpd.a.bc -o=/occam/examples/trimmer/thttpd/slash/thttpd.a.i.bc -Pinternalize -Pinternalize-wrt-interfaces main.iface
+
+	strcspn(?,S:2482BC0)
+	fcntl(?,0x2,0x1)
+	fcntl(?,0x2,0x1)
+	perror(?)
+	perror(?)
+	perror(?)
+	perror(S:BE98CA27)
+	perror(S:EE814DEA)
+	perror(S:BFABAEAF)
+	perror(S:D60E9BF9)
+	perror(S:5A2F6542)
+	__isoc99_sscanf(?,S:A13F16C8,?,?,?)
+	__isoc99_sscanf(?,S:51F2B2C6,?,?)
+	read(?,?,?)
+	read(?,?,0x1000)
+	exit(0x0)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x0)
+	exit(0x1)
+	fileno(?)
+	fileno(?)
+	fileno(?)
+	setgid(?)
+	getuid()
+	getuid()
+	getuid()
+	strrchr(?,0x2F)
+	freeaddrinfo(?)
+	setsid()
+	setuid(?)
+	chroot(?)
+	openlog(?,0x9,0x18)
+	strlen(?)
+	strlen(?)
+	strlen(?)
+	strlen(?)
+	strlen(?)
+	strlen(?)
+	fopen(?,S:EB2)
+	fopen(?,S:EB2)
+	fopen(?,S:C81)
+	fopen(?,S:F57)
+	fopen(?,S:C81)
+	tzset()
+	fprintf(?,S:89E536F,?,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:89E536F,?,?)
+	fprintf(?,S:89E536F,?,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:89E536F,?,?)
+	fprintf(?,S:89E536F,?,?)
+	fprintf(?,S:89E536F,?,?)
+	fprintf(?,S:89E536F,?,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:89E536F,?,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:89E536F,?,?)
+	fprintf(?,S:89E536F,?,?)
+	fprintf(?,S:89E536F,?,?)
+	fprintf(?,S:89E536F,?,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:948E66C1,?,?)
+	fprintf(?,S:1C9AA020,?,?,?)
+	fprintf(?,S:99C4EC08,?)
+	fprintf(?,S:532BA111,?,?,?)
+	fprintf(?,S:B712226E,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:2CD27EBE,?,?)
+	fprintf(?,S:808EF98,?)
+	fprintf(?,S:15F4B3,?)
+	fprintf(?,S:FD311101,?)
+	fprintf(?,S:C16F9FFE,?)
+	fclose(?)
+	fclose(?)
+	fclose(?)
+	fclose(?)
+	fclose(?)
+	fclose(?)
+	strdup(?)
+	strdup(?)
+	strdup(?)
+	strdup(?)
+	strdup(?)
+	strdup(?)
+	strdup(?)
+	strdup(?)
+	strdup(?)
+	strdup(?)
+	strdup(?)
+	strdup(?)
+	strdup(?)
+	realloc(?,?)
+	fchown(?,?,?)
+	getaddrinfo(?,?,?,?)
+	strncmp(?,?,?)
+	daemon(0x1,0x1)
+	snprintf(?,0xA,S:AA49,?)
+	strcasecmp(?,S:F09F45E7)
+	strcasecmp(?,S:8298A65)
+	strcasecmp(?,S:38A33F)
+	strcasecmp(?,S:BFABAEAF)
+	strcasecmp(?,S:3DAF8AAC)
+	strcasecmp(?,S:D0257538)
+	strcasecmp(?,S:89F970C7)
+	strcasecmp(?,S:C878CC64)
+	strcasecmp(?,S:C927987A)
+	strcasecmp(?,S:D79267B7)
+	strcasecmp(?,S:885FEDF)
+	strcasecmp(?,S:BCB3FA58)
+	strcasecmp(?,S:B0D608D2)
+	strcasecmp(?,S:402B4858)
+	strcasecmp(?,S:AD0F056A)
+	strcasecmp(?,S:43F64A10)
+	strcasecmp(?,S:D42F4809)
+	strcasecmp(?,S:798CA9E)
+	strcasecmp(?,S:3FAAF02)
+	strcasecmp(?,S:1AD984D4)
+	strcasecmp(?,S:FFA35531)
+	strcasecmp(?,S:5C341003)
+	strcasecmp(?,S:35BE35C0)
+	strcasecmp(?,S:E0251C1D)
+	strcasecmp(?,S:8DB21C0A)
+	strcasecmp(?,S:3E51D3)
+	strcasecmp(?,S:E1B1C032)
+	strchr(?,0x23)
+	strchr(?,0x3D)
+	strchr(?,0x23)
+	malloc(0x12C0)
+	malloc(?)
+	__errno_location()
+	__errno_location()
+	__errno_location()
+	__errno_location()
+	getpid()
+	getcwd(?,0x1000)
+## External symbols:
+	__ctype_b_loc
+	__ctype_tolower_loc
+	__errno_location
+	__isoc99_sscanf
+	__lxstat
+	__xstat
+	abort
+	accept
+	alarm
+	bcmp
+	bind
+	chdir
+	chroot
+	close
+	closedir
+	closelog
+	crypt
+	ctime
+	daemon
+	dup2
+	execve
+	exit
+	fchown
+	fclose
+	fcntl
+	fdopen
+	fflush
+	fgets_unlocked
+	fileno
+	fopen
+	fork
+	fprintf
+	fread_unlocked
+	free
+	freeaddrinfo
+	fwrite
+	gai_strerror
+	getaddrinfo
+	getcwd
+	getdtablesize
+	getenv
+	gethostname
+	getnameinfo
+	getpid
+	getpwnam
+	getrlimit
+	getsockname
+	gettimeofday
+	getuid
+	gmtime
+	initgroups
+	kill
+	listen
+	localtime
+	malloc
+	memchr
+	mmap
+	munmap
+	nice
+	open
+	opendir
+	openlog
+	perror
+	pipe
+	poll
+	printf
+	puts
+	qsort
+	read
+	readdir
+	readlink
+	realloc
+	setgid
+	setgroups
+	setrlimit
+	setsid
+	setsockopt
+	setuid
+	shutdown
+	sigset
+	sleep
+	snprintf
+	socket
+	sprintf
+	stderr
+	stdin
+	stdout
+	strcasecmp
+	strcat
+	strchr
+	strcmp
+	strcpy
+	strcspn
+	strdup
+	strftime
+	strlen
+	strncasecmp
+	strncmp
+	strncpy
+	strpbrk
+	strrchr
+	strspn
+	strstr
+	strtol
+	strtoll
+	syslog
+	time
+	tzset
+	vsnprintf
+	waitpid
+	write
+	writev
+
+InternalizePass
+Reading file 'main.iface'...success
+Done reading.
+InternalizePass::runOnModule: /occam/examples/trimmer/thttpd/slash/thttpd.a.bc
+Internalizing '' ExternalLinkage DefaultVisibility
+Internalizing 'httpd_initialize' ExternalLinkage DefaultVisibility
+Internalizing 'httpd_set_logfp' ExternalLinkage DefaultVisibility
+Internalizing 'httpd_ntoa' ExternalLinkage DefaultVisibility
+Internalizing 'httpd_terminate' ExternalLinkage DefaultVisibility
+Internalizing 'httpd_unlisten' ExternalLinkage DefaultVisibility
+Internalizing 'httpd_write_response' ExternalLinkage DefaultVisibility
+Internalizing 'httpd_clear_ndelay' ExternalLinkage DefaultVisibility
+Internalizing 'httpd_write_fully' ExternalLinkage DefaultVisibility
+Internalizing 'httpd_set_ndelay' ExternalLinkage DefaultVisibility
+Internalizing 'httpd_realloc_str' ExternalLinkage DefaultVisibility
+Internalizing 'httpd_send_err' ExternalLinkage DefaultVisibility
+Internalizing 'httpd_method_str' ExternalLinkage DefaultVisibility
+Internalizing 'httpd_get_conn' ExternalLinkage DefaultVisibility
+Internalizing 'httpd_got_request' ExternalLinkage DefaultVisibility
+Internalizing 'httpd_parse_request' ExternalLinkage DefaultVisibility
+Internalizing 'httpd_close_conn' ExternalLinkage DefaultVisibility
+Internalizing 'httpd_destroy_conn' ExternalLinkage DefaultVisibility
+Internalizing 'httpd_start_request' ExternalLinkage DefaultVisibility
+Internalizing 'httpd_read_fully' ExternalLinkage DefaultVisibility
+Internalizing 'httpd_logstats' ExternalLinkage DefaultVisibility
+Internalizing 'fdwatch_get_nfiles' ExternalLinkage DefaultVisibility
+Internalizing 'fdwatch_add_fd' ExternalLinkage DefaultVisibility
+Internalizing 'fdwatch_del_fd' ExternalLinkage DefaultVisibility
+Internalizing 'fdwatch' ExternalLinkage DefaultVisibility
+Internalizing 'fdwatch_check_fd' ExternalLinkage DefaultVisibility
+Internalizing 'fdwatch_get_next_client_data' ExternalLinkage DefaultVisibility
+Internalizing 'fdwatch_logstats' ExternalLinkage DefaultVisibility
+Internalizing 'mmc_map' ExternalLinkage DefaultVisibility
+Internalizing 'mmc_unmap' ExternalLinkage DefaultVisibility
+Internalizing 'mmc_cleanup' ExternalLinkage DefaultVisibility
+Internalizing 'mmc_destroy' ExternalLinkage DefaultVisibility
+Internalizing 'mmc_logstats' ExternalLinkage DefaultVisibility
+Internalizing 'tmr_init' ExternalLinkage DefaultVisibility
+Internalizing 'tmr_create' ExternalLinkage DefaultVisibility
+Internalizing 'tmr_timeout' ExternalLinkage DefaultVisibility
+Internalizing 'tmr_mstimeout' ExternalLinkage DefaultVisibility
+Internalizing 'tmr_run' ExternalLinkage DefaultVisibility
+Internalizing 'tmr_cancel' ExternalLinkage DefaultVisibility
+Internalizing 'tmr_reset' ExternalLinkage DefaultVisibility
+Internalizing 'tmr_cleanup' ExternalLinkage DefaultVisibility
+Internalizing 'tmr_destroy' ExternalLinkage DefaultVisibility
+Internalizing 'tmr_logstats' ExternalLinkage DefaultVisibility
+Internalizing 'match' ExternalLinkage DefaultVisibility
+Internalizing 'tdate_parse' ExternalLinkage DefaultVisibility
+Internalizing 'terminate' ExternalLinkage DefaultVisibility
+Internalizing 'httpd_err400title' ExternalLinkage DefaultVisibility
+Internalizing 'httpd_err400form' ExternalLinkage DefaultVisibility
+Internalizing 'httpd_err408title' ExternalLinkage DefaultVisibility
+Internalizing 'httpd_err408form' ExternalLinkage DefaultVisibility
+Internalizing 'httpd_err503title' ExternalLinkage DefaultVisibility
+Internalizing 'httpd_err503form' ExternalLinkage DefaultVisibility
+...progress...
+Progress: internalized functions = 45 internalized globals = 7
+/usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/thttpd/slash/thttpd.a.bc -o=/occam/examples/trimmer/thttpd/slash/thttpd.a.i.bc -Pinternalize -Pinternalize-wrt-interfaces main.iface => 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -disable-simplify-libcalls --disable-slp-vectorization /occam/examples/trimmer/thttpd/slash/thttpd.a.i.bc -o /tmp/tmpQxv_vQ.bc -O3
+
+EXECUTED: /usr/lib/llvm-10/bin/opt -disable-simplify-libcalls --disable-slp-vectorization /occam/examples/trimmer/thttpd/slash/thttpd.a.i.bc -o /tmp/tmpQxv_vQ.bc -O3 WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /tmp/tmpZVX_2b.bc -o=/tmp/tmpGpSZop.bc -Ppeval -Ppeval-policy=nonrec-aggressive -Ppeval-opt
+
+=== Begin intra-module specialization ===
+Intra-specializing call to 'logstats' in function 'handle_usr2' on arguments [0=(%struct.timeval* null)]
+Intra-specializing call to 'httpd_send_err' in function 'idle' on arguments [1=(i32 408),2=(i8* getelementptr inbounds ([16 x i8], [16 x i8]* @.str.12.9, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([54 x i8], [54 x i8]* @.str.13.12, i64 0, i64 0)),5=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to 'tmr_create' in function 'clear_connection' on arguments [1=(@linger_clear_connection),3=(i64 500),4=(i32 0)]
+Intra-specializing call to 'send_mime' in function 'send_err_file' on arguments [3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),5=(i8* getelementptr inbounds ([22 x i8], [22 x i8]* @.str.65.88, i64 0, i64 0)),6=(i64 -1),7=(i64 0)]
+Intra-specializing call to 'send_mime' in function 'send_response' on arguments [3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),5=(i8* getelementptr inbounds ([22 x i8], [22 x i8]* @.str.65.88, i64 0, i64 0)),6=(i64 -1),7=(i64 0)]
+Intra-specializing call to 'httpd_send_err' in function 'httpd_parse_request' on arguments [1=(i32 403),2=(i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.93.188, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([95 x i8], [95 x i8]* @.str.55.189, i64 0, i64 0))]
+Intra-specializing call to 'httpd_send_err' in function 'httpd_parse_request' on arguments [1=(i32 500),2=(i8* getelementptr inbounds ([15 x i8], [15 x i8]* @.str.88.185, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([65 x i8], [65 x i8]* @.str.89.186, i64 0, i64 0))]
+Intra-specializing call to 'httpd_send_err' in function 'httpd_parse_request' on arguments [1=(i32 500),2=(i8* getelementptr inbounds ([15 x i8], [15 x i8]* @.str.88.185, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([65 x i8], [65 x i8]* @.str.89.186, i64 0, i64 0))]
+Intra-specializing call to 'httpd_send_err' in function 'httpd_parse_request' on arguments [1=(i32 400),2=(i8* getelementptr inbounds ([12 x i8], [12 x i8]* @.str.10.3, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([69 x i8], [69 x i8]* @.str.11.6, i64 0, i64 0)),5=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to 'httpd_send_err' in function 'httpd_parse_request' on arguments [1=(i32 400),2=(i8* getelementptr inbounds ([12 x i8], [12 x i8]* @.str.10.3, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([69 x i8], [69 x i8]* @.str.11.6, i64 0, i64 0)),5=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to 'httpd_send_err' in function 'httpd_parse_request' on arguments [1=(i32 400),2=(i8* getelementptr inbounds ([12 x i8], [12 x i8]* @.str.10.3, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([69 x i8], [69 x i8]* @.str.11.6, i64 0, i64 0)),5=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to 'httpd_send_err' in function 'httpd_parse_request' on arguments [1=(i32 501),2=(i8* getelementptr inbounds ([16 x i8], [16 x i8]* @.str.84.155, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([65 x i8], [65 x i8]* @.str.85.156, i64 0, i64 0))]
+Intra-specializing call to 'httpd_send_err' in function 'httpd_parse_request' on arguments [1=(i32 400),2=(i8* getelementptr inbounds ([12 x i8], [12 x i8]* @.str.10.3, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([69 x i8], [69 x i8]* @.str.11.6, i64 0, i64 0)),5=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to 'httpd_send_err' in function 'httpd_parse_request' on arguments [1=(i32 400),2=(i8* getelementptr inbounds ([12 x i8], [12 x i8]* @.str.10.3, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([69 x i8], [69 x i8]* @.str.11.6, i64 0, i64 0)),5=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to 'httpd_send_err' in function 'httpd_parse_request' on arguments [1=(i32 400),2=(i8* getelementptr inbounds ([12 x i8], [12 x i8]* @.str.10.3, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([69 x i8], [69 x i8]* @.str.11.6, i64 0, i64 0)),5=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to 'httpd_send_err' in function 'httpd_parse_request' on arguments [1=(i32 400),2=(i8* getelementptr inbounds ([12 x i8], [12 x i8]* @.str.10.3, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([69 x i8], [69 x i8]* @.str.11.6, i64 0, i64 0)),5=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to 'httpd_send_err' in function 'httpd_parse_request' on arguments [1=(i32 400),2=(i8* getelementptr inbounds ([12 x i8], [12 x i8]* @.str.10.3, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([69 x i8], [69 x i8]* @.str.11.6, i64 0, i64 0)),5=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to 'send_mime' in function 'httpd_start_request' on arguments [1=(i32 200),2=(i8* getelementptr inbounds ([3 x i8], [3 x i8]* @.str.528, i64 0, i64 0)),4=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to 'httpd_send_err' in function 'httpd_start_request' on arguments [1=(i32 500),2=(i8* getelementptr inbounds ([15 x i8], [15 x i8]* @.str.88.185, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([65 x i8], [65 x i8]* @.str.89.186, i64 0, i64 0))]
+Intra-specializing call to 'send_mime' in function 'httpd_start_request' on arguments [1=(i32 304),2=(i8* getelementptr inbounds ([13 x i8], [13 x i8]* @.str.529, i64 0, i64 0)),4=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),6=(i64 -1)]
+Intra-specializing call to 'send_mime' in function 'httpd_start_request' on arguments [1=(i32 200),2=(i8* getelementptr inbounds ([3 x i8], [3 x i8]* @.str.528, i64 0, i64 0)),4=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to 'httpd_send_err' in function 'httpd_start_request' on arguments [1=(i32 403),2=(i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.93.188, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([109 x i8], [109 x i8]* @.str.447, i64 0, i64 0))]
+Intra-specializing call to 'httpd_send_err' in function 'httpd_start_request' on arguments [1=(i32 403),2=(i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.93.188, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([124 x i8], [124 x i8]* @.str.445, i64 0, i64 0))]
+Intra-specializing call to 'httpd_send_err' in function 'httpd_start_request' on arguments [1=(i32 501),2=(i8* getelementptr inbounds ([16 x i8], [16 x i8]* @.str.84.155, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([65 x i8], [65 x i8]* @.str.85.156, i64 0, i64 0)),5=(i8* getelementptr inbounds ([8 x i8], [8 x i8]* @.str.23.139, i64 0, i64 0))]
+Intra-specializing call to 'tmr_create' in function 'httpd_start_request' on arguments [0=(%struct.timeval* null),1=(@cgi_kill),3=(i64 30000),4=(i32 0)]
+Intra-specializing call to 'httpd_send_err' in function 'httpd_start_request' on arguments [1=(i32 500),2=(i8* getelementptr inbounds ([15 x i8], [15 x i8]* @.str.88.185, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([65 x i8], [65 x i8]* @.str.89.186, i64 0, i64 0))]
+Intra-specializing call to 'httpd_send_err' in function 'httpd_start_request' on arguments [1=(i32 503),2=(i8* getelementptr inbounds ([31 x i8], [31 x i8]* @.str.14, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([79 x i8], [79 x i8]* @.str.15.17, i64 0, i64 0))]
+Intra-specializing call to 'httpd_send_err' in function 'httpd_start_request' on arguments [1=(i32 501),2=(i8* getelementptr inbounds ([16 x i8], [16 x i8]* @.str.84.155, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([65 x i8], [65 x i8]* @.str.85.156, i64 0, i64 0)),5=(i8* getelementptr inbounds ([5 x i8], [5 x i8]* @.str.21.141, i64 0, i64 0))]
+Intra-specializing call to 'httpd_send_err' in function 'httpd_start_request' on arguments [1=(i32 403),2=(i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.93.188, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([85 x i8], [85 x i8]* @.str.443, i64 0, i64 0))]
+Intra-specializing call to 'httpd_send_err' in function 'httpd_start_request' on arguments [1=(i32 403),2=(i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.93.188, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([85 x i8], [85 x i8]* @.str.443, i64 0, i64 0))]
+Intra-specializing call to 'httpd_send_err' in function 'httpd_start_request' on arguments [1=(i32 403),2=(i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.93.188, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([81 x i8], [81 x i8]* @.str.440, i64 0, i64 0))]
+Intra-specializing call to 'httpd_send_err' in function 'httpd_start_request' on arguments [1=(i32 500),2=(i8* getelementptr inbounds ([15 x i8], [15 x i8]* @.str.88.185, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([65 x i8], [65 x i8]* @.str.89.186, i64 0, i64 0))]
+Intra-specializing call to 'httpd_send_err' in function 'httpd_start_request' on arguments [1=(i32 501),2=(i8* getelementptr inbounds ([16 x i8], [16 x i8]* @.str.84.155, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([65 x i8], [65 x i8]* @.str.85.156, i64 0, i64 0))]
+Intra-specializing call to 'tmr_create' in function 'httpd_start_request' on arguments [0=(%struct.timeval* null),1=(@cgi_kill),3=(i64 30000),4=(i32 0)]
+Intra-specializing call to 'httpd_send_err' in function 'httpd_start_request' on arguments [1=(i32 500),2=(i8* getelementptr inbounds ([15 x i8], [15 x i8]* @.str.88.185, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([65 x i8], [65 x i8]* @.str.89.186, i64 0, i64 0))]
+Intra-specializing call to 'send_mime' in function 'httpd_start_request' on arguments [1=(i32 200),2=(i8* getelementptr inbounds ([3 x i8], [3 x i8]* @.str.528, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),5=(i8* getelementptr inbounds ([22 x i8], [22 x i8]* @.str.65.88, i64 0, i64 0)),6=(i64 -1)]
+Intra-specializing call to 'httpd_send_err' in function 'httpd_start_request' on arguments [1=(i32 500),2=(i8* getelementptr inbounds ([15 x i8], [15 x i8]* @.str.88.185, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([65 x i8], [65 x i8]* @.str.89.186, i64 0, i64 0))]
+Intra-specializing call to 'httpd_send_err' in function 'httpd_start_request' on arguments [1=(i32 503),2=(i8* getelementptr inbounds ([31 x i8], [31 x i8]* @.str.14, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([79 x i8], [79 x i8]* @.str.15.17, i64 0, i64 0))]
+Intra-specializing call to 'send_mime' in function 'httpd_start_request' on arguments [1=(i32 200),2=(i8* getelementptr inbounds ([3 x i8], [3 x i8]* @.str.528, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),5=(i8* getelementptr inbounds ([22 x i8], [22 x i8]* @.str.65.88, i64 0, i64 0)),6=(i64 -1)]
+Intra-specializing call to 'httpd_send_err' in function 'httpd_start_request' on arguments [1=(i32 404),2=(i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.448, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([57 x i8], [57 x i8]* @.str.449, i64 0, i64 0))]
+Intra-specializing call to 'httpd_send_err' in function 'httpd_start_request' on arguments [1=(i32 403),2=(i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.93.188, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([79 x i8], [79 x i8]* @.str.438, i64 0, i64 0))]
+Intra-specializing call to 'send_response' in function 'httpd_start_request' on arguments [1=(i32 302),2=(i8* getelementptr inbounds ([6 x i8], [6 x i8]* @.str.453, i64 0, i64 0)),4=(i8* getelementptr inbounds ([28 x i8], [28 x i8]* @.str.454, i64 0, i64 0))]
+Intra-specializing call to 'httpd_send_err' in function 'httpd_start_request' on arguments [1=(i32 404),2=(i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.448, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([57 x i8], [57 x i8]* @.str.449, i64 0, i64 0))]
+Intra-specializing call to 'httpd_send_err' in function 'httpd_start_request' on arguments [1=(i32 403),2=(i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.93.188, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([74 x i8], [74 x i8]* @.str.436, i64 0, i64 0))]
+Intra-specializing call to 'httpd_send_err' in function 'httpd_start_request' on arguments [1=(i32 500),2=(i8* getelementptr inbounds ([15 x i8], [15 x i8]* @.str.88.185, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([65 x i8], [65 x i8]* @.str.89.186, i64 0, i64 0))]
+Intra-specializing call to 'httpd_send_err' in function 'httpd_start_request' on arguments [1=(i32 501),2=(i8* getelementptr inbounds ([16 x i8], [16 x i8]* @.str.84.155, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([65 x i8], [65 x i8]* @.str.85.156, i64 0, i64 0)),5=(i8* getelementptr inbounds ([8 x i8], [8 x i8]* @.str.23.139, i64 0, i64 0))]
+Intra-specializing call to 'httpd_send_err' in function 'auth_check2' on arguments [1=(i32 401),2=(i8* getelementptr inbounds ([13 x i8], [13 x i8]* @.str.460, i64 0, i64 0)),4=(i8* getelementptr inbounds ([45 x i8], [45 x i8]* @.str.461, i64 0, i64 0))]
+Intra-specializing call to 'httpd_send_err' in function 'auth_check2' on arguments [1=(i32 401),2=(i8* getelementptr inbounds ([13 x i8], [13 x i8]* @.str.460, i64 0, i64 0)),4=(i8* getelementptr inbounds ([45 x i8], [45 x i8]* @.str.461, i64 0, i64 0))]
+Intra-specializing call to 'httpd_send_err' in function 'auth_check2' on arguments [1=(i32 403),2=(i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.93.188, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([113 x i8], [113 x i8]* @.str.458, i64 0, i64 0))]
+Intra-specializing call to 'httpd_send_err' in function 'auth_check2' on arguments [1=(i32 401),2=(i8* getelementptr inbounds ([13 x i8], [13 x i8]* @.str.460, i64 0, i64 0)),4=(i8* getelementptr inbounds ([45 x i8], [45 x i8]* @.str.461, i64 0, i64 0))]
+Intra-specializing call to 'httpd_send_err' in function 'auth_check2' on arguments [1=(i32 401),2=(i8* getelementptr inbounds ([13 x i8], [13 x i8]* @.str.460, i64 0, i64 0)),4=(i8* getelementptr inbounds ([45 x i8], [45 x i8]* @.str.461, i64 0, i64 0))]
+Intra-specializing call to 'httpd_send_err' in function 'auth_check2' on arguments [1=(i32 401),2=(i8* getelementptr inbounds ([13 x i8], [13 x i8]* @.str.460, i64 0, i64 0)),4=(i8* getelementptr inbounds ([45 x i8], [45 x i8]* @.str.461, i64 0, i64 0))]
+Intra-specializing call to 'httpd_send_err' in function 'check_referer' on arguments [1=(i32 403),2=(i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.93.188, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([70 x i8], [70 x i8]* @.str.463, i64 0, i64 0))]
+Intra-specializing call to 'tmr_create' in function 'cgi_kill' on arguments [1=(@cgi_kill2),3=(i64 5000),4=(i32 0)]
+Intra-specializing call to 'httpd_send_err' in function 'cgi_child' on arguments [1=(i32 500),2=(i8* getelementptr inbounds ([15 x i8], [15 x i8]* @.str.88.185, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([65 x i8], [65 x i8]* @.str.89.186, i64 0, i64 0))]
+Intra-specializing call to 'httpd_send_err' in function 'cgi_child' on arguments [1=(i32 500),2=(i8* getelementptr inbounds ([15 x i8], [15 x i8]* @.str.88.185, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([65 x i8], [65 x i8]* @.str.89.186, i64 0, i64 0))]
+Intra-specializing call to 'httpd_send_err' in function 'cgi_child' on arguments [1=(i32 500),2=(i8* getelementptr inbounds ([15 x i8], [15 x i8]* @.str.88.185, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([65 x i8], [65 x i8]* @.str.89.186, i64 0, i64 0))]
+Intra-specializing call to 'httpd_send_err' in function 'cgi_child' on arguments [1=(i32 500),2=(i8* getelementptr inbounds ([15 x i8], [15 x i8]* @.str.88.185, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([65 x i8], [65 x i8]* @.str.89.186, i64 0, i64 0))]
+Intra-specializing call to 'httpd_send_err' in function 'cgi_child' on arguments [1=(i32 500),2=(i8* getelementptr inbounds ([15 x i8], [15 x i8]* @.str.88.185, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([65 x i8], [65 x i8]* @.str.89.186, i64 0, i64 0))]
+Intra-specializing call to 'build_env' in function 'cgi_child' on arguments [0=(i8* getelementptr inbounds ([15 x i8], [15 x i8]* @.str.518, i64 0, i64 0))]
+Intra-specializing call to 'build_env' in function 'cgi_child' on arguments [0=(i8* getelementptr inbounds ([6 x i8], [6 x i8]* @.str.517, i64 0, i64 0))]
+Intra-specializing call to 'build_env' in function 'cgi_child' on arguments [0=(i8* getelementptr inbounds ([13 x i8], [13 x i8]* @.str.514, i64 0, i64 0)),1=(i8* getelementptr inbounds ([6 x i8], [6 x i8]* @.str.515, i64 0, i64 0))]
+Intra-specializing call to 'build_env' in function 'cgi_child' on arguments [0=(i8* getelementptr inbounds ([15 x i8], [15 x i8]* @.str.513, i64 0, i64 0))]
+Intra-specializing call to 'build_env' in function 'cgi_child' on arguments [0=(i8* getelementptr inbounds ([18 x i8], [18 x i8]* @.str.512, i64 0, i64 0))]
+Intra-specializing call to 'build_env' in function 'cgi_child' on arguments [0=(i8* getelementptr inbounds ([13 x i8], [13 x i8]* @.str.510, i64 0, i64 0))]
+Intra-specializing call to 'build_env' in function 'cgi_child' on arguments [0=(i8* getelementptr inbounds ([16 x i8], [16 x i8]* @.str.509, i64 0, i64 0))]
+Intra-specializing call to 'build_env' in function 'cgi_child' on arguments [0=(i8* getelementptr inbounds ([15 x i8], [15 x i8]* @.str.508, i64 0, i64 0))]
+Intra-specializing call to 'build_env' in function 'cgi_child' on arguments [0=(i8* getelementptr inbounds ([24 x i8], [24 x i8]* @.str.507, i64 0, i64 0))]
+Intra-specializing call to 'build_env' in function 'cgi_child' on arguments [0=(i8* getelementptr inbounds ([24 x i8], [24 x i8]* @.str.506, i64 0, i64 0))]
+Intra-specializing call to 'build_env' in function 'cgi_child' on arguments [0=(i8* getelementptr inbounds ([15 x i8], [15 x i8]* @.str.505, i64 0, i64 0))]
+Intra-specializing call to 'build_env' in function 'cgi_child' on arguments [0=(i8* getelementptr inbounds ([19 x i8], [19 x i8]* @.str.504, i64 0, i64 0))]
+Intra-specializing call to 'build_env' in function 'cgi_child' on arguments [0=(i8* getelementptr inbounds ([16 x i8], [16 x i8]* @.str.503, i64 0, i64 0))]
+Intra-specializing call to 'build_env' in function 'cgi_child' on arguments [0=(i8* getelementptr inbounds ([15 x i8], [15 x i8]* @.str.502, i64 0, i64 0))]
+Intra-specializing call to 'build_env' in function 'cgi_child' on arguments [0=(i8* getelementptr inbounds ([16 x i8], [16 x i8]* @.str.501, i64 0, i64 0))]
+Intra-specializing call to 'build_env' in function 'cgi_child' on arguments [0=(i8* getelementptr inbounds ([16 x i8], [16 x i8]* @.str.500, i64 0, i64 0))]
+Intra-specializing call to 'build_env' in function 'cgi_child' on arguments [0=(i8* getelementptr inbounds ([19 x i8], [19 x i8]* @.str.499, i64 0, i64 0))]
+Intra-specializing call to 'build_env' in function 'cgi_child' on arguments [0=(i8* getelementptr inbounds ([14 x i8], [14 x i8]* @.str.498, i64 0, i64 0))]
+Intra-specializing call to 'build_env' in function 'cgi_child' on arguments [0=(i8* getelementptr inbounds ([18 x i8], [18 x i8]* @.str.497, i64 0, i64 0))]
+Intra-specializing call to 'build_env' in function 'cgi_child' on arguments [0=(i8* getelementptr inbounds ([15 x i8], [15 x i8]* @.str.496, i64 0, i64 0))]
+Intra-specializing call to 'build_env' in function 'cgi_child' on arguments [0=(i8* getelementptr inbounds ([19 x i8], [19 x i8]* @.str.494, i64 0, i64 0))]
+Intra-specializing call to 'build_env' in function 'cgi_child' on arguments [0=(i8* getelementptr inbounds ([15 x i8], [15 x i8]* @.str.492, i64 0, i64 0))]
+Intra-specializing call to 'build_env' in function 'cgi_child' on arguments [0=(i8* getelementptr inbounds ([19 x i8], [19 x i8]* @.str.491, i64 0, i64 0)),1=(i8* getelementptr inbounds ([23 x i8], [23 x i8]* @.str.8.58, i64 0, i64 0))]
+Intra-specializing call to 'build_env' in function 'cgi_child' on arguments [0=(i8* getelementptr inbounds ([8 x i8], [8 x i8]* @.str.489, i64 0, i64 0)),1=(i8* getelementptr inbounds ([38 x i8], [38 x i8]* @.str.490, i64 0, i64 0))]
+Intra-specializing call to 'tmr_create' in function 'main' on arguments [1=(@wakeup_connection),4=(i32 0)]
+Intra-specializing call to 'tmr_create' in function 'main' on arguments [1=(@wakeup_connection),4=(i32 0)]
+Intra-specializing call to 'fdwatch_add_fd' in function 'main' on arguments [2=(i32 1)]
+Intra-specializing call to 'httpd_send_err' in function 'main' on arguments [1=(i32 503),2=(i8* getelementptr inbounds ([31 x i8], [31 x i8]* @.str.14, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([79 x i8], [79 x i8]* @.str.15.17, i64 0, i64 0))]
+Intra-specializing call to 'httpd_send_err' in function 'main' on arguments [1=(i32 400),2=(i8* getelementptr inbounds ([12 x i8], [12 x i8]* @.str.10.3, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([69 x i8], [69 x i8]* @.str.11.6, i64 0, i64 0)),5=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to 'httpd_send_err' in function 'main' on arguments [1=(i32 400),2=(i8* getelementptr inbounds ([12 x i8], [12 x i8]* @.str.10.3, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([69 x i8], [69 x i8]* @.str.11.6, i64 0, i64 0)),5=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to 'httpd_send_err' in function 'main' on arguments [1=(i32 400),2=(i8* getelementptr inbounds ([12 x i8], [12 x i8]* @.str.10.3, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([69 x i8], [69 x i8]* @.str.11.6, i64 0, i64 0)),5=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to 'httpd_send_err' in function 'main' on arguments [1=(i32 400),2=(i8* getelementptr inbounds ([12 x i8], [12 x i8]* @.str.10.3, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([69 x i8], [69 x i8]* @.str.11.6, i64 0, i64 0)),5=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to 'fdwatch_add_fd' in function 'main' on arguments [1=(i8* null),2=(i32 0)]
+Intra-specializing call to 'fdwatch_add_fd' in function 'main' on arguments [1=(i8* null),2=(i32 0)]
+Intra-specializing call to 'tmr_create' in function 'main' on arguments [0=(%struct.timeval* null),1=(@show_stats),3=(i64 3600000),4=(i32 1)]
+Intra-specializing call to 'tmr_create' in function 'main' on arguments [0=(%struct.timeval* null),1=(@update_throttles),3=(i64 2000),4=(i32 1)]
+Intra-specializing call to 'tmr_create' in function 'main' on arguments [0=(%struct.timeval* null),1=(@idle),3=(i64 5000),4=(i32 1)]
+Intra-specializing call to 'tmr_create' in function 'main' on arguments [0=(%struct.timeval* null),1=(@occasional),3=(i64 120000),4=(i32 1)]
+Intra-specializing call to 'send_response' in function '__occam_spec.httpd_send_err(?,0x198,S:7CDFF8F0,S:0,S:AE2165A2,S:0)' on arguments [1=(i32 408),2=(i8* getelementptr inbounds ([16 x i8], [16 x i8]* @.str.12.9, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([54 x i8], [54 x i8]* @.str.13.12, i64 0, i64 0)),5=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to 'send_err_file' in function '__occam_spec.httpd_send_err(?,0x198,S:7CDFF8F0,S:0,S:AE2165A2,S:0)' on arguments [1=(i32 408),2=(i8* getelementptr inbounds ([16 x i8], [16 x i8]* @.str.12.9, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to 'send_err_file' in function '__occam_spec.httpd_send_err(?,0x198,S:7CDFF8F0,S:0,S:AE2165A2,S:0)' on arguments [1=(i32 408),2=(i8* getelementptr inbounds ([16 x i8], [16 x i8]* @.str.12.9, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to 'send_response' in function '__occam_spec.httpd_send_err(?,0x193,S:462C8AAD,S:0,S:1E025B17,?)' on arguments [1=(i32 403),2=(i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.93.188, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([95 x i8], [95 x i8]* @.str.55.189, i64 0, i64 0))]
+Intra-specializing call to 'send_err_file' in function '__occam_spec.httpd_send_err(?,0x193,S:462C8AAD,S:0,S:1E025B17,?)' on arguments [1=(i32 403),2=(i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.93.188, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to 'send_err_file' in function '__occam_spec.httpd_send_err(?,0x193,S:462C8AAD,S:0,S:1E025B17,?)' on arguments [1=(i32 403),2=(i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.93.188, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to 'send_response' in function '__occam_spec.httpd_send_err(?,0x1F4,S:8355C767,S:0,S:5B618C88,?)' on arguments [1=(i32 500),2=(i8* getelementptr inbounds ([15 x i8], [15 x i8]* @.str.88.185, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([65 x i8], [65 x i8]* @.str.89.186, i64 0, i64 0))]
+Intra-specializing call to 'send_err_file' in function '__occam_spec.httpd_send_err(?,0x1F4,S:8355C767,S:0,S:5B618C88,?)' on arguments [1=(i32 500),2=(i8* getelementptr inbounds ([15 x i8], [15 x i8]* @.str.88.185, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to 'send_err_file' in function '__occam_spec.httpd_send_err(?,0x1F4,S:8355C767,S:0,S:5B618C88,?)' on arguments [1=(i32 500),2=(i8* getelementptr inbounds ([15 x i8], [15 x i8]* @.str.88.185, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to 'send_response' in function '__occam_spec.httpd_send_err(?,0x190,S:66733650,S:0,S:27C28476,S:0)' on arguments [1=(i32 400),2=(i8* getelementptr inbounds ([12 x i8], [12 x i8]* @.str.10.3, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([69 x i8], [69 x i8]* @.str.11.6, i64 0, i64 0)),5=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to 'send_err_file' in function '__occam_spec.httpd_send_err(?,0x190,S:66733650,S:0,S:27C28476,S:0)' on arguments [1=(i32 400),2=(i8* getelementptr inbounds ([12 x i8], [12 x i8]* @.str.10.3, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to 'send_err_file' in function '__occam_spec.httpd_send_err(?,0x190,S:66733650,S:0,S:27C28476,S:0)' on arguments [1=(i32 400),2=(i8* getelementptr inbounds ([12 x i8], [12 x i8]* @.str.10.3, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to 'send_response' in function '__occam_spec.httpd_send_err(?,0x1F5,S:E04926E5,S:0,S:60D9EC53,?)' on arguments [1=(i32 501),2=(i8* getelementptr inbounds ([16 x i8], [16 x i8]* @.str.84.155, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([65 x i8], [65 x i8]* @.str.85.156, i64 0, i64 0))]
+Intra-specializing call to 'send_err_file' in function '__occam_spec.httpd_send_err(?,0x1F5,S:E04926E5,S:0,S:60D9EC53,?)' on arguments [1=(i32 501),2=(i8* getelementptr inbounds ([16 x i8], [16 x i8]* @.str.84.155, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to 'send_err_file' in function '__occam_spec.httpd_send_err(?,0x1F5,S:E04926E5,S:0,S:60D9EC53,?)' on arguments [1=(i32 501),2=(i8* getelementptr inbounds ([16 x i8], [16 x i8]* @.str.84.155, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to 'send_response' in function '__occam_spec.httpd_send_err(?,0x193,S:462C8AAD,S:0,S:407F77C8,?)' on arguments [1=(i32 403),2=(i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.93.188, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([109 x i8], [109 x i8]* @.str.447, i64 0, i64 0))]
+Intra-specializing call to 'send_err_file' in function '__occam_spec.httpd_send_err(?,0x193,S:462C8AAD,S:0,S:407F77C8,?)' on arguments [1=(i32 403),2=(i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.93.188, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to 'send_err_file' in function '__occam_spec.httpd_send_err(?,0x193,S:462C8AAD,S:0,S:407F77C8,?)' on arguments [1=(i32 403),2=(i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.93.188, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to 'send_response' in function '__occam_spec.httpd_send_err(?,0x193,S:462C8AAD,S:0,S:2689F882,?)' on arguments [1=(i32 403),2=(i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.93.188, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([124 x i8], [124 x i8]* @.str.445, i64 0, i64 0))]
+Intra-specializing call to 'send_err_file' in function '__occam_spec.httpd_send_err(?,0x193,S:462C8AAD,S:0,S:2689F882,?)' on arguments [1=(i32 403),2=(i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.93.188, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to 'send_err_file' in function '__occam_spec.httpd_send_err(?,0x193,S:462C8AAD,S:0,S:2689F882,?)' on arguments [1=(i32 403),2=(i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.93.188, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to 'send_response' in function '__occam_spec.httpd_send_err(?,0x1F5,S:E04926E5,S:0,S:60D9EC53,S:9ABD5E10)' on arguments [1=(i32 501),2=(i8* getelementptr inbounds ([16 x i8], [16 x i8]* @.str.84.155, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([65 x i8], [65 x i8]* @.str.85.156, i64 0, i64 0)),5=(i8* getelementptr inbounds ([8 x i8], [8 x i8]* @.str.23.139, i64 0, i64 0))]
+Intra-specializing call to 'send_err_file' in function '__occam_spec.httpd_send_err(?,0x1F5,S:E04926E5,S:0,S:60D9EC53,S:9ABD5E10)' on arguments [1=(i32 501),2=(i8* getelementptr inbounds ([16 x i8], [16 x i8]* @.str.84.155, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to 'send_err_file' in function '__occam_spec.httpd_send_err(?,0x1F5,S:E04926E5,S:0,S:60D9EC53,S:9ABD5E10)' on arguments [1=(i32 501),2=(i8* getelementptr inbounds ([16 x i8], [16 x i8]* @.str.84.155, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to 'send_response' in function '__occam_spec.httpd_send_err(?,0x1F7,S:5BB9D56E,S:0,S:B051F8D2,?)' on arguments [1=(i32 503),2=(i8* getelementptr inbounds ([31 x i8], [31 x i8]* @.str.14, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([79 x i8], [79 x i8]* @.str.15.17, i64 0, i64 0))]
+Intra-specializing call to 'send_err_file' in function '__occam_spec.httpd_send_err(?,0x1F7,S:5BB9D56E,S:0,S:B051F8D2,?)' on arguments [1=(i32 503),2=(i8* getelementptr inbounds ([31 x i8], [31 x i8]* @.str.14, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to 'send_err_file' in function '__occam_spec.httpd_send_err(?,0x1F7,S:5BB9D56E,S:0,S:B051F8D2,?)' on arguments [1=(i32 503),2=(i8* getelementptr inbounds ([31 x i8], [31 x i8]* @.str.14, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to 'send_response' in function '__occam_spec.httpd_send_err(?,0x1F5,S:E04926E5,S:0,S:60D9EC53,S:53DD7B2)' on arguments [1=(i32 501),2=(i8* getelementptr inbounds ([16 x i8], [16 x i8]* @.str.84.155, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([65 x i8], [65 x i8]* @.str.85.156, i64 0, i64 0)),5=(i8* getelementptr inbounds ([5 x i8], [5 x i8]* @.str.21.141, i64 0, i64 0))]
+Intra-specializing call to 'send_err_file' in function '__occam_spec.httpd_send_err(?,0x1F5,S:E04926E5,S:0,S:60D9EC53,S:53DD7B2)' on arguments [1=(i32 501),2=(i8* getelementptr inbounds ([16 x i8], [16 x i8]* @.str.84.155, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to 'send_err_file' in function '__occam_spec.httpd_send_err(?,0x1F5,S:E04926E5,S:0,S:60D9EC53,S:53DD7B2)' on arguments [1=(i32 501),2=(i8* getelementptr inbounds ([16 x i8], [16 x i8]* @.str.84.155, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to 'send_response' in function '__occam_spec.httpd_send_err(?,0x193,S:462C8AAD,S:0,S:4C825599,?)' on arguments [1=(i32 403),2=(i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.93.188, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([85 x i8], [85 x i8]* @.str.443, i64 0, i64 0))]
+Intra-specializing call to 'send_err_file' in function '__occam_spec.httpd_send_err(?,0x193,S:462C8AAD,S:0,S:4C825599,?)' on arguments [1=(i32 403),2=(i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.93.188, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to 'send_err_file' in function '__occam_spec.httpd_send_err(?,0x193,S:462C8AAD,S:0,S:4C825599,?)' on arguments [1=(i32 403),2=(i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.93.188, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to 'send_response' in function '__occam_spec.httpd_send_err(?,0x193,S:462C8AAD,S:0,S:7420961A,?)' on arguments [1=(i32 403),2=(i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.93.188, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([81 x i8], [81 x i8]* @.str.440, i64 0, i64 0))]
+Intra-specializing call to 'send_err_file' in function '__occam_spec.httpd_send_err(?,0x193,S:462C8AAD,S:0,S:7420961A,?)' on arguments [1=(i32 403),2=(i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.93.188, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to 'send_err_file' in function '__occam_spec.httpd_send_err(?,0x193,S:462C8AAD,S:0,S:7420961A,?)' on arguments [1=(i32 403),2=(i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.93.188, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to 'send_response' in function '__occam_spec.httpd_send_err(?,0x194,S:15AD0AAD,S:0,S:225E3BFE,?)' on arguments [1=(i32 404),2=(i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.448, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([57 x i8], [57 x i8]* @.str.449, i64 0, i64 0))]
+Intra-specializing call to 'send_err_file' in function '__occam_spec.httpd_send_err(?,0x194,S:15AD0AAD,S:0,S:225E3BFE,?)' on arguments [1=(i32 404),2=(i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.448, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to 'send_err_file' in function '__occam_spec.httpd_send_err(?,0x194,S:15AD0AAD,S:0,S:225E3BFE,?)' on arguments [1=(i32 404),2=(i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.448, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to 'send_response' in function '__occam_spec.httpd_send_err(?,0x193,S:462C8AAD,S:0,S:C9F8E361,?)' on arguments [1=(i32 403),2=(i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.93.188, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([79 x i8], [79 x i8]* @.str.438, i64 0, i64 0))]
+Intra-specializing call to 'send_err_file' in function '__occam_spec.httpd_send_err(?,0x193,S:462C8AAD,S:0,S:C9F8E361,?)' on arguments [1=(i32 403),2=(i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.93.188, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to 'send_err_file' in function '__occam_spec.httpd_send_err(?,0x193,S:462C8AAD,S:0,S:C9F8E361,?)' on arguments [1=(i32 403),2=(i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.93.188, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to '__occam_spec.send_mime(?,?,?,S:0,?,S:B1F71643,0x-1,0x0)' in function '__occam_spec.send_response(?,0x12E,S:AB63C51C,?,S:67E63C9E,?)' on arguments [1=(i32 302),2=(i8* getelementptr inbounds ([6 x i8], [6 x i8]* @.str.453, i64 0, i64 0))]
+Intra-specializing call to 'send_response' in function '__occam_spec.httpd_send_err(?,0x193,S:462C8AAD,S:0,S:CCC70D74,?)' on arguments [1=(i32 403),2=(i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.93.188, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([74 x i8], [74 x i8]* @.str.436, i64 0, i64 0))]
+Intra-specializing call to 'send_err_file' in function '__occam_spec.httpd_send_err(?,0x193,S:462C8AAD,S:0,S:CCC70D74,?)' on arguments [1=(i32 403),2=(i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.93.188, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to 'send_err_file' in function '__occam_spec.httpd_send_err(?,0x193,S:462C8AAD,S:0,S:CCC70D74,?)' on arguments [1=(i32 403),2=(i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.93.188, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to 'send_response' in function '__occam_spec.httpd_send_err(?,0x191,S:F9541622,?,S:E8822C61,?)' on arguments [1=(i32 401),2=(i8* getelementptr inbounds ([13 x i8], [13 x i8]* @.str.460, i64 0, i64 0)),4=(i8* getelementptr inbounds ([45 x i8], [45 x i8]* @.str.461, i64 0, i64 0))]
+Intra-specializing call to 'send_err_file' in function '__occam_spec.httpd_send_err(?,0x191,S:F9541622,?,S:E8822C61,?)' on arguments [1=(i32 401),2=(i8* getelementptr inbounds ([13 x i8], [13 x i8]* @.str.460, i64 0, i64 0))]
+Intra-specializing call to 'send_err_file' in function '__occam_spec.httpd_send_err(?,0x191,S:F9541622,?,S:E8822C61,?)' on arguments [1=(i32 401),2=(i8* getelementptr inbounds ([13 x i8], [13 x i8]* @.str.460, i64 0, i64 0))]
+Intra-specializing call to 'send_response' in function '__occam_spec.httpd_send_err(?,0x193,S:462C8AAD,S:0,S:89BD8887,?)' on arguments [1=(i32 403),2=(i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.93.188, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([113 x i8], [113 x i8]* @.str.458, i64 0, i64 0))]
+Intra-specializing call to 'send_err_file' in function '__occam_spec.httpd_send_err(?,0x193,S:462C8AAD,S:0,S:89BD8887,?)' on arguments [1=(i32 403),2=(i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.93.188, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to 'send_err_file' in function '__occam_spec.httpd_send_err(?,0x193,S:462C8AAD,S:0,S:89BD8887,?)' on arguments [1=(i32 403),2=(i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.93.188, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to 'send_response' in function '__occam_spec.httpd_send_err(?,0x193,S:462C8AAD,S:0,S:E2B02057,?)' on arguments [1=(i32 403),2=(i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.93.188, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0)),4=(i8* getelementptr inbounds ([70 x i8], [70 x i8]* @.str.463, i64 0, i64 0))]
+Intra-specializing call to 'send_err_file' in function '__occam_spec.httpd_send_err(?,0x193,S:462C8AAD,S:0,S:E2B02057,?)' on arguments [1=(i32 403),2=(i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.93.188, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to 'send_err_file' in function '__occam_spec.httpd_send_err(?,0x193,S:462C8AAD,S:0,S:E2B02057,?)' on arguments [1=(i32 403),2=(i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.93.188, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to '__occam_spec.send_mime(?,?,?,S:0,?,S:B1F71643,0x-1,0x0)' in function '__occam_spec.send_response(?,0x198,S:7CDFF8F0,S:0,S:AE2165A2,S:0)' on arguments [1=(i32 408),2=(i8* getelementptr inbounds ([16 x i8], [16 x i8]* @.str.12.9, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to '__occam_spec.send_mime(?,?,?,S:0,?,S:B1F71643,0x-1,0x0)' in function '__occam_spec.send_err_file(?,0x198,S:7CDFF8F0,S:0,?)' on arguments [1=(i32 408),2=(i8* getelementptr inbounds ([16 x i8], [16 x i8]* @.str.12.9, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to '__occam_spec.send_mime(?,?,?,S:0,?,S:B1F71643,0x-1,0x0)' in function '__occam_spec.send_response(?,0x193,S:462C8AAD,S:0,S:1E025B17,?)' on arguments [1=(i32 403),2=(i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.93.188, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to '__occam_spec.send_mime(?,?,?,S:0,?,S:B1F71643,0x-1,0x0)' in function '__occam_spec.send_err_file(?,0x193,S:462C8AAD,S:0,?)' on arguments [1=(i32 403),2=(i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.93.188, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to '__occam_spec.send_mime(?,?,?,S:0,?,S:B1F71643,0x-1,0x0)' in function '__occam_spec.send_response(?,0x1F4,S:8355C767,S:0,S:5B618C88,?)' on arguments [1=(i32 500),2=(i8* getelementptr inbounds ([15 x i8], [15 x i8]* @.str.88.185, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to '__occam_spec.send_mime(?,?,?,S:0,?,S:B1F71643,0x-1,0x0)' in function '__occam_spec.send_err_file(?,0x1F4,S:8355C767,S:0,?)' on arguments [1=(i32 500),2=(i8* getelementptr inbounds ([15 x i8], [15 x i8]* @.str.88.185, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to '__occam_spec.send_mime(?,?,?,S:0,?,S:B1F71643,0x-1,0x0)' in function '__occam_spec.send_response(?,0x190,S:66733650,S:0,S:27C28476,S:0)' on arguments [1=(i32 400),2=(i8* getelementptr inbounds ([12 x i8], [12 x i8]* @.str.10.3, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to '__occam_spec.send_mime(?,?,?,S:0,?,S:B1F71643,0x-1,0x0)' in function '__occam_spec.send_err_file(?,0x190,S:66733650,S:0,?)' on arguments [1=(i32 400),2=(i8* getelementptr inbounds ([12 x i8], [12 x i8]* @.str.10.3, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to '__occam_spec.send_mime(?,?,?,S:0,?,S:B1F71643,0x-1,0x0)' in function '__occam_spec.send_response(?,0x1F5,S:E04926E5,S:0,S:60D9EC53,?)' on arguments [1=(i32 501),2=(i8* getelementptr inbounds ([16 x i8], [16 x i8]* @.str.84.155, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to '__occam_spec.send_mime(?,?,?,S:0,?,S:B1F71643,0x-1,0x0)' in function '__occam_spec.send_err_file(?,0x1F5,S:E04926E5,S:0,?)' on arguments [1=(i32 501),2=(i8* getelementptr inbounds ([16 x i8], [16 x i8]* @.str.84.155, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to '__occam_spec.send_mime(?,?,?,S:0,?,S:B1F71643,0x-1,0x0)' in function '__occam_spec.send_response(?,0x193,S:462C8AAD,S:0,S:407F77C8,?)' on arguments [1=(i32 403),2=(i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.93.188, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to '__occam_spec.send_mime(?,?,?,S:0,?,S:B1F71643,0x-1,0x0)' in function '__occam_spec.send_response(?,0x193,S:462C8AAD,S:0,S:2689F882,?)' on arguments [1=(i32 403),2=(i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.93.188, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to '__occam_spec.send_mime(?,?,?,S:0,?,S:B1F71643,0x-1,0x0)' in function '__occam_spec.send_response(?,0x1F5,S:E04926E5,S:0,S:60D9EC53,S:9ABD5E10)' on arguments [1=(i32 501),2=(i8* getelementptr inbounds ([16 x i8], [16 x i8]* @.str.84.155, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to '__occam_spec.send_mime(?,?,?,S:0,?,S:B1F71643,0x-1,0x0)' in function '__occam_spec.send_response(?,0x1F7,S:5BB9D56E,S:0,S:B051F8D2,?)' on arguments [1=(i32 503),2=(i8* getelementptr inbounds ([31 x i8], [31 x i8]* @.str.14, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to '__occam_spec.send_mime(?,?,?,S:0,?,S:B1F71643,0x-1,0x0)' in function '__occam_spec.send_err_file(?,0x1F7,S:5BB9D56E,S:0,?)' on arguments [1=(i32 503),2=(i8* getelementptr inbounds ([31 x i8], [31 x i8]* @.str.14, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to '__occam_spec.send_mime(?,?,?,S:0,?,S:B1F71643,0x-1,0x0)' in function '__occam_spec.send_response(?,0x1F5,S:E04926E5,S:0,S:60D9EC53,S:53DD7B2)' on arguments [1=(i32 501),2=(i8* getelementptr inbounds ([16 x i8], [16 x i8]* @.str.84.155, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to '__occam_spec.send_mime(?,?,?,S:0,?,S:B1F71643,0x-1,0x0)' in function '__occam_spec.send_response(?,0x193,S:462C8AAD,S:0,S:4C825599,?)' on arguments [1=(i32 403),2=(i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.93.188, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to '__occam_spec.send_mime(?,?,?,S:0,?,S:B1F71643,0x-1,0x0)' in function '__occam_spec.send_response(?,0x193,S:462C8AAD,S:0,S:7420961A,?)' on arguments [1=(i32 403),2=(i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.93.188, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to '__occam_spec.send_mime(?,?,?,S:0,?,S:B1F71643,0x-1,0x0)' in function '__occam_spec.send_response(?,0x194,S:15AD0AAD,S:0,S:225E3BFE,?)' on arguments [1=(i32 404),2=(i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.448, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to '__occam_spec.send_mime(?,?,?,S:0,?,S:B1F71643,0x-1,0x0)' in function '__occam_spec.send_err_file(?,0x194,S:15AD0AAD,S:0,?)' on arguments [1=(i32 404),2=(i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.448, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to '__occam_spec.send_mime(?,?,?,S:0,?,S:B1F71643,0x-1,0x0)' in function '__occam_spec.send_response(?,0x193,S:462C8AAD,S:0,S:C9F8E361,?)' on arguments [1=(i32 403),2=(i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.93.188, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to '__occam_spec.send_mime(?,?,?,S:0,?,S:B1F71643,0x-1,0x0)' in function '__occam_spec.send_response(?,0x193,S:462C8AAD,S:0,S:CCC70D74,?)' on arguments [1=(i32 403),2=(i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.93.188, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to '__occam_spec.send_mime(?,?,?,S:0,?,S:B1F71643,0x-1,0x0)' in function '__occam_spec.send_response(?,0x191,S:F9541622,?,S:E8822C61,?)' on arguments [1=(i32 401),2=(i8* getelementptr inbounds ([13 x i8], [13 x i8]* @.str.460, i64 0, i64 0))]
+Intra-specializing call to '__occam_spec.send_mime(?,?,?,S:0,?,S:B1F71643,0x-1,0x0)' in function '__occam_spec.send_err_file(?,0x191,S:F9541622,?,?)' on arguments [1=(i32 401),2=(i8* getelementptr inbounds ([13 x i8], [13 x i8]* @.str.460, i64 0, i64 0))]
+Intra-specializing call to '__occam_spec.send_mime(?,?,?,S:0,?,S:B1F71643,0x-1,0x0)' in function '__occam_spec.send_response(?,0x193,S:462C8AAD,S:0,S:89BD8887,?)' on arguments [1=(i32 403),2=(i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.93.188, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+Intra-specializing call to '__occam_spec.send_mime(?,?,?,S:0,?,S:B1F71643,0x-1,0x0)' in function '__occam_spec.send_response(?,0x193,S:462C8AAD,S:0,S:E2B02057,?)' on arguments [1=(i32 403),2=(i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.93.188, i64 0, i64 0)),3=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.26.122, i64 0, i64 0))]
+...progress...
+Specialized 0 functions.
+ === End intra-module specialization ===
+/usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /tmp/tmpZVX_2b.bc -o=/tmp/tmpGpSZop.bc -Ppeval -Ppeval-policy=nonrec-aggressive -Ppeval-opt => 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -disable-simplify-libcalls --disable-slp-vectorization /tmp/tmpQxv_vQ.bc -o /tmp/tmpZVX_2b.bc -O3
+
+EXECUTED: /usr/lib/llvm-10/bin/opt -disable-simplify-libcalls --disable-slp-vectorization /tmp/tmpQxv_vQ.bc -o /tmp/tmpZVX_2b.bc -O3 WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /tmp/tmpZVX_2b.bc -o=/tmp/tmpGpSZop.bc -Ppeval -Ppeval-policy=nonrec-aggressive -Ppeval-opt
+
+=== Begin intra-module specialization ===
+...no progress...
+No specialization took place
+ === End intra-module specialization ===
+/usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /tmp/tmpZVX_2b.bc -o=/tmp/tmpGpSZop.bc -Ppeval -Ppeval-policy=nonrec-aggressive -Ppeval-opt => 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/thttpd/slash/thttpd.a.i.p.bc -o=/dev/null -Pinterface -Pinterface-output /tmp/tmpJWqLLe.iface -Pinterface-entry /tmp/tmpJWqLLe.iface
+
+GatherInterfacePass::runOnModule: /occam/examples/trimmer/thttpd/slash/thttpd.a.i.p.bc
+Reading interface from '/tmp/tmpJWqLLe.iface'...success
+External call to malloc
+External call to strrchr
+External call to openlog
+External call to strcmp
+External call to puts
+External call to exit
+External call to strcmp
+External call to fopen
+External call to fgets_unlocked
+External call to perror
+External call to exit
+External call to fgets_unlocked
+External call to strchr
+External call to strspn
+External call to strcspn
+External call to strlen
+External call to strlen
+External call to strchr
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strtol
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strtol
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strtol
+External call to fprintf
+External call to exit
+External call to strspn
+External call to fclose
+External call to strcmp
+External call to strtol
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strtol
+External call to strcmp
+External call to tzset
+External call to snprintf
+External call to getaddrinfo
+External call to gai_strerror
+External call to syslog
+External call to gai_strerror
+External call to fprintf
+External call to exit
+External call to syslog
+External call to exit
+External call to syslog
+External call to exit
+External call to freeaddrinfo
+External call to syslog
+External call to fprintf
+External call to exit
+External call to fopen
+External call to syslog
+External call to perror
+External call to exit
+External call to gettimeofday
+External call to fgets_unlocked
+External call to strchr
+External call to strlen
+External call to __isoc99_sscanf
+External call to __isoc99_sscanf
+External call to syslog
+External call to fprintf
+External call to fgets_unlocked
+External call to strcpy
+External call to strstr
+External call to strcpy
+External call to strstr
+External call to malloc
+External call to realloc
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to fclose
+External call to getuid
+External call to getpwnam
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcmp
+External call to strcmp
+External call to fopen
+External call to syslog
+External call to perror
+External call to exit
+External call to syslog
+External call to fprintf
+External call to fileno
+External call to fcntl
+External call to getuid
+External call to fileno
+External call to fchown
+External call to syslog
+External call to perror
+External call to chdir
+External call to syslog
+External call to perror
+External call to exit
+External call to getcwd
+External call to strlen
+External call to strlen
+External call to fclose
+External call to fclose
+External call to fclose
+External call to daemon
+External call to syslog
+External call to exit
+External call to setsid
+External call to fopen
+External call to syslog
+External call to exit
+External call to getpid
+External call to fprintf
+External call to fclose
+External call to syslog
+External call to exit
+External call to chroot
+External call to syslog
+External call to perror
+External call to exit
+External call to strcmp
+External call to strlen
+External call to strncmp
+External call to strcpy
+External call to syslog
+External call to fprintf
+External call to chdir
+External call to syslog
+External call to perror
+External call to exit
+External call to chdir
+External call to syslog
+External call to perror
+External call to exit
+External call to alarm
+External call to exit
+External call to syslog
+External call to exit
+External call to syslog
+External call to exit
+External call to syslog
+External call to exit
+External call to syslog
+External call to exit
+External call to time
+External call to getuid
+External call to setgroups
+External call to syslog
+External call to exit
+External call to setgid
+External call to syslog
+External call to exit
+External call to initgroups
+External call to syslog
+External call to setuid
+External call to syslog
+External call to exit
+External call to syslog
+External call to malloc
+External call to syslog
+External call to exit
+External call to gettimeofday
+External call to strcmp
+External call to syslog
+External call to fopen
+External call to syslog
+External call to fileno
+External call to fcntl
+External call to __errno_location
+External call to syslog
+External call to exit
+External call to gettimeofday
+External call to read
+External call to __errno_location
+External call to syslog
+External call to write
+External call to writev
+External call to __errno_location
+External call to syslog
+External call to syslog
+External call to exit
+External call to syslog
+External call to syslog
+External call to syslog
+External call to exit
+External call to read
+External call to __errno_location
+External call to syslog
+External call to closelog
+External call to exit
+External call to fprintf
+External call to exit
+Added reference to function strrchr
+Added reference to function openlog
+Added reference to function strcmp
+Added reference to function puts
+Added reference to function exit
+Added reference to function fopen
+Added reference to function fgets_unlocked
+Added reference to function perror
+Added reference to function strchr
+Added reference to function strspn
+Added reference to function strcspn
+Added reference to function strlen
+Added reference to function strcasecmp
+Added reference to function fprintf
+Added reference to function strtol
+Added reference to function strdup
+Added reference to function syslog
+Added reference to function fclose
+Added reference to function tzset
+Added reference to function snprintf
+Added reference to function getaddrinfo
+Added reference to function gai_strerror
+Added reference to function freeaddrinfo
+Added reference to function gettimeofday
+Added reference to function __isoc99_sscanf
+Added reference to function strcpy
+Added reference to function strstr
+Added reference to function malloc
+Added reference to function realloc
+Added reference to function getuid
+Added reference to function getpwnam
+Added reference to function fileno
+Added reference to function fcntl
+Added reference to function fchown
+Added reference to function chdir
+Added reference to function getcwd
+Added reference to function daemon
+Added reference to function setsid
+Added reference to function getpid
+Added reference to function chroot
+Added reference to function strncmp
+Added reference to function sigset
+Added reference to function alarm
+Added reference to function time
+Added reference to function setgroups
+Added reference to function setgid
+Added reference to function initgroups
+Added reference to function setuid
+Added reference to function __errno_location
+Added reference to function read
+Added reference to function write
+Added reference to function writev
+Added reference to function closelog
+Added reference to function free
+Added reference to function shutdown
+Added reference to function abort
+Added reference to function waitpid
+Added reference to function gethostname
+Added reference to function qsort
+Added reference to function getnameinfo
+Added reference to function bcmp
+Added reference to function socket
+Added reference to function setsockopt
+Added reference to function bind
+Added reference to function close
+Added reference to function listen
+Added reference to function sleep
+Added reference to function gmtime
+Added reference to function strftime
+Added reference to function fread_unlocked
+Added reference to function vsnprintf
+Added reference to function accept
+Added reference to function strpbrk
+Added reference to function strncasecmp
+Added reference to function __ctype_b_loc
+Added reference to function strcat
+Added reference to function strtoll
+Added reference to function getsockname
+Added reference to function __ctype_tolower_loc
+Added reference to function __xstat
+Added reference to function strncpy
+Added reference to function readlink
+Added reference to function localtime
+Added reference to function fflush
+Added reference to function opendir
+Added reference to function closedir
+Added reference to function fork
+Added reference to function nice
+Added reference to function fdopen
+Added reference to function readdir
+Added reference to function memchr
+Added reference to function sprintf
+Added reference to function __lxstat
+Added reference to function ctime
+Added reference to function fwrite
+Added reference to function dup2
+Added reference to function getenv
+Added reference to function pipe
+Added reference to function execve
+Added reference to function kill
+Added reference to function crypt
+Added reference to function getdtablesize
+Added reference to function getrlimit
+Added reference to function setrlimit
+Added reference to function printf
+Added reference to function poll
+Added reference to function open
+Added reference to function mmap
+Added reference to function munmap
+Added reference to global stderr
+Added reference to global stdout
+Added reference to global stdin
+Generated interface for /occam/examples/trimmer/thttpd/slash/thttpd.a.i.p.bc
+## External calls:
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:512BEA50,?,?)
+	syslog(0x2,S:9376100A,?,0x80,?)
+	syslog(0x2,S:9376100A,?,0x80,?)
+	syslog(0x3,S:10EDE6EC)
+	syslog(0x2,S:AA2BCDCD,?)
+	syslog(0x2,S:18E5E5D5,?,?)
+	syslog(0x2,S:71B92A12)
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:33FB1978,?)
+	syslog(0x2,S:AA2BCDCD,?)
+	syslog(0x4,S:7A82AAFC)
+	syslog(0x4,S:7885D4E6)
+	syslog(0x2,S:34162A89)
+	syslog(0x2,S:AA4F89D3)
+	syslog(0x2,S:AA2BCDCD,?)
+	syslog(0x2,S:FFF6A891)
+	syslog(0x2,S:A44CE6E)
+	syslog(0x4,S:768D7B85)
+	syslog(0x2,S:F12199F8)
+	syslog(0x2,S:907098E1)
+	syslog(0x2,S:A0020458)
+	syslog(0x2,S:F0451A9A)
+	syslog(0x2,S:D5B36487)
+	syslog(0x2,S:9A3AABEB)
+	syslog(0x2,S:2413BEB)
+	syslog(0x2,S:9467559F)
+	syslog(0x4,S:C0A986F3)
+	syslog(0x2,S:F33583AD)
+	syslog(0x4,S:869200E)
+	syslog(0x2,S:6088F026)
+	syslog(0x5,S:4B325F36)
+	syslog(0x2,S:1AA20181,?)
+	syslog(0x3,S:FE6E5240)
+	syslog(0x3,S:AA5E50A7)
+	syslog(0x3,S:DA0701D6)
+	syslog(0x2,S:A509D398)
+	syslog(0x3,S:30F19000,?)
+	syslog(0x3,S:DA0701D6)
+	syslog(0x2,S:A509D398)
+	syslog(0x5,S:48A1B0B8)
+	gettimeofday(?,null)
+	gettimeofday(?,null)
+	gettimeofday(?,null)
+	getpwnam(?)
+	writev(?,?,0x2)
+	strcpy(?,?)
+	strcpy(?,?)
+	strcpy(?,?)
+	strspn(?,S:2482BC0)
+	strspn(?,S:2482BC0)
+	puts(S:50185BEC)
+	alarm(0x168)
+	time(null)
+	strstr(?,S:2158B)
+	strstr(?,S:2158B)
+	gai_strerror(?)
+	gai_strerror(?)
+	initgroups(?,?)
+	setgroups(0x0,null)
+	closelog()
+	strcmp(?,S:CA83)
+	strcmp(?,S:C810)
+	strcmp(?,S:CDDD)
+	strcmp(?,S:CC51)
+	strcmp(?,S:CE1F)
+	strcmp(?,S:36C873C)
+	strcmp(?,S:1A6355)
+	strcmp(?,S:CE40)
+	strcmp(?,S:36C875D)
+	strcmp(?,S:CE82)
+	strcmp(?,S:CC30)
+	strcmp(?,S:CE61)
+	strcmp(?,S:CCD5)
+	strcmp(?,S:CD59)
+	strcmp(?,S:CEA3)
+	strcmp(?,S:36C87C0)
+	strcmp(?,S:CCB4)
+	strcmp(?,S:36C85D1)
+	strcmp(?,S:CCF6)
+	strcmp(?,S:CA41)
+	strcmp(?,S:C9BD)
+	strcmp(?,S:C95A)
+	strcmp(?,S:C831)
+	strcmp(?,S:6588C5D8)
+	strcmp(?,S:5CD)
+	strcmp(?,S:5CD)
+	strcmp(?,S:5CD)
+	strtol(?,null,0xA)
+	strtol(?,null,0xA)
+	strtol(?,null,0xA)
+	strtol(?,null,0xA)
+	strtol(?,null,0xA)
+	chdir(?)
+	chdir(?)
+	chdir(?)
+	write(?,?,?)
+	strcspn(?,S:2482BC0)
+	fgets_unlocked(?,0x2710,?)
+	fgets_unlocked(?,0x2710,?)
+	fgets_unlocked(?,0x1388,?)
+	fgets_unlocked(?,0x1388,?)
+	fcntl(?,0x2,0x1)
+	fcntl(?,0x2,0x1)
+	perror(?)
+	perror(?)
+	perror(?)
+	perror(S:BE98CA27)
+	perror(S:EE814DEA)
+	perror(S:BFABAEAF)
+	perror(S:D60E9BF9)
+	perror(S:5A2F6542)
+	exit(0x0)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x0)
+	exit(0x1)
+	read(?,?,?)
+	read(?,?,0x1000)
+	fileno(?)
+	fileno(?)
+	fileno(?)
+	__isoc99_sscanf(?,S:A13F16C8,?,?,?)
+	__isoc99_sscanf(?,S:51F2B2C6,?,?)
+	setgid(?)
+	getuid()
+	getuid()
+	getuid()
+	strrchr(S:DC70A898,0x2F)
+	freeaddrinfo(?)
+	setsid()
+	setuid(?)
+	chroot(?)
+	openlog(?,0x9,0x18)
+	strlen(?)
+	strlen(?)
+	strlen(?)
+	strlen(?)
+	strlen(?)
+	strlen(?)
+	fopen(?,S:EB2)
+	fopen(?,S:EB2)
+	fopen(?,S:C81)
+	fopen(?,S:F57)
+	fopen(?,S:C81)
+	tzset()
+	fclose(?)
+	fclose(?)
+	fclose(?)
+	fclose(?)
+	fclose(?)
+	fclose(?)
+	fprintf(?,S:89E536F,?,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:89E536F,?,?)
+	fprintf(?,S:89E536F,?,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:89E536F,?,?)
+	fprintf(?,S:89E536F,?,?)
+	fprintf(?,S:89E536F,?,?)
+	fprintf(?,S:89E536F,?,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:89E536F,?,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:89E536F,?,?)
+	fprintf(?,S:89E536F,?,?)
+	fprintf(?,S:89E536F,?,?)
+	fprintf(?,S:89E536F,?,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:948E66C1,?,?)
+	fprintf(?,S:1C9AA020,?,?,?)
+	fprintf(?,S:99C4EC08,?)
+	fprintf(?,S:532BA111,?,?,?)
+	fprintf(?,S:B712226E,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:2CD27EBE,?,?)
+	fprintf(?,S:808EF98,?)
+	fprintf(?,S:15F4B3,?)
+	fprintf(?,S:FD311101,?)
+	fprintf(?,S:C16F9FFE,?)
+	strdup(?)
+	strdup(?)
+	strdup(?)
+	strdup(?)
+	strdup(?)
+	strdup(?)
+	strdup(?)
+	strdup(?)
+	strdup(?)
+	strdup(?)
+	strdup(?)
+	strdup(?)
+	strdup(?)
+	realloc(?,?)
+	fchown(?,?,?)
+	getaddrinfo(?,?,?,?)
+	strncmp(?,?,?)
+	daemon(0x1,0x1)
+	snprintf(?,0xA,S:AA49,?)
+	strcasecmp(?,S:F09F45E7)
+	strcasecmp(?,S:8298A65)
+EXECUTED: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/thttpd/slash/thttpd.a.i.p.bc -o=/dev/null -Pinterface -Pinterface-output /tmp/tmpJWqLLe.iface -Pinterface-entry /tmp/tmpJWqLLe.iface WHICH RETURNED 0
+
+	strcasecmp(?,S:38A33F)
+	strcasecmp(?,S:BFABAEAF)
+	strcasecmp(?,S:3DAF8AAC)
+	strcasecmp(?,S:D0257538)
+	strcasecmp(?,S:89F970C7)
+	strcasecmp(?,S:C878CC64)
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/thttpd/slash/thttpd.a.i.p.bc -o=/dev/null -Pinterface -Pinterface-output /tmp/tmpJWqLLe.iface -Pinterface-entry /tmp/tmpJWqLLe.iface
+
+	strcasecmp(?,S:C927987A)
+	strcasecmp(?,S:D79267B7)
+	strcasecmp(?,S:885FEDF)
+	strcasecmp(?,S:BCB3FA58)
+	strcasecmp(?,S:B0D608D2)
+	strcasecmp(?,S:402B4858)
+	strcasecmp(?,S:AD0F056A)
+	strcasecmp(?,S:43F64A10)
+	strcasecmp(?,S:D42F4809)
+	strcasecmp(?,S:798CA9E)
+	strcasecmp(?,S:3FAAF02)
+	strcasecmp(?,S:1AD984D4)
+	strcasecmp(?,S:FFA35531)
+	strcasecmp(?,S:5C341003)
+	strcasecmp(?,S:35BE35C0)
+	strcasecmp(?,S:E0251C1D)
+	strcasecmp(?,S:8DB21C0A)
+	strcasecmp(?,S:3E51D3)
+	strcasecmp(?,S:E1B1C032)
+	strchr(?,0x23)
+	strchr(?,0x3D)
+	strchr(?,0x23)
+	malloc(0x18)
+	malloc(0x12C0)
+	malloc(?)
+	__errno_location()
+	__errno_location()
+	__errno_location()
+	__errno_location()
+	getpid()
+	getcwd(?,0x1000)
+## External symbols:
+	__ctype_b_loc
+	__ctype_tolower_loc
+	__errno_location
+	__isoc99_sscanf
+	__lxstat
+	__xstat
+	abort
+	accept
+	alarm
+	bcmp
+	bind
+	chdir
+	chroot
+	close
+	closedir
+	closelog
+	crypt
+	ctime
+	daemon
+	dup2
+	execve
+	exit
+	fchown
+	fclose
+	fcntl
+	fdopen
+	fflush
+	fgets_unlocked
+	fileno
+	fopen
+	fork
+	fprintf
+	fread_unlocked
+	free
+	freeaddrinfo
+	fwrite
+	gai_strerror
+	getaddrinfo
+	getcwd
+	getdtablesize
+	getenv
+	gethostname
+	getnameinfo
+	getpid
+	getpwnam
+	getrlimit
+	getsockname
+	gettimeofday
+	getuid
+	gmtime
+	initgroups
+	kill
+	listen
+	localtime
+	malloc
+	memchr
+	mmap
+	munmap
+	nice
+	open
+	opendir
+	openlog
+	perror
+	pipe
+	poll
+	printf
+	puts
+	qsort
+	read
+	readdir
+	readlink
+	realloc
+	setgid
+	setgroups
+	setrlimit
+	setsid
+	setsockopt
+	setuid
+	shutdown
+	sigset
+	sleep
+	snprintf
+	socket
+	sprintf
+	stderr
+	stdin
+	stdout
+	strcasecmp
+	strcat
+	strchr
+	strcmp
+	strcpy
+	strcspn
+	strdup
+	strftime
+	strlen
+	strncasecmp
+	strncmp
+	strncpy
+	strpbrk
+	strrchr
+	strspn
+	strstr
+	strtol
+	strtoll
+	syslog
+	time
+	tzset
+	vsnprintf
+	waitpid
+	write
+	writev
+
+GatherInterfacePass::runOnModule: /occam/examples/trimmer/thttpd/slash/thttpd.a.i.p.bc
+Reading interface from '/tmp/tmpJWqLLe.iface'...success
+External call to malloc
+External call to strrchr
+External call to openlog
+External call to strcmp
+External call to puts
+External call to exit
+External call to strcmp
+External call to fopen
+External call to fgets_unlocked
+External call to perror
+External call to exit
+External call to fgets_unlocked
+External call to strchr
+External call to strspn
+External call to strcspn
+External call to strlen
+External call to strlen
+External call to strchr
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strtol
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strtol
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strtol
+External call to fprintf
+External call to exit
+External call to strspn
+External call to fclose
+External call to strcmp
+External call to strtol
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strtol
+External call to strcmp
+External call to tzset
+External call to snprintf
+External call to getaddrinfo
+External call to gai_strerror
+External call to syslog
+External call to gai_strerror
+External call to fprintf
+External call to exit
+External call to syslog
+External call to exit
+External call to syslog
+External call to exit
+External call to freeaddrinfo
+External call to syslog
+External call to fprintf
+External call to exit
+External call to fopen
+External call to syslog
+External call to perror
+External call to exit
+External call to gettimeofday
+External call to fgets_unlocked
+External call to strchr
+External call to strlen
+External call to __isoc99_sscanf
+External call to __isoc99_sscanf
+External call to syslog
+External call to fprintf
+External call to fgets_unlocked
+External call to strcpy
+External call to strstr
+External call to strcpy
+External call to strstr
+External call to malloc
+External call to realloc
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to fclose
+External call to getuid
+External call to getpwnam
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcmp
+External call to strcmp
+External call to fopen
+External call to syslog
+External call to perror
+External call to exit
+External call to syslog
+External call to fprintf
+External call to fileno
+External call to fcntl
+External call to getuid
+External call to fileno
+External call to fchown
+External call to syslog
+External call to perror
+External call to chdir
+External call to syslog
+External call to perror
+External call to exit
+External call to getcwd
+External call to strlen
+External call to strlen
+External call to fclose
+External call to fclose
+External call to fclose
+External call to daemon
+External call to syslog
+External call to exit
+External call to setsid
+External call to fopen
+External call to syslog
+External call to exit
+External call to getpid
+External call to fprintf
+External call to fclose
+External call to syslog
+External call to exit
+External call to chroot
+External call to syslog
+External call to perror
+External call to exit
+External call to strcmp
+External call to strlen
+External call to strncmp
+External call to strcpy
+External call to syslog
+External call to fprintf
+External call to chdir
+External call to syslog
+External call to perror
+External call to exit
+External call to chdir
+External call to syslog
+External call to perror
+External call to exit
+External call to alarm
+External call to exit
+External call to syslog
+External call to exit
+External call to syslog
+External call to exit
+External call to syslog
+External call to exit
+External call to syslog
+External call to exit
+External call to time
+External call to getuid
+External call to setgroups
+External call to syslog
+External call to exit
+External call to setgid
+External call to syslog
+External call to exit
+External call to initgroups
+External call to syslog
+External call to setuid
+External call to syslog
+External call to exit
+External call to syslog
+External call to malloc
+External call to syslog
+External call to exit
+External call to gettimeofday
+External call to strcmp
+External call to syslog
+External call to fopen
+External call to syslog
+External call to fileno
+External call to fcntl
+External call to __errno_location
+External call to syslog
+External call to exit
+External call to gettimeofday
+External call to read
+External call to __errno_location
+External call to syslog
+External call to write
+External call to writev
+External call to __errno_location
+External call to syslog
+External call to syslog
+External call to exit
+External call to syslog
+External call to syslog
+External call to syslog
+External call to exit
+External call to read
+External call to __errno_location
+External call to syslog
+External call to closelog
+External call to exit
+External call to fprintf
+External call to exit
+Added reference to function strrchr
+Added reference to function openlog
+Added reference to function strcmp
+Added reference to function puts
+Added reference to function exit
+Added reference to function fopen
+Added reference to function fgets_unlocked
+Added reference to function perror
+Added reference to function strchr
+Added reference to function strspn
+Added reference to function strcspn
+Added reference to function strlen
+Added reference to function strcasecmp
+Added reference to function fprintf
+Added reference to function strtol
+Added reference to function strdup
+Added reference to function syslog
+Added reference to function fclose
+Added reference to function tzset
+Added reference to function snprintf
+Added reference to function getaddrinfo
+Added reference to function gai_strerror
+Added reference to function freeaddrinfo
+Added reference to function gettimeofday
+Added reference to function __isoc99_sscanf
+Added reference to function strcpy
+Added reference to function strstr
+Added reference to function malloc
+Added reference to function realloc
+Added reference to function getuid
+Added reference to function getpwnam
+Added reference to function fileno
+Added reference to function fcntl
+Added reference to function fchown
+Added reference to function chdir
+Added reference to function getcwd
+Added reference to function daemon
+Added reference to function setsid
+Added reference to function getpid
+Added reference to function chroot
+Added reference to function strncmp
+Added reference to function sigset
+Added reference to function alarm
+Added reference to function time
+Added reference to function setgroups
+Added reference to function setgid
+Added reference to function initgroups
+Added reference to function setuid
+Added reference to function __errno_location
+Added reference to function read
+Added reference to function write
+Added reference to function writev
+Added reference to function closelog
+Added reference to function free
+Added reference to function shutdown
+Added reference to function abort
+Added reference to function waitpid
+Added reference to function gethostname
+Added reference to function qsort
+Added reference to function getnameinfo
+Added reference to function bcmp
+Added reference to function socket
+Added reference to function setsockopt
+Added reference to function bind
+Added reference to function close
+Added reference to function listen
+Added reference to function sleep
+Added reference to function gmtime
+Added reference to function strftime
+Added reference to function fread_unlocked
+Added reference to function vsnprintf
+Added reference to function accept
+Added reference to function strpbrk
+Added reference to function strncasecmp
+Added reference to function __ctype_b_loc
+Added reference to function strcat
+Added reference to function strtoll
+Added reference to function getsockname
+Added reference to function __ctype_tolower_loc
+Added reference to function __xstat
+Added reference to function strncpy
+Added reference to function readlink
+Added reference to function localtime
+Added reference to function fflush
+Added reference to function opendir
+Added reference to function closedir
+Added reference to function fork
+Added reference to function nice
+Added reference to function fdopen
+Added reference to function readdir
+Added reference to function memchr
+Added reference to function sprintf
+Added reference to function __lxstat
+Added reference to function ctime
+Added reference to function fwrite
+Added reference to function dup2
+Added reference to function getenv
+Added reference to function pipe
+Added reference to function execve
+Added reference to function kill
+Added reference to function crypt
+Added reference to function getdtablesize
+Added reference to function getrlimit
+Added reference to function setrlimit
+Added reference to function printf
+Added reference to function poll
+Added reference to function open
+Added reference to function mmap
+Added reference to function munmap
+Added reference to global stderr
+Added reference to global stdout
+Added reference to global stdin
+Generated interface for /occam/examples/trimmer/thttpd/slash/thttpd.a.i.p.bc
+## External calls:
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:512BEA50,?,?)
+	syslog(0x2,S:9376100A,?,0x80,?)
+	syslog(0x2,S:9376100A,?,0x80,?)
+	syslog(0x3,S:10EDE6EC)
+	syslog(0x2,S:AA2BCDCD,?)
+	syslog(0x2,S:18E5E5D5,?,?)
+	syslog(0x2,S:71B92A12)
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:33FB1978,?)
+	syslog(0x2,S:AA2BCDCD,?)
+	syslog(0x4,S:7A82AAFC)
+	syslog(0x4,S:7885D4E6)
+	syslog(0x2,S:34162A89)
+	syslog(0x2,S:AA4F89D3)
+	syslog(0x2,S:AA2BCDCD,?)
+	syslog(0x2,S:FFF6A891)
+	syslog(0x2,S:A44CE6E)
+	syslog(0x4,S:768D7B85)
+	syslog(0x2,S:F12199F8)
+	syslog(0x2,S:907098E1)
+	syslog(0x2,S:A0020458)
+	syslog(0x2,S:F0451A9A)
+	syslog(0x2,S:D5B36487)
+	syslog(0x2,S:9A3AABEB)
+	syslog(0x2,S:2413BEB)
+	syslog(0x2,S:9467559F)
+	syslog(0x4,S:C0A986F3)
+	syslog(0x2,S:F33583AD)
+	syslog(0x4,S:869200E)
+	syslog(0x2,S:6088F026)
+	syslog(0x5,S:4B325F36)
+	syslog(0x2,S:1AA20181,?)
+	syslog(0x3,S:FE6E5240)
+	syslog(0x3,S:AA5E50A7)
+	syslog(0x3,S:DA0701D6)
+	syslog(0x2,S:A509D398)
+	syslog(0x3,S:30F19000,?)
+	syslog(0x3,S:DA0701D6)
+	syslog(0x2,S:A509D398)
+	syslog(0x5,S:48A1B0B8)
+	gettimeofday(?,null)
+	gettimeofday(?,null)
+	gettimeofday(?,null)
+	getpwnam(?)
+	writev(?,?,0x2)
+	strcpy(?,?)
+	strcpy(?,?)
+	strcpy(?,?)
+	strspn(?,S:2482BC0)
+	strspn(?,S:2482BC0)
+	puts(S:50185BEC)
+	alarm(0x168)
+	time(null)
+	strstr(?,S:2158B)
+	strstr(?,S:2158B)
+	gai_strerror(?)
+	gai_strerror(?)
+	initgroups(?,?)
+	setgroups(0x0,null)
+	closelog()
+	strcmp(?,S:CA83)
+	strcmp(?,S:C810)
+	strcmp(?,S:CDDD)
+	strcmp(?,S:CC51)
+	strcmp(?,S:CE1F)
+	strcmp(?,S:36C873C)
+	strcmp(?,S:1A6355)
+	strcmp(?,S:CE40)
+	strcmp(?,S:36C875D)
+	strcmp(?,S:CE82)
+	strcmp(?,S:CC30)
+	strcmp(?,S:CE61)
+	strcmp(?,S:CCD5)
+	strcmp(?,S:CD59)
+	strcmp(?,S:CEA3)
+	strcmp(?,S:36C87C0)
+	strcmp(?,S:CCB4)
+	strcmp(?,S:36C85D1)
+	strcmp(?,S:CCF6)
+	strcmp(?,S:CA41)
+	strcmp(?,S:C9BD)
+	strcmp(?,S:C95A)
+	strcmp(?,S:C831)
+	strcmp(?,S:6588C5D8)
+	strcmp(?,S:5CD)
+	strcmp(?,S:5CD)
+	strcmp(?,S:5CD)
+	strtol(?,null,0xA)
+	strtol(?,null,0xA)
+	strtol(?,null,0xA)
+	strtol(?,null,0xA)
+	strtol(?,null,0xA)
+	chdir(?)
+	chdir(?)
+	chdir(?)
+	write(?,?,?)
+	strcspn(?,S:2482BC0)
+	fgets_unlocked(?,0x2710,?)
+	fgets_unlocked(?,0x2710,?)
+	fgets_unlocked(?,0x1388,?)
+	fgets_unlocked(?,0x1388,?)
+	fcntl(?,0x2,0x1)
+	fcntl(?,0x2,0x1)
+	perror(?)
+	perror(?)
+	perror(?)
+	perror(S:BE98CA27)
+	perror(S:EE814DEA)
+	perror(S:BFABAEAF)
+	perror(S:D60E9BF9)
+	perror(S:5A2F6542)
+	exit(0x0)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x0)
+	exit(0x1)
+	read(?,?,?)
+	read(?,?,0x1000)
+	fileno(?)
+	fileno(?)
+	fileno(?)
+	__isoc99_sscanf(?,S:A13F16C8,?,?,?)
+	__isoc99_sscanf(?,S:51F2B2C6,?,?)
+	setgid(?)
+	getuid()
+	getuid()
+	getuid()
+	strrchr(S:DC70A898,0x2F)
+	freeaddrinfo(?)
+	setsid()
+	setuid(?)
+	chroot(?)
+	openlog(?,0x9,0x18)
+	strlen(?)
+	strlen(?)
+	strlen(?)
+	strlen(?)
+	strlen(?)
+	strlen(?)
+	fopen(?,S:EB2)
+	fopen(?,S:EB2)
+	fopen(?,S:C81)
+	fopen(?,S:F57)
+	fopen(?,S:C81)
+	tzset()
+	fclose(?)
+	fclose(?)
+	fclose(?)
+	fclose(?)
+	fclose(?)
+	fclose(?)
+	fprintf(?,S:89E536F,?,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:89E536F,?,?)
+	fprintf(?,S:89E536F,?,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:89E536F,?,?)
+	fprintf(?,S:89E536F,?,?)
+	fprintf(?,S:89E536F,?,?)
+	fprintf(?,S:89E536F,?,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:89E536F,?,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:89E536F,?,?)
+	fprintf(?,S:89E536F,?,?)
+	fprintf(?,S:89E536F,?,?)
+	fprintf(?,S:89E536F,?,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:948E66C1,?,?)
+	fprintf(?,S:1C9AA020,?,?,?)
+	fprintf(?,S:99C4EC08,?)
+	fprintf(?,S:532BA111,?,?,?)
+	fprintf(?,S:B712226E,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:2CD27EBE,?,?)
+	fprintf(?,S:808EF98,?)
+	fprintf(?,S:15F4B3,?)
+	fprintf(?,S:FD311101,?)
+	fprintf(?,S:C16F9FFE,?)
+	strdup(?)
+	strdup(?)
+	strdup(?)
+	strdup(?)
+	strdup(?)
+	strdup(?)
+	strdup(?)
+	strdup(?)
+	strdup(?)
+	strdup(?)
+	strdup(?)
+	strdup(?)
+	strdup(?)
+	realloc(?,?)
+	fchown(?,?,?)
+	getaddrinfo(?,?,?,?)
+	strncmp(?,?,?)
+	daemon(0x1,0x1)
+	snprintf(?,0xA,S:AA49,?)
+	strcasecmp(?,S:F09F45E7)
+	strcasecmp(?,S:8298A65)
+	strcasecmp(?,S:38A33F)
+	strcasecmp(?,S:BFABAEAF)
+	strcasecmp(?,S:3DAF8AAC)
+	strcasecmp(?,S:D0257538)
+	strcasecmp(?,S:89F970C7)
+	strcasecmp(?,S:C878CC64)
+	strcasecmp(?,S:C927987A)
+	strcasecmp(?,S:D79267B7)
+	strcasecmp(?,S:885FEDF)
+	strcasecmp(?,S:BCB3FA58)
+	strcasecmp(?,S:B0D608D2)
+	strcasecmp(?,S:402B4858)
+	strcasecmp(?,S:AD0F056A)
+EXECUTED: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/thttpd/slash/thttpd.a.i.p.bc -o=/dev/null -Pinterface -Pinterface-output /tmp/tmpJWqLLe.iface -Pinterface-entry /tmp/tmpJWqLLe.iface WHICH RETURNED 0
+
+	strcasecmp(?,S:43F64A10)
+	strcasecmp(?,S:D42F4809)
+	strcasecmp(?,S:798CA9E)
+	strcasecmp(?,S:3FAAF02)
+	strcasecmp(?,S:1AD984D4)
+	strcasecmp(?,S:FFA35531)
+	strcasecmp(?,S:5C341003)
+	strcasecmp(?,S:35BE35C0)
+	strcasecmp(?,S:E0251C1D)
+	strcasecmp(?,S:8DB21C0A)
+	strcasecmp(?,S:3E51D3)
+	strcasecmp(?,S:E1B1C032)
+	strchr(?,0x23)
+	strchr(?,0x3D)
+	strchr(?,0x23)
+	malloc(0x18)
+	malloc(0x12C0)
+	malloc(?)
+	__errno_location()
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/thttpd/slash/thttpd.a.i.p.bc -o=/dev/null -Pinterface -Pinterface-output thttpd.02.iface
+
+	__errno_location()
+	__errno_location()
+	__errno_location()
+	getpid()
+	getcwd(?,0x1000)
+## External symbols:
+	__ctype_b_loc
+	__ctype_tolower_loc
+	__errno_location
+	__isoc99_sscanf
+	__lxstat
+	__xstat
+	abort
+	accept
+	alarm
+	bcmp
+	bind
+	chdir
+	chroot
+	close
+	closedir
+	closelog
+	crypt
+	ctime
+	daemon
+	dup2
+	execve
+	exit
+	fchown
+	fclose
+	fcntl
+	fdopen
+	fflush
+	fgets_unlocked
+	fileno
+	fopen
+	fork
+	fprintf
+	fread_unlocked
+	free
+	freeaddrinfo
+	fwrite
+	gai_strerror
+	getaddrinfo
+	getcwd
+	getdtablesize
+	getenv
+	gethostname
+	getnameinfo
+	getpid
+	getpwnam
+	getrlimit
+	getsockname
+	gettimeofday
+	getuid
+	gmtime
+	initgroups
+	kill
+	listen
+	localtime
+	malloc
+	memchr
+	mmap
+	munmap
+	nice
+	open
+	opendir
+	openlog
+	perror
+	pipe
+	poll
+	printf
+	puts
+	qsort
+	read
+	readdir
+	readlink
+	realloc
+	setgid
+	setgroups
+	setrlimit
+	setsid
+	setsockopt
+	setuid
+	shutdown
+	sigset
+	sleep
+	snprintf
+	socket
+	sprintf
+	stderr
+	stdin
+	stdout
+	strcasecmp
+	strcat
+	strchr
+	strcmp
+	strcpy
+	strcspn
+	strdup
+	strftime
+	strlen
+	strncasecmp
+	strncmp
+	strncpy
+	strpbrk
+	strrchr
+	strspn
+	strstr
+	strtol
+	strtoll
+	syslog
+	time
+	tzset
+	vsnprintf
+	waitpid
+	write
+	writev
+
+GatherInterfacePass::runOnModule: /occam/examples/trimmer/thttpd/slash/thttpd.a.i.p.bc
+Added reference to function strrchr
+Added reference to function openlog
+Added reference to function strcmp
+Added reference to function puts
+Added reference to function exit
+Added reference to function fopen
+Added reference to function fgets_unlocked
+Added reference to function perror
+Added reference to function strchr
+Added reference to function strspn
+Added reference to function strcspn
+Added reference to function strlen
+Added reference to function strcasecmp
+Added reference to function fprintf
+Added reference to function strtol
+Added reference to function strdup
+Added reference to function syslog
+Added reference to function fclose
+Added reference to function tzset
+Added reference to function snprintf
+Added reference to function getaddrinfo
+Added reference to function gai_strerror
+Added reference to function freeaddrinfo
+Added reference to function gettimeofday
+Added reference to function __isoc99_sscanf
+Added reference to function strcpy
+Added reference to function strstr
+Added reference to function malloc
+Added reference to function realloc
+Added reference to function getuid
+Added reference to function getpwnam
+Added reference to function fileno
+Added reference to function fcntl
+Added reference to function fchown
+Added reference to function chdir
+Added reference to function getcwd
+Added reference to function daemon
+Added reference to function setsid
+Added reference to function getpid
+Added reference to function chroot
+Added reference to function strncmp
+Added reference to function sigset
+Added reference to function alarm
+Added reference to function time
+Added reference to function setgroups
+Added reference to function setgid
+Added reference to function initgroups
+Added reference to function setuid
+Added reference to function __errno_location
+Added reference to function read
+Added reference to function write
+Added reference to function writev
+Added reference to function closelog
+Added reference to function free
+Added reference to function shutdown
+Added reference to function abort
+Added reference to function waitpid
+Added reference to function gethostname
+Added reference to function qsort
+Added reference to function getnameinfo
+Added reference to function bcmp
+Added reference to function socket
+Added reference to function setsockopt
+Added reference to function bind
+Added reference to function close
+Added reference to function listen
+Added reference to function sleep
+Added reference to function gmtime
+Added reference to function strftime
+Added reference to function fread_unlocked
+Added reference to function vsnprintf
+Added reference to function accept
+Added reference to function strpbrk
+Added reference to function strncasecmp
+Added reference to function __ctype_b_loc
+Added reference to function strcat
+Added reference to function strtoll
+Added reference to function getsockname
+Added reference to function __ctype_tolower_loc
+Added reference to function __xstat
+Added reference to function strncpy
+Added reference to function readlink
+Added reference to function localtime
+Added reference to function fflush
+Added reference to function opendir
+Added reference to function closedir
+Added reference to function fork
+Added reference to function nice
+Added reference to function fdopen
+Added reference to function readdir
+Added reference to function memchr
+Added reference to function sprintf
+Added reference to function __lxstat
+Added reference to function ctime
+Added reference to function fwrite
+Added reference to function dup2
+Added reference to function getenv
+Added reference to function pipe
+Added reference to function execve
+Added reference to function kill
+Added reference to function crypt
+Added reference to function getdtablesize
+Added reference to function getrlimit
+Added reference to function setrlimit
+Added reference to function printf
+Added reference to function poll
+Added reference to function open
+Added reference to function mmap
+Added reference to function munmap
+Added reference to global stderr
+Added reference to global stdout
+Added reference to global stdin
+Generated interface for /occam/examples/trimmer/thttpd/slash/thttpd.a.i.p.bc
+## External calls:
+## External symbols:
+	__ctype_b_loc
+	__ctype_tolower_loc
+	__errno_location
+	__isoc99_sscanf
+	__lxstat
+	__xstat
+	abort
+	accept
+	alarm
+	bcmp
+	bind
+	chdir
+	chroot
+	close
+	closedir
+	closelog
+	crypt
+	ctime
+	daemon
+	dup2
+	execve
+	exit
+	fchown
+	fclose
+	fcntl
+	fdopen
+	fflush
+	fgets_unlocked
+	fileno
+	fopen
+	fork
+	fprintf
+	fread_unlocked
+	free
+	freeaddrinfo
+	fwrite
+	gai_strerror
+	getaddrinfo
+	getcwd
+	getdtablesize
+	getenv
+	gethostname
+	getnameinfo
+	getpid
+	getpwnam
+	getrlimit
+	getsockname
+	gettimeofday
+	getuid
+	gmtime
+	initgroups
+	kill
+	listen
+	localtime
+	malloc
+	memchr
+	mmap
+	munmap
+	nice
+	open
+	opendir
+	openlog
+	perror
+	pipe
+	poll
+	printf
+	puts
+	qsort
+	read
+	readdir
+	readlink
+	realloc
+	setgid
+	setgroups
+	setrlimit
+	setsid
+	setsockopt
+	setuid
+	shutdown
+	sigset
+	sleep
+	snprintf
+	socket
+	sprintf
+	stderr
+	stdin
+	stdout
+	strcasecmp
+	strcat
+	strchr
+	strcmp
+	strcpy
+	strcspn
+	strdup
+	strftime
+	strlen
+	strncasecmp
+	strncmp
+	strncpy
+	strpbrk
+	strrchr
+	strspn
+	strstr
+	strtol
+	strtoll
+	syslog
+	time
+	tzset
+	vsnprintf
+	waitpid
+	write
+	writev
+
+EXECUTED: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/thttpd/slash/thttpd.a.i.p.bc -o=/dev/null -Pinterface -Pinterface-output thttpd.02.iface WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/thttpd/slash/thttpd.a.i.p.bc -o=/occam/examples/trimmer/thttpd/slash/thttpd.a.i.p.i.bc -Pinternalize -Pinternalize-wrt-interfaces main.iface
+
+InternalizePass
+Reading file 'main.iface'...success
+Done reading.
+InternalizePass::runOnModule: /occam/examples/trimmer/thttpd/slash/thttpd.a.i.p.bc
+...no progress...
+/usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/thttpd/slash/thttpd.a.i.p.bc -o=/occam/examples/trimmer/thttpd/slash/thttpd.a.i.p.i.bc -Pinternalize -Pinternalize-wrt-interfaces main.iface => 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/thttpd/slash/thttpd.a.i.p.i.bc -o=/dev/null -Pinterface -Pinterface-output /tmp/tmpVK1ZG_.iface -Pinterface-entry /tmp/tmpVK1ZG_.iface
+
+GatherInterfacePass::runOnModule: /occam/examples/trimmer/thttpd/slash/thttpd.a.i.p.i.bc
+Reading interface from '/tmp/tmpVK1ZG_.iface'...success
+External call to malloc
+External call to strrchr
+External call to openlog
+External call to strcmp
+External call to puts
+External call to exit
+External call to strcmp
+External call to fopen
+External call to fgets_unlocked
+External call to perror
+External call to exit
+External call to fgets_unlocked
+External call to strchr
+External call to strspn
+External call to strcspn
+External call to strlen
+External call to strlen
+External call to strchr
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strtol
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strtol
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strtol
+External call to fprintf
+External call to exit
+External call to strspn
+External call to fclose
+External call to strcmp
+External call to strtol
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strtol
+External call to strcmp
+External call to tzset
+External call to snprintf
+External call to getaddrinfo
+External call to gai_strerror
+External call to syslog
+External call to gai_strerror
+External call to fprintf
+External call to exit
+External call to syslog
+External call to exit
+External call to syslog
+External call to exit
+External call to freeaddrinfo
+External call to syslog
+External call to fprintf
+External call to exit
+External call to fopen
+External call to syslog
+External call to perror
+External call to exit
+External call to gettimeofday
+External call to fgets_unlocked
+External call to strchr
+External call to strlen
+External call to __isoc99_sscanf
+External call to __isoc99_sscanf
+External call to syslog
+External call to fprintf
+External call to fgets_unlocked
+External call to strcpy
+External call to strstr
+External call to strcpy
+External call to strstr
+External call to malloc
+External call to realloc
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to fclose
+External call to getuid
+External call to getpwnam
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcmp
+External call to strcmp
+External call to fopen
+External call to syslog
+External call to perror
+External call to exit
+External call to syslog
+External call to fprintf
+External call to fileno
+External call to fcntl
+External call to getuid
+External call to fileno
+External call to fchown
+External call to syslog
+External call to perror
+External call to chdir
+External call to syslog
+External call to perror
+External call to exit
+External call to getcwd
+External call to strlen
+External call to strlen
+External call to fclose
+External call to fclose
+External call to fclose
+External call to daemon
+External call to syslog
+External call to exit
+External call to setsid
+External call to fopen
+External call to syslog
+External call to exit
+External call to getpid
+External call to fprintf
+External call to fclose
+External call to syslog
+External call to exit
+External call to chroot
+External call to syslog
+External call to perror
+External call to exit
+External call to strcmp
+External call to strlen
+External call to strncmp
+External call to strcpy
+External call to syslog
+External call to fprintf
+External call to chdir
+External call to syslog
+External call to perror
+External call to exit
+External call to chdir
+External call to syslog
+External call to perror
+External call to exit
+External call to alarm
+External call to exit
+External call to syslog
+External call to exit
+External call to syslog
+External call to exit
+External call to syslog
+External call to exit
+External call to syslog
+External call to exit
+External call to time
+External call to getuid
+External call to setgroups
+External call to syslog
+External call to exit
+External call to setgid
+External call to syslog
+External call to exit
+External call to initgroups
+External call to syslog
+External call to setuid
+External call to syslog
+External call to exit
+External call to syslog
+External call to malloc
+External call to syslog
+External call to exit
+External call to gettimeofday
+External call to strcmp
+External call to syslog
+External call to fopen
+External call to syslog
+External call to fileno
+External call to fcntl
+External call to __errno_location
+External call to syslog
+External call to exit
+External call to gettimeofday
+External call to read
+External call to __errno_location
+External call to syslog
+External call to write
+External call to writev
+External call to __errno_location
+External call to syslog
+External call to syslog
+External call to exit
+External call to syslog
+External call to syslog
+External call to syslog
+External call to exit
+External call to read
+External call to __errno_location
+External call to syslog
+External call to closelog
+External call to exit
+External call to fprintf
+External call to exit
+Added reference to function strrchr
+Added reference to function openlog
+Added reference to function strcmp
+Added reference to function puts
+Added reference to function exit
+Added reference to function fopen
+Added reference to function fgets_unlocked
+Added reference to function perror
+Added reference to function strchr
+Added reference to function strspn
+Added reference to function strcspn
+Added reference to function strlen
+Added reference to function strcasecmp
+Added reference to function fprintf
+Added reference to function strtol
+Added reference to function strdup
+Added reference to function syslog
+Added reference to function fclose
+Added reference to function tzset
+Added reference to function snprintf
+Added reference to function getaddrinfo
+Added reference to function gai_strerror
+Added reference to function freeaddrinfo
+Added reference to function gettimeofday
+Added reference to function __isoc99_sscanf
+Added reference to function strcpy
+Added reference to function strstr
+Added reference to function malloc
+Added reference to function realloc
+Added reference to function getuid
+Added reference to function getpwnam
+Added reference to function fileno
+Added reference to function fcntl
+Added reference to function fchown
+Added reference to function chdir
+Added reference to function getcwd
+Added reference to function daemon
+Added reference to function setsid
+Added reference to function getpid
+Added reference to function chroot
+Added reference to function strncmp
+Added reference to function sigset
+Added reference to function alarm
+Added reference to function time
+Added reference to function setgroups
+Added reference to function setgid
+Added reference to function initgroups
+Added reference to function setuid
+Added reference to function __errno_location
+Added reference to function read
+Added reference to function write
+Added reference to function writev
+Added reference to function closelog
+Added reference to function free
+Added reference to function shutdown
+Added reference to function abort
+Added reference to function waitpid
+Added reference to function gethostname
+Added reference to function qsort
+Added reference to function getnameinfo
+Added reference to function bcmp
+Added reference to function socket
+Added reference to function setsockopt
+Added reference to function bind
+Added reference to function close
+Added reference to function listen
+Added reference to function sleep
+Added reference to function gmtime
+Added reference to function strftime
+Added reference to function fread_unlocked
+Added reference to function vsnprintf
+Added reference to function accept
+Added reference to function strpbrk
+Added reference to function strncasecmp
+Added reference to function __ctype_b_loc
+Added reference to function strcat
+Added reference to function strtoll
+Added reference to function getsockname
+Added reference to function __ctype_tolower_loc
+Added reference to function __xstat
+Added reference to function strncpy
+Added reference to function readlink
+Added reference to function localtime
+Added reference to function fflush
+Added reference to function opendir
+Added reference to function closedir
+Added reference to function fork
+Added reference to function nice
+Added reference to function fdopen
+Added reference to function readdir
+Added reference to function memchr
+Added reference to function sprintf
+Added reference to function __lxstat
+Added reference to function ctime
+Added reference to function fwrite
+Added reference to function dup2
+Added reference to function getenv
+Added reference to function pipe
+Added reference to function execve
+Added reference to function kill
+Added reference to function crypt
+Added reference to function getdtablesize
+Added reference to function getrlimit
+Added reference to function setrlimit
+Added reference to function printf
+Added reference to function poll
+Added reference to function open
+Added reference to function mmap
+Added reference to function munmap
+Added reference to global stderr
+Added reference to global stdout
+Added reference to global stdin
+Generated interface for /occam/examples/trimmer/thttpd/slash/thttpd.a.i.p.i.bc
+## External calls:
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:512BEA50,?,?)
+	syslog(0x2,S:9376100A,?,0x80,?)
+	syslog(0x2,S:9376100A,?,0x80,?)
+	syslog(0x3,S:10EDE6EC)
+	syslog(0x2,S:AA2BCDCD,?)
+	syslog(0x2,S:18E5E5D5,?,?)
+	syslog(0x2,S:71B92A12)
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:33FB1978,?)
+	syslog(0x2,S:AA2BCDCD,?)
+	syslog(0x4,S:7A82AAFC)
+	syslog(0x4,S:7885D4E6)
+	syslog(0x2,S:34162A89)
+	syslog(0x2,S:AA4F89D3)
+	syslog(0x2,S:AA2BCDCD,?)
+	syslog(0x2,S:FFF6A891)
+	syslog(0x2,S:A44CE6E)
+	syslog(0x4,S:768D7B85)
+	syslog(0x2,S:F12199F8)
+	syslog(0x2,S:907098E1)
+	syslog(0x2,S:A0020458)
+	syslog(0x2,S:F0451A9A)
+	syslog(0x2,S:D5B36487)
+	syslog(0x2,S:9A3AABEB)
+	syslog(0x2,S:2413BEB)
+	syslog(0x2,S:9467559F)
+	syslog(0x4,S:C0A986F3)
+	syslog(0x2,S:F33583AD)
+	syslog(0x4,S:869200E)
+	syslog(0x2,S:6088F026)
+	syslog(0x5,S:4B325F36)
+	syslog(0x2,S:1AA20181,?)
+	syslog(0x3,S:FE6E5240)
+	syslog(0x3,S:AA5E50A7)
+	syslog(0x3,S:DA0701D6)
+	syslog(0x2,S:A509D398)
+	syslog(0x3,S:30F19000,?)
+	syslog(0x3,S:DA0701D6)
+	syslog(0x2,S:A509D398)
+	syslog(0x5,S:48A1B0B8)
+	gettimeofday(?,null)
+	gettimeofday(?,null)
+	gettimeofday(?,null)
+	getpwnam(?)
+	writev(?,?,0x2)
+	strcpy(?,?)
+	strcpy(?,?)
+	strcpy(?,?)
+	strspn(?,S:2482BC0)
+	strspn(?,S:2482BC0)
+	puts(S:50185BEC)
+	alarm(0x168)
+	time(null)
+	strstr(?,S:2158B)
+	strstr(?,S:2158B)
+	gai_strerror(?)
+	gai_strerror(?)
+	initgroups(?,?)
+	setgroups(0x0,null)
+	closelog()
+	strcmp(?,S:CA83)
+	strcmp(?,S:C810)
+	strcmp(?,S:CDDD)
+	strcmp(?,S:CC51)
+	strcmp(?,S:CE1F)
+	strcmp(?,S:36C873C)
+	strcmp(?,S:1A6355)
+	strcmp(?,S:CE40)
+	strcmp(?,S:36C875D)
+	strcmp(?,S:CE82)
+	strcmp(?,S:CC30)
+	strcmp(?,S:CE61)
+	strcmp(?,S:CCD5)
+	strcmp(?,S:CD59)
+	strcmp(?,S:CEA3)
+	strcmp(?,S:36C87C0)
+	strcmp(?,S:CCB4)
+	strcmp(?,S:36C85D1)
+	strcmp(?,S:CCF6)
+	strcmp(?,S:CA41)
+	strcmp(?,S:C9BD)
+	strcmp(?,S:C95A)
+	strcmp(?,S:C831)
+	strcmp(?,S:6588C5D8)
+	strcmp(?,S:5CD)
+	strcmp(?,S:5CD)
+	strcmp(?,S:5CD)
+	strtol(?,null,0xA)
+	strtol(?,null,0xA)
+	strtol(?,null,0xA)
+	strtol(?,null,0xA)
+	strtol(?,null,0xA)
+	chdir(?)
+	chdir(?)
+	chdir(?)
+	write(?,?,?)
+	strcspn(?,S:2482BC0)
+	fgets_unlocked(?,0x2710,?)
+	fgets_unlocked(?,0x2710,?)
+	fgets_unlocked(?,0x1388,?)
+	fgets_unlocked(?,0x1388,?)
+	fcntl(?,0x2,0x1)
+	fcntl(?,0x2,0x1)
+	perror(?)
+	perror(?)
+	perror(?)
+	perror(S:BE98CA27)
+	perror(S:EE814DEA)
+	perror(S:BFABAEAF)
+	perror(S:D60E9BF9)
+	perror(S:5A2F6542)
+	exit(0x0)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x0)
+	exit(0x1)
+	read(?,?,?)
+	read(?,?,0x1000)
+	fileno(?)
+	fileno(?)
+	fileno(?)
+	__isoc99_sscanf(?,S:A13F16C8,?,?,?)
+	__isoc99_sscanf(?,S:51F2B2C6,?,?)
+	setgid(?)
+	getuid()
+	getuid()
+	getuid()
+	strrchr(S:DC70A898,0x2F)
+	freeaddrinfo(?)
+	setsid()
+	setuid(?)
+	chroot(?)
+	openlog(?,0x9,0x18)
+	strlen(?)
+	strlen(?)
+	strlen(?)
+	strlen(?)
+	strlen(?)
+	strlen(?)
+	fopen(?,S:EB2)
+	fopen(?,S:EB2)
+	fopen(?,S:C81)
+	fopen(?,S:F57)
+	fopen(?,S:C81)
+	tzset()
+	fclose(?)
+	fclose(?)
+	fclose(?)
+	fclose(?)
+	fclose(?)
+	fclose(?)
+	fprintf(?,S:89E536F,?,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:89E536F,?,?)
+	fprintf(?,S:89E536F,?,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:89E536F,?,?)
+	fprintf(?,S:89E536F,?,?)
+	fprintf(?,S:89E536F,?,?)
+	fprintf(?,S:89E536F,?,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:89E536F,?,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:89E536F,?,?)
+	fprintf(?,S:89E536F,?,?)
+	fprintf(?,S:89E536F,?,?)
+	fprintf(?,S:89E536F,?,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:948E66C1,?,?)
+	fprintf(?,S:1C9AA020,?,?,?)
+	fprintf(?,S:99C4EC08,?)
+	fprintf(?,S:532BA111,?,?,?)
+	fprintf(?,S:B712226E,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:2CD27EBE,?,?)
+	fprintf(?,S:808EF98,?)
+	fprintf(?,S:15F4B3,?)
+	fprintf(?,S:FD311101,?)
+	fprintf(?,S:C16F9FFE,?)
+	strdup(?)
+	strdup(?)
+	strdup(?)
+	strdup(?)
+	strdup(?)
+	strdup(?)
+	strdup(?)
+	strdup(?)
+	strdup(?)
+	strdup(?)
+	strdup(?)
+	strdup(?)
+	strdup(?)
+	realloc(?,?)
+	fchown(?,?,?)
+	getaddrinfo(?,?,?,?)
+	strncmp(?,?,?)
+	daemon(0x1,0x1)
+	snprintf(?,0xA,S:AA49,?)
+	strcasecmp(?,S:F09F45E7)
+	strcasecmp(?,S:8298A65)
+	strcasecmp(?,S:38A33F)
+	strcasecmp(?,S:BFABAEAF)
+	strcasecmp(?,S:3DAF8AAC)
+	strcasecmp(?,S:D0257538)
+	strcasecmp(?,S:89F970C7)
+	strcasecmp(?,S:C878CC64)
+	strcasecmp(?,S:C927987A)
+EXECUTED: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/thttpd/slash/thttpd.a.i.p.i.bc -o=/dev/null -Pinterface -Pinterface-output /tmp/tmpVK1ZG_.iface -Pinterface-entry /tmp/tmpVK1ZG_.iface WHICH RETURNED 0
+
+	strcasecmp(?,S:D79267B7)
+	strcasecmp(?,S:885FEDF)
+	strcasecmp(?,S:BCB3FA58)
+	strcasecmp(?,S:B0D608D2)
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/thttpd/slash/thttpd.a.i.p.i.bc -o=/dev/null -Pinterface -Pinterface-output /tmp/tmpVK1ZG_.iface -Pinterface-entry /tmp/tmpVK1ZG_.iface
+
+	strcasecmp(?,S:402B4858)
+	strcasecmp(?,S:AD0F056A)
+	strcasecmp(?,S:43F64A10)
+	strcasecmp(?,S:D42F4809)
+	strcasecmp(?,S:798CA9E)
+	strcasecmp(?,S:3FAAF02)
+	strcasecmp(?,S:1AD984D4)
+	strcasecmp(?,S:FFA35531)
+	strcasecmp(?,S:5C341003)
+	strcasecmp(?,S:35BE35C0)
+	strcasecmp(?,S:E0251C1D)
+	strcasecmp(?,S:8DB21C0A)
+	strcasecmp(?,S:3E51D3)
+	strcasecmp(?,S:E1B1C032)
+	strchr(?,0x23)
+	strchr(?,0x3D)
+	strchr(?,0x23)
+	malloc(0x18)
+	malloc(0x12C0)
+	malloc(?)
+	__errno_location()
+	__errno_location()
+	__errno_location()
+	__errno_location()
+	getpid()
+	getcwd(?,0x1000)
+## External symbols:
+	__ctype_b_loc
+	__ctype_tolower_loc
+	__errno_location
+	__isoc99_sscanf
+	__lxstat
+	__xstat
+	abort
+	accept
+	alarm
+	bcmp
+	bind
+	chdir
+	chroot
+	close
+	closedir
+	closelog
+	crypt
+	ctime
+	daemon
+	dup2
+	execve
+	exit
+	fchown
+	fclose
+	fcntl
+	fdopen
+	fflush
+	fgets_unlocked
+	fileno
+	fopen
+	fork
+	fprintf
+	fread_unlocked
+	free
+	freeaddrinfo
+	fwrite
+	gai_strerror
+	getaddrinfo
+	getcwd
+	getdtablesize
+	getenv
+	gethostname
+	getnameinfo
+	getpid
+	getpwnam
+	getrlimit
+	getsockname
+	gettimeofday
+	getuid
+	gmtime
+	initgroups
+	kill
+	listen
+	localtime
+	malloc
+	memchr
+	mmap
+	munmap
+	nice
+	open
+	opendir
+	openlog
+	perror
+	pipe
+	poll
+	printf
+	puts
+	qsort
+	read
+	readdir
+	readlink
+	realloc
+	setgid
+	setgroups
+	setrlimit
+	setsid
+	setsockopt
+	setuid
+	shutdown
+	sigset
+	sleep
+	snprintf
+	socket
+	sprintf
+	stderr
+	stdin
+	stdout
+	strcasecmp
+	strcat
+	strchr
+	strcmp
+	strcpy
+	strcspn
+	strdup
+	strftime
+	strlen
+	strncasecmp
+	strncmp
+	strncpy
+	strpbrk
+	strrchr
+	strspn
+	strstr
+	strtol
+	strtoll
+	syslog
+	time
+	tzset
+	vsnprintf
+	waitpid
+	write
+	writev
+
+GatherInterfacePass::runOnModule: /occam/examples/trimmer/thttpd/slash/thttpd.a.i.p.i.bc
+Reading interface from '/tmp/tmpVK1ZG_.iface'...success
+External call to malloc
+External call to strrchr
+External call to openlog
+External call to strcmp
+External call to puts
+External call to exit
+External call to strcmp
+External call to fopen
+External call to fgets_unlocked
+External call to perror
+External call to exit
+External call to fgets_unlocked
+External call to strchr
+External call to strspn
+External call to strcspn
+External call to strlen
+External call to strlen
+External call to strchr
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strtol
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strtol
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcasecmp
+External call to fprintf
+External call to exit
+External call to strtol
+External call to fprintf
+External call to exit
+External call to strspn
+External call to fclose
+External call to strcmp
+External call to strtol
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strtol
+External call to strcmp
+External call to tzset
+External call to snprintf
+External call to getaddrinfo
+External call to gai_strerror
+External call to syslog
+External call to gai_strerror
+External call to fprintf
+External call to exit
+External call to syslog
+External call to exit
+External call to syslog
+External call to exit
+External call to freeaddrinfo
+External call to syslog
+External call to fprintf
+External call to exit
+External call to fopen
+External call to syslog
+External call to perror
+External call to exit
+External call to gettimeofday
+External call to fgets_unlocked
+External call to strchr
+External call to strlen
+External call to __isoc99_sscanf
+External call to __isoc99_sscanf
+External call to syslog
+External call to fprintf
+External call to fgets_unlocked
+External call to strcpy
+External call to strstr
+External call to strcpy
+External call to strstr
+External call to malloc
+External call to realloc
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strdup
+External call to syslog
+External call to fprintf
+External call to exit
+External call to fclose
+External call to getuid
+External call to getpwnam
+External call to syslog
+External call to fprintf
+External call to exit
+External call to strcmp
+External call to strcmp
+External call to fopen
+External call to syslog
+External call to perror
+External call to exit
+External call to syslog
+External call to fprintf
+External call to fileno
+External call to fcntl
+External call to getuid
+External call to fileno
+External call to fchown
+External call to syslog
+External call to perror
+External call to chdir
+External call to syslog
+External call to perror
+External call to exit
+External call to getcwd
+External call to strlen
+External call to strlen
+External call to fclose
+External call to fclose
+External call to fclose
+External call to daemon
+External call to syslog
+External call to exit
+External call to setsid
+External call to fopen
+External call to syslog
+External call to exit
+External call to getpid
+External call to fprintf
+External call to fclose
+External call to syslog
+External call to exit
+External call to chroot
+External call to syslog
+External call to perror
+External call to exit
+External call to strcmp
+External call to strlen
+External call to strncmp
+External call to strcpy
+External call to syslog
+External call to fprintf
+External call to chdir
+External call to syslog
+External call to perror
+External call to exit
+External call to chdir
+External call to syslog
+External call to perror
+External call to exit
+External call to alarm
+External call to exit
+External call to syslog
+External call to exit
+External call to syslog
+External call to exit
+External call to syslog
+External call to exit
+External call to syslog
+External call to exit
+External call to time
+External call to getuid
+External call to setgroups
+External call to syslog
+External call to exit
+External call to setgid
+External call to syslog
+External call to exit
+External call to initgroups
+External call to syslog
+External call to setuid
+External call to syslog
+External call to exit
+External call to syslog
+External call to malloc
+External call to syslog
+External call to exit
+External call to gettimeofday
+External call to strcmp
+External call to syslog
+External call to fopen
+External call to syslog
+External call to fileno
+External call to fcntl
+External call to __errno_location
+External call to syslog
+External call to exit
+External call to gettimeofday
+External call to read
+External call to __errno_location
+External call to syslog
+External call to write
+External call to writev
+External call to __errno_location
+External call to syslog
+External call to syslog
+External call to exit
+External call to syslog
+External call to syslog
+External call to syslog
+External call to exit
+External call to read
+External call to __errno_location
+External call to syslog
+External call to closelog
+External call to exit
+External call to fprintf
+External call to exit
+Added reference to function strrchr
+Added reference to function openlog
+Added reference to function strcmp
+Added reference to function puts
+Added reference to function exit
+Added reference to function fopen
+Added reference to function fgets_unlocked
+Added reference to function perror
+Added reference to function strchr
+Added reference to function strspn
+Added reference to function strcspn
+Added reference to function strlen
+Added reference to function strcasecmp
+Added reference to function fprintf
+Added reference to function strtol
+Added reference to function strdup
+Added reference to function syslog
+Added reference to function fclose
+Added reference to function tzset
+Added reference to function snprintf
+Added reference to function getaddrinfo
+Added reference to function gai_strerror
+Added reference to function freeaddrinfo
+Added reference to function gettimeofday
+Added reference to function __isoc99_sscanf
+Added reference to function strcpy
+Added reference to function strstr
+Added reference to function malloc
+Added reference to function realloc
+Added reference to function getuid
+Added reference to function getpwnam
+Added reference to function fileno
+Added reference to function fcntl
+Added reference to function fchown
+Added reference to function chdir
+Added reference to function getcwd
+Added reference to function daemon
+Added reference to function setsid
+Added reference to function getpid
+Added reference to function chroot
+Added reference to function strncmp
+Added reference to function sigset
+Added reference to function alarm
+Added reference to function time
+Added reference to function setgroups
+Added reference to function setgid
+Added reference to function initgroups
+Added reference to function setuid
+Added reference to function __errno_location
+Added reference to function read
+Added reference to function write
+Added reference to function writev
+Added reference to function closelog
+Added reference to function free
+Added reference to function shutdown
+Added reference to function abort
+Added reference to function waitpid
+Added reference to function gethostname
+Added reference to function qsort
+Added reference to function getnameinfo
+Added reference to function bcmp
+Added reference to function socket
+Added reference to function setsockopt
+Added reference to function bind
+Added reference to function close
+Added reference to function listen
+Added reference to function sleep
+Added reference to function gmtime
+Added reference to function strftime
+Added reference to function fread_unlocked
+Added reference to function vsnprintf
+Added reference to function accept
+Added reference to function strpbrk
+Added reference to function strncasecmp
+Added reference to function __ctype_b_loc
+Added reference to function strcat
+Added reference to function strtoll
+Added reference to function getsockname
+Added reference to function __ctype_tolower_loc
+Added reference to function __xstat
+Added reference to function strncpy
+Added reference to function readlink
+Added reference to function localtime
+Added reference to function fflush
+Added reference to function opendir
+Added reference to function closedir
+Added reference to function fork
+Added reference to function nice
+Added reference to function fdopen
+Added reference to function readdir
+Added reference to function memchr
+Added reference to function sprintf
+Added reference to function __lxstat
+Added reference to function ctime
+Added reference to function fwrite
+Added reference to function dup2
+Added reference to function getenv
+Added reference to function pipe
+Added reference to function execve
+Added reference to function kill
+Added reference to function crypt
+Added reference to function getdtablesize
+Added reference to function getrlimit
+Added reference to function setrlimit
+Added reference to function printf
+Added reference to function poll
+Added reference to function open
+Added reference to function mmap
+Added reference to function munmap
+Added reference to global stderr
+Added reference to global stdout
+Added reference to global stdin
+Generated interface for /occam/examples/trimmer/thttpd/slash/thttpd.a.i.p.i.bc
+## External calls:
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:512BEA50,?,?)
+	syslog(0x2,S:9376100A,?,0x80,?)
+	syslog(0x2,S:9376100A,?,0x80,?)
+	syslog(0x3,S:10EDE6EC)
+	syslog(0x2,S:AA2BCDCD,?)
+	syslog(0x2,S:18E5E5D5,?,?)
+	syslog(0x2,S:71B92A12)
+	syslog(0x2,S:FFAFFBB7)
+	syslog(0x2,S:33FB1978,?)
+	syslog(0x2,S:AA2BCDCD,?)
+	syslog(0x4,S:7A82AAFC)
+	syslog(0x4,S:7885D4E6)
+	syslog(0x2,S:34162A89)
+	syslog(0x2,S:AA4F89D3)
+	syslog(0x2,S:AA2BCDCD,?)
+	syslog(0x2,S:FFF6A891)
+	syslog(0x2,S:A44CE6E)
+	syslog(0x4,S:768D7B85)
+	syslog(0x2,S:F12199F8)
+	syslog(0x2,S:907098E1)
+	syslog(0x2,S:A0020458)
+	syslog(0x2,S:F0451A9A)
+	syslog(0x2,S:D5B36487)
+	syslog(0x2,S:9A3AABEB)
+	syslog(0x2,S:2413BEB)
+	syslog(0x2,S:9467559F)
+	syslog(0x4,S:C0A986F3)
+	syslog(0x2,S:F33583AD)
+	syslog(0x4,S:869200E)
+	syslog(0x2,S:6088F026)
+	syslog(0x5,S:4B325F36)
+	syslog(0x2,S:1AA20181,?)
+	syslog(0x3,S:FE6E5240)
+	syslog(0x3,S:AA5E50A7)
+	syslog(0x3,S:DA0701D6)
+	syslog(0x2,S:A509D398)
+	syslog(0x3,S:30F19000,?)
+	syslog(0x3,S:DA0701D6)
+	syslog(0x2,S:A509D398)
+	syslog(0x5,S:48A1B0B8)
+	gettimeofday(?,null)
+	gettimeofday(?,null)
+	gettimeofday(?,null)
+	getpwnam(?)
+	writev(?,?,0x2)
+	strcpy(?,?)
+	strcpy(?,?)
+	strcpy(?,?)
+	strspn(?,S:2482BC0)
+	strspn(?,S:2482BC0)
+	puts(S:50185BEC)
+	alarm(0x168)
+	time(null)
+	strstr(?,S:2158B)
+	strstr(?,S:2158B)
+	gai_strerror(?)
+	gai_strerror(?)
+	initgroups(?,?)
+	setgroups(0x0,null)
+	closelog()
+	strcmp(?,S:CA83)
+	strcmp(?,S:C810)
+	strcmp(?,S:CDDD)
+	strcmp(?,S:CC51)
+	strcmp(?,S:CE1F)
+	strcmp(?,S:36C873C)
+	strcmp(?,S:1A6355)
+	strcmp(?,S:CE40)
+	strcmp(?,S:36C875D)
+	strcmp(?,S:CE82)
+	strcmp(?,S:CC30)
+	strcmp(?,S:CE61)
+	strcmp(?,S:CCD5)
+	strcmp(?,S:CD59)
+	strcmp(?,S:CEA3)
+	strcmp(?,S:36C87C0)
+	strcmp(?,S:CCB4)
+	strcmp(?,S:36C85D1)
+	strcmp(?,S:CCF6)
+	strcmp(?,S:CA41)
+	strcmp(?,S:C9BD)
+	strcmp(?,S:C95A)
+	strcmp(?,S:C831)
+	strcmp(?,S:6588C5D8)
+	strcmp(?,S:5CD)
+	strcmp(?,S:5CD)
+	strcmp(?,S:5CD)
+	strtol(?,null,0xA)
+	strtol(?,null,0xA)
+	strtol(?,null,0xA)
+	strtol(?,null,0xA)
+	strtol(?,null,0xA)
+	chdir(?)
+	chdir(?)
+	chdir(?)
+	write(?,?,?)
+	strcspn(?,S:2482BC0)
+	fgets_unlocked(?,0x2710,?)
+	fgets_unlocked(?,0x2710,?)
+	fgets_unlocked(?,0x1388,?)
+	fgets_unlocked(?,0x1388,?)
+	fcntl(?,0x2,0x1)
+	fcntl(?,0x2,0x1)
+	perror(?)
+	perror(?)
+	perror(?)
+	perror(S:BE98CA27)
+	perror(S:EE814DEA)
+	perror(S:BFABAEAF)
+	perror(S:D60E9BF9)
+	perror(S:5A2F6542)
+	exit(0x0)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x1)
+	exit(0x0)
+	exit(0x1)
+	read(?,?,?)
+	read(?,?,0x1000)
+	fileno(?)
+	fileno(?)
+	fileno(?)
+	__isoc99_sscanf(?,S:A13F16C8,?,?,?)
+	__isoc99_sscanf(?,S:51F2B2C6,?,?)
+	setgid(?)
+	getuid()
+	getuid()
+	getuid()
+	strrchr(S:DC70A898,0x2F)
+	freeaddrinfo(?)
+	setsid()
+	setuid(?)
+	chroot(?)
+	openlog(?,0x9,0x18)
+	strlen(?)
+	strlen(?)
+	strlen(?)
+	strlen(?)
+	strlen(?)
+	strlen(?)
+	fopen(?,S:EB2)
+	fopen(?,S:EB2)
+	fopen(?,S:C81)
+	fopen(?,S:F57)
+	fopen(?,S:C81)
+	tzset()
+	fclose(?)
+	fclose(?)
+	fclose(?)
+	fclose(?)
+	fclose(?)
+	fclose(?)
+	fprintf(?,S:89E536F,?,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:89E536F,?,?)
+	fprintf(?,S:89E536F,?,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:89E536F,?,?)
+	fprintf(?,S:89E536F,?,?)
+	fprintf(?,S:89E536F,?,?)
+	fprintf(?,S:89E536F,?,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:89E536F,?,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:89E536F,?,?)
+	fprintf(?,S:89E536F,?,?)
+	fprintf(?,S:89E536F,?,?)
+	fprintf(?,S:89E536F,?,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:9F324192,?,?)
+	fprintf(?,S:948E66C1,?,?)
+	fprintf(?,S:1C9AA020,?,?,?)
+	fprintf(?,S:99C4EC08,?)
+	fprintf(?,S:532BA111,?,?,?)
+	fprintf(?,S:B712226E,?)
+	fprintf(?,S:8FEC76B3,?)
+	fprintf(?,S:2CD27EBE,?,?)
+	fprintf(?,S:808EF98,?)
+	fprintf(?,S:15F4B3,?)
+	fprintf(?,S:FD311101,?)
+	fprintf(?,S:C16F9FFE,?)
+	strdup(?)
+	strdup(?)
+	strdup(?)
+	strdup(?)
+	strdup(?)
+	strdup(?)
+	strdup(?)
+	strdup(?)
+	strdup(?)
+	strdup(?)
+	strdup(?)
+	strdup(?)
+EXECUTED: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/thttpd/slash/thttpd.a.i.p.i.bc -o=/dev/null -Pinterface -Pinterface-output /tmp/tmpVK1ZG_.iface -Pinterface-entry /tmp/tmpVK1ZG_.iface WHICH RETURNED 0
+
+	strdup(?)
+	realloc(?,?)
+	fchown(?,?,?)
+	getaddrinfo(?,?,?,?)
+	strncmp(?,?,?)
+	daemon(0x1,0x1)
+	snprintf(?,0xA,S:AA49,?)
+	strcasecmp(?,S:F09F45E7)
+	strcasecmp(?,S:8298A65)
+	strcasecmp(?,S:38A33F)
+	strcasecmp(?,S:BFABAEAF)
+	strcasecmp(?,S:3DAF8AAC)
+	strcasecmp(?,S:D0257538)
+	strcasecmp(?,S:89F970C7)
+	strcasecmp(?,S:C878CC64)
+	strcasecmp(?,S:C927987A)
+	strcasecmp(?,S:D79267B7)
+	strcasecmp(?,S:885FEDF)
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/thttpd/slash/thttpd.a.i.p.i.bc -o=/occam/examples/trimmer/thttpd/slash/thttpd.a.i.p.i.h.bc -Pinternalize -Pinternalize-wrt-interfaces interface_after.01.iface
+
+	strcasecmp(?,S:BCB3FA58)
+	strcasecmp(?,S:B0D608D2)
+	strcasecmp(?,S:402B4858)
+	strcasecmp(?,S:AD0F056A)
+	strcasecmp(?,S:43F64A10)
+	strcasecmp(?,S:D42F4809)
+	strcasecmp(?,S:798CA9E)
+	strcasecmp(?,S:3FAAF02)
+	strcasecmp(?,S:1AD984D4)
+	strcasecmp(?,S:FFA35531)
+	strcasecmp(?,S:5C341003)
+	strcasecmp(?,S:35BE35C0)
+	strcasecmp(?,S:E0251C1D)
+	strcasecmp(?,S:8DB21C0A)
+	strcasecmp(?,S:3E51D3)
+	strcasecmp(?,S:E1B1C032)
+	strchr(?,0x23)
+	strchr(?,0x3D)
+	strchr(?,0x23)
+	malloc(0x18)
+	malloc(0x12C0)
+	malloc(?)
+	__errno_location()
+	__errno_location()
+	__errno_location()
+	__errno_location()
+	getpid()
+	getcwd(?,0x1000)
+## External symbols:
+	__ctype_b_loc
+	__ctype_tolower_loc
+	__errno_location
+	__isoc99_sscanf
+	__lxstat
+	__xstat
+	abort
+	accept
+	alarm
+	bcmp
+	bind
+	chdir
+	chroot
+	close
+	closedir
+	closelog
+	crypt
+	ctime
+	daemon
+	dup2
+	execve
+	exit
+	fchown
+	fclose
+	fcntl
+	fdopen
+	fflush
+	fgets_unlocked
+	fileno
+	fopen
+	fork
+	fprintf
+	fread_unlocked
+	free
+	freeaddrinfo
+	fwrite
+	gai_strerror
+	getaddrinfo
+	getcwd
+	getdtablesize
+	getenv
+	gethostname
+	getnameinfo
+	getpid
+	getpwnam
+	getrlimit
+	getsockname
+	gettimeofday
+	getuid
+	gmtime
+	initgroups
+	kill
+	listen
+	localtime
+	malloc
+	memchr
+	mmap
+	munmap
+	nice
+	open
+	opendir
+	openlog
+	perror
+	pipe
+	poll
+	printf
+	puts
+	qsort
+	read
+	readdir
+	readlink
+	realloc
+	setgid
+	setgroups
+	setrlimit
+	setsid
+	setsockopt
+	setuid
+	shutdown
+	sigset
+	sleep
+	snprintf
+	socket
+	sprintf
+	stderr
+	stdin
+	stdout
+	strcasecmp
+	strcat
+	strchr
+	strcmp
+	strcpy
+	strcspn
+	strdup
+	strftime
+	strlen
+	strncasecmp
+	strncmp
+	strncpy
+	strpbrk
+	strrchr
+	strspn
+	strstr
+	strtol
+	strtoll
+	syslog
+	time
+	tzset
+	vsnprintf
+	waitpid
+	write
+	writev
+
+InternalizePass
+Reading file 'interface_after.01.iface'...success
+Done reading.
+InternalizePass::runOnModule: /occam/examples/trimmer/thttpd/slash/thttpd.a.i.p.i.bc
+...no progress...
+/usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/thttpd/slash/thttpd.a.i.p.i.bc -o=/occam/examples/trimmer/thttpd/slash/thttpd.a.i.p.i.h.bc -Pinternalize -Pinternalize-wrt-interfaces interface_after.01.iface => 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/thttpd/slash/thttpd.a.i.p.i.h.bc -o=/dev/null -Pprofiler -profile-verbose=false -profile-loops=true -profile-safe-pointers=true -profile-outfile=/tmp/tmpxEsqhN
+
+EXECUTED: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/thttpd/slash/thttpd.a.i.p.i.h.bc -o=/dev/null -Pprofiler -profile-verbose=false -profile-loops=true -profile-safe-pointers=true -profile-outfile=/tmp/tmpxEsqhN WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/clang++ /occam/examples/trimmer/thttpd/slash/thttpd.a.i.p.i.h.bc -o thttpd_fin -lcrypt -O3
+
+EXECUTED: /usr/lib/llvm-10/bin/clang++ /occam/examples/trimmer/thttpd/slash/thttpd.a.i.p.i.h.bc -o thttpd_fin -lcrypt -O3 WHICH RETURNED 0
+

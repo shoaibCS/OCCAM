@@ -1,0 +1,7 @@
+{"binary": "mini_httpd_fin", 
+"native_libs": [], 
+"name": "mini_httpd", 
+"args": ["-C", "mini_httpd.conf"], 
+"modules": [], 
+"ldflags": ["-lcrypt","-O3"], 
+"main": "mini_httpd.bc"}

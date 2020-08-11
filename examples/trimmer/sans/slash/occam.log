@@ -1,0 +1,1448 @@
+>> /usr/local/bin/slash --inter-spec-policy=none --intra-spec-policy=onlyonce --stats --disable-inlining --use-pointer-analysis --work-dir=slash sans_udp.manifest
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/sans/slash/sans.bc -o=/dev/null -Pprofiler -profile-verbose=false -profile-loops=true -profile-safe-pointers=true -profile-outfile=/tmp/tmpy4GCrW
+
+EXECUTED: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/sans/slash/sans.bc -o=/dev/null -Pprofiler -profile-verbose=false -profile-loops=true -profile-safe-pointers=true -profile-outfile=/tmp/tmpy4GCrW WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/sans/slash/sans.bc -o=/occam/examples/trimmer/sans/slash/sans.a.bc -Pfull-cmdline-spec -Pfull-cmdline-spec-input arguments -Pfull-cmdline-spec-name sans
+
+Read 2 command line arguments:
+	-c
+	sans.conf
+EXECUTED: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/sans/slash/sans.bc -o=/occam/examples/trimmer/sans/slash/sans.a.bc -Pfull-cmdline-spec -Pfull-cmdline-spec-input arguments -Pfull-cmdline-spec-name sans WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/sans/slash/sans.a.bc -o=/dev/null -Pinterface -Pinterface-output sans.01.iface
+
+GatherInterfacePass::runOnModule: /occam/examples/trimmer/sans/slash/sans.a.bc
+External call to sigemptyset
+External call to sigaction
+External call to sigaction
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to fprintf
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to fprintf
+External call to strcmp
+External call to fprintf
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to printf
+External call to fprintf
+External call to strcpy
+External call to strcpy
+External call to strcpy
+External call to strcpy
+External call to strcpy
+External call to strcpy
+External call to strcpy
+External call to strcpy
+External call to strcpy
+External call to strcpy
+External call to printf
+Added reference to function sigemptyset
+Added reference to function sigaction
+Added reference to function __assert_fail
+Added reference to function getaddrinfo
+Added reference to function freeaddrinfo
+Added reference to function malloc
+Added reference to function socket
+Added reference to function free
+Added reference to function connect
+Added reference to function __errno_location
+Added reference to function close
+Added reference to function send
+Added reference to function recv
+Added reference to function strcmp
+Added reference to function fprintf
+Added reference to function printf
+Added reference to function strcpy
+Added reference to function fopen
+Added reference to function feof
+Added reference to function fgets
+Added reference to function __ctype_b_loc
+Added reference to function strlen
+Added reference to function strchr
+Added reference to function fclose
+Added reference to function strrchr
+Added reference to function ntohs
+Added reference to function htons
+Added reference to function recvfrom
+Added reference to function sendto
+Added reference to function gettimeofday
+Added reference to function select
+Added reference to function time
+Added reference to function localtime
+Added reference to function strftime
+Added reference to function vfprintf
+Added reference to function putchar
+Added reference to function fflush
+Added reference to function strerror
+Added reference to function bind
+Added reference to function listen
+Added reference to function accept
+Added reference to function srand
+Added reference to function rand
+Added reference to function fcntl
+Added reference to function setsockopt
+Added reference to function getsockopt
+Added reference to function getpwnam
+Added reference to function setegid
+Added reference to function seteuid
+Added reference to function fork
+Added reference to function exit
+Added reference to function umask
+Added reference to function setsid
+Added reference to function freopen
+Added reference to function sprintf
+Added reference to function strtol
+Added reference to function tolower
+Added reference to global stdout
+Added reference to global stderr
+Added reference to global stdin
+Generated interface for /occam/examples/trimmer/sans/slash/sans.a.bc
+## External calls:
+	sigaction(0x2,?,null)
+	sigaction(0xF,?,null)
+	printf(S:2EC54CDA,S:8581575,S:7353ADCD)
+	printf(S:9F80BB89,S:8581575,S:84BEFC60)
+	strcpy(?,S:A03C6973)
+	strcpy(?,S:B5339E7D)
+	strcpy(?,S:90C2A215)
+	strcpy(?,S:E808)
+	strcpy(?,S:95E466A)
+	strcpy(?,S:E808)
+	strcpy(?,S:F9F4C362)
+	strcpy(?,S:E808)
+	strcpy(?,S:95C1462)
+	strcpy(?,S:E808)
+	strcmp(?,S:CCD5)
+	strcmp(?,S:F88802C3)
+	strcmp(?,S:CC30)
+	strcmp(?,S:D124A730)
+	strcmp(?,S:CC51)
+	strcmp(?,S:FCD7BFAE)
+	strcmp(?,S:FE07C17)
+	strcmp(?,S:33B60EFC)
+	strcmp(?,S:CEA3)
+	strcmp(?,S:85E5C530)
+	strcmp(?,S:CE82)
+	strcmp(?,S:C873D67D)
+	strcmp(?,S:CA83)
+	strcmp(?,S:87160BA0)
+	fprintf(?,S:D23A98FD,?)
+	fprintf(?,S:D23A98FD,?)
+	fprintf(?,S:D23A98FD,?)
+	fprintf(?,S:87FACCDC,?)
+	sigemptyset(?)
+## External symbols:
+	__assert_fail
+	__ctype_b_loc
+	__errno_location
+	accept
+	bind
+	close
+	connect
+	exit
+	fclose
+	fcntl
+	feof
+	fflush
+	fgets
+	fopen
+	fork
+	fprintf
+	free
+	freeaddrinfo
+	freopen
+	getaddrinfo
+	getpwnam
+	getsockopt
+	gettimeofday
+	htons
+	listen
+	localtime
+	malloc
+	ntohs
+	printf
+	putchar
+	rand
+	recv
+	recvfrom
+	select
+	send
+	sendto
+	setegid
+	seteuid
+	setsid
+	setsockopt
+	sigaction
+	sigemptyset
+	socket
+	sprintf
+	srand
+	stderr
+	stdin
+	stdout
+	strchr
+	strcmp
+	strcpy
+	strerror
+	strftime
+	strlen
+	strrchr
+	strtol
+	time
+	tolower
+	umask
+	vfprintf
+
+EXECUTED: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/sans/slash/sans.a.bc -o=/dev/null -Pinterface -Pinterface-output sans.01.iface WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/sans/slash/sans.a.bc -o=/occam/examples/trimmer/sans/slash/sans.a.i.bc -Pinternalize -Pinternalize-wrt-interfaces main.iface
+
+InternalizePass
+Reading file 'main.iface'...success
+Done reading.
+InternalizePass::runOnModule: /occam/examples/trimmer/sans/slash/sans.a.bc
+Internalizing '' ExternalLinkage DefaultVisibility
+Internalizing 'socks5_init' ExternalLinkage DefaultVisibility
+Internalizing 'async_connect' ExternalLinkage DefaultVisibility
+Internalizing 'cache_insert' ExternalLinkage DefaultVisibility
+Internalizing 'cache_search' ExternalLinkage DefaultVisibility
+Internalizing 'cache_delete' ExternalLinkage DefaultVisibility
+Internalizing 'cache_tick' ExternalLinkage DefaultVisibility
+Internalizing 'parse_args' ExternalLinkage DefaultVisibility
+Internalizing 'ns_getid' ExternalLinkage DefaultVisibility
+Internalizing 'ns_setid' ExternalLinkage DefaultVisibility
+Internalizing 'ns_newid' ExternalLinkage DefaultVisibility
+Internalizing 'ns_type_str' ExternalLinkage DefaultVisibility
+Internalizing 'ns_mkquery' ExternalLinkage DefaultVisibility
+Internalizing 'ns_parse_query' ExternalLinkage DefaultVisibility
+Internalizing 'ns_parse_reply' ExternalLinkage DefaultVisibility
+Internalizing 'query_recv' ExternalLinkage DefaultVisibility
+Internalizing 'reply_recv' ExternalLinkage DefaultVisibility
+Internalizing 'query_send' ExternalLinkage DefaultVisibility
+Internalizing 'reply_send' ExternalLinkage DefaultVisibility
+Internalizing 'ev_init' ExternalLinkage DefaultVisibility
+Internalizing 'ev_io_init' ExternalLinkage DefaultVisibility
+Internalizing 'ev_io_start' ExternalLinkage DefaultVisibility
+Internalizing 'ev_io_stop' ExternalLinkage DefaultVisibility
+Internalizing 'ev_run' ExternalLinkage DefaultVisibility
+Internalizing 'ev_stop' ExternalLinkage DefaultVisibility
+Internalizing 'sans_log' ExternalLinkage DefaultVisibility
+Internalizing 'sans_err' ExternalLinkage DefaultVisibility
+Internalizing 'sans_dump' ExternalLinkage DefaultVisibility
+Internalizing 'query_add' ExternalLinkage DefaultVisibility
+Internalizing 'query_search' ExternalLinkage DefaultVisibility
+Internalizing 'query_delete' ExternalLinkage DefaultVisibility
+Internalizing 'query_tick' ExternalLinkage DefaultVisibility
+Internalizing 'sans_init' ExternalLinkage DefaultVisibility
+Internalizing 'sans_run' ExternalLinkage DefaultVisibility
+Internalizing 'sans_stop' ExternalLinkage DefaultVisibility
+Internalizing 'rand_uint16' ExternalLinkage DefaultVisibility
+Internalizing 'setnonblock' ExternalLinkage DefaultVisibility
+Internalizing 'settimeout' ExternalLinkage DefaultVisibility
+Internalizing 'setreuseaddr' ExternalLinkage DefaultVisibility
+Internalizing 'setkeepalive' ExternalLinkage DefaultVisibility
+Internalizing 'getsockerror' ExternalLinkage DefaultVisibility
+Internalizing 'runas' ExternalLinkage DefaultVisibility
+Internalizing 'daemonize' ExternalLinkage DefaultVisibility
+Internalizing 'ns_name_ntop' ExternalLinkage DefaultVisibility
+Internalizing 'ns_name_pton' ExternalLinkage DefaultVisibility
+Internalizing 'ns_name_ntol' ExternalLinkage DefaultVisibility
+Internalizing 'ns_name_unpack' ExternalLinkage DefaultVisibility
+Internalizing 'ns_name_pack' ExternalLinkage DefaultVisibility
+Internalizing 'ns_name_uncompress' ExternalLinkage DefaultVisibility
+Internalizing 'ns_name_compress' ExternalLinkage DefaultVisibility
+Internalizing 'ns_name_rollback' ExternalLinkage DefaultVisibility
+Internalizing 'ns_name_skip' ExternalLinkage DefaultVisibility
+Internalizing 'ns_skiprr' ExternalLinkage DefaultVisibility
+Internalizing 'dn_skipname' ExternalLinkage DefaultVisibility
+Internalizing 'ns_initparse' ExternalLinkage DefaultVisibility
+Internalizing 'ns_parserr' ExternalLinkage DefaultVisibility
+Internalizing 'dn_expand' ExternalLinkage DefaultVisibility
+Internalizing 'dn_comp' ExternalLinkage DefaultVisibility
+...progress...
+Progress: internalized functions = 58 internalized globals = 0
+/usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/sans/slash/sans.a.bc -o=/occam/examples/trimmer/sans/slash/sans.a.i.bc -Pinternalize -Pinternalize-wrt-interfaces main.iface => 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -disable-simplify-libcalls --disable-slp-vectorization -disable-inlining /occam/examples/trimmer/sans/slash/sans.a.i.bc -o /tmp/tmpo1W9EH.bc -O3
+
+EXECUTED: /usr/lib/llvm-10/bin/opt -disable-simplify-libcalls --disable-slp-vectorization -disable-inlining /occam/examples/trimmer/sans/slash/sans.a.i.bc -o /tmp/tmpo1W9EH.bc -O3 WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /tmp/tmpo1W9EH.bc -o=/tmp/tmp_hfskc.bc -Pdevirt -sea-dsa-type-aware=true -Pdevirt-with-cha
+
+Sea-Dsa type aware!
+WARNING: detected ptrtoint instruction that might be escaping the analysis. (@30239288)
+WARNING: detected ptrtoint instruction that might be escaping the analysis. (@30239384)
+WARNING: detected ptrtoint instruction that might be escaping the analysis. (@30244280)
+WARNING: detected ptrtoint instruction that might be escaping the analysis. (@30245608)
+WARNING: detected ptrtoint instruction that might be escaping the analysis. (@30247048)
+WARNING: detected ptrtoint instruction that might be escaping the analysis. (@30243528)
+WARNING: detected ptrtoint instruction that might be escaping the analysis. (@30248296)
+WARNING: detected ptrtoint instruction that might be escaping the analysis. (@30252184)
+WARNING: detected ptrtoint instruction that might be escaping the analysis. (@30254952)
+WARNING: inttoptr @ addr 0x1cda948 is (unsoundly) assumed to point to a fresh memory region.
+WARNING: detected ptrtoint instruction that might be escaping the analysis. (@30170808)
+WARNING: inttoptr @ addr 0x1c8f368 is (unsoundly) assumed to point to a fresh memory region.
+WARNING: inttoptr @ addr 0x1cc3668 is (unsoundly) assumed to point to a fresh memory region.
+WARNING: destination of memcopy/memmove has no cell: %struct.sockaddr_storage* getelementptr inbounds (%struct.anon.0, %struct.anon.0* @server, i64 0, i32 1)
+Results of the Class Hierarchy Analysis
+=== CHA stats===
+BRUNCH_STAT GRAPH NUMBER NODES 27
+BRUNCH_STAT GRAPH NUMBER EDGES 13
+BRUNCH_STAT GRAPH NUMBER CLOSED EDGES 10
+BRUNCH_STAT POTENTIAL VTABLES 0
+BRUNCH_STAT IDENTIFIED VTABLES 0
+BRUNCH_STAT POTENTIAL VIRTUAL CALLS 0
+BRUNCH_STAT RESOLVED VIRTUAL CALLS 0
+WARNING Devirt (cha): cannot resolve   call void %95(%struct.ev_io* nonnull %.pr12) #12
+WARNING Devirt (cha): cannot resolve   call void %73(%struct.ev_io* nonnull %53) #12
+WARNING Devirt (cha): cannot resolve   tail call void (i8*, i32, ...) %65(i8* %66, i32 %67) #12
+WARNING Devirt (cha): cannot resolve   call void (i8*, i32, ...) %18(i8* nonnull %11, i32 %13) #12
+WARNING Devirt (cha): cannot resolve   tail call void (i32, ...) %89(i32 %91) #12
+WARNING Devirt (cha): cannot resolve   call void (i32, ...) %45(i32 %47) #12
+WARNING Devirt (cha): cannot resolve   call void %60(i32 -1, i8* %63) #12
+WARNING Devirt (cha): cannot resolve   call void %68(i32 %69, i8* %72) #12
+WARNING Devirt (cha): cannot resolve   call void %61(i32 -1, i8* %64) #12
+WARNING Devirt (cha): cannot resolve   call void %41(i32 -1, i8* %44) #12
+WARNING Devirt (cha): cannot resolve   call void %21(i32 -1, i8* %24) #12
+WARNING Devirt (cha): cannot resolve   tail call void %52(i32 -1, i8* %55) #12
+WARNING Devirt (cha): cannot resolve   tail call void %43(i32 -1, i8* %46) #12
+WARNING Devirt (cha): cannot resolve   tail call void %31(i32 %32, i8* %35) #12
+WARNING Devirt (dsa): cannot resolve   tail call void %31(i32 %32, i8* %35) #12 because the corresponding dsa node is not complete
+Dsa-based targets:
+WARNING Devirt (dsa): cannot resolve   tail call void %43(i32 -1, i8* %46) #12 because the corresponding dsa node is not complete
+Dsa-based targets:
+WARNING Devirt (dsa): cannot resolve   tail call void %52(i32 -1, i8* %55) #12 because the corresponding dsa node is not complete
+Dsa-based targets:
+WARNING Devirt (dsa): cannot resolve   call void %21(i32 -1, i8* %24) #12 because the corresponding dsa node is not complete
+Dsa-based targets:
+WARNING Devirt (dsa): cannot resolve   call void %41(i32 -1, i8* %44) #12 because the corresponding dsa node is not complete
+Dsa-based targets:
+WARNING Devirt (dsa): cannot resolve   call void %61(i32 -1, i8* %64) #12 because the corresponding dsa node is not complete
+Dsa-based targets:
+WARNING Devirt (dsa): cannot resolve   call void %68(i32 %69, i8* %72) #12 because the corresponding dsa node is not complete
+Dsa-based targets:
+WARNING Devirt (dsa): cannot resolve   call void %60(i32 -1, i8* %63) #12 because the corresponding dsa node is not complete
+Dsa-based targets:
+WARNING Devirt (dsa): cannot resolve   call void (i32, ...) %45(i32 %47) #12 because the corresponding dsa node is not complete
+Dsa-based targets:
+WARNING Devirt (dsa): cannot resolve   tail call void (i32, ...) %89(i32 %91) #12 because the corresponding dsa node is not complete
+Dsa-based targets:
+WARNING Devirt (dsa): cannot resolve   call void (i8*, i32, ...) %18(i8* nonnull %11, i32 %13) #12 because the corresponding dsa node is not complete
+Dsa-based targets:
+WARNING Devirt (dsa): cannot resolve   tail call void (i8*, i32, ...) %65(i8* %66, i32 %67) #12 because the corresponding dsa node is not complete
+Dsa-based targets:
+WARNING Devirt (dsa): cannot resolve   %5 = call { i64, i64* } asm sideeffect "cld; rep; stosq", "={cx},={di},{ax},0,1,~{memory},~{dirflag},~{fpsr},~{flags}"(i32 0, i64 16, i64* nonnull %4) #12, !srcloc !2 because the corresponding dsa node is not complete
+Dsa-based targets:
+WARNING Devirt (dsa): cannot resolve   %7 = call { i64, i64* } asm sideeffect "cld; rep; stosq", "={cx},={di},{ax},0,1,~{memory},~{dirflag},~{fpsr},~{flags}"(i32 0, i64 16, i64* nonnull %6) #12, !srcloc !3 because the corresponding dsa node is not complete
+Dsa-based targets:
+
+Dsa-based targets:
+	query_udp_recv_cb::void (%struct.ev_io*)*
+	query_tcp_recv_cb::void (%struct.ev_io*)*
+	reply_udp_recv_cb::void (%struct.ev_io*)*
+	reply_tcp_recv_cb::void (%struct.ev_io*)*
+	accept_cb::void (%struct.ev_io*)*
+Type-based targets:
+	query_udp_recv_cb::void (%struct.ev_io*)*
+	query_tcp_recv_cb::void (%struct.ev_io*)*
+	reply_tcp_send_cb::void (%struct.ev_io*)*
+	reply_udp_recv_cb::void (%struct.ev_io*)*
+	reply_tcp_recv_cb::void (%struct.ev_io*)*
+	query_tcp_send_cb::void (%struct.ev_io*)*
+	connect_cb::void (%struct.ev_io*)*
+	socks5_recv_cb::void (%struct.ev_io*)*
+	socks5_send_cb::void (%struct.ev_io*)*
+	accept_cb::void (%struct.ev_io*)*
+Devirt (dsa) resolved   call void %73(%struct.ev_io* nonnull %53) #12 with targets=
+	accept_cb::void (%struct.ev_io*)*
+	query_tcp_recv_cb::void (%struct.ev_io*)*
+	query_udp_recv_cb::void (%struct.ev_io*)*
+	reply_tcp_recv_cb::void (%struct.ev_io*)*
+	reply_udp_recv_cb::void (%struct.ev_io*)*
+
+Dsa-based targets:
+	query_udp_recv_cb::void (%struct.ev_io*)*
+	query_tcp_recv_cb::void (%struct.ev_io*)*
+	reply_udp_recv_cb::void (%struct.ev_io*)*
+	reply_tcp_recv_cb::void (%struct.ev_io*)*
+	accept_cb::void (%struct.ev_io*)*
+Type-based targets:
+	query_udp_recv_cb::void (%struct.ev_io*)*
+	query_tcp_recv_cb::void (%struct.ev_io*)*
+	reply_tcp_send_cb::void (%struct.ev_io*)*
+	reply_udp_recv_cb::void (%struct.ev_io*)*
+	reply_tcp_recv_cb::void (%struct.ev_io*)*
+	query_tcp_send_cb::void (%struct.ev_io*)*
+	connect_cb::void (%struct.ev_io*)*
+	socks5_recv_cb::void (%struct.ev_io*)*
+	socks5_send_cb::void (%struct.ev_io*)*
+	accept_cb::void (%struct.ev_io*)*
+Devirt (dsa) resolved   call void %95(%struct.ev_io* nonnull %.pr12) #12 with targets=
+	accept_cb::void (%struct.ev_io*)*
+	query_tcp_recv_cb::void (%struct.ev_io*)*
+	query_udp_recv_cb::void (%struct.ev_io*)*
+	reply_tcp_recv_cb::void (%struct.ev_io*)*
+	reply_udp_recv_cb::void (%struct.ev_io*)*
+=== DEVIRT (Dsa+types) stats===
+BRUNCH_STAT INDIRECT CALLS 16
+BRUNCH_STAT COMPLETE CALLS 2
+BRUNCH_STAT RESOLVED CALLS 2
+OCCAM -- Resolving indirect call site:
+  call void %95(%struct.ev_io* nonnull %.pr12) #12 using:
+	accept_cb :: void (%struct.ev_io*)*
+	query_tcp_recv_cb :: void (%struct.ev_io*)*
+	query_udp_recv_cb :: void (%struct.ev_io*)*
+	reply_tcp_recv_cb :: void (%struct.ev_io*)*
+	reply_udp_recv_cb :: void (%struct.ev_io*)*
+OCCAM -- Resolving indirect call site:
+  call void %73(%struct.ev_io* nonnull %53) #12 using:
+	accept_cb :: void (%struct.ev_io*)*
+	query_tcp_recv_cb :: void (%struct.ev_io*)*
+	query_udp_recv_cb :: void (%struct.ev_io*)*
+	reply_tcp_recv_cb :: void (%struct.ev_io*)*
+	reply_udp_recv_cb :: void (%struct.ev_io*)*
+/usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /tmp/tmpo1W9EH.bc -o=/tmp/tmp_hfskc.bc -Pdevirt -sea-dsa-type-aware=true -Pdevirt-with-cha => 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /tmp/tmpXnardk.bc -o=/tmp/tmp_hfskc.bc -Pspecialize-extern-call-function-ptr-arg -sea-dsa-type-aware -Ppeval -Ppeval-policy=onlyonce -Ppeval-opt
+
+Sea-Dsa type aware!
+WARNING: detected ptrtoint instruction that might be escaping the analysis. (@27430104)
+WARNING: detected ptrtoint instruction that might be escaping the analysis. (@27430200)
+WARNING: detected ptrtoint instruction that might be escaping the analysis. (@27435096)
+WARNING: detected ptrtoint instruction that might be escaping the analysis. (@27436424)
+WARNING: detected ptrtoint instruction that might be escaping the analysis. (@27437864)
+WARNING: detected ptrtoint instruction that might be escaping the analysis. (@27434344)
+WARNING: detected ptrtoint instruction that might be escaping the analysis. (@27439112)
+WARNING: detected ptrtoint instruction that might be escaping the analysis. (@27443000)
+WARNING: detected ptrtoint instruction that might be escaping the analysis. (@27445768)
+WARNING: inttoptr @ addr 0x1a2cbe8 is (unsoundly) assumed to point to a fresh memory region.
+WARNING: detected ptrtoint instruction that might be escaping the analysis. (@27361928)
+WARNING: inttoptr @ addr 0x19df928 is (unsoundly) assumed to point to a fresh memory region.
+WARNING: inttoptr @ addr 0x1a15a38 is (unsoundly) assumed to point to a fresh memory region.
+WARNING: destination of memcopy/memmove has no cell: %struct.sockaddr_storage* getelementptr inbounds (%struct.anon.0, %struct.anon.0* @server, i64 0, i32 1)
+=== Begin SpecializeCallFunctionPtrArg ===
+Number of calls with function pointer parameters: 0
+Number of *specialized* calls with function pointer parameters: 0
+=== End SpecializeCallFunctionPtrArg ===
+=== Begin intra-module specialization ===
+## Running only-once specialization policy
+There are 38 functions that are called more than once and 144 functions called only once.
+...no progress...
+No specialization took place
+ === End intra-module specialization ===
+/usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /tmp/tmpXnardk.bc -o=/tmp/tmp_hfskc.bc -Pspecialize-extern-call-function-ptr-arg -sea-dsa-type-aware -Ppeval -Ppeval-policy=onlyonce -Ppeval-opt => 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/sans/slash/sans.a.i.p.bc -o=/dev/null -Pinterface -Pinterface-with-seadsa --sea-dsa-type-aware=true -Pinterface-output /tmp/tmpxWg9tw.iface -Pinterface-entry /tmp/tmpxWg9tw.iface
+
+Sea-Dsa type aware!
+WARNING: detected ptrtoint instruction that might be escaping the analysis. (@22347240)
+WARNING: detected ptrtoint instruction that might be escaping the analysis. (@22347336)
+WARNING: detected ptrtoint instruction that might be escaping the analysis. (@22352232)
+WARNING: detected ptrtoint instruction that might be escaping the analysis. (@22353560)
+WARNING: detected ptrtoint instruction that might be escaping the analysis. (@22355000)
+WARNING: detected ptrtoint instruction that might be escaping the analysis. (@22351480)
+WARNING: detected ptrtoint instruction that might be escaping the analysis. (@22356248)
+WARNING: detected ptrtoint instruction that might be escaping the analysis. (@22360136)
+WARNING: detected ptrtoint instruction that might be escaping the analysis. (@22362904)
+WARNING: inttoptr @ addr 0x1553cf8 is (unsoundly) assumed to point to a fresh memory region.
+WARNING: detected ptrtoint instruction that might be escaping the analysis. (@22057368)
+WARNING: inttoptr @ addr 0x1539b58 is (unsoundly) assumed to point to a fresh memory region.
+WARNING: inttoptr @ addr 0x1506928 is (unsoundly) assumed to point to a fresh memory region.
+WARNING: destination of memcopy/memmove has no cell: %struct.sockaddr_storage* getelementptr inbounds (%struct.anon.0, %struct.anon.0* @server, i64 0, i32 1)
+GatherInterfacePass::runOnModule: /occam/examples/trimmer/sans/slash/sans.a.i.p.bc
+Reading interface from '/tmp/tmpxWg9tw.iface'...success
+External call to malloc
+External call to sigemptyset
+External call to sigaction
+External call to sigaction
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to fprintf
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to fprintf
+External call to strcmp
+External call to fprintf
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to printf
+External call to fprintf
+External call to strcpy
+External call to strcpy
+External call to strcpy
+External call to strcpy
+External call to strcpy
+External call to strcpy
+External call to strcpy
+External call to strcpy
+External call to strcpy
+External call to strcpy
+External call to printf
+Added reference to function sigemptyset
+Added reference to function sigaction
+Added reference to function __assert_fail
+Added reference to function getaddrinfo
+Added reference to function freeaddrinfo
+Added reference to function malloc
+Added reference to function socket
+Added reference to function free
+Added reference to function connect
+Added reference to function __errno_location
+Added reference to function close
+Added reference to function send
+Added reference to function recv
+Added reference to function strcmp
+Added reference to function fprintf
+Added reference to function printf
+Added reference to function strcpy
+Added reference to function fopen
+Added reference to function feof
+Added reference to function fgets
+Added reference to function __ctype_b_loc
+Added reference to function strlen
+Added reference to function strchr
+Added reference to function fclose
+Added reference to function strrchr
+Added reference to function ntohs
+Added reference to function htons
+Added reference to function recvfrom
+Added reference to function sendto
+Added reference to function gettimeofday
+Added reference to function select
+Added reference to function time
+Added reference to function localtime
+Added reference to function strftime
+Added reference to function vfprintf
+Added reference to function putchar
+Added reference to function fflush
+Added reference to function strerror
+Added reference to function bind
+Added reference to function listen
+Added reference to function accept
+Added reference to function srand
+Added reference to function rand
+Added reference to function fcntl
+Added reference to function setsockopt
+Added reference to function getsockopt
+Added reference to function getpwnam
+Added reference to function setegid
+Added reference to function seteuid
+Added reference to function fork
+Added reference to function exit
+Added reference to function umask
+Added reference to function setsid
+Added reference to function freopen
+Added reference to function sprintf
+Added reference to function strtol
+Added reference to global stdout
+Added reference to global stderr
+Added reference to global stdin
+Generated interface for /occam/examples/trimmer/sans/slash/sans.a.i.p.bc
+## External calls:
+	sigaction(0x2,?,null)
+	sigaction(0xF,?,null)
+	printf(S:2EC54CDA,S:8581575,S:7353ADCD)
+	printf(S:9F80BB89,S:8581575,S:84BEFC60)
+	strcpy(?,S:A03C6973)
+	strcpy(?,S:B5339E7D)
+	strcpy(?,S:90C2A215)
+	strcpy(?,S:E808)
+	strcpy(?,S:95E466A)
+	strcpy(?,S:E808)
+	strcpy(?,S:F9F4C362)
+	strcpy(?,S:E808)
+	strcpy(?,S:95C1462)
+	strcpy(?,S:E808)
+	malloc(0x18)
+	strcmp(?,S:CCD5)
+	strcmp(?,S:F88802C3)
+	strcmp(?,S:CC30)
+	strcmp(?,S:D124A730)
+	strcmp(?,S:CC51)
+	strcmp(?,S:FCD7BFAE)
+	strcmp(?,S:FE07C17)
+	strcmp(?,S:33B60EFC)
+	strcmp(?,S:CEA3)
+	strcmp(?,S:85E5C530)
+	strcmp(?,S:CE82)
+	strcmp(?,S:C873D67D)
+	strcmp(?,S:CA83)
+	strcmp(?,S:87160BA0)
+	fprintf(?,S:D23A98FD,?)
+	fprintf(?,S:D23A98FD,?)
+	fprintf(?,S:D23A98FD,?)
+	fprintf(?,S:87FACCDC,?)
+	sigemptyset(?)
+## External symbols:
+	__assert_fail
+	__ctype_b_loc
+	__errno_location
+	accept
+	bind
+	close
+	connect
+	exit
+	fclose
+	fcntl
+	feof
+	fflush
+	fgets
+	fopen
+	fork
+	fprintf
+	free
+	freeaddrinfo
+	freopen
+	getaddrinfo
+	getpwnam
+	getsockopt
+	gettimeofday
+	htons
+	listen
+	localtime
+	malloc
+	ntohs
+	printf
+	putchar
+	rand
+	recv
+	recvfrom
+	select
+	send
+	sendto
+	setegid
+	seteuid
+	setsid
+	setsockopt
+	sigaction
+	sigemptyset
+	socket
+	sprintf
+	srand
+	stderr
+	stdin
+	stdout
+	strchr
+	strcmp
+	strcpy
+	strerror
+	strftime
+	strlen
+	strrchr
+	strtol
+	time
+	umask
+	vfprintf
+
+EXECUTED: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/sans/slash/sans.a.i.p.bc -o=/dev/null -Pinterface -Pinterface-with-seadsa --sea-dsa-type-aware=true -Pinterface-output /tmp/tmpxWg9tw.iface -Pinterface-entry /tmp/tmpxWg9tw.iface WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/sans/slash/sans.a.i.p.bc -o=/dev/null -Pinterface -Pinterface-with-seadsa --sea-dsa-type-aware=true -Pinterface-output /tmp/tmpxWg9tw.iface -Pinterface-entry /tmp/tmpxWg9tw.iface
+
+Sea-Dsa type aware!
+WARNING: detected ptrtoint instruction that might be escaping the analysis. (@42741176)
+WARNING: detected ptrtoint instruction that might be escaping the analysis. (@42741272)
+WARNING: detected ptrtoint instruction that might be escaping the analysis. (@42746168)
+WARNING: detected ptrtoint instruction that might be escaping the analysis. (@42747496)
+WARNING: detected ptrtoint instruction that might be escaping the analysis. (@42748936)
+WARNING: detected ptrtoint instruction that might be escaping the analysis. (@42745416)
+WARNING: detected ptrtoint instruction that might be escaping the analysis. (@42750184)
+WARNING: detected ptrtoint instruction that might be escaping the analysis. (@42754072)
+WARNING: detected ptrtoint instruction that might be escaping the analysis. (@42756840)
+WARNING: inttoptr @ addr 0x28c6cc8 is (unsoundly) assumed to point to a fresh memory region.
+WARNING: detected ptrtoint instruction that might be escaping the analysis. (@42673000)
+WARNING: inttoptr @ addr 0x287d188 is (unsoundly) assumed to point to a fresh memory region.
+WARNING: inttoptr @ addr 0x28afaf8 is (unsoundly) assumed to point to a fresh memory region.
+WARNING: destination of memcopy/memmove has no cell: %struct.sockaddr_storage* getelementptr inbounds (%struct.anon.0, %struct.anon.0* @server, i64 0, i32 1)
+GatherInterfacePass::runOnModule: /occam/examples/trimmer/sans/slash/sans.a.i.p.bc
+Reading interface from '/tmp/tmpxWg9tw.iface'...success
+External call to malloc
+External call to sigemptyset
+External call to sigaction
+External call to sigaction
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to fprintf
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to fprintf
+External call to strcmp
+External call to fprintf
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to printf
+External call to fprintf
+External call to strcpy
+External call to strcpy
+External call to strcpy
+External call to strcpy
+External call to strcpy
+External call to strcpy
+External call to strcpy
+External call to strcpy
+External call to strcpy
+External call to strcpy
+External call to printf
+Added reference to function sigemptyset
+Added reference to function sigaction
+Added reference to function __assert_fail
+Added reference to function getaddrinfo
+Added reference to function freeaddrinfo
+Added reference to function malloc
+Added reference to function socket
+Added reference to function free
+Added reference to function connect
+Added reference to function __errno_location
+Added reference to function close
+Added reference to function send
+Added reference to function recv
+Added reference to function strcmp
+Added reference to function fprintf
+Added reference to function printf
+Added reference to function strcpy
+Added reference to function fopen
+Added reference to function feof
+Added reference to function fgets
+Added reference to function __ctype_b_loc
+Added reference to function strlen
+Added reference to function strchr
+Added reference to function fclose
+Added reference to function strrchr
+Added reference to function ntohs
+Added reference to function htons
+Added reference to function recvfrom
+Added reference to function sendto
+Added reference to function gettimeofday
+Added reference to function select
+Added reference to function time
+Added reference to function localtime
+Added reference to function strftime
+Added reference to function vfprintf
+Added reference to function putchar
+Added reference to function fflush
+Added reference to function strerror
+Added reference to function bind
+Added reference to function listen
+Added reference to function accept
+Added reference to function srand
+Added reference to function rand
+Added reference to function fcntl
+Added reference to function setsockopt
+Added reference to function getsockopt
+Added reference to function getpwnam
+Added reference to function setegid
+Added reference to function seteuid
+Added reference to function fork
+Added reference to function exit
+Added reference to function umask
+Added reference to function setsid
+Added reference to function freopen
+Added reference to function sprintf
+Added reference to function strtol
+Added reference to global stdout
+Added reference to global stderr
+Added reference to global stdin
+Generated interface for /occam/examples/trimmer/sans/slash/sans.a.i.p.bc
+## External calls:
+	sigaction(0x2,?,null)
+	sigaction(0xF,?,null)
+	printf(S:2EC54CDA,S:8581575,S:7353ADCD)
+	printf(S:9F80BB89,S:8581575,S:84BEFC60)
+	strcpy(?,S:A03C6973)
+	strcpy(?,S:B5339E7D)
+	strcpy(?,S:90C2A215)
+	strcpy(?,S:E808)
+	strcpy(?,S:95E466A)
+	strcpy(?,S:E808)
+	strcpy(?,S:F9F4C362)
+	strcpy(?,S:E808)
+	strcpy(?,S:95C1462)
+	strcpy(?,S:E808)
+	malloc(0x18)
+	strcmp(?,S:CCD5)
+	strcmp(?,S:F88802C3)
+	strcmp(?,S:CC30)
+	strcmp(?,S:D124A730)
+	strcmp(?,S:CC51)
+	strcmp(?,S:FCD7BFAE)
+	strcmp(?,S:FE07C17)
+	strcmp(?,S:33B60EFC)
+	strcmp(?,S:CEA3)
+	strcmp(?,S:85E5C530)
+	strcmp(?,S:CE82)
+	strcmp(?,S:C873D67D)
+	strcmp(?,S:CA83)
+	strcmp(?,S:87160BA0)
+	fprintf(?,S:D23A98FD,?)
+	fprintf(?,S:D23A98FD,?)
+	fprintf(?,S:D23A98FD,?)
+	fprintf(?,S:87FACCDC,?)
+	sigemptyset(?)
+## External symbols:
+	__assert_fail
+	__ctype_b_loc
+	__errno_location
+	accept
+	bind
+	close
+	connect
+	exit
+	fclose
+	fcntl
+	feof
+	fflush
+	fgets
+	fopen
+	fork
+	fprintf
+	free
+	freeaddrinfo
+	freopen
+	getaddrinfo
+	getpwnam
+	getsockopt
+	gettimeofday
+	htons
+	listen
+	localtime
+	malloc
+	ntohs
+	printf
+	putchar
+	rand
+	recv
+	recvfrom
+	select
+	send
+	sendto
+	setegid
+	seteuid
+	setsid
+	setsockopt
+	sigaction
+	sigemptyset
+	socket
+	sprintf
+	srand
+	stderr
+	stdin
+	stdout
+	strchr
+	strcmp
+	strcpy
+	strerror
+	strftime
+	strlen
+	strrchr
+	strtol
+	time
+	umask
+	vfprintf
+
+EXECUTED: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/sans/slash/sans.a.i.p.bc -o=/dev/null -Pinterface -Pinterface-with-seadsa --sea-dsa-type-aware=true -Pinterface-output /tmp/tmpxWg9tw.iface -Pinterface-entry /tmp/tmpxWg9tw.iface WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/sans/slash/sans.a.i.p.bc -o=/dev/null -Pinterface -Pinterface-output sans.02.iface
+
+GatherInterfacePass::runOnModule: /occam/examples/trimmer/sans/slash/sans.a.i.p.bc
+External call to __assert_fail
+Added reference to function sigemptyset
+Added reference to function sigaction
+Added reference to function __assert_fail
+Added reference to function getaddrinfo
+Added reference to function freeaddrinfo
+Added reference to function malloc
+Added reference to function socket
+Added reference to function free
+Added reference to function connect
+Added reference to function __errno_location
+Added reference to function close
+Added reference to function send
+Added reference to function recv
+Added reference to function strcmp
+Added reference to function fprintf
+Added reference to function printf
+Added reference to function strcpy
+Added reference to function fopen
+Added reference to function feof
+Added reference to function fgets
+Added reference to function __ctype_b_loc
+Added reference to function strlen
+Added reference to function strchr
+Added reference to function fclose
+Added reference to function strrchr
+Added reference to function ntohs
+Added reference to function htons
+Added reference to function recvfrom
+Added reference to function sendto
+Added reference to function gettimeofday
+Added reference to function select
+Added reference to function time
+Added reference to function localtime
+Added reference to function strftime
+Added reference to function vfprintf
+Added reference to function putchar
+Added reference to function fflush
+Added reference to function strerror
+Added reference to function bind
+Added reference to function listen
+Added reference to function accept
+Added reference to function srand
+Added reference to function rand
+Added reference to function fcntl
+Added reference to function setsockopt
+Added reference to function getsockopt
+Added reference to function getpwnam
+Added reference to function setegid
+Added reference to function seteuid
+Added reference to function fork
+Added reference to function exit
+Added reference to function umask
+Added reference to function setsid
+Added reference to function freopen
+Added reference to function sprintf
+Added reference to function strtol
+Added reference to global stdout
+Added reference to global stderr
+Added reference to global stdin
+Generated interface for /occam/examples/trimmer/sans/slash/sans.a.i.p.bc
+## External calls:
+	__assert_fail(S:B4E08A57,S:B0797236,0x28,S:A2D0B490)
+## External symbols:
+	__assert_fail
+	__ctype_b_loc
+	__errno_location
+	accept
+	bind
+	close
+	connect
+	exit
+	fclose
+	fcntl
+	feof
+	fflush
+	fgets
+	fopen
+	fork
+	fprintf
+	free
+	freeaddrinfo
+	freopen
+	getaddrinfo
+	getpwnam
+	getsockopt
+	gettimeofday
+	htons
+	listen
+	localtime
+	malloc
+	ntohs
+	printf
+	putchar
+	rand
+	recv
+	recvfrom
+	select
+	send
+	sendto
+	setegid
+	seteuid
+	setsid
+	setsockopt
+	sigaction
+	sigemptyset
+	socket
+	sprintf
+	srand
+	stderr
+	stdin
+	stdout
+	strchr
+	strcmp
+	strcpy
+	strerror
+	strftime
+	strlen
+	strrchr
+	strtol
+	time
+	umask
+	vfprintf
+
+EXECUTED: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/sans/slash/sans.a.i.p.bc -o=/dev/null -Pinterface -Pinterface-output sans.02.iface WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/sans/slash/sans.a.i.p.bc -o=/occam/examples/trimmer/sans/slash/sans.a.i.p.i.bc -Pinternalize -Pinternalize-wrt-interfaces main.iface
+
+InternalizePass
+Reading file 'main.iface'...success
+Done reading.
+InternalizePass::runOnModule: /occam/examples/trimmer/sans/slash/sans.a.i.p.bc
+...no progress...
+/usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/sans/slash/sans.a.i.p.bc -o=/occam/examples/trimmer/sans/slash/sans.a.i.p.i.bc -Pinternalize -Pinternalize-wrt-interfaces main.iface => 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/sans/slash/sans.a.i.p.i.bc -o=/dev/null -Pinterface -Pinterface-with-seadsa --sea-dsa-type-aware=true -Pinterface-output /tmp/tmpZqwGC3.iface -Pinterface-entry /tmp/tmpZqwGC3.iface
+
+Sea-Dsa type aware!
+WARNING: detected ptrtoint instruction that might be escaping the analysis. (@17739256)
+WARNING: detected ptrtoint instruction that might be escaping the analysis. (@17739352)
+WARNING: detected ptrtoint instruction that might be escaping the analysis. (@17744248)
+WARNING: detected ptrtoint instruction that might be escaping the analysis. (@17745576)
+WARNING: detected ptrtoint instruction that might be escaping the analysis. (@17747016)
+WARNING: detected ptrtoint instruction that might be escaping the analysis. (@17743496)
+WARNING: detected ptrtoint instruction that might be escaping the analysis. (@17748264)
+WARNING: detected ptrtoint instruction that might be escaping the analysis. (@17752152)
+WARNING: detected ptrtoint instruction that might be escaping the analysis. (@17754920)
+WARNING: inttoptr @ addr 0x10eed08 is (unsoundly) assumed to point to a fresh memory region.
+WARNING: detected ptrtoint instruction that might be escaping the analysis. (@17670776)
+WARNING: inttoptr @ addr 0x10a2f38 is (unsoundly) assumed to point to a fresh memory region.
+WARNING: inttoptr @ addr 0x10a5dd8 is (unsoundly) assumed to point to a fresh memory region.
+WARNING: destination of memcopy/memmove has no cell: %struct.sockaddr_storage* getelementptr inbounds (%struct.anon.0, %struct.anon.0* @server, i64 0, i32 1)
+GatherInterfacePass::runOnModule: /occam/examples/trimmer/sans/slash/sans.a.i.p.i.bc
+Reading interface from '/tmp/tmpZqwGC3.iface'...success
+External call to malloc
+External call to sigemptyset
+External call to sigaction
+External call to sigaction
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to fprintf
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to fprintf
+External call to strcmp
+External call to fprintf
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to printf
+External call to fprintf
+External call to strcpy
+External call to strcpy
+External call to strcpy
+External call to strcpy
+External call to strcpy
+External call to strcpy
+External call to strcpy
+External call to strcpy
+External call to strcpy
+External call to strcpy
+External call to printf
+Added reference to function sigemptyset
+Added reference to function sigaction
+Added reference to function __assert_fail
+Added reference to function getaddrinfo
+Added reference to function freeaddrinfo
+Added reference to function malloc
+Added reference to function socket
+Added reference to function free
+Added reference to function connect
+Added reference to function __errno_location
+Added reference to function close
+Added reference to function send
+Added reference to function recv
+Added reference to function strcmp
+Added reference to function fprintf
+Added reference to function printf
+Added reference to function strcpy
+Added reference to function fopen
+Added reference to function feof
+Added reference to function fgets
+Added reference to function __ctype_b_loc
+Added reference to function strlen
+Added reference to function strchr
+Added reference to function fclose
+Added reference to function strrchr
+Added reference to function ntohs
+Added reference to function htons
+Added reference to function recvfrom
+Added reference to function sendto
+Added reference to function gettimeofday
+Added reference to function select
+Added reference to function time
+Added reference to function localtime
+Added reference to function strftime
+Added reference to function vfprintf
+Added reference to function putchar
+Added reference to function fflush
+Added reference to function strerror
+Added reference to function bind
+Added reference to function listen
+Added reference to function accept
+Added reference to function srand
+Added reference to function rand
+Added reference to function fcntl
+Added reference to function setsockopt
+Added reference to function getsockopt
+Added reference to function getpwnam
+Added reference to function setegid
+Added reference to function seteuid
+Added reference to function fork
+Added reference to function exit
+Added reference to function umask
+Added reference to function setsid
+Added reference to function freopen
+Added reference to function sprintf
+Added reference to function strtol
+Added reference to global stdout
+Added reference to global stderr
+Added reference to global stdin
+Generated interface for /occam/examples/trimmer/sans/slash/sans.a.i.p.i.bc
+## External calls:
+	sigaction(0x2,?,null)
+	sigaction(0xF,?,null)
+	printf(S:2EC54CDA,S:8581575,S:7353ADCD)
+	printf(S:9F80BB89,S:8581575,S:84BEFC60)
+	strcpy(?,S:A03C6973)
+	strcpy(?,S:B5339E7D)
+	strcpy(?,S:90C2A215)
+	strcpy(?,S:E808)
+	strcpy(?,S:95E466A)
+	strcpy(?,S:E808)
+	strcpy(?,S:F9F4C362)
+	strcpy(?,S:E808)
+	strcpy(?,S:95C1462)
+	strcpy(?,S:E808)
+	malloc(0x18)
+	strcmp(?,S:CCD5)
+	strcmp(?,S:F88802C3)
+	strcmp(?,S:CC30)
+	strcmp(?,S:D124A730)
+	strcmp(?,S:CC51)
+	strcmp(?,S:FCD7BFAE)
+	strcmp(?,S:FE07C17)
+	strcmp(?,S:33B60EFC)
+	strcmp(?,S:CEA3)
+	strcmp(?,S:85E5C530)
+	strcmp(?,S:CE82)
+	strcmp(?,S:C873D67D)
+	strcmp(?,S:CA83)
+	strcmp(?,S:87160BA0)
+	fprintf(?,S:D23A98FD,?)
+	fprintf(?,S:D23A98FD,?)
+	fprintf(?,S:D23A98FD,?)
+	fprintf(?,S:87FACCDC,?)
+	sigemptyset(?)
+## External symbols:
+	__assert_fail
+	__ctype_b_loc
+	__errno_location
+	accept
+	bind
+	close
+	connect
+	exit
+	fclose
+	fcntl
+	feof
+	fflush
+	fgets
+	fopen
+	fork
+	fprintf
+	free
+	freeaddrinfo
+	freopen
+	getaddrinfo
+	getpwnam
+	getsockopt
+	gettimeofday
+	htons
+	listen
+	localtime
+	malloc
+	ntohs
+	printf
+	putchar
+	rand
+	recv
+	recvfrom
+	select
+	send
+	sendto
+	setegid
+	seteuid
+	setsid
+EXECUTED: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/sans/slash/sans.a.i.p.i.bc -o=/dev/null -Pinterface -Pinterface-with-seadsa --sea-dsa-type-aware=true -Pinterface-output /tmp/tmpZqwGC3.iface -Pinterface-entry /tmp/tmpZqwGC3.iface WHICH RETURNED 0
+
+	setsockopt
+	sigaction
+	sigemptyset
+	socket
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/sans/slash/sans.a.i.p.i.bc -o=/dev/null -Pinterface -Pinterface-with-seadsa --sea-dsa-type-aware=true -Pinterface-output /tmp/tmpZqwGC3.iface -Pinterface-entry /tmp/tmpZqwGC3.iface
+
+	sprintf
+	srand
+	stderr
+	stdin
+	stdout
+	strchr
+	strcmp
+	strcpy
+	strerror
+	strftime
+	strlen
+	strrchr
+	strtol
+	time
+	umask
+	vfprintf
+
+Sea-Dsa type aware!
+WARNING: detected ptrtoint instruction that might be escaping the analysis. (@34921960)
+WARNING: detected ptrtoint instruction that might be escaping the analysis. (@34922056)
+WARNING: detected ptrtoint instruction that might be escaping the analysis. (@34926952)
+WARNING: detected ptrtoint instruction that might be escaping the analysis. (@34928280)
+WARNING: detected ptrtoint instruction that might be escaping the analysis. (@34929720)
+WARNING: detected ptrtoint instruction that might be escaping the analysis. (@34926200)
+WARNING: detected ptrtoint instruction that might be escaping the analysis. (@34930968)
+WARNING: detected ptrtoint instruction that might be escaping the analysis. (@34934856)
+WARNING: detected ptrtoint instruction that might be escaping the analysis. (@34937624)
+WARNING: inttoptr @ addr 0x2151cf8 is (unsoundly) assumed to point to a fresh memory region.
+WARNING: detected ptrtoint instruction that might be escaping the analysis. (@34853480)
+WARNING: inttoptr @ addr 0x2103688 is (unsoundly) assumed to point to a fresh memory region.
+WARNING: inttoptr @ addr 0x213aa38 is (unsoundly) assumed to point to a fresh memory region.
+WARNING: destination of memcopy/memmove has no cell: %struct.sockaddr_storage* getelementptr inbounds (%struct.anon.0, %struct.anon.0* @server, i64 0, i32 1)
+GatherInterfacePass::runOnModule: /occam/examples/trimmer/sans/slash/sans.a.i.p.i.bc
+Reading interface from '/tmp/tmpZqwGC3.iface'...success
+External call to malloc
+External call to sigemptyset
+External call to sigaction
+External call to sigaction
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to fprintf
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to fprintf
+External call to strcmp
+External call to fprintf
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to printf
+External call to fprintf
+External call to strcpy
+External call to strcpy
+External call to strcpy
+External call to strcpy
+External call to strcpy
+External call to strcpy
+External call to strcpy
+External call to strcpy
+External call to strcpy
+External call to strcpy
+External call to printf
+Added reference to function sigemptyset
+Added reference to function sigaction
+Added reference to function __assert_fail
+Added reference to function getaddrinfo
+Added reference to function freeaddrinfo
+Added reference to function malloc
+Added reference to function socket
+Added reference to function free
+Added reference to function connect
+Added reference to function __errno_location
+Added reference to function close
+Added reference to function send
+Added reference to function recv
+Added reference to function strcmp
+Added reference to function fprintf
+Added reference to function printf
+Added reference to function strcpy
+Added reference to function fopen
+Added reference to function feof
+Added reference to function fgets
+Added reference to function __ctype_b_loc
+Added reference to function strlen
+Added reference to function strchr
+Added reference to function fclose
+Added reference to function strrchr
+Added reference to function ntohs
+Added reference to function htons
+Added reference to function recvfrom
+Added reference to function sendto
+Added reference to function gettimeofday
+Added reference to function select
+Added reference to function time
+Added reference to function localtime
+Added reference to function strftime
+Added reference to function vfprintf
+Added reference to function putchar
+Added reference to function fflush
+Added reference to function strerror
+Added reference to function bind
+Added reference to function listen
+Added reference to function accept
+Added reference to function srand
+Added reference to function rand
+Added reference to function fcntl
+Added reference to function setsockopt
+Added reference to function getsockopt
+Added reference to function getpwnam
+Added reference to function setegid
+Added reference to function seteuid
+Added reference to function fork
+Added reference to function exit
+Added reference to function umask
+Added reference to function setsid
+Added reference to function freopen
+Added reference to function sprintf
+Added reference to function strtol
+Added reference to global stdout
+Added reference to global stderr
+Added reference to global stdin
+Generated interface for /occam/examples/trimmer/sans/slash/sans.a.i.p.i.bc
+## External calls:
+	sigaction(0x2,?,null)
+	sigaction(0xF,?,null)
+	printf(S:2EC54CDA,S:8581575,S:7353ADCD)
+	printf(S:9F80BB89,S:8581575,S:84BEFC60)
+	strcpy(?,S:A03C6973)
+	strcpy(?,S:B5339E7D)
+	strcpy(?,S:90C2A215)
+	strcpy(?,S:E808)
+	strcpy(?,S:95E466A)
+	strcpy(?,S:E808)
+	strcpy(?,S:F9F4C362)
+	strcpy(?,S:E808)
+	strcpy(?,S:95C1462)
+	strcpy(?,S:E808)
+	malloc(0x18)
+	strcmp(?,S:CCD5)
+	strcmp(?,S:F88802C3)
+	strcmp(?,S:CC30)
+	strcmp(?,S:D124A730)
+	strcmp(?,S:CC51)
+	strcmp(?,S:FCD7BFAE)
+	strcmp(?,S:FE07C17)
+	strcmp(?,S:33B60EFC)
+	strcmp(?,S:CEA3)
+	strcmp(?,S:85E5C530)
+	strcmp(?,S:CE82)
+	strcmp(?,S:C873D67D)
+	strcmp(?,S:CA83)
+	strcmp(?,S:87160BA0)
+	fprintf(?,S:D23A98FD,?)
+	fprintf(?,S:D23A98FD,?)
+	fprintf(?,S:D23A98FD,?)
+	fprintf(?,S:87FACCDC,?)
+	sigemptyset(?)
+## External symbols:
+	__assert_fail
+	__ctype_b_loc
+	__errno_location
+	accept
+	bind
+	close
+	connect
+	exit
+	fclose
+	fcntl
+	feof
+	fflush
+	fgets
+	fopen
+	fork
+	fprintf
+	free
+	freeaddrinfo
+	freopen
+	getaddrinfo
+	getpwnam
+	getsockopt
+	gettimeofday
+	htons
+	listen
+	localtime
+	malloc
+	ntohs
+	printf
+	putchar
+	rand
+	recv
+	recvfrom
+	select
+	send
+	sendto
+	setegid
+	seteuid
+	setsid
+	setsockopt
+	sigaction
+	sigemptyset
+	socket
+	sprintf
+	srand
+	stderr
+	stdin
+	stdout
+	strchr
+EXECUTED: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/sans/slash/sans.a.i.p.i.bc -o=/dev/null -Pinterface -Pinterface-with-seadsa --sea-dsa-type-aware=true -Pinterface-output /tmp/tmpZqwGC3.iface -Pinterface-entry /tmp/tmpZqwGC3.iface WHICH RETURNED 0
+
+	strcmp
+	strcpy
+	strerror
+	strftime
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/sans/slash/sans.a.i.p.i.bc -o=/occam/examples/trimmer/sans/slash/sans.a.i.p.i.h.bc -Pinternalize -Pinternalize-wrt-interfaces interface_after.01.iface
+
+	strlen
+	strrchr
+	strtol
+	time
+	umask
+	vfprintf
+
+InternalizePass
+Reading file 'interface_after.01.iface'...success
+Done reading.
+InternalizePass::runOnModule: /occam/examples/trimmer/sans/slash/sans.a.i.p.i.bc
+...no progress...
+/usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/sans/slash/sans.a.i.p.i.bc -o=/occam/examples/trimmer/sans/slash/sans.a.i.p.i.h.bc -Pinternalize -Pinternalize-wrt-interfaces interface_after.01.iface => 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt /occam/examples/trimmer/sans/slash/sans.a.i.p.i.h.bc -o /occam/examples/trimmer/sans/slash/sans.a.i.p.i.h.x.bc -strip -strip-dead-prototypes
+
+EXECUTED: /usr/lib/llvm-10/bin/opt /occam/examples/trimmer/sans/slash/sans.a.i.p.i.h.bc -o /occam/examples/trimmer/sans/slash/sans.a.i.p.i.h.x.bc -strip -strip-dead-prototypes WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/sans/slash/sans.a.i.p.i.h.x.bc -o=/dev/null -Pprofiler -profile-verbose=false -profile-loops=true -profile-safe-pointers=true -profile-outfile=/tmp/tmpsZUsT1
+
+EXECUTED: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/sans/slash/sans.a.i.p.i.h.x.bc -o=/dev/null -Pprofiler -profile-verbose=false -profile-loops=true -profile-safe-pointers=true -profile-outfile=/tmp/tmpsZUsT1 WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/clang++ /occam/examples/trimmer/sans/slash/sans.a.i.p.i.h.x.bc -o sans_fin -O3
+
+EXECUTED: /usr/lib/llvm-10/bin/clang++ /occam/examples/trimmer/sans/slash/sans.a.i.p.i.h.x.bc -o sans_fin -O3 WHICH RETURNED 0
+

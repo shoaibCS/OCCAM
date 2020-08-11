@@ -1,0 +1,7 @@
+{"binary": "aircrack-ng_fin", 
+"native_libs": [], 
+"name": "aircrack-ng", 
+"args": ["-b", "00:0c:29:52:aa:56","-a","wpa","-s","-w","dictionary.lst","chargen-tcp.pcap"], 
+"modules": [], 
+"ldflags": ["-lssl","-lcrypto","-lpthread","/occam/examples/trimmer/aircrack/sha1-sse2.S","-O3"], 
+"main": "aircrack-ng.bc"}

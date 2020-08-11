@@ -1,0 +1,2 @@
+"_IO_getc"_IO_putc"__assert_fail"__ctype_get_mb_cur_max"__errno_location"abort"bindtextdomain"calloc"environ"exit"fclose"ferror"fflush"fopen"fprintf"fputc"fputs"fread"free"fscanf"fseek"ftell"getopt_long"gettext"gmtime"malloc"mbrtowc"memcmp"optarg"optind"printf"putchar"puts"qsort"realloc"rewind"sbrk"	setlocale"snprintf"sprintf"stat"stderr"stdout"stpcpy"strcat"strchr"strcmp"strcpy"strdup"strerror"strlen"strncat"strncmp"strncpy"strnlen"strrchr"strtoul"
+textdomain"vfprintf

@@ -1,0 +1,2783 @@
+>> /usr/local/bin/slash --inter-spec-policy=none --intra-spec-policy=nonrec-aggressive --no-strip --stats --work-dir=slash aircrack-ng.manifest
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/aircrack/slash/aircrack-ng.bc -o=/dev/null -Pprofiler -profile-verbose=false -profile-loops=true -profile-safe-pointers=true -profile-outfile=/tmp/tmpNsp2Hp
+
+EXECUTED: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/aircrack/slash/aircrack-ng.bc -o=/dev/null -Pprofiler -profile-verbose=false -profile-loops=true -profile-safe-pointers=true -profile-outfile=/tmp/tmpNsp2Hp WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/aircrack/slash/aircrack-ng.bc -o=/occam/examples/trimmer/aircrack/slash/aircrack-ng.a.bc -Pfull-cmdline-spec -Pfull-cmdline-spec-input arguments -Pfull-cmdline-spec-name aircrack-ng
+
+Read 8 command line arguments:
+	-b
+	00:0c:29:52:aa:56
+	-a
+	wpa
+	-s
+	-w
+	dictionary.lst
+	chargen-tcp.pcap
+EXECUTED: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/aircrack/slash/aircrack-ng.bc -o=/occam/examples/trimmer/aircrack/slash/aircrack-ng.a.bc -Pfull-cmdline-spec -Pfull-cmdline-spec-input arguments -Pfull-cmdline-spec-name aircrack-ng WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/aircrack/slash/aircrack-ng.a.bc -o=/dev/null -Pinterface -Pinterface-output aircrack-ng.01.iface
+
+GatherInterfacePass::runOnModule: /occam/examples/trimmer/aircrack/slash/aircrack-ng.a.bc
+External call to printf
+External call to printf
+External call to printf
+Added reference to function printf
+Added reference to function strncpy
+Added reference to function strlen
+Added reference to function shasse2_init
+Added reference to function shasse2_data
+Added reference to function EVP_sha1
+Added reference to function HMAC
+Added reference to function shasse2_ends
+Added reference to function fflush
+Added reference to function pthread_join
+Added reference to function free
+Added reference to function fork
+Added reference to function exit
+Added reference to function _exit
+Added reference to function write
+Added reference to function __errno_location
+Added reference to function signal
+Added reference to function pthread_mutex_lock
+Added reference to function pthread_cond_broadcast
+Added reference to function pthread_mutex_unlock
+Added reference to function usleep
+Added reference to function pthread_cond_wait
+Added reference to function pthread_cond_signal
+Added reference to function strdup
+Added reference to function strsep
+Added reference to function malloc
+Added reference to function memcmp
+Added reference to function perror
+Added reference to function snprintf
+Added reference to function toupper
+Added reference to function read
+Added reference to function strcmp
+Added reference to function open64
+Added reference to function fprintf
+Added reference to function errx
+Added reference to function fcntl
+Added reference to function realloc
+Added reference to function kill
+Added reference to function gettimeofday
+Added reference to function ioctl
+Added reference to function fopen64
+Added reference to function fclose
+Added reference to function qsort
+Added reference to function sleep
+Added reference to function atoi
+Added reference to function __ctype_b_loc
+Added reference to function pthread_mutex_trylock
+Added reference to function shasse2_cpuid
+Added reference to function pthread_exit
+Added reference to function sched_yield
+Added reference to function EVP_md5
+Added reference to function fileno
+Added reference to function fdopen
+Added reference to function fseek
+Added reference to function ftell
+Added reference to function rewind
+Added reference to function fgets
+Added reference to function sscanf
+Added reference to function strncasecmp
+Added reference to function setsid
+Added reference to function time
+Added reference to function srand
+Added reference to function getopt_long
+Added reference to function strcasecmp
+Added reference to function calloc
+Added reference to function pthread_mutex_init
+Added reference to function pthread_cond_init
+Added reference to function pthread_create
+Added reference to function scanf
+Added reference to function pipe
+Added reference to function RC4_set_key
+Added reference to function RC4
+Added reference to function SHA1_Init
+Added reference to function SHA1_Update
+Added reference to function SHA1_Final
+Added reference to function HMAC_CTX_new
+Added reference to function HMAC_Init_ex
+Added reference to function HMAC_Update
+Added reference to function HMAC_Final
+Added reference to function HMAC_CTX_free
+Added reference to function htons
+Added reference to function __assert_fail
+Added reference to function AES_set_encrypt_key
+Added reference to function AES_encrypt
+Added reference to function __isoc99_fscanf
+Added reference to function strncmp
+Added reference to function strncat
+Added reference to function strstr
+Added reference to function strchr
+Added reference to function sysconf
+Added reference to function __isoc99_sscanf
+Added reference to function getchar
+Added reference to function rand
+Added reference to global stdout
+Added reference to global stderr
+Added reference to global stdin
+Added reference to global optarg
+Added reference to global optind
+Generated interface for /occam/examples/trimmer/aircrack/slash/aircrack-ng.a.bc
+## External calls:
+	printf(S:8CB80DEA,?)
+	printf(S:2B7A41D,?)
+	printf(S:14A)
+## External symbols:
+	AES_encrypt
+	AES_set_encrypt_key
+	EVP_md5
+	EVP_sha1
+	HMAC
+	HMAC_CTX_free
+	HMAC_CTX_new
+	HMAC_Final
+	HMAC_Init_ex
+	HMAC_Update
+	RC4
+	RC4_set_key
+	SHA1_Final
+	SHA1_Init
+	SHA1_Update
+	__assert_fail
+	__ctype_b_loc
+	__errno_location
+	__isoc99_fscanf
+	__isoc99_sscanf
+	_exit
+	atoi
+	calloc
+	errx
+	exit
+	fclose
+	fcntl
+	fdopen
+	fflush
+	fgets
+	fileno
+	fopen64
+	fork
+	fprintf
+	free
+	fseek
+	ftell
+	getchar
+	getopt_long
+	gettimeofday
+	htons
+	ioctl
+	kill
+	malloc
+	memcmp
+	open64
+	optarg
+	optind
+	perror
+	pipe
+	printf
+	pthread_cond_broadcast
+	pthread_cond_init
+	pthread_cond_signal
+	pthread_cond_wait
+	pthread_create
+	pthread_exit
+	pthread_join
+	pthread_mutex_init
+	pthread_mutex_lock
+	pthread_mutex_trylock
+	pthread_mutex_unlock
+	qsort
+	rand
+	read
+	realloc
+	rewind
+	scanf
+	sched_yield
+	setsid
+	shasse2_cpuid
+	shasse2_data
+	shasse2_ends
+	shasse2_init
+	signal
+	sleep
+	snprintf
+	srand
+	sscanf
+	stderr
+	stdin
+	stdout
+	strcasecmp
+	strchr
+	strcmp
+	strdup
+	strlen
+	strncasecmp
+	strncat
+	strncmp
+	strncpy
+	strsep
+	strstr
+	sysconf
+	time
+	toupper
+	usleep
+	write
+
+EXECUTED: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/aircrack/slash/aircrack-ng.a.bc -o=/dev/null -Pinterface -Pinterface-output aircrack-ng.01.iface WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/aircrack/slash/aircrack-ng.a.bc -o=/occam/examples/trimmer/aircrack/slash/aircrack-ng.a.i.bc -Pinternalize -Pinternalize-wrt-interfaces main.iface
+
+InternalizePass
+Reading file 'main.iface'...success
+Done reading.
+InternalizePass::runOnModule: /occam/examples/trimmer/aircrack/slash/aircrack-ng.a.bc
+Internalizing 'show_result' ExternalLinkage DefaultVisibility
+Internalizing 'calc_4pmk' ExternalLinkage DefaultVisibility
+Internalizing 'clean_exit' ExternalLinkage DefaultVisibility
+Internalizing 'safe_write' ExternalLinkage DefaultVisibility
+Internalizing 'eof_wait' ExternalLinkage DefaultVisibility
+Internalizing 'wpa_send_passphrase' ExternalLinkage DefaultVisibility
+Internalizing 'wpa_receive_passphrase' ExternalLinkage DefaultVisibility
+Internalizing 'checkbssids' ExternalLinkage DefaultVisibility
+Internalizing 'mergebssids' ExternalLinkage DefaultVisibility
+Internalizing 'atomic_read' ExternalLinkage DefaultVisibility
+Internalizing 'chrono' ExternalLinkage DefaultVisibility
+Internalizing 'safe_read' ExternalLinkage DefaultVisibility
+Internalizing 'show_wep_stats' ExternalLinkage DefaultVisibility
+Internalizing 'check_wep_key' ExternalLinkage DefaultVisibility
+Internalizing 'calc_poll' ExternalLinkage DefaultVisibility
+Internalizing 'update_ivbuf' ExternalLinkage DefaultVisibility
+Internalizing 'remove_votes' ExternalLinkage DefaultVisibility
+Internalizing 'do_wep_crack1' ExternalLinkage DefaultVisibility
+Internalizing 'do_wep_crack2' ExternalLinkage DefaultVisibility
+Internalizing 'show_wpa_stats' ExternalLinkage DefaultVisibility
+Internalizing 'next_dict' ExternalLinkage DefaultVisibility
+Internalizing 'do_wpa_crack' ExternalLinkage DefaultVisibility
+Internalizing 'next_key' ExternalLinkage DefaultVisibility
+Internalizing 'set_dicts' ExternalLinkage DefaultVisibility
+Internalizing 'crack_wep_dict' ExternalLinkage DefaultVisibility
+Internalizing '' ExternalLinkage DefaultVisibility
+Internalizing 'encrypt_wep' ExternalLinkage DefaultVisibility
+Internalizing 'decrypt_wep' ExternalLinkage DefaultVisibility
+Internalizing 'check_crc_buf' ExternalLinkage DefaultVisibility
+Internalizing 'calc_crc' ExternalLinkage DefaultVisibility
+Internalizing 'rc4_setup' ExternalLinkage DefaultVisibility
+Internalizing 'rc4_crypt' ExternalLinkage DefaultVisibility
+Internalizing 'calc_pmk' ExternalLinkage DefaultVisibility
+Internalizing 'calc_mic' ExternalLinkage DefaultVisibility
+Internalizing 'calc_crc_plain' ExternalLinkage DefaultVisibility
+Internalizing 'add_crc32' ExternalLinkage DefaultVisibility
+Internalizing 'add_crc32_plain' ExternalLinkage DefaultVisibility
+Internalizing 'calc_crc_buf' ExternalLinkage DefaultVisibility
+Internalizing 'get_da' ExternalLinkage DefaultVisibility
+Internalizing 'get_sa' ExternalLinkage DefaultVisibility
+Internalizing 'is_ipv6' ExternalLinkage DefaultVisibility
+Internalizing 'is_dhcp_discover' ExternalLinkage DefaultVisibility
+Internalizing 'is_arp' ExternalLinkage DefaultVisibility
+Internalizing 'is_qos_arp_tkip' ExternalLinkage DefaultVisibility
+Internalizing 'is_spantree' ExternalLinkage DefaultVisibility
+Internalizing 'is_cdp_vtp' ExternalLinkage DefaultVisibility
+Internalizing 'known_clear' ExternalLinkage DefaultVisibility
+Internalizing 'calc_ptk' ExternalLinkage DefaultVisibility
+Internalizing 'init_michael' ExternalLinkage DefaultVisibility
+Internalizing 'michael_append_byte' ExternalLinkage DefaultVisibility
+Internalizing 'michael_remove_byte' ExternalLinkage DefaultVisibility
+Internalizing 'michael_append' ExternalLinkage DefaultVisibility
+Internalizing 'michael_remove' ExternalLinkage DefaultVisibility
+Internalizing 'michael_finalize' ExternalLinkage DefaultVisibility
+Internalizing 'michael_finalize_zero' ExternalLinkage DefaultVisibility
+Internalizing 'michael_test' ExternalLinkage DefaultVisibility
+Internalizing 'calc_tkip_mic_key' ExternalLinkage DefaultVisibility
+Internalizing 'calc_tkip_mic' ExternalLinkage DefaultVisibility
+Internalizing 'calc_tkip_ppk' ExternalLinkage DefaultVisibility
+Internalizing 'decrypt_tkip' ExternalLinkage DefaultVisibility
+Internalizing 'decrypt_ccmp' ExternalLinkage DefaultVisibility
+Internalizing 'get_ram_size' ExternalLinkage DefaultVisibility
+Internalizing 'getVersion' ExternalLinkage DefaultVisibility
+Internalizing 'maccmp' ExternalLinkage DefaultVisibility
+Internalizing 'mac2string' ExternalLinkage DefaultVisibility
+Internalizing 'hexCharToInt' ExternalLinkage DefaultVisibility
+Internalizing 'hexStringToHex' ExternalLinkage DefaultVisibility
+Internalizing 'getmac' ExternalLinkage DefaultVisibility
+Internalizing 'readLine' ExternalLinkage DefaultVisibility
+Internalizing 'hexToInt' ExternalLinkage DefaultVisibility
+Internalizing 'uniqueiv_init' ExternalLinkage DefaultVisibility
+Internalizing 'uniqueiv_mark' ExternalLinkage DefaultVisibility
+Internalizing 'uniqueiv_check' ExternalLinkage DefaultVisibility
+Internalizing 'uniqueiv_wipe' ExternalLinkage DefaultVisibility
+Internalizing 'data_init' ExternalLinkage DefaultVisibility
+Internalizing 'data_check' ExternalLinkage DefaultVisibility
+Internalizing 'data_wipe' ExternalLinkage DefaultVisibility
+Internalizing 'PTW_computeKey' ExternalLinkage DefaultVisibility
+Internalizing 'PTW_addsession' ExternalLinkage DefaultVisibility
+Internalizing 'PTW_freeattackstate' ExternalLinkage DefaultVisibility
+Internalizing 'nb_eof' ExternalLinkage DefaultVisibility
+Internalizing 'nb_pkt' ExternalLinkage DefaultVisibility
+Internalizing 'wepkey_crack_success' ExternalLinkage DefaultVisibility
+Internalizing 'close_aircrack' ExternalLinkage DefaultVisibility
+Internalizing 'id' ExternalLinkage DefaultVisibility
+Internalizing 'wpa_wordlists_done' ExternalLinkage DefaultVisibility
+Internalizing 'K_COEFF' ExternalLinkage DefaultVisibility
+Internalizing 'PTW_DEFAULTWEIGHT' ExternalLinkage DefaultVisibility
+Internalizing 'PTW_DEFAULTBF' ExternalLinkage DefaultVisibility
+Internalizing 'R' ExternalLinkage DefaultVisibility
+Internalizing 'usage' ExternalLinkage DefaultVisibility
+Internalizing 'intr_read' ExternalLinkage DefaultVisibility
+Internalizing 'crc_tbl' ExternalLinkage DefaultVisibility
+Internalizing 'crc_chop_tbl' ExternalLinkage DefaultVisibility
+Internalizing 'TkipSbox' ExternalLinkage DefaultVisibility
+...progress...
+Progress: internalized functions = 80 internalized globals = 15
+/usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/aircrack/slash/aircrack-ng.a.bc -o=/occam/examples/trimmer/aircrack/slash/aircrack-ng.a.i.bc -Pinternalize -Pinternalize-wrt-interfaces main.iface => 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -disable-simplify-libcalls --disable-slp-vectorization /occam/examples/trimmer/aircrack/slash/aircrack-ng.a.i.bc -o /tmp/tmpljPwUD.bc -O3
+
+EXECUTED: /usr/lib/llvm-10/bin/opt -disable-simplify-libcalls --disable-slp-vectorization /occam/examples/trimmer/aircrack/slash/aircrack-ng.a.i.bc -o /tmp/tmpljPwUD.bc -O3 WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /tmp/tmptjdTop.bc -o=/tmp/tmpb65BGI.bc -Ppeval -Ppeval-policy=nonrec-aggressive -Ppeval-opt
+
+=== Begin intra-module specialization ===
+Intra-specializing call to 'safe_write' in function 'clean_exit' on arguments [2=(i64 64)]
+Intra-specializing call to 'safe_write' in function 'clean_exit' on arguments [1=(i8* getelementptr inbounds ([6 x i8], [6 x i8]* @.str.4, i64 0, i64 0)),2=(i64 5)]
+Intra-specializing call to 'clean_exit' in function 'sighandler' on arguments [0=(i32 1)]
+Intra-specializing call to 'clean_exit' in function 'sighandler' on arguments [0=(i32 1)]
+Intra-specializing call to 'clean_exit' in function 'sighandler' on arguments [0=(i32 0)]
+Intra-specializing call to 'PTW_addsession' in function 'read_thread' on arguments [4=(i32 1)]
+Intra-specializing call to 'PTW_addsession' in function 'read_thread' on arguments [4=(i32 1)]
+Intra-specializing call to 'PTW_addsession' in function 'read_thread' on arguments [4=(i32 1)]
+Intra-specializing call to 'atomic_read' in function 'read_thread' on arguments [2=(i32 16)]
+Intra-specializing call to 'atomic_read' in function 'read_thread' on arguments [2=(i32 16)]
+Intra-specializing call to 'atomic_read' in function 'read_thread' on arguments [2=(i32 6)]
+Intra-specializing call to 'atomic_read' in function 'read_thread' on arguments [2=(i32 6)]
+Intra-specializing call to 'atomic_read' in function 'read_thread' on arguments [2=(i32 4)]
+Intra-specializing call to 'atomic_read' in function 'read_thread' on arguments [2=(i32 4)]
+Intra-specializing call to 'atomic_read' in function 'read_thread' on arguments [2=(i32 5)]
+Intra-specializing call to 'atomic_read' in function 'read_thread' on arguments [2=(i32 5)]
+Intra-specializing call to 'atomic_read' in function 'read_thread' on arguments [2=(i32 5)]
+Intra-specializing call to 'atomic_read' in function 'read_thread' on arguments [2=(i32 5)]
+Intra-specializing call to 'atomic_read' in function 'read_thread' on arguments [2=(i32 1)]
+Intra-specializing call to 'atomic_read' in function 'read_thread' on arguments [2=(i32 1)]
+Intra-specializing call to 'atomic_read' in function 'read_thread' on arguments [2=(i32 2)]
+Intra-specializing call to 'atomic_read' in function 'read_thread' on arguments [2=(i32 20)]
+Intra-specializing call to 'atomic_read' in function 'read_thread' on arguments [2=(i32 4)]
+Intra-specializing call to 'atomic_read' in function 'check_thread' on arguments [2=(i32 16)]
+Intra-specializing call to 'atomic_read' in function 'check_thread' on arguments [2=(i32 6)]
+Intra-specializing call to 'atomic_read' in function 'check_thread' on arguments [2=(i32 4)]
+Intra-specializing call to 'atomic_read' in function 'check_thread' on arguments [2=(i32 5)]
+Intra-specializing call to 'atomic_read' in function 'check_thread' on arguments [2=(i32 5)]
+Intra-specializing call to 'atomic_read' in function 'check_thread' on arguments [2=(i32 1)]
+Intra-specializing call to 'atomic_read' in function 'check_thread' on arguments [2=(i32 2)]
+Intra-specializing call to 'atomic_read' in function 'check_thread' on arguments [2=(i32 20)]
+Intra-specializing call to 'atomic_read' in function 'check_thread' on arguments [2=(i32 4)]
+Intra-specializing call to 'safe_write' in function 'crack_wep_thread' on arguments [2=(i64 17408)]
+Intra-specializing call to 'safe_read' in function 'crack_wep_thread' on arguments [2=(i64 4)]
+Intra-specializing call to 'chrono' in function 'show_wep_stats' on arguments [1=(i32 0)]
+Intra-specializing call to 'chrono' in function 'show_wep_stats' on arguments [1=(i32 1)]
+Intra-specializing call to 'chrono' in function 'show_wep_stats' on arguments [1=(i32 0)]
+Intra-specializing call to 'show_wep_stats' in function 'key_found' on arguments [1=(i32 1),2=([256 x %struct.PTW_tableentry]* null),3=(i32* null),4=(i32* null),5=(i32 0)]
+Intra-specializing call to 'safe_read' in function 'calc_poll' on arguments [2=(i64 17408)]
+Intra-specializing call to 'safe_write' in function 'calc_poll' on arguments [2=(i64 4)]
+Intra-specializing call to 'safe_write' in function 'do_wep_crack1' on arguments [2=(i64 64)]
+Intra-specializing call to 'check_wep_key' in function 'do_wep_crack1' on arguments [2=(i32 0)]
+Intra-specializing call to 'check_wep_key' in function 'do_wep_crack1' on arguments [2=(i32 0)]
+Intra-specializing call to 'check_wep_key' in function 'do_wep_crack1' on arguments [2=(i32 0)]
+Intra-specializing call to 'check_wep_key' in function 'do_wep_crack1' on arguments [2=(i32 0)]
+Intra-specializing call to 'show_wep_stats' in function 'do_wep_crack1' on arguments [1=(i32 1),2=([256 x %struct.PTW_tableentry]* null),3=(i32* null),4=(i32* null),5=(i32 0)]
+Intra-specializing call to 'check_wep_key' in function 'do_wep_crack1' on arguments [1=(i32 4),2=(i32 5)]
+Intra-specializing call to 'show_wep_stats' in function 'do_wep_crack1' on arguments [1=(i32 0),2=([256 x %struct.PTW_tableentry]* null),3=(i32* null),4=(i32* null),5=(i32 0)]
+Intra-specializing call to 'check_wep_key' in function 'do_wep_crack1' on arguments [2=(i32 0)]
+Intra-specializing call to 'show_wep_stats' in function 'do_wep_crack1' on arguments [1=(i32 0),2=([256 x %struct.PTW_tableentry]* null),3=(i32* null),4=(i32* null),5=(i32 0)]
+Intra-specializing call to 'check_wep_key' in function 'do_wep_crack2' on arguments [2=(i32 0)]
+Intra-specializing call to 'check_wep_key' in function 'do_wep_crack2' on arguments [2=(i32 0)]
+Intra-specializing call to 'check_wep_key' in function 'do_wep_crack2' on arguments [2=(i32 0)]
+Intra-specializing call to 'show_wep_stats' in function 'do_wep_crack2' on arguments [1=(i32 0),2=([256 x %struct.PTW_tableentry]* null),3=(i32* null),4=(i32* null),5=(i32 0)]
+Intra-specializing call to 'show_wep_stats' in function 'do_wep_crack2' on arguments [1=(i32 0),2=([256 x %struct.PTW_tableentry]* null),3=(i32* null),4=(i32* null),5=(i32 0)]
+Intra-specializing call to 'show_wep_stats' in function 'do_wep_crack2' on arguments [1=(i32 0),2=([256 x %struct.PTW_tableentry]* null),3=(i32* null),4=(i32* null),5=(i32 0)]
+Intra-specializing call to 'check_wep_key' in function 'inner_bruteforcer_thread' on arguments [2=(i32 0)]
+Intra-specializing call to 'check_wep_key' in function 'inner_bruteforcer_thread' on arguments [2=(i32 0)]
+Intra-specializing call to 'check_wep_key' in function 'inner_bruteforcer_thread' on arguments [2=(i32 0)]
+Intra-specializing call to 'check_wep_key' in function 'inner_bruteforcer_thread' on arguments [2=(i32 0)]
+Intra-specializing call to 'safe_read' in function 'inner_bruteforcer_thread' on arguments [2=(i64 64)]
+Intra-specializing call to 'chrono' in function 'show_wpa_stats' on arguments [1=(i32 0)]
+Intra-specializing call to 'chrono' in function 'show_wpa_stats' on arguments [1=(i32 0)]
+Intra-specializing call to 'chrono' in function 'show_wpa_stats' on arguments [1=(i32 0)]
+Intra-specializing call to 'chrono' in function 'show_wpa_stats' on arguments [1=(i32 1)]
+Intra-specializing call to 'chrono' in function 'show_wpa_stats' on arguments [1=(i32 0)]
+Intra-specializing call to 'show_wpa_stats' in function 'crack_wpa_thread' on arguments [5=(i32 0)]
+Intra-specializing call to 'show_wpa_stats' in function 'crack_wpa_thread' on arguments [5=(i32 1)]
+Intra-specializing call to 'wpa_send_passphrase' in function 'do_wpa_crack' on arguments [2=(i32 1)]
+Intra-specializing call to 'wpa_send_passphrase' in function 'do_wpa_crack' on arguments [2=(i32 0)]
+Intra-specializing call to 'next_dict' in function 'set_dicts' on arguments [0=(i32 0)]
+Intra-specializing call to 'next_dict' in function 'set_dicts' on arguments [0=(i32 0)]
+Intra-specializing call to 'check_wep_key' in function 'crack_wep_dict' on arguments [2=(i32 0)]
+Intra-specializing call to 'show_wep_stats' in function 'crack_wep_dict' on arguments [1=(i32 1),2=([256 x %struct.PTW_tableentry]* null),3=(i32* null),4=(i32* null),5=(i32 0)]
+Intra-specializing call to 'key_found' in function 'crack_wep_ptw' on arguments [2=(i32 -1)]
+Intra-specializing call to 'PTW_computeKey' in function 'crack_wep_ptw' on arguments [1=(i32 5)]
+Intra-specializing call to 'PTW_computeKey' in function 'crack_wep_ptw' on arguments [1=(i32 13)]
+Intra-specializing call to 'PTW_computeKey' in function 'crack_wep_ptw' on arguments [1=(i32 5),2=(i32 1000)]
+Intra-specializing call to 'PTW_computeKey' in function 'crack_wep_ptw' on arguments [1=(i32 5)]
+Intra-specializing call to 'PTW_computeKey' in function 'crack_wep_ptw' on arguments [1=(i32 13)]
+Intra-specializing call to 'PTW_computeKey' in function 'crack_wep_ptw' on arguments [1=(i32 5),2=(i32 1000)]
+Intra-specializing call to 'guesskeybytes' in function 'PTW_computeKey' on arguments [4=(i32 1)]
+Intra-specializing call to 'show_wep_stats' in function 'doComputation' on arguments [1=(i32 1)]
+Intra-specializing call to 'show_wep_stats' in function 'doComputation' on arguments [1=(i32 0)]
+Intra-specializing call to 'show_wep_stats' in function 'doComputation' on arguments [1=(i32 1)]
+Intra-specializing call to 'show_wep_stats' in function 'doComputation' on arguments [1=(i32 0)]
+Intra-specializing call to 'show_wep_stats' in function 'doRound' on arguments [1=(i32 0)]
+Intra-specializing call to 'guesskeybytes' in function 'PTW_addsession' on arguments [0=(i32 3),4=(i32 29)]
+Intra-specializing call to 'chrono' in function 'main' on arguments [1=(i32 1)]
+Intra-specializing call to 'chrono' in function 'main' on arguments [1=(i32 1)]
+Intra-specializing call to 'chrono' in function 'main' on arguments [1=(i32 1)]
+Intra-specializing call to 'guesskeybytes' in function '__occam_spec.PTW_addsession(?,?,?,?,0x1)' on arguments [0=(i32 3),4=(i32 29)]
+Intra-specializing call to 'key_found' in function '__occam_spec.check_wep_key(?,0x4,0x5)' on arguments [2=(i32 4)]
+Intra-specializing call to 'doComputation' in function '__occam_spec.PTW_computeKey(?,0x5,?,?,?)' on arguments [1=(i32 5)]
+Intra-specializing call to 'doComputation' in function '__occam_spec.PTW_computeKey(?,0x5,?,?,?)' on arguments [1=(i32 5)]
+Intra-specializing call to 'getdrv' in function '__occam_spec.PTW_computeKey(?,0x5,?,?,?)' on arguments [1=(i32 5)]
+Intra-specializing call to 'doComputation' in function '__occam_spec.PTW_computeKey(?,0x5,?,?,?)' on arguments [1=(i32 5)]
+Intra-specializing call to 'correct' in function '__occam_spec.PTW_computeKey(?,0x5,?,?,?)' on arguments [2=(i32 5)]
+Intra-specializing call to 'guesskeybytes' in function '__occam_spec.PTW_computeKey(?,0x5,?,?,?)' on arguments [4=(i32 1)]
+Intra-specializing call to 'doComputation' in function '__occam_spec.PTW_computeKey(?,0xD,?,?,?)' on arguments [1=(i32 13)]
+Intra-specializing call to 'doComputation' in function '__occam_spec.PTW_computeKey(?,0xD,?,?,?)' on arguments [1=(i32 13)]
+Intra-specializing call to 'getdrv' in function '__occam_spec.PTW_computeKey(?,0xD,?,?,?)' on arguments [1=(i32 13)]
+Intra-specializing call to 'doComputation' in function '__occam_spec.PTW_computeKey(?,0xD,?,?,?)' on arguments [1=(i32 13)]
+Intra-specializing call to 'correct' in function '__occam_spec.PTW_computeKey(?,0xD,?,?,?)' on arguments [2=(i32 13)]
+Intra-specializing call to 'guesskeybytes' in function '__occam_spec.PTW_computeKey(?,0xD,?,?,?)' on arguments [4=(i32 1)]
+Intra-specializing call to 'doComputation' in function '__occam_spec.PTW_computeKey(?,0x5,0x3E8,?,?)' on arguments [1=(i32 5)]
+Intra-specializing call to 'doComputation' in function '__occam_spec.PTW_computeKey(?,0x5,0x3E8,?,?)' on arguments [1=(i32 5)]
+Intra-specializing call to 'getdrv' in function '__occam_spec.PTW_computeKey(?,0x5,0x3E8,?,?)' on arguments [1=(i32 5)]
+Intra-specializing call to 'doComputation' in function '__occam_spec.PTW_computeKey(?,0x5,0x3E8,?,?)' on arguments [1=(i32 5)]
+Intra-specializing call to 'correct' in function '__occam_spec.PTW_computeKey(?,0x5,0x3E8,?,?)' on arguments [2=(i32 5)]
+Intra-specializing call to 'guesskeybytes' in function '__occam_spec.PTW_computeKey(?,0x5,0x3E8,?,?)' on arguments [4=(i32 1)]
+...progress...
+Specialized 0 functions.
+ === End intra-module specialization ===
+/usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /tmp/tmptjdTop.bc -o=/tmp/tmpb65BGI.bc -Ppeval -Ppeval-policy=nonrec-aggressive -Ppeval-opt => 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -disable-simplify-libcalls --disable-slp-vectorization /tmp/tmpljPwUD.bc -o /tmp/tmptjdTop.bc -O3
+
+EXECUTED: /usr/lib/llvm-10/bin/opt -disable-simplify-libcalls --disable-slp-vectorization /tmp/tmpljPwUD.bc -o /tmp/tmptjdTop.bc -O3 WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /tmp/tmptjdTop.bc -o=/tmp/tmpb65BGI.bc -Ppeval -Ppeval-policy=nonrec-aggressive -Ppeval-opt
+
+=== Begin intra-module specialization ===
+Intra-specializing call to '__occam_spec.doComputation(?,0x5,?,?,?,?,?)' in function '__occam_spec.PTW_computeKey(?,0x5,0x3E8,?,?)' on arguments [4=(i32 700)]
+Intra-specializing call to '__occam_spec.doComputation(?,0x5,?,?,?,?,?)' in function '__occam_spec.PTW_computeKey(?,0x5,0x3E8,?,?)' on arguments [4=(i32 100)]
+Intra-specializing call to '__occam_spec.doComputation(?,0x5,?,?,?,?,?)' in function '__occam_spec.PTW_computeKey(?,0x5,0x3E8,?,?)' on arguments [4=(i32 200)]
+Intra-specializing call to '__occam_spec.show_wep_stats(?,0x1,null,null,null,0x0)' in function '__occam_spec.key_found(?,?,0x4)' on arguments [0=(i32 3)]
+Intra-specializing call to '__occam_spec.show_wep_stats(?,0x1,?,?,?,?)' in function '__occam_spec.doComputation(?,0x5,?,?,?,?,?)' on arguments [0=(i32 4)]
+Intra-specializing call to '__occam_spec.show_wep_stats(?,0x1,?,?,?,?)' in function '__occam_spec.doComputation(?,0x5,?,?,?,?,?)' on arguments [0=(i32 4)]
+Intra-specializing call to '__occam_spec.show_wep_stats(?,0x0,?,?,?,?)' in function '__occam_spec.doComputation(?,0x5,?,?,?,?,?)' on arguments [0=(i32 4)]
+Intra-specializing call to 'rc4init' in function '__occam_spec.correct(?,?,0x5)' on arguments [1=(i32 8)]
+Intra-specializing call to '__occam_spec.show_wep_stats(?,0x1,?,?,?,?)' in function '__occam_spec.doComputation(?,0xD,?,?,?,?,?)' on arguments [0=(i32 12)]
+Intra-specializing call to '__occam_spec.show_wep_stats(?,0x1,?,?,?,?)' in function '__occam_spec.doComputation(?,0xD,?,?,?,?,?)' on arguments [0=(i32 12)]
+Intra-specializing call to '__occam_spec.show_wep_stats(?,0x0,?,?,?,?)' in function '__occam_spec.doComputation(?,0xD,?,?,?,?,?)' on arguments [0=(i32 12)]
+Intra-specializing call to 'rc4init' in function '__occam_spec.correct(?,?,0xD)' on arguments [1=(i32 16)]
+Intra-specializing call to '__occam_spec.show_wep_stats(?,0x1,?,?,?,?)' in function '__occam_spec.doComputation(?,0x5,?,?,?,0x2BC,?)' on arguments [0=(i32 4)]
+Intra-specializing call to '__occam_spec.show_wep_stats(?,0x1,?,?,?,?)' in function '__occam_spec.doComputation(?,0x5,?,?,?,0x2BC,?)' on arguments [0=(i32 4)]
+Intra-specializing call to '__occam_spec.show_wep_stats(?,0x0,?,?,?,?)' in function '__occam_spec.doComputation(?,0x5,?,?,?,0x2BC,?)' on arguments [0=(i32 4)]
+Intra-specializing call to '__occam_spec.show_wep_stats(?,0x1,?,?,?,?)' in function '__occam_spec.doComputation(?,0x5,?,?,?,0x64,?)' on arguments [0=(i32 4)]
+Intra-specializing call to '__occam_spec.show_wep_stats(?,0x1,?,?,?,?)' in function '__occam_spec.doComputation(?,0x5,?,?,?,0x64,?)' on arguments [0=(i32 4)]
+Intra-specializing call to '__occam_spec.show_wep_stats(?,0x0,?,?,?,?)' in function '__occam_spec.doComputation(?,0x5,?,?,?,0x64,?)' on arguments [0=(i32 4)]
+Intra-specializing call to '__occam_spec.show_wep_stats(?,0x1,?,?,?,?)' in function '__occam_spec.doComputation(?,0x5,?,?,?,0xC8,?)' on arguments [0=(i32 4)]
+Intra-specializing call to '__occam_spec.show_wep_stats(?,0x1,?,?,?,?)' in function '__occam_spec.doComputation(?,0x5,?,?,?,0xC8,?)' on arguments [0=(i32 4)]
+Intra-specializing call to '__occam_spec.show_wep_stats(?,0x0,?,?,?,?)' in function '__occam_spec.doComputation(?,0x5,?,?,?,0xC8,?)' on arguments [0=(i32 4)]
+...progress...
+Specialized 0 functions.
+ === End intra-module specialization ===
+/usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /tmp/tmptjdTop.bc -o=/tmp/tmpb65BGI.bc -Ppeval -Ppeval-policy=nonrec-aggressive -Ppeval-opt => 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -disable-simplify-libcalls --disable-slp-vectorization /tmp/tmpljPwUD.bc -o /tmp/tmptjdTop.bc -O3
+
+EXECUTED: /usr/lib/llvm-10/bin/opt -disable-simplify-libcalls --disable-slp-vectorization /tmp/tmpljPwUD.bc -o /tmp/tmptjdTop.bc -O3 WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /tmp/tmptjdTop.bc -o=/tmp/tmpb65BGI.bc -Ppeval -Ppeval-policy=nonrec-aggressive -Ppeval-opt
+
+=== Begin intra-module specialization ===
+...no progress...
+No specialization took place
+ === End intra-module specialization ===
+/usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /tmp/tmptjdTop.bc -o=/tmp/tmpb65BGI.bc -Ppeval -Ppeval-policy=nonrec-aggressive -Ppeval-opt => 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/aircrack/slash/aircrack-ng.a.i.p.bc -o=/dev/null -Pinterface -Pinterface-output /tmp/tmp_cw3Vm.iface -Pinterface-entry /tmp/tmp_cw3Vm.iface
+
+GatherInterfacePass::runOnModule: /occam/examples/trimmer/aircrack/slash/aircrack-ng.a.i.p.bc
+Reading interface from '/tmp/tmp_cw3Vm.iface'...success
+External call to malloc
+External call to setsid
+External call to time
+External call to srand
+External call to getopt_long
+External call to printf
+External call to printf
+External call to printf
+External call to shasse2_cpuid
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to sscanf
+External call to strcasecmp
+External call to strcasecmp
+External call to printf
+External call to printf
+External call to strncpy
+External call to printf
+External call to printf
+External call to sscanf
+External call to printf
+External call to printf
+External call to sscanf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to sscanf
+External call to printf
+External call to printf
+External call to sscanf
+External call to printf
+External call to printf
+External call to sscanf
+External call to printf
+External call to printf
+External call to sscanf
+External call to printf
+External call to printf
+External call to strlen
+External call to calloc
+External call to printf
+External call to strlen
+External call to strncpy
+External call to sscanf
+External call to printf
+External call to printf
+External call to sscanf
+External call to printf
+External call to printf
+External call to sscanf
+External call to printf
+External call to printf
+External call to printf
+External call to fprintf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to getopt_long
+External call to printf
+External call to exit
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to signal
+External call to signal
+External call to signal
+External call to signal
+External call to pthread_mutex_init
+External call to pthread_mutex_init
+External call to pthread_mutex_init
+External call to pthread_cond_init
+External call to strcmp
+External call to pthread_create
+External call to perror
+External call to usleep
+External call to printf
+External call to printf
+External call to fflush
+External call to pthread_join
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to fflush
+External call to scanf
+External call to atoi
+External call to printf
+External call to printf
+External call to signal
+External call to strcmp
+External call to pthread_create
+External call to perror
+External call to usleep
+External call to pthread_mutex_lock
+External call to printf
+External call to fflush
+External call to pthread_cond_wait
+External call to pthread_mutex_unlock
+External call to memcmp
+External call to memcmp
+External call to memcmp
+External call to memcmp
+External call to strcmp
+External call to memcmp
+External call to memcmp
+External call to strcmp
+External call to printf
+External call to printf
+External call to printf
+External call to pipe
+External call to pipe
+External call to pipe
+External call to signal
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to usleep
+External call to pthread_create
+External call to perror
+External call to pthread_create
+External call to perror
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to memcmp
+External call to printf
+External call to strncpy
+External call to malloc
+External call to pthread_cond_init
+External call to pthread_mutex_init
+External call to pthread_create
+External call to perror
+External call to pthread_join
+External call to printf
+External call to printf
+External call to strlen
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to fflush
+External call to printf
+External call to calloc
+External call to strlen
+External call to calloc
+External call to snprintf
+External call to free
+External call to strlen
+External call to realloc
+Added reference to function printf
+Added reference to function strncpy
+Added reference to function strlen
+Added reference to function shasse2_init
+Added reference to function shasse2_data
+Added reference to function EVP_sha1
+Added reference to function HMAC
+Added reference to function shasse2_ends
+Added reference to function fflush
+Added reference to function pthread_join
+Added reference to function free
+Added reference to function fork
+Added reference to function exit
+Added reference to function _exit
+Added reference to function write
+Added reference to function __errno_location
+Added reference to function signal
+Added reference to function pthread_mutex_lock
+Added reference to function pthread_cond_broadcast
+Added reference to function pthread_mutex_unlock
+Added reference to function usleep
+Added reference to function pthread_cond_wait
+Added reference to function pthread_cond_signal
+Added reference to function strdup
+Added reference to function strsep
+Added reference to function malloc
+Added reference to function memcmp
+Added reference to function perror
+Added reference to function snprintf
+Added reference to function toupper
+Added reference to function read
+Added reference to function strcmp
+Added reference to function open64
+Added reference to function fprintf
+Added reference to function errx
+Added reference to function fcntl
+Added reference to function realloc
+Added reference to function kill
+Added reference to function gettimeofday
+Added reference to function ioctl
+Added reference to function fopen64
+Added reference to function fclose
+Added reference to function qsort
+Added reference to function sleep
+Added reference to function atoi
+Added reference to function __ctype_b_loc
+Added reference to function pthread_mutex_trylock
+Added reference to function shasse2_cpuid
+Added reference to function pthread_exit
+Added reference to function sched_yield
+Added reference to function EVP_md5
+Added reference to function fileno
+Added reference to function fdopen
+Added reference to function fseek
+Added reference to function ftell
+Added reference to function rewind
+Added reference to function fgets
+Added reference to function sscanf
+Added reference to function strncasecmp
+Added reference to function setsid
+Added reference to function time
+Added reference to function srand
+Added reference to function getopt_long
+Added reference to function strcasecmp
+Added reference to function calloc
+Added reference to function pthread_mutex_init
+Added reference to function pthread_cond_init
+Added reference to function pthread_create
+Added reference to function scanf
+Added reference to function pipe
+Added reference to function SHA1_Init
+Added reference to function SHA1_Update
+Added reference to function SHA1_Final
+Added reference to function htons
+Added reference to function strstr
+Added reference to function strchr
+Added reference to function sysconf
+Added reference to function __isoc99_sscanf
+Added reference to function getchar
+Added reference to function rand
+Added reference to global stdout
+Added reference to global stderr
+Added reference to global stdin
+Added reference to global optarg
+Added reference to global optind
+Generated interface for /occam/examples/trimmer/aircrack/slash/aircrack-ng.a.i.p.bc
+## External calls:
+	free(?)
+	setsid()
+	pthread_mutex_init(?,null)
+	pthread_mutex_init(?,null)
+	pthread_mutex_init(?,null)
+	pthread_mutex_init(?,null)
+	usleep(0x1FFFF)
+	usleep(0x1FFFF)
+	usleep(0x2710)
+	time(null)
+	strncpy(?,?,0x20)
+	strncpy(?,?,?)
+	strncpy(?,?,0x20)
+	srand(?)
+	fprintf(?,S:3F68E1DC)
+	strcmp(?,S:5CD)
+	strcmp(?,S:5CD)
+	strcmp(?,?)
+	strcmp(?,?)
+	pthread_create(?,null,?,?)
+	pthread_create(?,null,?,?)
+	pthread_create(?,null,?,?)
+	pthread_create(?,null,?,?)
+	pthread_create(?,null,?,?)
+	pthread_cond_init(?,null)
+	pthread_cond_init(?,null)
+	signal(0x2,sighandler)
+	signal(0x3,sighandler)
+	signal(0xF,sighandler)
+	signal(0xE,?)
+	signal(0x2,sighandler)
+	signal(0x1C,sighandler)
+	pthread_cond_wait(?,?)
+	getopt_long(0x9,?,S:A5847C0E,?,?)
+	getopt_long(0x9,?,S:A5847C0E,?,?)
+	pthread_mutex_lock(?)
+	pthread_mutex_unlock(?)
+	strlen(?)
+	strlen(?)
+	strlen(?)
+	strlen(S:4860B522)
+	strlen(?)
+	fflush(?)
+	fflush(?)
+	fflush(?)
+	fflush(?)
+	memcmp(?,S:12AC975A,0x6)
+	memcmp(?,?,0x6)
+	memcmp(?,S:12AC975A,0x6)
+	memcmp(?,S:12AC975A,0x6)
+	memcmp(?,S:12AC975A,0x6)
+	memcmp(?,?,0x6)
+	memcmp(?,?,0x20)
+	scanf(S:59E1F3B2,?)
+	realloc(?,?)
+	atoi(?)
+	shasse2_cpuid()
+	calloc(0x1,?)
+	calloc(0x1,0x14)
+	calloc(0x1,?)
+	pipe(?)
+	pipe(?)
+	pipe(?)
+	printf(S:7D16B107,?)
+	printf(S:7D16B107,?)
+	printf(S:9FB153D,?)
+	printf(?)
+	printf(S:14A)
+	printf(S:471A69DE)
+	printf(S:E3A97CF4,?)
+	printf(S:32C5D9FC)
+	printf(S:7D16B107,?)
+	printf(S:87377F28)
+	printf(S:7D16B107,?)
+	printf(S:8085DBD,?)
+	printf(S:7D16B107,?)
+	printf(S:FBC86D8F)
+	printf(S:7D16B107,?)
+	printf(S:73F74DFC)
+	printf(S:7D16B107,?)
+	printf(S:4712830)
+	printf(S:7D16B107,?)
+	printf(S:60CC5916)
+	printf(S:7D16B107,?)
+	printf(S:5FAB8FCD)
+	printf(S:7D16B107,?)
+	printf(S:376C5465,0x11)
+	printf(S:7D16B107,?)
+	printf(S:D46DF92B)
+	printf(S:F6A3EE1C)
+	printf(S:7D16B107,?)
+	printf(S:20FB0D2A)
+	printf(S:7D16B107,?)
+	printf(S:291B17E,?)
+	printf(S:7D16B107,?)
+	printf(S:7D16B107,?)
+	printf(S:CF498A0F,?)
+	printf(S:C027031)
+	printf(S:471A69DE)
+	printf(S:E3A97CF4,?)
+	printf(?,?,?)
+	printf(?,?,?)
+	printf(S:17ACE5C8)
+	printf(S:7D16B107,?)
+	printf(S:1680514A)
+	printf(S:85C9E542)
+	printf(S:C8D3B20D,0x80)
+	printf(S:1C78CBD7)
+	printf(S:BE441E1F,?)
+	printf(S:91B29912)
+	printf(S:A73B1EA7,S:0,S:0)
+	printf(S:5CE5F3FC)
+	printf(S:F5550F39,?,?,?,?)
+	printf(S:402E9BC3)
+	printf(S:8BD2C24E,?)
+	printf(S:713ED3,?)
+	printf(S:66E58E1A)
+	printf(S:14A)
+	printf(S:5229B7A6)
+	printf(S:E0FCEC3F)
+	printf(S:14A)
+	printf(S:1C78CBD7)
+	printf(S:5FBABB58,?)
+	printf(S:C6BBE75)
+	printf(S:783ED2DC)
+	printf(S:C9343CA9)
+	printf(S:4BD5B4BB,0x1388)
+	printf(S:A202C93A,?)
+	printf(S:2F961567)
+	printf(S:B24F0C60,?)
+	printf(S:54910055)
+	printf(S:C4902782)
+	printf(S:14A)
+	printf(S:54910055)
+	printf(S:79727692)
+	printf(S:14A)
+	printf(S:248B6963)
+	printf(S:3AECC054)
+	printf(S:3E221640,?)
+	printf(S:C2740DF3)
+	printf(S:B6AF867,?,?)
+	printf(S:134A9467)
+	printf(S:EE93AFAC)
+	printf(S:14A)
+	printf(S:14A)
+	printf(S:B7A661C4,?,?,?,?,?,?,?,?)
+	snprintf(?,?,S:F450E3B8,S:4860B522,0x1,0x1)
+	strcasecmp(?,S:42FD2C)
+	strcasecmp(?,S:432A08)
+	pthread_join(?,null)
+	pthread_join(?,null)
+	malloc(0x48)
+	malloc(0x880)
+	perror(S:8808C180)
+	perror(S:8808C180)
+	perror(S:8808C180)
+	perror(S:8808C180)
+	perror(S:8808C180)
+	exit(0x0)
+	sscanf(?,S:AA49,?)
+	sscanf(?,S:AA49,?)
+	sscanf(?,S:ACDD,?)
+	sscanf(?,S:AA49,?)
+	sscanf(?,S:AA49,?)
+	sscanf(?,S:AA8B,?)
+	sscanf(?,S:AA49,?)
+	sscanf(?,S:AA49,?)
+	sscanf(?,S:AA49,?)
+	sscanf(?,S:AA49,?)
+## External symbols:
+	EVP_md5
+	EVP_sha1
+	HMAC
+	SHA1_Final
+	SHA1_Init
+	SHA1_Update
+	__ctype_b_loc
+	__errno_location
+	__isoc99_sscanf
+	_exit
+	atoi
+	calloc
+	errx
+	exit
+	fclose
+	fcntl
+	fdopen
+	fflush
+	fgets
+	fileno
+	fopen64
+	fork
+	fprintf
+	free
+	fseek
+	ftell
+	getchar
+	getopt_long
+	gettimeofday
+	htons
+	ioctl
+	kill
+	malloc
+	memcmp
+	open64
+	optarg
+	optind
+	perror
+	pipe
+	printf
+	pthread_cond_broadcast
+	pthread_cond_init
+	pthread_cond_signal
+	pthread_cond_wait
+	pthread_create
+	pthread_exit
+	pthread_join
+	pthread_mutex_init
+	pthread_mutex_lock
+	pthread_mutex_trylock
+	pthread_mutex_unlock
+	qsort
+	rand
+	read
+	realloc
+	rewind
+	scanf
+	sched_yield
+	setsid
+	shasse2_cpuid
+	shasse2_data
+	shasse2_ends
+	shasse2_init
+	signal
+	sleep
+	snprintf
+	srand
+	sscanf
+	stderr
+	stdin
+	stdout
+	strcasecmp
+	strchr
+	strcmp
+	strdup
+	strlen
+	strncasecmp
+	strncpy
+	strsep
+	strstr
+	sysconf
+	time
+	toupper
+	usleep
+	write
+
+EXECUTED: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/aircrack/slash/aircrack-ng.a.i.p.bc -o=/dev/null -Pinterface -Pinterface-output /tmp/tmp_cw3Vm.iface -Pinterface-entry /tmp/tmp_cw3Vm.iface WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/aircrack/slash/aircrack-ng.a.i.p.bc -o=/dev/null -Pinterface -Pinterface-output /tmp/tmp_cw3Vm.iface -Pinterface-entry /tmp/tmp_cw3Vm.iface
+
+GatherInterfacePass::runOnModule: /occam/examples/trimmer/aircrack/slash/aircrack-ng.a.i.p.bc
+Reading interface from '/tmp/tmp_cw3Vm.iface'...success
+External call to malloc
+External call to setsid
+External call to time
+External call to srand
+External call to getopt_long
+External call to printf
+External call to printf
+External call to printf
+External call to shasse2_cpuid
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to sscanf
+External call to strcasecmp
+External call to strcasecmp
+External call to printf
+External call to printf
+External call to strncpy
+External call to printf
+External call to printf
+External call to sscanf
+External call to printf
+External call to printf
+External call to sscanf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to sscanf
+External call to printf
+External call to printf
+External call to sscanf
+External call to printf
+External call to printf
+External call to sscanf
+External call to printf
+External call to printf
+External call to sscanf
+External call to printf
+External call to printf
+External call to strlen
+External call to calloc
+External call to printf
+External call to strlen
+External call to strncpy
+External call to sscanf
+External call to printf
+External call to printf
+External call to sscanf
+External call to printf
+External call to printf
+External call to sscanf
+External call to printf
+External call to printf
+External call to printf
+External call to fprintf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to getopt_long
+External call to printf
+External call to exit
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to signal
+External call to signal
+External call to signal
+External call to signal
+External call to pthread_mutex_init
+External call to pthread_mutex_init
+External call to pthread_mutex_init
+External call to pthread_cond_init
+External call to strcmp
+External call to pthread_create
+External call to perror
+External call to usleep
+External call to printf
+External call to printf
+External call to fflush
+External call to pthread_join
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to fflush
+External call to scanf
+External call to atoi
+External call to printf
+External call to printf
+External call to signal
+External call to strcmp
+External call to pthread_create
+External call to perror
+External call to usleep
+External call to pthread_mutex_lock
+External call to printf
+External call to fflush
+External call to pthread_cond_wait
+External call to pthread_mutex_unlock
+External call to memcmp
+External call to memcmp
+External call to memcmp
+External call to memcmp
+External call to strcmp
+External call to memcmp
+External call to memcmp
+External call to strcmp
+External call to printf
+External call to printf
+External call to printf
+External call to pipe
+External call to pipe
+External call to pipe
+External call to signal
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to usleep
+External call to pthread_create
+External call to perror
+External call to pthread_create
+External call to perror
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to memcmp
+External call to printf
+External call to strncpy
+External call to malloc
+External call to pthread_cond_init
+External call to pthread_mutex_init
+External call to pthread_create
+External call to perror
+External call to pthread_join
+External call to printf
+External call to printf
+External call to strlen
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to fflush
+External call to printf
+External call to calloc
+External call to strlen
+External call to calloc
+External call to snprintf
+External call to free
+External call to strlen
+External call to realloc
+Added reference to function printf
+Added reference to function strncpy
+Added reference to function strlen
+Added reference to function shasse2_init
+Added reference to function shasse2_data
+Added reference to function EVP_sha1
+Added reference to function HMAC
+Added reference to function shasse2_ends
+Added reference to function fflush
+Added reference to function pthread_join
+Added reference to function free
+Added reference to function fork
+Added reference to function exit
+Added reference to function _exit
+Added reference to function write
+Added reference to function __errno_location
+Added reference to function signal
+Added reference to function pthread_mutex_lock
+Added reference to function pthread_cond_broadcast
+Added reference to function pthread_mutex_unlock
+Added reference to function usleep
+Added reference to function pthread_cond_wait
+Added reference to function pthread_cond_signal
+Added reference to function strdup
+Added reference to function strsep
+Added reference to function malloc
+Added reference to function memcmp
+Added reference to function perror
+Added reference to function snprintf
+Added reference to function toupper
+Added reference to function read
+Added reference to function strcmp
+Added reference to function open64
+Added reference to function fprintf
+Added reference to function errx
+Added reference to function fcntl
+Added reference to function realloc
+Added reference to function kill
+Added reference to function gettimeofday
+Added reference to function ioctl
+Added reference to function fopen64
+Added reference to function fclose
+Added reference to function qsort
+Added reference to function sleep
+Added reference to function atoi
+Added reference to function __ctype_b_loc
+Added reference to function pthread_mutex_trylock
+Added reference to function shasse2_cpuid
+Added reference to function pthread_exit
+Added reference to function sched_yield
+Added reference to function EVP_md5
+Added reference to function fileno
+Added reference to function fdopen
+Added reference to function fseek
+Added reference to function ftell
+Added reference to function rewind
+Added reference to function fgets
+Added reference to function sscanf
+Added reference to function strncasecmp
+Added reference to function setsid
+Added reference to function time
+Added reference to function srand
+Added reference to function getopt_long
+Added reference to function strcasecmp
+Added reference to function calloc
+Added reference to function pthread_mutex_init
+Added reference to function pthread_cond_init
+Added reference to function pthread_create
+Added reference to function scanf
+Added reference to function pipe
+Added reference to function SHA1_Init
+Added reference to function SHA1_Update
+Added reference to function SHA1_Final
+Added reference to function htons
+Added reference to function strstr
+Added reference to function strchr
+Added reference to function sysconf
+Added reference to function __isoc99_sscanf
+Added reference to function getchar
+Added reference to function rand
+Added reference to global stdout
+Added reference to global stderr
+Added reference to global stdin
+Added reference to global optarg
+Added reference to global optind
+Generated interface for /occam/examples/trimmer/aircrack/slash/aircrack-ng.a.i.p.bc
+## External calls:
+	free(?)
+	setsid()
+	pthread_mutex_init(?,null)
+	pthread_mutex_init(?,null)
+	pthread_mutex_init(?,null)
+	pthread_mutex_init(?,null)
+	usleep(0x1FFFF)
+	usleep(0x1FFFF)
+	usleep(0x2710)
+	time(null)
+	strncpy(?,?,0x20)
+	strncpy(?,?,?)
+	strncpy(?,?,0x20)
+	srand(?)
+	fprintf(?,S:3F68E1DC)
+	strcmp(?,S:5CD)
+	strcmp(?,S:5CD)
+	strcmp(?,?)
+	strcmp(?,?)
+	pthread_create(?,null,?,?)
+	pthread_create(?,null,?,?)
+	pthread_create(?,null,?,?)
+	pthread_create(?,null,?,?)
+	pthread_create(?,null,?,?)
+	pthread_cond_init(?,null)
+	pthread_cond_init(?,null)
+	signal(0x2,sighandler)
+	signal(0x3,sighandler)
+	signal(0xF,sighandler)
+	signal(0xE,?)
+	signal(0x2,sighandler)
+	signal(0x1C,sighandler)
+	pthread_cond_wait(?,?)
+	getopt_long(0x9,?,S:A5847C0E,?,?)
+	getopt_long(0x9,?,S:A5847C0E,?,?)
+	pthread_mutex_lock(?)
+	pthread_mutex_unlock(?)
+	strlen(?)
+	strlen(?)
+	strlen(?)
+	strlen(S:4860B522)
+	strlen(?)
+	fflush(?)
+	fflush(?)
+	fflush(?)
+	fflush(?)
+	memcmp(?,S:12AC975A,0x6)
+	memcmp(?,?,0x6)
+	memcmp(?,S:12AC975A,0x6)
+	memcmp(?,S:12AC975A,0x6)
+	memcmp(?,S:12AC975A,0x6)
+	memcmp(?,?,0x6)
+	memcmp(?,?,0x20)
+	scanf(S:59E1F3B2,?)
+	realloc(?,?)
+	atoi(?)
+	shasse2_cpuid()
+	calloc(0x1,?)
+	calloc(0x1,0x14)
+	calloc(0x1,?)
+	pipe(?)
+	pipe(?)
+	pipe(?)
+	printf(S:7D16B107,?)
+	printf(S:7D16B107,?)
+	printf(S:9FB153D,?)
+	printf(?)
+	printf(S:14A)
+	printf(S:471A69DE)
+	printf(S:E3A97CF4,?)
+	printf(S:32C5D9FC)
+	printf(S:7D16B107,?)
+	printf(S:87377F28)
+	printf(S:7D16B107,?)
+	printf(S:8085DBD,?)
+	printf(S:7D16B107,?)
+	printf(S:FBC86D8F)
+	printf(S:7D16B107,?)
+	printf(S:73F74DFC)
+	printf(S:7D16B107,?)
+	printf(S:4712830)
+	printf(S:7D16B107,?)
+	printf(S:60CC5916)
+	printf(S:7D16B107,?)
+	printf(S:5FAB8FCD)
+	printf(S:7D16B107,?)
+	printf(S:376C5465,0x11)
+	printf(S:7D16B107,?)
+	printf(S:D46DF92B)
+	printf(S:F6A3EE1C)
+	printf(S:7D16B107,?)
+	printf(S:20FB0D2A)
+	printf(S:7D16B107,?)
+	printf(S:291B17E,?)
+	printf(S:7D16B107,?)
+	printf(S:7D16B107,?)
+	printf(S:CF498A0F,?)
+	printf(S:C027031)
+	printf(S:471A69DE)
+	printf(S:E3A97CF4,?)
+	printf(?,?,?)
+	printf(?,?,?)
+	printf(S:17ACE5C8)
+	printf(S:7D16B107,?)
+	printf(S:1680514A)
+	printf(S:85C9E542)
+	printf(S:C8D3B20D,0x80)
+	printf(S:1C78CBD7)
+	printf(S:BE441E1F,?)
+	printf(S:91B29912)
+	printf(S:A73B1EA7,S:0,S:0)
+	printf(S:5CE5F3FC)
+	printf(S:F5550F39,?,?,?,?)
+	printf(S:402E9BC3)
+	printf(S:8BD2C24E,?)
+	printf(S:713ED3,?)
+	printf(S:66E58E1A)
+	printf(S:14A)
+	printf(S:5229B7A6)
+	printf(S:E0FCEC3F)
+	printf(S:14A)
+	printf(S:1C78CBD7)
+	printf(S:5FBABB58,?)
+	printf(S:C6BBE75)
+	printf(S:783ED2DC)
+	printf(S:C9343CA9)
+	printf(S:4BD5B4BB,0x1388)
+	printf(S:A202C93A,?)
+	printf(S:2F961567)
+	printf(S:B24F0C60,?)
+	printf(S:54910055)
+	printf(S:C4902782)
+	printf(S:14A)
+	printf(S:54910055)
+	printf(S:79727692)
+	printf(S:14A)
+	printf(S:248B6963)
+	printf(S:3AECC054)
+	printf(S:3E221640,?)
+	printf(S:C2740DF3)
+	printf(S:B6AF867,?,?)
+	printf(S:134A9467)
+	printf(S:EE93AFAC)
+	printf(S:14A)
+	printf(S:14A)
+	printf(S:B7A661C4,?,?,?,?,?,?,?,?)
+	snprintf(?,?,S:F450E3B8,S:4860B522,0x1,0x1)
+	strcasecmp(?,S:42FD2C)
+	strcasecmp(?,S:432A08)
+	pthread_join(?,null)
+	pthread_join(?,null)
+	malloc(0x48)
+	malloc(0x880)
+	perror(S:8808C180)
+	perror(S:8808C180)
+	perror(S:8808C180)
+	perror(S:8808C180)
+	perror(S:8808C180)
+	exit(0x0)
+	sscanf(?,S:AA49,?)
+	sscanf(?,S:AA49,?)
+	sscanf(?,S:ACDD,?)
+	sscanf(?,S:AA49,?)
+	sscanf(?,S:AA49,?)
+	sscanf(?,S:AA8B,?)
+	sscanf(?,S:AA49,?)
+	sscanf(?,S:AA49,?)
+	sscanf(?,S:AA49,?)
+	sscanf(?,S:AA49,?)
+## External symbols:
+	EVP_md5
+	EVP_sha1
+	HMAC
+	SHA1_Final
+	SHA1_Init
+	SHA1_Update
+	__ctype_b_loc
+	__errno_location
+	__isoc99_sscanf
+	_exit
+	atoi
+	calloc
+	errx
+	exit
+	fclose
+	fcntl
+	fdopen
+	fflush
+	fgets
+	fileno
+	fopen64
+	fork
+	fprintf
+	free
+	fseek
+	ftell
+	getchar
+	getopt_long
+	gettimeofday
+	htons
+	ioctl
+	kill
+	malloc
+	memcmp
+	open64
+	optarg
+	optind
+	perror
+	pipe
+	printf
+	pthread_cond_broadcast
+	pthread_cond_init
+	pthread_cond_signal
+	pthread_cond_wait
+	pthread_create
+	pthread_exit
+	pthread_join
+	pthread_mutex_init
+	pthread_mutex_lock
+	pthread_mutex_trylock
+	pthread_mutex_unlock
+	qsort
+	rand
+	read
+	realloc
+	rewind
+	scanf
+	sched_yield
+	setsid
+	shasse2_cpuid
+	shasse2_data
+	shasse2_ends
+	shasse2_init
+	signal
+	sleep
+	snprintf
+	srand
+	sscanf
+	stderr
+	stdin
+	stdout
+	strcasecmp
+	strchr
+	strcmp
+	strdup
+	strlen
+	strncasecmp
+	strncpy
+	strsep
+	strstr
+	sysconf
+	time
+	toupper
+	usleep
+	write
+
+EXECUTED: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/aircrack/slash/aircrack-ng.a.i.p.bc -o=/dev/null -Pinterface -Pinterface-output /tmp/tmp_cw3Vm.iface -Pinterface-entry /tmp/tmp_cw3Vm.iface WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/aircrack/slash/aircrack-ng.a.i.p.bc -o=/dev/null -Pinterface -Pinterface-output aircrack-ng.02.iface
+
+GatherInterfacePass::runOnModule: /occam/examples/trimmer/aircrack/slash/aircrack-ng.a.i.p.bc
+Added reference to function printf
+Added reference to function strncpy
+Added reference to function strlen
+Added reference to function shasse2_init
+Added reference to function shasse2_data
+Added reference to function EVP_sha1
+Added reference to function HMAC
+Added reference to function shasse2_ends
+Added reference to function fflush
+Added reference to function pthread_join
+Added reference to function free
+Added reference to function fork
+Added reference to function exit
+Added reference to function _exit
+Added reference to function write
+Added reference to function __errno_location
+Added reference to function signal
+Added reference to function pthread_mutex_lock
+Added reference to function pthread_cond_broadcast
+Added reference to function pthread_mutex_unlock
+Added reference to function usleep
+Added reference to function pthread_cond_wait
+Added reference to function pthread_cond_signal
+Added reference to function strdup
+Added reference to function strsep
+Added reference to function malloc
+Added reference to function memcmp
+Added reference to function perror
+Added reference to function snprintf
+Added reference to function toupper
+Added reference to function read
+Added reference to function strcmp
+Added reference to function open64
+Added reference to function fprintf
+Added reference to function errx
+Added reference to function fcntl
+Added reference to function realloc
+Added reference to function kill
+Added reference to function gettimeofday
+Added reference to function ioctl
+Added reference to function fopen64
+Added reference to function fclose
+Added reference to function qsort
+Added reference to function sleep
+Added reference to function atoi
+Added reference to function __ctype_b_loc
+Added reference to function pthread_mutex_trylock
+Added reference to function shasse2_cpuid
+Added reference to function pthread_exit
+Added reference to function sched_yield
+Added reference to function EVP_md5
+Added reference to function fileno
+Added reference to function fdopen
+Added reference to function fseek
+Added reference to function ftell
+Added reference to function rewind
+Added reference to function fgets
+Added reference to function sscanf
+Added reference to function strncasecmp
+Added reference to function setsid
+Added reference to function time
+Added reference to function srand
+Added reference to function getopt_long
+Added reference to function strcasecmp
+Added reference to function calloc
+Added reference to function pthread_mutex_init
+Added reference to function pthread_cond_init
+Added reference to function pthread_create
+Added reference to function scanf
+Added reference to function pipe
+Added reference to function SHA1_Init
+Added reference to function SHA1_Update
+Added reference to function SHA1_Final
+Added reference to function htons
+Added reference to function strstr
+Added reference to function strchr
+Added reference to function sysconf
+Added reference to function __isoc99_sscanf
+Added reference to function getchar
+Added reference to function rand
+Added reference to global stdout
+Added reference to global stderr
+Added reference to global stdin
+Added reference to global optarg
+Added reference to global optind
+Generated interface for /occam/examples/trimmer/aircrack/slash/aircrack-ng.a.i.p.bc
+## External calls:
+## External symbols:
+	EVP_md5
+	EVP_sha1
+	HMAC
+	SHA1_Final
+	SHA1_Init
+	SHA1_Update
+	__ctype_b_loc
+	__errno_location
+	__isoc99_sscanf
+	_exit
+	atoi
+	calloc
+	errx
+	exit
+	fclose
+	fcntl
+	fdopen
+	fflush
+	fgets
+	fileno
+	fopen64
+	fork
+	fprintf
+	free
+	fseek
+	ftell
+	getchar
+	getopt_long
+	gettimeofday
+	htons
+	ioctl
+	kill
+	malloc
+	memcmp
+	open64
+	optarg
+	optind
+	perror
+	pipe
+	printf
+	pthread_cond_broadcast
+	pthread_cond_init
+	pthread_cond_signal
+	pthread_cond_wait
+	pthread_create
+	pthread_exit
+	pthread_join
+	pthread_mutex_init
+	pthread_mutex_lock
+	pthread_mutex_trylock
+	pthread_mutex_unlock
+	qsort
+	rand
+	read
+	realloc
+	rewind
+	scanf
+	sched_yield
+	setsid
+	shasse2_cpuid
+	shasse2_data
+	shasse2_ends
+	shasse2_init
+	signal
+	sleep
+	snprintf
+	srand
+	sscanf
+	stderr
+	stdin
+	stdout
+	strcasecmp
+	strchr
+	strcmp
+	strdup
+	strlen
+	strncasecmp
+	strncpy
+	strsep
+	strstr
+	sysconf
+	time
+	toupper
+	usleep
+	write
+
+EXECUTED: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/aircrack/slash/aircrack-ng.a.i.p.bc -o=/dev/null -Pinterface -Pinterface-output aircrack-ng.02.iface WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/aircrack/slash/aircrack-ng.a.i.p.bc -o=/occam/examples/trimmer/aircrack/slash/aircrack-ng.a.i.p.i.bc -Pinternalize -Pinternalize-wrt-interfaces main.iface
+
+InternalizePass
+Reading file 'main.iface'...success
+Done reading.
+InternalizePass::runOnModule: /occam/examples/trimmer/aircrack/slash/aircrack-ng.a.i.p.bc
+Internalizing 'get_nb_cpus' ExternalLinkage DefaultVisibility
+Internalizing 'PTW_newattackstate' ExternalLinkage DefaultVisibility
+...progress...
+Progress: internalized functions = 2 internalized globals = 0
+/usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/aircrack/slash/aircrack-ng.a.i.p.bc -o=/occam/examples/trimmer/aircrack/slash/aircrack-ng.a.i.p.i.bc -Pinternalize -Pinternalize-wrt-interfaces main.iface => 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/aircrack/slash/aircrack-ng.a.i.p.i.bc -o=/dev/null -Pinterface -Pinterface-output /tmp/tmpkRtUie.iface -Pinterface-entry /tmp/tmpkRtUie.iface
+
+GatherInterfacePass::runOnModule: /occam/examples/trimmer/aircrack/slash/aircrack-ng.a.i.p.i.bc
+Reading interface from '/tmp/tmpkRtUie.iface'...success
+External call to malloc
+External call to setsid
+External call to time
+External call to srand
+External call to getopt_long
+External call to printf
+External call to printf
+External call to printf
+External call to shasse2_cpuid
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to sscanf
+External call to strcasecmp
+External call to strcasecmp
+External call to printf
+External call to printf
+External call to strncpy
+External call to printf
+External call to printf
+External call to sscanf
+External call to printf
+External call to printf
+External call to sscanf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to sscanf
+External call to printf
+External call to printf
+External call to sscanf
+External call to printf
+External call to printf
+External call to sscanf
+External call to printf
+External call to printf
+External call to sscanf
+External call to printf
+External call to printf
+External call to strlen
+External call to calloc
+External call to printf
+External call to strlen
+External call to strncpy
+External call to sscanf
+External call to printf
+External call to printf
+External call to sscanf
+External call to printf
+External call to printf
+External call to sscanf
+External call to printf
+External call to printf
+External call to printf
+External call to fprintf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to getopt_long
+External call to printf
+External call to exit
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to signal
+External call to signal
+External call to signal
+External call to signal
+External call to pthread_mutex_init
+External call to pthread_mutex_init
+External call to pthread_mutex_init
+External call to pthread_cond_init
+External call to strcmp
+External call to pthread_create
+External call to perror
+External call to usleep
+External call to printf
+External call to printf
+External call to fflush
+External call to pthread_join
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to fflush
+External call to scanf
+External call to atoi
+External call to printf
+External call to printf
+External call to signal
+External call to strcmp
+External call to pthread_create
+External call to perror
+External call to usleep
+External call to pthread_mutex_lock
+External call to printf
+External call to fflush
+External call to pthread_cond_wait
+External call to pthread_mutex_unlock
+External call to memcmp
+External call to memcmp
+External call to memcmp
+External call to memcmp
+External call to strcmp
+External call to memcmp
+External call to memcmp
+External call to strcmp
+External call to printf
+External call to printf
+External call to printf
+External call to pipe
+External call to pipe
+External call to pipe
+External call to signal
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to usleep
+External call to pthread_create
+External call to perror
+External call to pthread_create
+External call to perror
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to memcmp
+External call to printf
+External call to strncpy
+External call to malloc
+External call to pthread_cond_init
+External call to pthread_mutex_init
+External call to pthread_create
+External call to perror
+External call to pthread_join
+External call to printf
+External call to printf
+External call to strlen
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to fflush
+External call to printf
+External call to calloc
+External call to strlen
+External call to calloc
+External call to snprintf
+External call to free
+External call to strlen
+External call to realloc
+Added reference to function printf
+Added reference to function strncpy
+Added reference to function strlen
+Added reference to function shasse2_init
+Added reference to function shasse2_data
+Added reference to function EVP_sha1
+Added reference to function HMAC
+Added reference to function shasse2_ends
+Added reference to function fflush
+Added reference to function pthread_join
+Added reference to function free
+Added reference to function fork
+Added reference to function exit
+Added reference to function _exit
+Added reference to function write
+Added reference to function __errno_location
+Added reference to function signal
+Added reference to function pthread_mutex_lock
+Added reference to function pthread_cond_broadcast
+Added reference to function pthread_mutex_unlock
+Added reference to function usleep
+Added reference to function pthread_cond_wait
+Added reference to function pthread_cond_signal
+Added reference to function strdup
+Added reference to function strsep
+Added reference to function malloc
+Added reference to function memcmp
+Added reference to function perror
+Added reference to function snprintf
+Added reference to function toupper
+Added reference to function read
+Added reference to function strcmp
+Added reference to function open64
+Added reference to function fprintf
+Added reference to function errx
+Added reference to function fcntl
+Added reference to function realloc
+Added reference to function kill
+Added reference to function gettimeofday
+Added reference to function ioctl
+Added reference to function fopen64
+Added reference to function fclose
+Added reference to function qsort
+Added reference to function sleep
+Added reference to function atoi
+Added reference to function __ctype_b_loc
+Added reference to function pthread_mutex_trylock
+Added reference to function shasse2_cpuid
+Added reference to function pthread_exit
+Added reference to function sched_yield
+Added reference to function EVP_md5
+Added reference to function fileno
+Added reference to function fdopen
+Added reference to function fseek
+Added reference to function ftell
+Added reference to function rewind
+Added reference to function fgets
+Added reference to function sscanf
+Added reference to function strncasecmp
+Added reference to function setsid
+Added reference to function time
+Added reference to function srand
+Added reference to function getopt_long
+Added reference to function strcasecmp
+Added reference to function calloc
+Added reference to function pthread_mutex_init
+Added reference to function pthread_cond_init
+Added reference to function pthread_create
+Added reference to function scanf
+Added reference to function pipe
+Added reference to function SHA1_Init
+Added reference to function SHA1_Update
+Added reference to function SHA1_Final
+Added reference to function htons
+Added reference to function strstr
+Added reference to function strchr
+Added reference to function sysconf
+Added reference to function __isoc99_sscanf
+Added reference to function getchar
+Added reference to function rand
+Added reference to global stdout
+Added reference to global stderr
+Added reference to global stdin
+Added reference to global optarg
+Added reference to global optind
+Generated interface for /occam/examples/trimmer/aircrack/slash/aircrack-ng.a.i.p.i.bc
+## External calls:
+	free(?)
+	setsid()
+	pthread_mutex_init(?,null)
+	pthread_mutex_init(?,null)
+	pthread_mutex_init(?,null)
+	pthread_mutex_init(?,null)
+	usleep(0x1FFFF)
+	usleep(0x1FFFF)
+	usleep(0x2710)
+	time(null)
+	strncpy(?,?,0x20)
+	strncpy(?,?,?)
+	strncpy(?,?,0x20)
+	srand(?)
+	fprintf(?,S:3F68E1DC)
+	strcmp(?,S:5CD)
+	strcmp(?,S:5CD)
+	strcmp(?,?)
+	strcmp(?,?)
+	pthread_create(?,null,?,?)
+	pthread_create(?,null,?,?)
+	pthread_create(?,null,?,?)
+	pthread_create(?,null,?,?)
+	pthread_create(?,null,?,?)
+	pthread_cond_init(?,null)
+	pthread_cond_init(?,null)
+	signal(0x2,sighandler)
+	signal(0x3,sighandler)
+	signal(0xF,sighandler)
+	signal(0xE,?)
+	signal(0x2,sighandler)
+	signal(0x1C,sighandler)
+	pthread_cond_wait(?,?)
+	getopt_long(0x9,?,S:A5847C0E,?,?)
+	getopt_long(0x9,?,S:A5847C0E,?,?)
+	pthread_mutex_lock(?)
+	pthread_mutex_unlock(?)
+	strlen(?)
+	strlen(?)
+	strlen(?)
+	strlen(S:4860B522)
+	strlen(?)
+	fflush(?)
+	fflush(?)
+	fflush(?)
+	fflush(?)
+	memcmp(?,S:12AC975A,0x6)
+	memcmp(?,?,0x6)
+	memcmp(?,S:12AC975A,0x6)
+	memcmp(?,S:12AC975A,0x6)
+	memcmp(?,S:12AC975A,0x6)
+	memcmp(?,?,0x6)
+	memcmp(?,?,0x20)
+	scanf(S:59E1F3B2,?)
+	realloc(?,?)
+	atoi(?)
+	shasse2_cpuid()
+	calloc(0x1,?)
+	calloc(0x1,0x14)
+	calloc(0x1,?)
+	pipe(?)
+	pipe(?)
+	pipe(?)
+	printf(S:7D16B107,?)
+	printf(S:7D16B107,?)
+	printf(S:9FB153D,?)
+	printf(?)
+	printf(S:14A)
+	printf(S:471A69DE)
+	printf(S:E3A97CF4,?)
+	printf(S:32C5D9FC)
+	printf(S:7D16B107,?)
+	printf(S:87377F28)
+	printf(S:7D16B107,?)
+	printf(S:8085DBD,?)
+	printf(S:7D16B107,?)
+	printf(S:FBC86D8F)
+	printf(S:7D16B107,?)
+	printf(S:73F74DFC)
+	printf(S:7D16B107,?)
+	printf(S:4712830)
+	printf(S:7D16B107,?)
+	printf(S:60CC5916)
+	printf(S:7D16B107,?)
+	printf(S:5FAB8FCD)
+	printf(S:7D16B107,?)
+	printf(S:376C5465,0x11)
+	printf(S:7D16B107,?)
+	printf(S:D46DF92B)
+	printf(S:F6A3EE1C)
+	printf(S:7D16B107,?)
+	printf(S:20FB0D2A)
+	printf(S:7D16B107,?)
+	printf(S:291B17E,?)
+	printf(S:7D16B107,?)
+	printf(S:7D16B107,?)
+	printf(S:CF498A0F,?)
+	printf(S:C027031)
+	printf(S:471A69DE)
+	printf(S:E3A97CF4,?)
+	printf(?,?,?)
+	printf(?,?,?)
+	printf(S:17ACE5C8)
+	printf(S:7D16B107,?)
+	printf(S:1680514A)
+	printf(S:85C9E542)
+	printf(S:C8D3B20D,0x80)
+	printf(S:1C78CBD7)
+	printf(S:BE441E1F,?)
+	printf(S:91B29912)
+	printf(S:A73B1EA7,S:0,S:0)
+	printf(S:5CE5F3FC)
+	printf(S:F5550F39,?,?,?,?)
+	printf(S:402E9BC3)
+	printf(S:8BD2C24E,?)
+	printf(S:713ED3,?)
+	printf(S:66E58E1A)
+	printf(S:14A)
+	printf(S:5229B7A6)
+	printf(S:E0FCEC3F)
+	printf(S:14A)
+	printf(S:1C78CBD7)
+	printf(S:5FBABB58,?)
+	printf(S:C6BBE75)
+	printf(S:783ED2DC)
+	printf(S:C9343CA9)
+	printf(S:4BD5B4BB,0x1388)
+	printf(S:A202C93A,?)
+	printf(S:2F961567)
+	printf(S:B24F0C60,?)
+	printf(S:54910055)
+	printf(S:C4902782)
+	printf(S:14A)
+	printf(S:54910055)
+	printf(S:79727692)
+	printf(S:14A)
+	printf(S:248B6963)
+	printf(S:3AECC054)
+	printf(S:3E221640,?)
+	printf(S:C2740DF3)
+	printf(S:B6AF867,?,?)
+	printf(S:134A9467)
+	printf(S:EE93AFAC)
+	printf(S:14A)
+	printf(S:14A)
+	printf(S:B7A661C4,?,?,?,?,?,?,?,?)
+	snprintf(?,?,S:F450E3B8,S:4860B522,0x1,0x1)
+	strcasecmp(?,S:42FD2C)
+	strcasecmp(?,S:432A08)
+	pthread_join(?,null)
+	pthread_join(?,null)
+	malloc(0x48)
+	malloc(0x880)
+	perror(S:8808C180)
+	perror(S:8808C180)
+	perror(S:8808C180)
+	perror(S:8808C180)
+	perror(S:8808C180)
+	exit(0x0)
+	sscanf(?,S:AA49,?)
+	sscanf(?,S:AA49,?)
+	sscanf(?,S:ACDD,?)
+	sscanf(?,S:AA49,?)
+	sscanf(?,S:AA49,?)
+	sscanf(?,S:AA8B,?)
+	sscanf(?,S:AA49,?)
+	sscanf(?,S:AA49,?)
+	sscanf(?,S:AA49,?)
+	sscanf(?,S:AA49,?)
+## External symbols:
+	EVP_md5
+	EVP_sha1
+	HMAC
+	SHA1_Final
+	SHA1_Init
+	SHA1_Update
+	__ctype_b_loc
+	__errno_location
+	__isoc99_sscanf
+	_exit
+	atoi
+	calloc
+	errx
+	exit
+	fclose
+	fcntl
+	fdopen
+	fflush
+	fgets
+	fileno
+	fopen64
+	fork
+	fprintf
+	free
+	fseek
+	ftell
+	getchar
+	getopt_long
+	gettimeofday
+	htons
+	ioctl
+	kill
+	malloc
+	memcmp
+	open64
+	optarg
+	optind
+	perror
+	pipe
+	printf
+	pthread_cond_broadcast
+	pthread_cond_init
+	pthread_cond_signal
+	pthread_cond_wait
+	pthread_create
+	pthread_exit
+	pthread_join
+	pthread_mutex_init
+	pthread_mutex_lock
+	pthread_mutex_trylock
+	pthread_mutex_unlock
+	qsort
+	rand
+	read
+	realloc
+	rewind
+	scanf
+	sched_yield
+	setsid
+	shasse2_cpuid
+	shasse2_data
+	shasse2_ends
+	shasse2_init
+	signal
+	sleep
+	snprintf
+	srand
+	sscanf
+	stderr
+	stdin
+	stdout
+	strcasecmp
+	strchr
+	strcmp
+	strdup
+	strlen
+	strncasecmp
+	strncpy
+	strsep
+	strstr
+	sysconf
+	time
+	toupper
+	usleep
+	write
+
+EXECUTED: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/aircrack/slash/aircrack-ng.a.i.p.i.bc -o=/dev/null -Pinterface -Pinterface-output /tmp/tmpkRtUie.iface -Pinterface-entry /tmp/tmpkRtUie.iface WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/aircrack/slash/aircrack-ng.a.i.p.i.bc -o=/dev/null -Pinterface -Pinterface-output /tmp/tmpkRtUie.iface -Pinterface-entry /tmp/tmpkRtUie.iface
+
+GatherInterfacePass::runOnModule: /occam/examples/trimmer/aircrack/slash/aircrack-ng.a.i.p.i.bc
+Reading interface from '/tmp/tmpkRtUie.iface'...success
+External call to malloc
+External call to setsid
+External call to time
+External call to srand
+External call to getopt_long
+External call to printf
+External call to printf
+External call to printf
+External call to shasse2_cpuid
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to sscanf
+External call to strcasecmp
+External call to strcasecmp
+External call to printf
+External call to printf
+External call to strncpy
+External call to printf
+External call to printf
+External call to sscanf
+External call to printf
+External call to printf
+External call to sscanf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to sscanf
+External call to printf
+External call to printf
+External call to sscanf
+External call to printf
+External call to printf
+External call to sscanf
+External call to printf
+External call to printf
+External call to sscanf
+External call to printf
+External call to printf
+External call to strlen
+External call to calloc
+External call to printf
+External call to strlen
+External call to strncpy
+External call to sscanf
+External call to printf
+External call to printf
+External call to sscanf
+External call to printf
+External call to printf
+External call to sscanf
+External call to printf
+External call to printf
+External call to printf
+External call to fprintf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to getopt_long
+External call to printf
+External call to exit
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to signal
+External call to signal
+External call to signal
+External call to signal
+External call to pthread_mutex_init
+External call to pthread_mutex_init
+External call to pthread_mutex_init
+External call to pthread_cond_init
+External call to strcmp
+External call to pthread_create
+External call to perror
+External call to usleep
+External call to printf
+External call to printf
+External call to fflush
+External call to pthread_join
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to fflush
+External call to scanf
+External call to atoi
+External call to printf
+External call to printf
+External call to signal
+External call to strcmp
+External call to pthread_create
+External call to perror
+External call to usleep
+External call to pthread_mutex_lock
+External call to printf
+External call to fflush
+External call to pthread_cond_wait
+External call to pthread_mutex_unlock
+External call to memcmp
+External call to memcmp
+External call to memcmp
+External call to memcmp
+External call to strcmp
+External call to memcmp
+External call to memcmp
+External call to strcmp
+External call to printf
+External call to printf
+External call to printf
+External call to pipe
+External call to pipe
+External call to pipe
+External call to signal
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to usleep
+External call to pthread_create
+External call to perror
+External call to pthread_create
+External call to perror
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to memcmp
+External call to printf
+External call to strncpy
+External call to malloc
+External call to pthread_cond_init
+External call to pthread_mutex_init
+External call to pthread_create
+External call to perror
+External call to pthread_join
+External call to printf
+External call to printf
+External call to strlen
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to fflush
+External call to printf
+External call to calloc
+External call to strlen
+External call to calloc
+External call to snprintf
+External call to free
+External call to strlen
+External call to realloc
+Added reference to function printf
+Added reference to function strncpy
+Added reference to function strlen
+Added reference to function shasse2_init
+Added reference to function shasse2_data
+Added reference to function EVP_sha1
+Added reference to function HMAC
+Added reference to function shasse2_ends
+Added reference to function fflush
+Added reference to function pthread_join
+Added reference to function free
+Added reference to function fork
+Added reference to function exit
+Added reference to function _exit
+Added reference to function write
+Added reference to function __errno_location
+Added reference to function signal
+Added reference to function pthread_mutex_lock
+Added reference to function pthread_cond_broadcast
+Added reference to function pthread_mutex_unlock
+Added reference to function usleep
+Added reference to function pthread_cond_wait
+Added reference to function pthread_cond_signal
+Added reference to function strdup
+Added reference to function strsep
+Added reference to function malloc
+Added reference to function memcmp
+Added reference to function perror
+Added reference to function snprintf
+Added reference to function toupper
+Added reference to function read
+Added reference to function strcmp
+Added reference to function open64
+Added reference to function fprintf
+Added reference to function errx
+Added reference to function fcntl
+Added reference to function realloc
+Added reference to function kill
+Added reference to function gettimeofday
+Added reference to function ioctl
+Added reference to function fopen64
+Added reference to function fclose
+Added reference to function qsort
+Added reference to function sleep
+Added reference to function atoi
+Added reference to function __ctype_b_loc
+Added reference to function pthread_mutex_trylock
+Added reference to function shasse2_cpuid
+Added reference to function pthread_exit
+Added reference to function sched_yield
+Added reference to function EVP_md5
+Added reference to function fileno
+Added reference to function fdopen
+Added reference to function fseek
+Added reference to function ftell
+Added reference to function rewind
+Added reference to function fgets
+Added reference to function sscanf
+Added reference to function strncasecmp
+Added reference to function setsid
+Added reference to function time
+Added reference to function srand
+Added reference to function getopt_long
+Added reference to function strcasecmp
+Added reference to function calloc
+Added reference to function pthread_mutex_init
+Added reference to function pthread_cond_init
+Added reference to function pthread_create
+Added reference to function scanf
+Added reference to function pipe
+Added reference to function SHA1_Init
+Added reference to function SHA1_Update
+Added reference to function SHA1_Final
+Added reference to function htons
+Added reference to function strstr
+Added reference to function strchr
+Added reference to function sysconf
+Added reference to function __isoc99_sscanf
+Added reference to function getchar
+Added reference to function rand
+Added reference to global stdout
+Added reference to global stderr
+Added reference to global stdin
+Added reference to global optarg
+Added reference to global optind
+Generated interface for /occam/examples/trimmer/aircrack/slash/aircrack-ng.a.i.p.i.bc
+## External calls:
+	free(?)
+	setsid()
+	pthread_mutex_init(?,null)
+	pthread_mutex_init(?,null)
+	pthread_mutex_init(?,null)
+	pthread_mutex_init(?,null)
+	usleep(0x1FFFF)
+	usleep(0x1FFFF)
+	usleep(0x2710)
+	time(null)
+	strncpy(?,?,0x20)
+	strncpy(?,?,?)
+	strncpy(?,?,0x20)
+	srand(?)
+	fprintf(?,S:3F68E1DC)
+	strcmp(?,S:5CD)
+	strcmp(?,S:5CD)
+	strcmp(?,?)
+	strcmp(?,?)
+	pthread_create(?,null,?,?)
+	pthread_create(?,null,?,?)
+	pthread_create(?,null,?,?)
+	pthread_create(?,null,?,?)
+	pthread_create(?,null,?,?)
+	pthread_cond_init(?,null)
+	pthread_cond_init(?,null)
+	signal(0x2,sighandler)
+	signal(0x3,sighandler)
+	signal(0xF,sighandler)
+	signal(0xE,?)
+	signal(0x2,sighandler)
+	signal(0x1C,sighandler)
+	pthread_cond_wait(?,?)
+	getopt_long(0x9,?,S:A5847C0E,?,?)
+	getopt_long(0x9,?,S:A5847C0E,?,?)
+	pthread_mutex_lock(?)
+	pthread_mutex_unlock(?)
+	strlen(?)
+	strlen(?)
+	strlen(?)
+	strlen(S:4860B522)
+	strlen(?)
+	fflush(?)
+	fflush(?)
+	fflush(?)
+	fflush(?)
+	memcmp(?,S:12AC975A,0x6)
+	memcmp(?,?,0x6)
+	memcmp(?,S:12AC975A,0x6)
+	memcmp(?,S:12AC975A,0x6)
+	memcmp(?,S:12AC975A,0x6)
+	memcmp(?,?,0x6)
+	memcmp(?,?,0x20)
+	scanf(S:59E1F3B2,?)
+	realloc(?,?)
+	atoi(?)
+	shasse2_cpuid()
+	calloc(0x1,?)
+	calloc(0x1,0x14)
+	calloc(0x1,?)
+	pipe(?)
+	pipe(?)
+	pipe(?)
+	printf(S:7D16B107,?)
+	printf(S:7D16B107,?)
+	printf(S:9FB153D,?)
+	printf(?)
+	printf(S:14A)
+	printf(S:471A69DE)
+	printf(S:E3A97CF4,?)
+	printf(S:32C5D9FC)
+	printf(S:7D16B107,?)
+	printf(S:87377F28)
+	printf(S:7D16B107,?)
+	printf(S:8085DBD,?)
+	printf(S:7D16B107,?)
+	printf(S:FBC86D8F)
+	printf(S:7D16B107,?)
+	printf(S:73F74DFC)
+	printf(S:7D16B107,?)
+	printf(S:4712830)
+	printf(S:7D16B107,?)
+	printf(S:60CC5916)
+	printf(S:7D16B107,?)
+	printf(S:5FAB8FCD)
+	printf(S:7D16B107,?)
+	printf(S:376C5465,0x11)
+	printf(S:7D16B107,?)
+	printf(S:D46DF92B)
+	printf(S:F6A3EE1C)
+	printf(S:7D16B107,?)
+	printf(S:20FB0D2A)
+	printf(S:7D16B107,?)
+	printf(S:291B17E,?)
+	printf(S:7D16B107,?)
+	printf(S:7D16B107,?)
+	printf(S:CF498A0F,?)
+	printf(S:C027031)
+	printf(S:471A69DE)
+	printf(S:E3A97CF4,?)
+	printf(?,?,?)
+	printf(?,?,?)
+	printf(S:17ACE5C8)
+	printf(S:7D16B107,?)
+	printf(S:1680514A)
+	printf(S:85C9E542)
+	printf(S:C8D3B20D,0x80)
+	printf(S:1C78CBD7)
+	printf(S:BE441E1F,?)
+	printf(S:91B29912)
+	printf(S:A73B1EA7,S:0,S:0)
+	printf(S:5CE5F3FC)
+	printf(S:F5550F39,?,?,?,?)
+	printf(S:402E9BC3)
+	printf(S:8BD2C24E,?)
+	printf(S:713ED3,?)
+	printf(S:66E58E1A)
+	printf(S:14A)
+	printf(S:5229B7A6)
+	printf(S:E0FCEC3F)
+	printf(S:14A)
+	printf(S:1C78CBD7)
+	printf(S:5FBABB58,?)
+	printf(S:C6BBE75)
+	printf(S:783ED2DC)
+	printf(S:C9343CA9)
+	printf(S:4BD5B4BB,0x1388)
+	printf(S:A202C93A,?)
+	printf(S:2F961567)
+	printf(S:B24F0C60,?)
+	printf(S:54910055)
+	printf(S:C4902782)
+	printf(S:14A)
+	printf(S:54910055)
+	printf(S:79727692)
+	printf(S:14A)
+	printf(S:248B6963)
+	printf(S:3AECC054)
+	printf(S:3E221640,?)
+	printf(S:C2740DF3)
+	printf(S:B6AF867,?,?)
+	printf(S:134A9467)
+	printf(S:EE93AFAC)
+	printf(S:14A)
+	printf(S:14A)
+	printf(S:B7A661C4,?,?,?,?,?,?,?,?)
+	snprintf(?,?,S:F450E3B8,S:4860B522,0x1,0x1)
+	strcasecmp(?,S:42FD2C)
+	strcasecmp(?,S:432A08)
+	pthread_join(?,null)
+	pthread_join(?,null)
+	malloc(0x48)
+	malloc(0x880)
+	perror(S:8808C180)
+	perror(S:8808C180)
+	perror(S:8808C180)
+	perror(S:8808C180)
+	perror(S:8808C180)
+	exit(0x0)
+	sscanf(?,S:AA49,?)
+	sscanf(?,S:AA49,?)
+	sscanf(?,S:ACDD,?)
+	sscanf(?,S:AA49,?)
+	sscanf(?,S:AA49,?)
+	sscanf(?,S:AA8B,?)
+	sscanf(?,S:AA49,?)
+	sscanf(?,S:AA49,?)
+	sscanf(?,S:AA49,?)
+	sscanf(?,S:AA49,?)
+## External symbols:
+	EVP_md5
+	EVP_sha1
+	HMAC
+	SHA1_Final
+	SHA1_Init
+	SHA1_Update
+	__ctype_b_loc
+	__errno_location
+	__isoc99_sscanf
+	_exit
+	atoi
+	calloc
+	errx
+	exit
+	fclose
+	fcntl
+	fdopen
+	fflush
+	fgets
+	fileno
+	fopen64
+	fork
+	fprintf
+	free
+	fseek
+	ftell
+	getchar
+	getopt_long
+	gettimeofday
+	htons
+	ioctl
+	kill
+	malloc
+	memcmp
+	open64
+	optarg
+	optind
+	perror
+	pipe
+	printf
+	pthread_cond_broadcast
+	pthread_cond_init
+	pthread_cond_signal
+	pthread_cond_wait
+	pthread_create
+	pthread_exit
+	pthread_join
+	pthread_mutex_init
+	pthread_mutex_lock
+	pthread_mutex_trylock
+	pthread_mutex_unlock
+	qsort
+	rand
+	read
+	realloc
+	rewind
+	scanf
+	sched_yield
+	setsid
+	shasse2_cpuid
+	shasse2_data
+	shasse2_ends
+	shasse2_init
+	signal
+	sleep
+	snprintf
+	srand
+	sscanf
+	stderr
+	stdin
+	stdout
+	strcasecmp
+	strchr
+	strcmp
+	strdup
+	strlen
+	strncasecmp
+	strncpy
+	strsep
+	strstr
+	sysconf
+	time
+	toupper
+	usleep
+	write
+
+EXECUTED: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/aircrack/slash/aircrack-ng.a.i.p.i.bc -o=/dev/null -Pinterface -Pinterface-output /tmp/tmpkRtUie.iface -Pinterface-entry /tmp/tmpkRtUie.iface WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/aircrack/slash/aircrack-ng.a.i.p.i.bc -o=/occam/examples/trimmer/aircrack/slash/aircrack-ng.a.i.p.i.h.bc -Pinternalize -Pinternalize-wrt-interfaces interface_after.01.iface
+
+InternalizePass
+Reading file 'interface_after.01.iface'...success
+Done reading.
+InternalizePass::runOnModule: /occam/examples/trimmer/aircrack/slash/aircrack-ng.a.i.p.i.bc
+...no progress...
+/usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/aircrack/slash/aircrack-ng.a.i.p.i.bc -o=/occam/examples/trimmer/aircrack/slash/aircrack-ng.a.i.p.i.h.bc -Pinternalize -Pinternalize-wrt-interfaces interface_after.01.iface => 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/aircrack/slash/aircrack-ng.a.i.p.i.h.bc -o=/dev/null -Pprofiler -profile-verbose=false -profile-loops=true -profile-safe-pointers=true -profile-outfile=/tmp/tmpprzVjh
+
+EXECUTED: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/aircrack/slash/aircrack-ng.a.i.p.i.h.bc -o=/dev/null -Pprofiler -profile-verbose=false -profile-loops=true -profile-safe-pointers=true -profile-outfile=/tmp/tmpprzVjh WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/clang++ /occam/examples/trimmer/aircrack/slash/aircrack-ng.a.i.p.i.h.bc -o aircrack-ng_fin -lssl -lcrypto -lpthread /occam/examples/trimmer/aircrack/sha1-sse2.S -O3
+
+EXECUTED: /usr/lib/llvm-10/bin/clang++ /occam/examples/trimmer/aircrack/slash/aircrack-ng.a.i.p.i.h.bc -o aircrack-ng_fin -lssl -lcrypto -lpthread /occam/examples/trimmer/aircrack/sha1-sse2.S -O3 WHICH RETURNED 0
+

@@ -1,0 +1,1 @@
+{"binary": "bzip2_fin", "native_libs": [], "name": "bzip2", "args": ["-fdq", "huffman.c.bz2"], "modules": [], "ldflags": ["-lbz2","-O3"], "main": "bzip2.bc", "config_files": []}

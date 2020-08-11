@@ -1,0 +1,1858 @@
+>> /usr/local/bin/slash --inter-spec-policy=none --intra-spec-policy=nonrec-aggressive --no-strip --stats --work-dir=slash airtun-ng.manifest
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/airtun/slash/airtun-ng.bc -o=/dev/null -Pprofiler -profile-verbose=false -profile-loops=true -profile-safe-pointers=true -profile-outfile=/tmp/tmp3T4uSu
+
+EXECUTED: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/airtun/slash/airtun-ng.bc -o=/dev/null -Pprofiler -profile-verbose=false -profile-loops=true -profile-safe-pointers=true -profile-outfile=/tmp/tmp3T4uSu WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/airtun/slash/airtun-ng.bc -o=/occam/examples/trimmer/airtun/slash/airtun-ng.a.bc -Pfull-cmdline-spec -Pfull-cmdline-spec-input arguments -Pfull-cmdline-spec-name airtun-ng
+
+Read 5 command line arguments:
+	-a
+	00:0c:29:52:aa:56
+	-w
+	1234567890
+	eth0
+EXECUTED: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/airtun/slash/airtun-ng.bc -o=/occam/examples/trimmer/airtun/slash/airtun-ng.a.bc -Pfull-cmdline-spec -Pfull-cmdline-spec-input arguments -Pfull-cmdline-spec-name airtun-ng WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/airtun/slash/airtun-ng.a.bc -o=/dev/null -Pinterface -Pinterface-output airtun-ng.01.iface
+
+GatherInterfacePass::runOnModule: /occam/examples/trimmer/airtun/slash/airtun-ng.a.bc
+External call to memcmp
+Added reference to function memcmp
+Added reference to function malloc
+Added reference to function printf
+Added reference to function gettimeofday
+Added reference to function free
+Added reference to function rand
+Added reference to function perror
+Added reference to function read
+Added reference to function usleep
+Added reference to function strlen
+Added reference to function fopen64
+Added reference to function fseek
+Added reference to function ftell
+Added reference to function rewind
+Added reference to function fread
+Added reference to function fprintf
+Added reference to function fclose
+Added reference to function time
+Added reference to function srand
+Added reference to function getopt_long
+Added reference to function __isoc99_sscanf
+Added reference to function atoi
+Added reference to function getuid
+Added reference to function setuid
+Added reference to function __errno_location
+Added reference to function strerror
+Added reference to function select
+Added reference to function __isoc99_fscanf
+Added reference to function strncmp
+Added reference to function calloc
+Added reference to function snprintf
+Added reference to function strncat
+Added reference to function realloc
+Added reference to function fgets
+Added reference to function strstr
+Added reference to function strchr
+Added reference to function sysconf
+Added reference to function toupper
+Added reference to function getchar
+Added reference to function RC4_set_key
+Added reference to function RC4
+Added reference to function strncpy
+Added reference to function SHA1_Init
+Added reference to function SHA1_Update
+Added reference to function EVP_sha1
+Added reference to function HMAC
+Added reference to function SHA1_Final
+Added reference to function HMAC_CTX_new
+Added reference to function HMAC_Init_ex
+Added reference to function HMAC_Update
+Added reference to function HMAC_Final
+Added reference to function HMAC_CTX_free
+Added reference to function EVP_md5
+Added reference to function htons
+Added reference to function __assert_fail
+Added reference to function AES_set_encrypt_key
+Added reference to function AES_encrypt
+Added reference to function send
+Added reference to function recv
+Added reference to function inet_aton
+Added reference to function socket
+Added reference to function connect
+Added reference to function close
+Added reference to function strdup
+Added reference to function ioctl
+Added reference to function strcmp
+Added reference to function fork
+Added reference to function chdir
+Added reference to function execl
+Added reference to function exit
+Added reference to function waitpid
+Added reference to function execlp
+Added reference to function sleep
+Added reference to function wait
+Added reference to function opendir
+Added reference to function readdir
+Added reference to function sprintf
+Added reference to function closedir
+Added reference to function lstat
+Added reference to function system
+Added reference to function uname
+Added reference to function strncasecmp
+Added reference to function fopen
+Added reference to function fputs
+Added reference to function strcpy
+Added reference to function bind
+Added reference to function setsockopt
+Added reference to function open
+Added reference to function dup2
+Added reference to function write
+Added reference to global stderr
+Added reference to global optarg
+Added reference to global optind
+Generated interface for /occam/examples/trimmer/airtun/slash/airtun-ng.a.bc
+## External calls:
+	memcmp(?,?,0x6)
+## External symbols:
+	AES_encrypt
+	AES_set_encrypt_key
+	EVP_md5
+	EVP_sha1
+	HMAC
+	HMAC_CTX_free
+	HMAC_CTX_new
+	HMAC_Final
+	HMAC_Init_ex
+	HMAC_Update
+	RC4
+	RC4_set_key
+	SHA1_Final
+	SHA1_Init
+	SHA1_Update
+	__assert_fail
+	__errno_location
+	__isoc99_fscanf
+	__isoc99_sscanf
+	atoi
+	bind
+	calloc
+	chdir
+	close
+	closedir
+	connect
+	dup2
+	execl
+	execlp
+	exit
+	fclose
+	fgets
+	fopen
+	fopen64
+	fork
+	fprintf
+	fputs
+	fread
+	free
+	fseek
+	ftell
+	getchar
+	getopt_long
+	gettimeofday
+	getuid
+	htons
+	inet_aton
+	ioctl
+	lstat
+	malloc
+	memcmp
+	open
+	opendir
+	optarg
+	optind
+	perror
+	printf
+	rand
+	read
+	readdir
+	realloc
+	recv
+	rewind
+	select
+	send
+	setsockopt
+	setuid
+	sleep
+	snprintf
+	socket
+	sprintf
+	srand
+	stderr
+	strchr
+	strcmp
+	strcpy
+	strdup
+	strerror
+	strlen
+	strncasecmp
+	strncat
+	strncmp
+	strncpy
+	strstr
+	sysconf
+	system
+	time
+	toupper
+	uname
+	usleep
+	wait
+	waitpid
+	write
+
+EXECUTED: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/airtun/slash/airtun-ng.a.bc -o=/dev/null -Pinterface -Pinterface-output airtun-ng.01.iface WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/airtun/slash/airtun-ng.a.bc -o=/occam/examples/trimmer/airtun/slash/airtun-ng.a.i.bc -Pinternalize -Pinternalize-wrt-interfaces main.iface
+
+InternalizePass
+Reading file 'main.iface'...success
+Done reading.
+InternalizePass::runOnModule: /occam/examples/trimmer/airtun/slash/airtun-ng.a.bc
+Internalizing 'find_entry' ExternalLinkage DefaultVisibility
+Internalizing 'set_entry' ExternalLinkage DefaultVisibility
+Internalizing 'get_entry' ExternalLinkage DefaultVisibility
+Internalizing 'swap_ra_ta' ExternalLinkage DefaultVisibility
+Internalizing 'sighandler' ExternalLinkage DefaultVisibility
+Internalizing 'addFrag' ExternalLinkage DefaultVisibility
+Internalizing 'timeoutFrag' ExternalLinkage DefaultVisibility
+Internalizing 'delFrag' ExternalLinkage DefaultVisibility
+Internalizing 'getCompleteFrag' ExternalLinkage DefaultVisibility
+Internalizing 'is_filtered_netmask' ExternalLinkage DefaultVisibility
+Internalizing 'send_packet' ExternalLinkage DefaultVisibility
+Internalizing 'read_packet' ExternalLinkage DefaultVisibility
+Internalizing 'msleep' ExternalLinkage DefaultVisibility
+Internalizing 'read_prga' ExternalLinkage DefaultVisibility
+Internalizing 'add_icv' ExternalLinkage DefaultVisibility
+Internalizing 'xor_keystream' ExternalLinkage DefaultVisibility
+Internalizing 'print_packet' ExternalLinkage DefaultVisibility
+Internalizing 'set_IVidx' ExternalLinkage DefaultVisibility
+Internalizing 'encrypt_data' ExternalLinkage DefaultVisibility
+Internalizing 'create_wep_packet' ExternalLinkage DefaultVisibility
+Internalizing 'packet_xmit' ExternalLinkage DefaultVisibility
+Internalizing 'packet_recv' ExternalLinkage DefaultVisibility
+Internalizing '' ExternalLinkage DefaultVisibility
+Internalizing 'get_ram_size' ExternalLinkage DefaultVisibility
+Internalizing 'getVersion' ExternalLinkage DefaultVisibility
+Internalizing 'get_nb_cpus' ExternalLinkage DefaultVisibility
+Internalizing 'maccmp' ExternalLinkage DefaultVisibility
+Internalizing 'mac2string' ExternalLinkage DefaultVisibility
+Internalizing 'hexCharToInt' ExternalLinkage DefaultVisibility
+Internalizing 'hexStringToHex' ExternalLinkage DefaultVisibility
+Internalizing 'readLine' ExternalLinkage DefaultVisibility
+Internalizing 'hexToInt' ExternalLinkage DefaultVisibility
+Internalizing 'encrypt_wep' ExternalLinkage DefaultVisibility
+Internalizing 'decrypt_wep' ExternalLinkage DefaultVisibility
+Internalizing 'check_crc_buf' ExternalLinkage DefaultVisibility
+Internalizing 'calc_crc' ExternalLinkage DefaultVisibility
+Internalizing 'rc4_setup' ExternalLinkage DefaultVisibility
+Internalizing 'rc4_crypt' ExternalLinkage DefaultVisibility
+Internalizing 'calc_pmk' ExternalLinkage DefaultVisibility
+Internalizing 'calc_mic' ExternalLinkage DefaultVisibility
+Internalizing 'calc_crc_plain' ExternalLinkage DefaultVisibility
+Internalizing 'add_crc32' ExternalLinkage DefaultVisibility
+Internalizing 'add_crc32_plain' ExternalLinkage DefaultVisibility
+Internalizing 'calc_crc_buf' ExternalLinkage DefaultVisibility
+Internalizing 'get_da' ExternalLinkage DefaultVisibility
+Internalizing 'get_sa' ExternalLinkage DefaultVisibility
+Internalizing 'is_ipv6' ExternalLinkage DefaultVisibility
+Internalizing 'is_dhcp_discover' ExternalLinkage DefaultVisibility
+Internalizing 'is_arp' ExternalLinkage DefaultVisibility
+Internalizing 'is_qos_arp_tkip' ExternalLinkage DefaultVisibility
+Internalizing 'is_spantree' ExternalLinkage DefaultVisibility
+Internalizing 'is_cdp_vtp' ExternalLinkage DefaultVisibility
+Internalizing 'known_clear' ExternalLinkage DefaultVisibility
+Internalizing 'calc_ptk' ExternalLinkage DefaultVisibility
+Internalizing 'init_michael' ExternalLinkage DefaultVisibility
+Internalizing 'michael_append_byte' ExternalLinkage DefaultVisibility
+Internalizing 'michael_remove_byte' ExternalLinkage DefaultVisibility
+Internalizing 'michael_append' ExternalLinkage DefaultVisibility
+Internalizing 'michael_remove' ExternalLinkage DefaultVisibility
+Internalizing 'michael_finalize' ExternalLinkage DefaultVisibility
+Internalizing 'michael_finalize_zero' ExternalLinkage DefaultVisibility
+Internalizing 'michael_test' ExternalLinkage DefaultVisibility
+Internalizing 'calc_tkip_mic_key' ExternalLinkage DefaultVisibility
+Internalizing 'calc_tkip_mic' ExternalLinkage DefaultVisibility
+Internalizing 'calc_tkip_ppk' ExternalLinkage DefaultVisibility
+Internalizing 'decrypt_tkip' ExternalLinkage DefaultVisibility
+Internalizing 'decrypt_ccmp' ExternalLinkage DefaultVisibility
+Internalizing 'wi_set_channel' ExternalLinkage DefaultVisibility
+Internalizing 'wi_set_freq' ExternalLinkage DefaultVisibility
+Internalizing 'wi_get_freq' ExternalLinkage DefaultVisibility
+Internalizing 'wi_get_monitor' ExternalLinkage DefaultVisibility
+Internalizing 'wi_close' ExternalLinkage DefaultVisibility
+Internalizing 'wi_get_mac' ExternalLinkage DefaultVisibility
+Internalizing 'wi_set_mac' ExternalLinkage DefaultVisibility
+Internalizing 'wi_get_rate' ExternalLinkage DefaultVisibility
+Internalizing 'wi_set_rate' ExternalLinkage DefaultVisibility
+Internalizing 'wi_get_mtu' ExternalLinkage DefaultVisibility
+Internalizing 'wi_set_mtu' ExternalLinkage DefaultVisibility
+Internalizing 'ti_set_mtu' ExternalLinkage DefaultVisibility
+Internalizing 'ti_get_mtu' ExternalLinkage DefaultVisibility
+Internalizing 'ti_set_mac' ExternalLinkage DefaultVisibility
+Internalizing 'ti_set_ip' ExternalLinkage DefaultVisibility
+Internalizing 'net_send' ExternalLinkage DefaultVisibility
+Internalizing 'net_read_exact' ExternalLinkage DefaultVisibility
+Internalizing 'net_get' ExternalLinkage DefaultVisibility
+Internalizing 'calc_crc_osdep' ExternalLinkage DefaultVisibility
+Internalizing 'check_crc_buf_osdep' ExternalLinkage DefaultVisibility
+Internalizing 'set_monitor' ExternalLinkage DefaultVisibility
+Internalizing 'get_battery_state' ExternalLinkage DefaultVisibility
+Internalizing 'ti_open' ExternalLinkage DefaultVisibility
+Internalizing 'ieee80211_radiotap_iterator_init' ExternalLinkage DefaultVisibility
+Internalizing 'ieee80211_radiotap_iterator_next' ExternalLinkage DefaultVisibility
+Internalizing 'getFrequencyFromChannel' ExternalLinkage DefaultVisibility
+Internalizing 'getChannelFromFrequency' ExternalLinkage DefaultVisibility
+Internalizing 'usage' ExternalLinkage DefaultVisibility
+Internalizing 'nets' ExternalLinkage DefaultVisibility
+Internalizing 'crc_tbl' ExternalLinkage DefaultVisibility
+Internalizing 'crc_chop_tbl' ExternalLinkage DefaultVisibility
+Internalizing 'TkipSbox' ExternalLinkage DefaultVisibility
+Internalizing 'crc_tbl_osdep' ExternalLinkage DefaultVisibility
+...progress...
+Progress: internalized functions = 94 internalized globals = 6
+/usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/airtun/slash/airtun-ng.a.bc -o=/occam/examples/trimmer/airtun/slash/airtun-ng.a.i.bc -Pinternalize -Pinternalize-wrt-interfaces main.iface => 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -disable-simplify-libcalls --disable-slp-vectorization /occam/examples/trimmer/airtun/slash/airtun-ng.a.i.bc -o /tmp/tmpTwtBZs.bc -O3
+
+EXECUTED: /usr/lib/llvm-10/bin/opt -disable-simplify-libcalls --disable-slp-vectorization /occam/examples/trimmer/airtun/slash/airtun-ng.a.i.bc -o /tmp/tmpTwtBZs.bc -O3 WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /tmp/tmpSSTCyR.bc -o=/tmp/tmpb57pHa.bc -Ppeval -Ppeval-policy=nonrec-aggressive -Ppeval-opt
+
+=== Begin intra-module specialization ===
+Intra-specializing call to 'set_entry' in function 'packet_recv' on arguments [1=(i8 1)]
+Intra-specializing call to 'set_entry' in function 'packet_recv' on arguments [1=(i8 0)]
+...progress...
+Specialized 0 functions.
+ === End intra-module specialization ===
+/usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /tmp/tmpSSTCyR.bc -o=/tmp/tmpb57pHa.bc -Ppeval -Ppeval-policy=nonrec-aggressive -Ppeval-opt => 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -disable-simplify-libcalls --disable-slp-vectorization /tmp/tmpTwtBZs.bc -o /tmp/tmpSSTCyR.bc -O3
+
+EXECUTED: /usr/lib/llvm-10/bin/opt -disable-simplify-libcalls --disable-slp-vectorization /tmp/tmpTwtBZs.bc -o /tmp/tmpSSTCyR.bc -O3 WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /tmp/tmpSSTCyR.bc -o=/tmp/tmpb57pHa.bc -Ppeval -Ppeval-policy=nonrec-aggressive -Ppeval-opt
+
+=== Begin intra-module specialization ===
+...no progress...
+No specialization took place
+ === End intra-module specialization ===
+/usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /tmp/tmpSSTCyR.bc -o=/tmp/tmpb57pHa.bc -Ppeval -Ppeval-policy=nonrec-aggressive -Ppeval-opt => 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/airtun/slash/airtun-ng.a.i.p.bc -o=/dev/null -Pinterface -Pinterface-output /tmp/tmpHN6FmT.iface -Pinterface-entry /tmp/tmpHN6FmT.iface
+
+GatherInterfacePass::runOnModule: /occam/examples/trimmer/airtun/slash/airtun-ng.a.i.p.bc
+Reading interface from '/tmp/tmpHN6FmT.iface'...success
+External call to malloc
+External call to malloc
+External call to time
+External call to srand
+External call to getopt_long
+External call to printf
+External call to printf
+External call to __isoc99_sscanf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to atoi
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to __isoc99_sscanf
+External call to printf
+External call to printf
+External call to __isoc99_sscanf
+External call to printf
+External call to printf
+External call to memcmp
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to memcmp
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to getopt_long
+External call to printf
+External call to printf
+External call to memcmp
+External call to memcmp
+External call to printf
+External call to printf
+External call to memcmp
+External call to printf
+External call to printf
+External call to memcmp
+External call to printf
+External call to printf
+External call to getuid
+External call to printf
+External call to getuid
+External call to setuid
+External call to fopen64
+External call to perror
+External call to fread
+External call to perror
+External call to fprintf
+External call to fprintf
+External call to __errno_location
+External call to strerror
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to fread
+External call to printf
+External call to printf
+External call to fread
+External call to printf
+External call to memcmp
+External call to memcmp
+External call to memcmp
+External call to select
+Added reference to function memcmp
+Added reference to function malloc
+Added reference to function printf
+Added reference to function gettimeofday
+Added reference to function free
+Added reference to function rand
+Added reference to function perror
+Added reference to function read
+Added reference to function usleep
+Added reference to function strlen
+Added reference to function fopen64
+Added reference to function fseek
+Added reference to function ftell
+Added reference to function rewind
+Added reference to function fread
+Added reference to function fprintf
+Added reference to function fclose
+Added reference to function time
+Added reference to function srand
+Added reference to function getopt_long
+Added reference to function __isoc99_sscanf
+Added reference to function atoi
+Added reference to function getuid
+Added reference to function setuid
+Added reference to function __errno_location
+Added reference to function strerror
+Added reference to function select
+Added reference to function strncmp
+Added reference to function calloc
+Added reference to function snprintf
+Added reference to function realloc
+Added reference to function fgets
+Added reference to function strchr
+Added reference to function RC4_set_key
+Added reference to function RC4
+Added reference to function strncpy
+Added reference to function __assert_fail
+Added reference to function send
+Added reference to function recv
+Added reference to function inet_aton
+Added reference to function socket
+Added reference to function connect
+Added reference to function close
+Added reference to function strdup
+Added reference to function ioctl
+Added reference to function strcmp
+Added reference to function fork
+Added reference to function chdir
+Added reference to function execl
+Added reference to function exit
+Added reference to function waitpid
+Added reference to function execlp
+Added reference to function sleep
+Added reference to function wait
+Added reference to function opendir
+Added reference to function readdir
+Added reference to function sprintf
+Added reference to function closedir
+Added reference to function lstat
+Added reference to function system
+Added reference to function uname
+Added reference to function strncasecmp
+Added reference to function fopen
+Added reference to function fputs
+Added reference to function strcpy
+Added reference to function bind
+Added reference to function setsockopt
+Added reference to function open
+Added reference to function dup2
+Added reference to function write
+Added reference to global stderr
+Added reference to global optarg
+Added reference to global optind
+Generated interface for /occam/examples/trimmer/airtun/slash/airtun-ng.a.i.p.bc
+## External calls:
+	select(?,?,null,null,null)
+	fread(?,0x1,0x18,?)
+	fread(?,0x10,0x1,?)
+	fread(?,?,0x1,?)
+	getopt_long(0x6,?,S:3E33FE92,?,?)
+	getopt_long(0x6,?,S:3E33FE92,?,?)
+	strerror(?)
+	getuid()
+	getuid()
+	fopen64(?,S:1F194)
+	atoi(?)
+	setuid(?)
+	time(null)
+	printf(S:7D16B107,?)
+	printf(S:7D16B107,?)
+	printf(S:D8CDDCE8)
+	printf(S:7D16B107,?)
+	printf(S:2341BC7)
+	printf(S:7D16B107,?)
+	printf(S:D3924947)
+	printf(S:7D16B107,?)
+	printf(S:B5202470)
+	printf(S:7D16B107,?)
+	printf(S:180F859A)
+	printf(S:7D16B107,?)
+	printf(S:7D16B107,?)
+	printf(S:62E2006F)
+	printf(S:7D16B107,?)
+	printf(S:E7F03893)
+	printf(S:7D16B107,?)
+	printf(S:B5202470)
+	printf(S:7D16B107,?)
+	printf(S:180F859A)
+	printf(S:7D16B107,?)
+	printf(S:E33E674)
+	printf(S:7D16B107,?)
+	printf(S:8B2845D6)
+	printf(S:7D16B107,?)
+	printf(S:8843FD14)
+	printf(S:7D16B107,?)
+	printf(S:23702340)
+	printf(S:7D16B107,?)
+	printf(S:CFEE7416)
+	printf(S:7D16B107,?)
+	printf(S:5ECC4102)
+	printf(S:7D16B107,?)
+	printf(S:62E2006F)
+	printf(S:7D16B107,?)
+	printf(?,?)
+	printf(?,?)
+	printf(S:7639865F)
+	printf(S:7D16B107,?)
+	printf(S:FC638DEE)
+	printf(S:7D16B107,?)
+	printf(S:7A20EB9A)
+	printf(S:7D16B107,?)
+	printf(S:BC7A56D4)
+	printf(S:7D16B107,?)
+	printf(S:2DAB690,?)
+	printf(S:3233254B,?)
+	printf(S:F37E010,?)
+	printf(?,?)
+	printf(S:6FB6B4B9)
+	printf(?)
+	printf(S:2E8CC204,?)
+	printf(S:2E8CC204,?)
+	printf(S:2E8CC204,?)
+	malloc(0x30)
+	malloc(0xE0)
+	srand(?)
+	perror(S:5594D057)
+	perror(S:446F4D45)
+	__isoc99_sscanf(?,S:AA49,?)
+	__isoc99_sscanf(?,S:ACDD,?)
+	__isoc99_sscanf(?,S:ACDD,?)
+	fprintf(?,S:26FAA63E,?)
+	fprintf(?,S:7F7F3929)
+	__errno_location()
+	memcmp(?,?,0x6)
+	memcmp(?,?,0x6)
+	memcmp(?,?,0x6)
+	memcmp(?,?,0x6)
+	memcmp(?,?,0x6)
+	memcmp(?,?,0x6)
+	memcmp(?,?,0x6)
+	memcmp(?,?,0x6)
+	memcmp(?,?,0x6)
+## External symbols:
+	RC4
+	RC4_set_key
+	__assert_fail
+	__errno_location
+	__isoc99_sscanf
+	atoi
+	bind
+	calloc
+	chdir
+	close
+	closedir
+	connect
+	dup2
+	execl
+	execlp
+	exit
+	fclose
+	fgets
+	fopen
+	fopen64
+	fork
+	fprintf
+	fputs
+	fread
+EXECUTED: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/airtun/slash/airtun-ng.a.i.p.bc -o=/dev/null -Pinterface -Pinterface-output /tmp/tmpHN6FmT.iface -Pinterface-entry /tmp/tmpHN6FmT.iface WHICH RETURNED 0
+
+	free
+	fseek
+	ftell
+	getopt_long
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/airtun/slash/airtun-ng.a.i.p.bc -o=/dev/null -Pinterface -Pinterface-output /tmp/tmpHN6FmT.iface -Pinterface-entry /tmp/tmpHN6FmT.iface
+
+	gettimeofday
+	getuid
+	inet_aton
+	ioctl
+	lstat
+	malloc
+	memcmp
+	open
+	opendir
+	optarg
+	optind
+	perror
+	printf
+	rand
+	read
+	readdir
+	realloc
+	recv
+	rewind
+	select
+	send
+	setsockopt
+	setuid
+	sleep
+	snprintf
+	socket
+	sprintf
+	srand
+	stderr
+	strchr
+	strcmp
+	strcpy
+	strdup
+	strerror
+	strlen
+	strncasecmp
+	strncmp
+	strncpy
+	system
+	time
+	uname
+	usleep
+	wait
+	waitpid
+	write
+
+GatherInterfacePass::runOnModule: /occam/examples/trimmer/airtun/slash/airtun-ng.a.i.p.bc
+Reading interface from '/tmp/tmpHN6FmT.iface'...success
+External call to malloc
+External call to malloc
+External call to time
+External call to srand
+External call to getopt_long
+External call to printf
+External call to printf
+External call to __isoc99_sscanf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to atoi
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to __isoc99_sscanf
+External call to printf
+External call to printf
+External call to __isoc99_sscanf
+External call to printf
+External call to printf
+External call to memcmp
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to memcmp
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to getopt_long
+External call to printf
+External call to printf
+External call to memcmp
+External call to memcmp
+External call to printf
+External call to printf
+External call to memcmp
+External call to printf
+External call to printf
+External call to memcmp
+External call to printf
+External call to printf
+External call to getuid
+External call to printf
+External call to getuid
+External call to setuid
+External call to fopen64
+External call to perror
+External call to fread
+External call to perror
+External call to fprintf
+External call to fprintf
+External call to __errno_location
+External call to strerror
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to fread
+External call to printf
+External call to printf
+External call to fread
+External call to printf
+External call to memcmp
+External call to memcmp
+External call to memcmp
+External call to select
+Added reference to function memcmp
+Added reference to function malloc
+Added reference to function printf
+Added reference to function gettimeofday
+Added reference to function free
+Added reference to function rand
+Added reference to function perror
+Added reference to function read
+Added reference to function usleep
+Added reference to function strlen
+Added reference to function fopen64
+Added reference to function fseek
+Added reference to function ftell
+Added reference to function rewind
+Added reference to function fread
+Added reference to function fprintf
+Added reference to function fclose
+Added reference to function time
+Added reference to function srand
+Added reference to function getopt_long
+Added reference to function __isoc99_sscanf
+Added reference to function atoi
+Added reference to function getuid
+Added reference to function setuid
+Added reference to function __errno_location
+Added reference to function strerror
+Added reference to function select
+Added reference to function strncmp
+Added reference to function calloc
+Added reference to function snprintf
+Added reference to function realloc
+Added reference to function fgets
+Added reference to function strchr
+Added reference to function RC4_set_key
+Added reference to function RC4
+Added reference to function strncpy
+Added reference to function __assert_fail
+Added reference to function send
+Added reference to function recv
+Added reference to function inet_aton
+Added reference to function socket
+Added reference to function connect
+Added reference to function close
+Added reference to function strdup
+Added reference to function ioctl
+Added reference to function strcmp
+Added reference to function fork
+Added reference to function chdir
+Added reference to function execl
+Added reference to function exit
+Added reference to function waitpid
+Added reference to function execlp
+Added reference to function sleep
+Added reference to function wait
+Added reference to function opendir
+Added reference to function readdir
+Added reference to function sprintf
+Added reference to function closedir
+Added reference to function lstat
+Added reference to function system
+Added reference to function uname
+Added reference to function strncasecmp
+Added reference to function fopen
+Added reference to function fputs
+Added reference to function strcpy
+Added reference to function bind
+Added reference to function setsockopt
+Added reference to function open
+Added reference to function dup2
+Added reference to function write
+Added reference to global stderr
+Added reference to global optarg
+Added reference to global optind
+Generated interface for /occam/examples/trimmer/airtun/slash/airtun-ng.a.i.p.bc
+## External calls:
+	select(?,?,null,null,null)
+	fread(?,0x1,0x18,?)
+	fread(?,0x10,0x1,?)
+	fread(?,?,0x1,?)
+	getopt_long(0x6,?,S:3E33FE92,?,?)
+	getopt_long(0x6,?,S:3E33FE92,?,?)
+	strerror(?)
+	getuid()
+	getuid()
+	fopen64(?,S:1F194)
+	atoi(?)
+	setuid(?)
+	time(null)
+	printf(S:7D16B107,?)
+	printf(S:7D16B107,?)
+	printf(S:D8CDDCE8)
+	printf(S:7D16B107,?)
+	printf(S:2341BC7)
+	printf(S:7D16B107,?)
+	printf(S:D3924947)
+	printf(S:7D16B107,?)
+	printf(S:B5202470)
+	printf(S:7D16B107,?)
+	printf(S:180F859A)
+	printf(S:7D16B107,?)
+	printf(S:7D16B107,?)
+	printf(S:62E2006F)
+	printf(S:7D16B107,?)
+	printf(S:E7F03893)
+	printf(S:7D16B107,?)
+	printf(S:B5202470)
+	printf(S:7D16B107,?)
+	printf(S:180F859A)
+	printf(S:7D16B107,?)
+	printf(S:E33E674)
+	printf(S:7D16B107,?)
+	printf(S:8B2845D6)
+	printf(S:7D16B107,?)
+	printf(S:8843FD14)
+	printf(S:7D16B107,?)
+	printf(S:23702340)
+	printf(S:7D16B107,?)
+	printf(S:CFEE7416)
+	printf(S:7D16B107,?)
+	printf(S:5ECC4102)
+	printf(S:7D16B107,?)
+	printf(S:62E2006F)
+	printf(S:7D16B107,?)
+	printf(?,?)
+	printf(?,?)
+	printf(S:7639865F)
+	printf(S:7D16B107,?)
+	printf(S:FC638DEE)
+	printf(S:7D16B107,?)
+	printf(S:7A20EB9A)
+	printf(S:7D16B107,?)
+	printf(S:BC7A56D4)
+	printf(S:7D16B107,?)
+	printf(S:2DAB690,?)
+	printf(S:3233254B,?)
+	printf(S:F37E010,?)
+	printf(?,?)
+	printf(S:6FB6B4B9)
+	printf(?)
+	printf(S:2E8CC204,?)
+	printf(S:2E8CC204,?)
+	printf(S:2E8CC204,?)
+	malloc(0x30)
+	malloc(0xE0)
+	srand(?)
+	perror(S:5594D057)
+	perror(S:446F4D45)
+	__isoc99_sscanf(?,S:AA49,?)
+	__isoc99_sscanf(?,S:ACDD,?)
+	__isoc99_sscanf(?,S:ACDD,?)
+	fprintf(?,S:26FAA63E,?)
+	fprintf(?,S:7F7F3929)
+	__errno_location()
+	memcmp(?,?,0x6)
+	memcmp(?,?,0x6)
+	memcmp(?,?,0x6)
+	memcmp(?,?,0x6)
+	memcmp(?,?,0x6)
+	memcmp(?,?,0x6)
+	memcmp(?,?,0x6)
+	memcmp(?,?,0x6)
+	memcmp(?,?,0x6)
+## External symbols:
+	RC4
+	RC4_set_key
+	__assert_fail
+	__errno_location
+	__isoc99_sscanf
+	atoi
+	bind
+	calloc
+	chdir
+	close
+	closedir
+	connect
+	dup2
+	execl
+	execlp
+	exit
+	fclose
+	fgets
+	fopen
+	fopen64
+	fork
+	fprintf
+	fputs
+	fread
+	free
+	fseek
+EXECUTED: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/airtun/slash/airtun-ng.a.i.p.bc -o=/dev/null -Pinterface -Pinterface-output /tmp/tmpHN6FmT.iface -Pinterface-entry /tmp/tmpHN6FmT.iface WHICH RETURNED 0
+
+	ftell
+	getopt_long
+	gettimeofday
+	getuid
+	inet_aton
+	ioctl
+	lstat
+	malloc
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/airtun/slash/airtun-ng.a.i.p.bc -o=/dev/null -Pinterface -Pinterface-output airtun-ng.02.iface
+
+	memcmp
+	open
+	opendir
+	optarg
+	optind
+	perror
+	printf
+	rand
+	read
+	readdir
+	realloc
+	recv
+	rewind
+	select
+	send
+	setsockopt
+	setuid
+	sleep
+	snprintf
+	socket
+	sprintf
+	srand
+	stderr
+	strchr
+	strcmp
+	strcpy
+	strdup
+	strerror
+	strlen
+	strncasecmp
+	strncmp
+	strncpy
+	system
+	time
+	uname
+	usleep
+	wait
+	waitpid
+	write
+
+GatherInterfacePass::runOnModule: /occam/examples/trimmer/airtun/slash/airtun-ng.a.i.p.bc
+Added reference to function memcmp
+Added reference to function malloc
+Added reference to function printf
+Added reference to function gettimeofday
+Added reference to function free
+Added reference to function rand
+Added reference to function perror
+Added reference to function read
+Added reference to function usleep
+Added reference to function strlen
+Added reference to function fopen64
+Added reference to function fseek
+Added reference to function ftell
+Added reference to function rewind
+Added reference to function fread
+Added reference to function fprintf
+Added reference to function fclose
+Added reference to function time
+Added reference to function srand
+Added reference to function getopt_long
+Added reference to function __isoc99_sscanf
+Added reference to function atoi
+Added reference to function getuid
+Added reference to function setuid
+Added reference to function __errno_location
+Added reference to function strerror
+Added reference to function select
+Added reference to function strncmp
+Added reference to function calloc
+Added reference to function snprintf
+Added reference to function realloc
+Added reference to function fgets
+Added reference to function strchr
+Added reference to function RC4_set_key
+Added reference to function RC4
+Added reference to function strncpy
+Added reference to function __assert_fail
+Added reference to function send
+Added reference to function recv
+Added reference to function inet_aton
+Added reference to function socket
+Added reference to function connect
+Added reference to function close
+Added reference to function strdup
+Added reference to function ioctl
+Added reference to function strcmp
+Added reference to function fork
+Added reference to function chdir
+Added reference to function execl
+Added reference to function exit
+Added reference to function waitpid
+Added reference to function execlp
+Added reference to function sleep
+Added reference to function wait
+Added reference to function opendir
+Added reference to function readdir
+Added reference to function sprintf
+Added reference to function closedir
+Added reference to function lstat
+Added reference to function system
+Added reference to function uname
+Added reference to function strncasecmp
+Added reference to function fopen
+Added reference to function fputs
+Added reference to function strcpy
+Added reference to function bind
+Added reference to function setsockopt
+Added reference to function open
+Added reference to function dup2
+Added reference to function write
+Added reference to global stderr
+Added reference to global optarg
+Added reference to global optind
+Generated interface for /occam/examples/trimmer/airtun/slash/airtun-ng.a.i.p.bc
+## External calls:
+## External symbols:
+	RC4
+	RC4_set_key
+	__assert_fail
+	__errno_location
+	__isoc99_sscanf
+	atoi
+	bind
+	calloc
+	chdir
+	close
+	closedir
+	connect
+	dup2
+	execl
+	execlp
+	exit
+	fclose
+	fgets
+	fopen
+	fopen64
+	fork
+	fprintf
+	fputs
+	fread
+	free
+	fseek
+	ftell
+	getopt_long
+	gettimeofday
+	getuid
+	inet_aton
+	ioctl
+	lstat
+	malloc
+	memcmp
+	open
+	opendir
+	optarg
+	optind
+	perror
+	printf
+	rand
+	read
+	readdir
+	realloc
+	recv
+	rewind
+	select
+	send
+	setsockopt
+	setuid
+	sleep
+	snprintf
+	socket
+	sprintf
+	srand
+	stderr
+	strchr
+	strcmp
+	strcpy
+	strdup
+	strerror
+	strlen
+	strncasecmp
+	strncmp
+	strncpy
+	system
+	time
+	uname
+	usleep
+	wait
+	waitpid
+	write
+
+EXECUTED: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/airtun/slash/airtun-ng.a.i.p.bc -o=/dev/null -Pinterface -Pinterface-output airtun-ng.02.iface WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/airtun/slash/airtun-ng.a.i.p.bc -o=/occam/examples/trimmer/airtun/slash/airtun-ng.a.i.p.i.bc -Pinternalize -Pinternalize-wrt-interfaces main.iface
+
+InternalizePass
+Reading file 'main.iface'...success
+Done reading.
+InternalizePass::runOnModule: /occam/examples/trimmer/airtun/slash/airtun-ng.a.i.p.bc
+Internalizing 'wi_read' ExternalLinkage DefaultVisibility
+Internalizing 'wi_write' ExternalLinkage DefaultVisibility
+Internalizing 'wi_open' ExternalLinkage DefaultVisibility
+Internalizing 'ti_name' ExternalLinkage DefaultVisibility
+Internalizing 'ti_close' ExternalLinkage DefaultVisibility
+Internalizing 'ti_read' ExternalLinkage DefaultVisibility
+Internalizing 'ti_write' ExternalLinkage DefaultVisibility
+...progress...
+Progress: internalized functions = 7 internalized globals = 0
+/usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/airtun/slash/airtun-ng.a.i.p.bc -o=/occam/examples/trimmer/airtun/slash/airtun-ng.a.i.p.i.bc -Pinternalize -Pinternalize-wrt-interfaces main.iface => 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/airtun/slash/airtun-ng.a.i.p.i.bc -o=/dev/null -Pinterface -Pinterface-output /tmp/tmp7NBL6Q.iface -Pinterface-entry /tmp/tmp7NBL6Q.iface
+
+GatherInterfacePass::runOnModule: /occam/examples/trimmer/airtun/slash/airtun-ng.a.i.p.i.bc
+Reading interface from '/tmp/tmp7NBL6Q.iface'...success
+External call to malloc
+External call to malloc
+External call to time
+External call to srand
+External call to getopt_long
+External call to printf
+External call to printf
+External call to __isoc99_sscanf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to atoi
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to __isoc99_sscanf
+External call to printf
+External call to printf
+External call to __isoc99_sscanf
+External call to printf
+External call to printf
+External call to memcmp
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to memcmp
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to getopt_long
+External call to printf
+External call to printf
+External call to memcmp
+External call to memcmp
+External call to printf
+External call to printf
+External call to memcmp
+External call to printf
+External call to printf
+External call to memcmp
+External call to printf
+External call to printf
+External call to getuid
+External call to printf
+External call to getuid
+External call to setuid
+External call to fopen64
+External call to perror
+External call to fread
+External call to perror
+External call to fprintf
+External call to fprintf
+External call to __errno_location
+External call to strerror
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to fread
+External call to printf
+External call to printf
+External call to fread
+External call to printf
+External call to memcmp
+External call to memcmp
+External call to memcmp
+External call to select
+Added reference to function memcmp
+Added reference to function malloc
+Added reference to function printf
+Added reference to function gettimeofday
+Added reference to function free
+Added reference to function rand
+Added reference to function perror
+Added reference to function read
+Added reference to function usleep
+Added reference to function strlen
+Added reference to function fopen64
+Added reference to function fseek
+Added reference to function ftell
+Added reference to function rewind
+Added reference to function fread
+Added reference to function fprintf
+Added reference to function fclose
+Added reference to function time
+Added reference to function srand
+Added reference to function getopt_long
+Added reference to function __isoc99_sscanf
+Added reference to function atoi
+Added reference to function getuid
+Added reference to function setuid
+Added reference to function __errno_location
+Added reference to function strerror
+Added reference to function select
+Added reference to function strncmp
+Added reference to function calloc
+Added reference to function snprintf
+Added reference to function realloc
+Added reference to function fgets
+Added reference to function strchr
+Added reference to function RC4_set_key
+Added reference to function RC4
+Added reference to function strncpy
+Added reference to function __assert_fail
+Added reference to function send
+Added reference to function recv
+Added reference to function inet_aton
+Added reference to function socket
+Added reference to function connect
+Added reference to function close
+Added reference to function strdup
+Added reference to function ioctl
+Added reference to function strcmp
+Added reference to function fork
+Added reference to function chdir
+Added reference to function execl
+Added reference to function exit
+Added reference to function waitpid
+Added reference to function execlp
+Added reference to function sleep
+Added reference to function wait
+Added reference to function opendir
+Added reference to function readdir
+Added reference to function sprintf
+Added reference to function closedir
+Added reference to function lstat
+Added reference to function system
+Added reference to function uname
+Added reference to function strncasecmp
+Added reference to function fopen
+Added reference to function fputs
+Added reference to function strcpy
+Added reference to function bind
+Added reference to function setsockopt
+Added reference to function open
+Added reference to function dup2
+Added reference to function write
+Added reference to global stderr
+Added reference to global optarg
+Added reference to global optind
+Generated interface for /occam/examples/trimmer/airtun/slash/airtun-ng.a.i.p.i.bc
+## External calls:
+	select(?,?,null,null,null)
+	fread(?,0x1,0x18,?)
+	fread(?,0x10,0x1,?)
+	fread(?,?,0x1,?)
+	getopt_long(0x6,?,S:3E33FE92,?,?)
+	getopt_long(0x6,?,S:3E33FE92,?,?)
+	strerror(?)
+	getuid()
+	getuid()
+	fopen64(?,S:1F194)
+	atoi(?)
+	setuid(?)
+	time(null)
+	printf(S:7D16B107,?)
+	printf(S:7D16B107,?)
+	printf(S:D8CDDCE8)
+	printf(S:7D16B107,?)
+	printf(S:2341BC7)
+	printf(S:7D16B107,?)
+	printf(S:D3924947)
+	printf(S:7D16B107,?)
+	printf(S:B5202470)
+	printf(S:7D16B107,?)
+	printf(S:180F859A)
+	printf(S:7D16B107,?)
+	printf(S:7D16B107,?)
+	printf(S:62E2006F)
+	printf(S:7D16B107,?)
+	printf(S:E7F03893)
+	printf(S:7D16B107,?)
+	printf(S:B5202470)
+	printf(S:7D16B107,?)
+	printf(S:180F859A)
+	printf(S:7D16B107,?)
+	printf(S:E33E674)
+	printf(S:7D16B107,?)
+	printf(S:8B2845D6)
+	printf(S:7D16B107,?)
+	printf(S:8843FD14)
+	printf(S:7D16B107,?)
+	printf(S:23702340)
+	printf(S:7D16B107,?)
+	printf(S:CFEE7416)
+	printf(S:7D16B107,?)
+	printf(S:5ECC4102)
+	printf(S:7D16B107,?)
+	printf(S:62E2006F)
+	printf(S:7D16B107,?)
+	printf(?,?)
+	printf(?,?)
+	printf(S:7639865F)
+	printf(S:7D16B107,?)
+	printf(S:FC638DEE)
+	printf(S:7D16B107,?)
+	printf(S:7A20EB9A)
+	printf(S:7D16B107,?)
+	printf(S:BC7A56D4)
+	printf(S:7D16B107,?)
+	printf(S:2DAB690,?)
+	printf(S:3233254B,?)
+	printf(S:F37E010,?)
+	printf(?,?)
+	printf(S:6FB6B4B9)
+	printf(?)
+	printf(S:2E8CC204,?)
+	printf(S:2E8CC204,?)
+	printf(S:2E8CC204,?)
+	malloc(0x30)
+	malloc(0xE0)
+	srand(?)
+	perror(S:5594D057)
+	perror(S:446F4D45)
+	__isoc99_sscanf(?,S:AA49,?)
+	__isoc99_sscanf(?,S:ACDD,?)
+	__isoc99_sscanf(?,S:ACDD,?)
+	fprintf(?,S:26FAA63E,?)
+	fprintf(?,S:7F7F3929)
+	__errno_location()
+	memcmp(?,?,0x6)
+	memcmp(?,?,0x6)
+	memcmp(?,?,0x6)
+	memcmp(?,?,0x6)
+	memcmp(?,?,0x6)
+	memcmp(?,?,0x6)
+	memcmp(?,?,0x6)
+	memcmp(?,?,0x6)
+	memcmp(?,?,0x6)
+## External symbols:
+	RC4
+	RC4_set_key
+	__assert_fail
+	__errno_location
+	__isoc99_sscanf
+	atoi
+	bind
+	calloc
+	chdir
+	close
+	closedir
+	connect
+	dup2
+	execl
+	execlp
+	exit
+	fclose
+	fgets
+	fopen
+	fopen64
+	fork
+	fprintf
+	fputs
+EXECUTED: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/airtun/slash/airtun-ng.a.i.p.i.bc -o=/dev/null -Pinterface -Pinterface-output /tmp/tmp7NBL6Q.iface -Pinterface-entry /tmp/tmp7NBL6Q.iface WHICH RETURNED 0
+
+	fread
+	free
+	fseek
+	ftell
+	getopt_long
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/airtun/slash/airtun-ng.a.i.p.i.bc -o=/dev/null -Pinterface -Pinterface-output /tmp/tmp7NBL6Q.iface -Pinterface-entry /tmp/tmp7NBL6Q.iface
+
+	gettimeofday
+	getuid
+	inet_aton
+	ioctl
+	lstat
+	malloc
+	memcmp
+	open
+	opendir
+	optarg
+	optind
+	perror
+	printf
+	rand
+	read
+	readdir
+	realloc
+	recv
+	rewind
+	select
+	send
+	setsockopt
+	setuid
+	sleep
+	snprintf
+	socket
+	sprintf
+	srand
+	stderr
+	strchr
+	strcmp
+	strcpy
+	strdup
+	strerror
+	strlen
+	strncasecmp
+	strncmp
+	strncpy
+	system
+	time
+	uname
+	usleep
+	wait
+	waitpid
+	write
+
+GatherInterfacePass::runOnModule: /occam/examples/trimmer/airtun/slash/airtun-ng.a.i.p.i.bc
+Reading interface from '/tmp/tmp7NBL6Q.iface'...success
+External call to malloc
+External call to malloc
+External call to time
+External call to srand
+External call to getopt_long
+External call to printf
+External call to printf
+External call to __isoc99_sscanf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to atoi
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to __isoc99_sscanf
+External call to printf
+External call to printf
+External call to __isoc99_sscanf
+External call to printf
+External call to printf
+External call to memcmp
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to memcmp
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to getopt_long
+External call to printf
+External call to printf
+External call to memcmp
+External call to memcmp
+External call to printf
+External call to printf
+External call to memcmp
+External call to printf
+External call to printf
+External call to memcmp
+External call to printf
+External call to printf
+External call to getuid
+External call to printf
+External call to getuid
+External call to setuid
+External call to fopen64
+External call to perror
+External call to fread
+External call to perror
+External call to fprintf
+External call to fprintf
+External call to __errno_location
+External call to strerror
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to printf
+External call to fread
+External call to printf
+External call to printf
+External call to fread
+External call to printf
+External call to memcmp
+External call to memcmp
+External call to memcmp
+External call to select
+Added reference to function memcmp
+Added reference to function malloc
+Added reference to function printf
+Added reference to function gettimeofday
+Added reference to function free
+Added reference to function rand
+Added reference to function perror
+Added reference to function read
+Added reference to function usleep
+Added reference to function strlen
+Added reference to function fopen64
+Added reference to function fseek
+Added reference to function ftell
+Added reference to function rewind
+Added reference to function fread
+Added reference to function fprintf
+Added reference to function fclose
+Added reference to function time
+Added reference to function srand
+Added reference to function getopt_long
+Added reference to function __isoc99_sscanf
+Added reference to function atoi
+Added reference to function getuid
+Added reference to function setuid
+Added reference to function __errno_location
+Added reference to function strerror
+Added reference to function select
+Added reference to function strncmp
+Added reference to function calloc
+Added reference to function snprintf
+Added reference to function realloc
+Added reference to function fgets
+Added reference to function strchr
+Added reference to function RC4_set_key
+Added reference to function RC4
+Added reference to function strncpy
+Added reference to function __assert_fail
+Added reference to function send
+Added reference to function recv
+Added reference to function inet_aton
+Added reference to function socket
+Added reference to function connect
+Added reference to function close
+Added reference to function strdup
+Added reference to function ioctl
+Added reference to function strcmp
+Added reference to function fork
+Added reference to function chdir
+Added reference to function execl
+Added reference to function exit
+Added reference to function waitpid
+Added reference to function execlp
+Added reference to function sleep
+Added reference to function wait
+Added reference to function opendir
+Added reference to function readdir
+Added reference to function sprintf
+Added reference to function closedir
+Added reference to function lstat
+Added reference to function system
+Added reference to function uname
+Added reference to function strncasecmp
+Added reference to function fopen
+Added reference to function fputs
+Added reference to function strcpy
+Added reference to function bind
+Added reference to function setsockopt
+Added reference to function open
+Added reference to function dup2
+Added reference to function write
+Added reference to global stderr
+Added reference to global optarg
+Added reference to global optind
+Generated interface for /occam/examples/trimmer/airtun/slash/airtun-ng.a.i.p.i.bc
+## External calls:
+	select(?,?,null,null,null)
+	fread(?,0x1,0x18,?)
+	fread(?,0x10,0x1,?)
+	fread(?,?,0x1,?)
+	getopt_long(0x6,?,S:3E33FE92,?,?)
+	getopt_long(0x6,?,S:3E33FE92,?,?)
+	strerror(?)
+	getuid()
+	getuid()
+	fopen64(?,S:1F194)
+	atoi(?)
+	setuid(?)
+	time(null)
+	printf(S:7D16B107,?)
+	printf(S:7D16B107,?)
+	printf(S:D8CDDCE8)
+	printf(S:7D16B107,?)
+	printf(S:2341BC7)
+	printf(S:7D16B107,?)
+	printf(S:D3924947)
+	printf(S:7D16B107,?)
+	printf(S:B5202470)
+	printf(S:7D16B107,?)
+	printf(S:180F859A)
+	printf(S:7D16B107,?)
+	printf(S:7D16B107,?)
+	printf(S:62E2006F)
+	printf(S:7D16B107,?)
+	printf(S:E7F03893)
+	printf(S:7D16B107,?)
+	printf(S:B5202470)
+	printf(S:7D16B107,?)
+	printf(S:180F859A)
+	printf(S:7D16B107,?)
+	printf(S:E33E674)
+	printf(S:7D16B107,?)
+	printf(S:8B2845D6)
+	printf(S:7D16B107,?)
+	printf(S:8843FD14)
+	printf(S:7D16B107,?)
+	printf(S:23702340)
+	printf(S:7D16B107,?)
+	printf(S:CFEE7416)
+	printf(S:7D16B107,?)
+	printf(S:5ECC4102)
+	printf(S:7D16B107,?)
+	printf(S:62E2006F)
+	printf(S:7D16B107,?)
+	printf(?,?)
+	printf(?,?)
+	printf(S:7639865F)
+	printf(S:7D16B107,?)
+	printf(S:FC638DEE)
+	printf(S:7D16B107,?)
+	printf(S:7A20EB9A)
+	printf(S:7D16B107,?)
+	printf(S:BC7A56D4)
+	printf(S:7D16B107,?)
+	printf(S:2DAB690,?)
+	printf(S:3233254B,?)
+	printf(S:F37E010,?)
+	printf(?,?)
+	printf(S:6FB6B4B9)
+	printf(?)
+	printf(S:2E8CC204,?)
+	printf(S:2E8CC204,?)
+	printf(S:2E8CC204,?)
+	malloc(0x30)
+	malloc(0xE0)
+	srand(?)
+	perror(S:5594D057)
+	perror(S:446F4D45)
+	__isoc99_sscanf(?,S:AA49,?)
+	__isoc99_sscanf(?,S:ACDD,?)
+	__isoc99_sscanf(?,S:ACDD,?)
+	fprintf(?,S:26FAA63E,?)
+	fprintf(?,S:7F7F3929)
+	__errno_location()
+	memcmp(?,?,0x6)
+	memcmp(?,?,0x6)
+	memcmp(?,?,0x6)
+	memcmp(?,?,0x6)
+	memcmp(?,?,0x6)
+	memcmp(?,?,0x6)
+	memcmp(?,?,0x6)
+	memcmp(?,?,0x6)
+	memcmp(?,?,0x6)
+## External symbols:
+	RC4
+	RC4_set_key
+	__assert_fail
+	__errno_location
+	__isoc99_sscanf
+	atoi
+	bind
+	calloc
+	chdir
+	close
+	closedir
+	connect
+	dup2
+	execl
+	execlp
+	exit
+	fclose
+	fgets
+	fopen
+	fopen64
+	fork
+	fprintf
+	fputs
+	fread
+	free
+	fseek
+	ftell
+	getopt_long
+	gettimeofday
+	getuid
+	inet_aton
+EXECUTED: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/airtun/slash/airtun-ng.a.i.p.i.bc -o=/dev/null -Pinterface -Pinterface-output /tmp/tmp7NBL6Q.iface -Pinterface-entry /tmp/tmp7NBL6Q.iface WHICH RETURNED 0
+
+	ioctl
+	lstat
+	malloc
+	memcmp
+	open
+	opendir
+	optarg
+	optind
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/airtun/slash/airtun-ng.a.i.p.i.bc -o=/occam/examples/trimmer/airtun/slash/airtun-ng.a.i.p.i.h.bc -Pinternalize -Pinternalize-wrt-interfaces interface_after.01.iface
+
+	perror
+	printf
+	rand
+	read
+	readdir
+	realloc
+	recv
+	rewind
+	select
+	send
+	setsockopt
+	setuid
+	sleep
+	snprintf
+	socket
+	sprintf
+	srand
+	stderr
+	strchr
+	strcmp
+	strcpy
+	strdup
+	strerror
+	strlen
+	strncasecmp
+	strncmp
+	strncpy
+	system
+	time
+	uname
+	usleep
+	wait
+	waitpid
+	write
+
+InternalizePass
+Reading file 'interface_after.01.iface'...success
+Done reading.
+InternalizePass::runOnModule: /occam/examples/trimmer/airtun/slash/airtun-ng.a.i.p.i.bc
+...no progress...
+/usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/airtun/slash/airtun-ng.a.i.p.i.bc -o=/occam/examples/trimmer/airtun/slash/airtun-ng.a.i.p.i.h.bc -Pinternalize -Pinternalize-wrt-interfaces interface_after.01.iface => 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/airtun/slash/airtun-ng.a.i.p.i.h.bc -o=/dev/null -Pprofiler -profile-verbose=false -profile-loops=true -profile-safe-pointers=true -profile-outfile=/tmp/tmpOiicpQ
+
+EXECUTED: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/airtun/slash/airtun-ng.a.i.p.i.h.bc -o=/dev/null -Pprofiler -profile-verbose=false -profile-loops=true -profile-safe-pointers=true -profile-outfile=/tmp/tmpOiicpQ WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/clang++ /occam/examples/trimmer/airtun/slash/airtun-ng.a.i.p.i.h.bc -o airtun-ng_fin -lssl -lcrypto -O3
+
+EXECUTED: /usr/lib/llvm-10/bin/clang++ /occam/examples/trimmer/airtun/slash/airtun-ng.a.i.p.i.h.bc -o airtun-ng_fin -lssl -lcrypto -O3 WHICH RETURNED 0
+

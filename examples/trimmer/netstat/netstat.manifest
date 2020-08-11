@@ -1,0 +1,1 @@
+{"binary": "netstat_fin", "native_libs": [], "name": "netstat", "args": ["-a", "-e","-p","-s"], "modules": [], "ldflags": ["-O3"], "main": "netstat.bc"}

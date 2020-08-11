@@ -1,0 +1,7 @@
+{"binary": "objdump_fin", 
+"native_libs": [], 
+"name": "objdump", 
+"args": ["-D","--syms","-s","-w", "name"], 
+"modules": [], 
+"ldflags": ["-ldl","-O3"], 
+"main": "objdump.bc"}

@@ -1,0 +1,4 @@
+"_IO_getc"_IO_putc"__assert_fail"__errno_location"__sigsetjmp"_exit"abort"access"asprintf"atof"atoi"bindtextdomain"bsearch"calloc"chmod"close"closedir"ctime"dgettext"dlerror"dlopen"dlsym"environ"exit"fclose"fcntl"fdopen"ferror"fflush"ffs"fileno"fnmatch"fopen"fopen64"fprintf"fputc"fputs"fread"free"fseek"fseeko64"fstat"ftell"ftello64"fwrite"getcwd"getenv"getgid"getopt_long"getpagesize"	getrlimit"gettext"getuid"lseek"lstat"malloc"memchr"memcmp"mkdtemp"mkstemp"mkstemps"mmap"open"opendir"optarg"optind"printf"putchar"puts"qsort"read"readdir"realloc"realpath"sbrk"	setlocale"
+siglongjmp"snprintf"sprintf"sscanf"stat"stderr"stdout"stpcpy"
+strcasecmp"strcat"strchr"strcmp"strcpy"strcspn"strdup"strerror"strlen"strncasecmp"strncat"strncmp"strncpy"strnlen"strpbrk"strrchr"strspn"strstr"strtol"strtoul"sysconf"
+textdomain"time"towlower"umask"unlink"vfprintf"vprintf"	vsnprintf

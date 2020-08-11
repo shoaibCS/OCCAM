@@ -1,0 +1,5 @@
+"__ctype_b_loc"__errno_location"__isoc99_fscanf"__isoc99_sscanf"accept"atoi"bind"chdir"chroot"close"connect"daemon"endgrent"endpwent"exit"fclose"fgets"fopen"fprintf"free"freeaddrinfo"gai_strerror"getaddrinfo"getgid"getgrnam"getpid"getpwnam"getpwuid"
+getsockopt"getuid"htonl"htons"in6addr_any"	inet_aton"	inet_ntop"	inet_pton"ioctl"kill"listen"malloc"memcmp"ntohs"openlog"printf"random"read"recvfrom"select"sendto"setgid"
+setlogmask"
+setsockopt"setuid"shutdown"signal"sleep"snprintf"socket"sprintf"srandom"stderr"
+strcasecmp"strchr"strcmp"strcpy"strdup"strlen"strncasecmp"strncmp"strncpy"strstr"strtok"syslog"time"unlink"write

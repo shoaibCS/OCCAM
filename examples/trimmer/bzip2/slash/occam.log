@@ -1,0 +1,1441 @@
+>> /usr/local/bin/slash --inter-spec-policy=none --intra-spec-policy=aggressive --no-strip --stats --work-dir=slash bzip2.manifest
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/bzip2/slash/bzip2.bc -o=/dev/null -Pprofiler -profile-verbose=false -profile-loops=true -profile-safe-pointers=true -profile-outfile=/tmp/tmpnXzT9t
+
+EXECUTED: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/bzip2/slash/bzip2.bc -o=/dev/null -Pprofiler -profile-verbose=false -profile-loops=true -profile-safe-pointers=true -profile-outfile=/tmp/tmpnXzT9t WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/bzip2/slash/bzip2.bc -o=/occam/examples/trimmer/bzip2/slash/bzip2.a.bc -Pfull-cmdline-spec -Pfull-cmdline-spec-input arguments -Pfull-cmdline-spec-name bzip2
+
+Read 2 command line arguments:
+	-fdq
+	huffman.c.bz2
+EXECUTED: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/bzip2/slash/bzip2.bc -o=/occam/examples/trimmer/bzip2/slash/bzip2.a.bc -Pfull-cmdline-spec -Pfull-cmdline-spec-input arguments -Pfull-cmdline-spec-name bzip2 WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/bzip2/slash/bzip2.a.bc -o=/dev/null -Pinterface -Pinterface-output bzip2.01.iface
+
+GatherInterfacePass::runOnModule: /occam/examples/trimmer/bzip2/slash/bzip2.a.bc
+External call to signal
+External call to signal
+External call to strcmp
+External call to strlen
+External call to strlen
+External call to strstr
+External call to strstr
+External call to strstr
+External call to strstr
+External call to strstr
+External call to strstr
+External call to strcmp
+External call to exit
+External call to fprintf
+External call to exit
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to exit
+External call to strncmp
+External call to fprintf
+External call to exit
+External call to fprintf
+External call to exit
+External call to signal
+External call to signal
+External call to signal
+External call to strcmp
+External call to strcmp
+External call to exit
+External call to strcmp
+External call to fprintf
+External call to exit
+External call to free
+External call to free
+External call to strlen
+External call to fprintf
+External call to exit
+External call to strncpy
+Added reference to function signal
+Added reference to function strcmp
+Added reference to function strlen
+Added reference to function strstr
+Added reference to function exit
+Added reference to function fprintf
+Added reference to function strncmp
+Added reference to function free
+Added reference to function __errno_location
+Added reference to function strerror
+Added reference to function stat64
+Added reference to function fileno
+Added reference to function isatty
+Added reference to function fopen64
+Added reference to function fflush
+Added reference to function ferror
+Added reference to function fclose
+Added reference to function remove
+Added reference to function perror
+Added reference to function fgetc
+Added reference to function ungetc
+Added reference to function strcat
+Added reference to function utime
+Added reference to function fwrite
+Added reference to function rewind
+Added reference to function fread
+Added reference to function fchmod
+Added reference to function fchown
+Added reference to function open64
+Added reference to function fdopen
+Added reference to function close
+Added reference to function lstat64
+Added reference to function strcpy
+Added reference to function malloc
+Added reference to function getenv
+Added reference to function __ctype_b_loc
+Added reference to function strncpy
+Added reference to global stderr
+Added reference to global stdin
+Added reference to global stdout
+Generated interface for /occam/examples/trimmer/bzip2/slash/bzip2.a.bc
+## External calls:
+	strstr(?,S:18F6CC56)
+	strstr(?,S:CBFC8FB6)
+	strstr(?,S:20561B04)
+	strstr(?,S:D59EEE84)
+	strstr(?,S:8D7A292)
+	strstr(?,S:6827A12)
+	free(?)
+	free(?)
+	strncpy(?,?,0x400)
+	strncmp(?,S:C53A,0x2)
+	strlen(?)
+	strlen(?)
+	strlen(?)
+	strcmp(?,S:C53A)
+	strcmp(?,S:C53A)
+	strcmp(?,S:C53A)
+	strcmp(?,S:ABC26D7D)
+	strcmp(?,S:8F9F0E6F)
+	strcmp(?,S:77E84886)
+	strcmp(?,S:5961EE9)
+	strcmp(?,S:F961471A)
+	strcmp(?,S:F8BE2E7F)
+	strcmp(?,S:23BBD2D3)
+	strcmp(?,S:1FA68BE2)
+	strcmp(?,S:87160BA0)
+	strcmp(?,S:5C74C31D)
+	strcmp(?,S:64155761)
+	strcmp(?,S:F3F39796)
+	strcmp(?,S:F439C816)
+	strcmp(?,S:F861BE88)
+	strcmp(?,S:F81B8E08)
+	strcmp(?,S:85E5C530)
+	strcmp(?,S:F88802C3)
+	strcmp(?,S:C53A)
+	strcmp(?,S:C53A)
+	strcmp(?,S:C53A)
+	exit(0x0)
+	exit(0x1)
+	exit(0x0)
+	exit(0x1)
+	exit(0x1)
+	exit(?)
+	exit(?)
+	exit(?)
+	fprintf(?,S:85EC907C,?,?)
+	fprintf(?,S:85EC907C,?,?)
+	fprintf(?,S:E18410B,?)
+	fprintf(?,S:3D570446)
+	fprintf(?,S:BB141611,?,0x400)
+	signal(0xB,mySIGSEGVorSIGBUScatcher)
+	signal(0x7,mySIGSEGVorSIGBUScatcher)
+	signal(0x2,mySignalCatcher)
+	signal(0xF,mySignalCatcher)
+	signal(0x1,mySignalCatcher)
+## External symbols:
+	__ctype_b_loc
+	__errno_location
+	close
+	exit
+	fchmod
+	fchown
+	fclose
+	fdopen
+	ferror
+	fflush
+	fgetc
+	fileno
+	fopen64
+	fprintf
+	fread
+	free
+	fwrite
+	getenv
+	isatty
+	lstat64
+	malloc
+	open64
+	perror
+	remove
+	rewind
+	signal
+	stat64
+	stderr
+	stdin
+	stdout
+	strcat
+	strcmp
+	strcpy
+	strerror
+	strlen
+	strncmp
+	strncpy
+	strstr
+	ungetc
+	utime
+
+EXECUTED: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/bzip2/slash/bzip2.a.bc -o=/dev/null -Pinterface -Pinterface-output bzip2.01.iface WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/bzip2/slash/bzip2.a.bc -o=/occam/examples/trimmer/bzip2/slash/bzip2.a.i.bc -Pinternalize -Pinternalize-wrt-interfaces main.iface
+
+InternalizePass
+Reading file 'main.iface'...success
+Done reading.
+InternalizePass::runOnModule: /occam/examples/trimmer/bzip2/slash/bzip2.a.bc
+Internalizing '' ExternalLinkage DefaultVisibility
+Internalizing 'BZ2_bz__AssertH__fail' ExternalLinkage DefaultVisibility
+Internalizing 'BZ2_bzlibVersion' ExternalLinkage DefaultVisibility
+Internalizing 'BZ2_bzCompressInit' ExternalLinkage DefaultVisibility
+Internalizing 'BZ2_bzCompress' ExternalLinkage DefaultVisibility
+Internalizing 'BZ2_bzCompressEnd' ExternalLinkage DefaultVisibility
+Internalizing 'BZ2_bzDecompressInit' ExternalLinkage DefaultVisibility
+Internalizing 'BZ2_indexIntoF' ExternalLinkage DefaultVisibility
+Internalizing 'BZ2_bzDecompress' ExternalLinkage DefaultVisibility
+Internalizing 'BZ2_bzDecompressEnd' ExternalLinkage DefaultVisibility
+Internalizing 'BZ2_bzWriteOpen' ExternalLinkage DefaultVisibility
+Internalizing 'BZ2_bzWrite' ExternalLinkage DefaultVisibility
+Internalizing 'BZ2_bzWriteClose' ExternalLinkage DefaultVisibility
+Internalizing 'BZ2_bzWriteClose64' ExternalLinkage DefaultVisibility
+Internalizing 'BZ2_bzReadOpen' ExternalLinkage DefaultVisibility
+Internalizing 'BZ2_bzReadClose' ExternalLinkage DefaultVisibility
+Internalizing 'BZ2_bzRead' ExternalLinkage DefaultVisibility
+Internalizing 'BZ2_bzReadGetUnused' ExternalLinkage DefaultVisibility
+Internalizing 'BZ2_bzBuffToBuffCompress' ExternalLinkage DefaultVisibility
+Internalizing 'BZ2_bzBuffToBuffDecompress' ExternalLinkage DefaultVisibility
+Internalizing 'BZ2_bzopen' ExternalLinkage DefaultVisibility
+Internalizing 'BZ2_bzdopen' ExternalLinkage DefaultVisibility
+Internalizing 'BZ2_bzread' ExternalLinkage DefaultVisibility
+Internalizing 'BZ2_bzwrite' ExternalLinkage DefaultVisibility
+Internalizing 'BZ2_bzflush' ExternalLinkage DefaultVisibility
+Internalizing 'BZ2_bzclose' ExternalLinkage DefaultVisibility
+Internalizing 'BZ2_bzerror' ExternalLinkage DefaultVisibility
+Internalizing 'BZ2_bsInitWrite' ExternalLinkage DefaultVisibility
+Internalizing 'BZ2_compressBlock' ExternalLinkage DefaultVisibility
+Internalizing 'BZ2_decompress' ExternalLinkage DefaultVisibility
+Internalizing 'BZ2_blockSort' ExternalLinkage DefaultVisibility
+Internalizing 'BZ2_hbMakeCodeLengths' ExternalLinkage DefaultVisibility
+Internalizing 'BZ2_hbAssignCodes' ExternalLinkage DefaultVisibility
+Internalizing 'BZ2_hbCreateDecodeTables' ExternalLinkage DefaultVisibility
+Internalizing 'zSuffix' ExternalLinkage DefaultVisibility
+Internalizing 'unzSuffix' ExternalLinkage DefaultVisibility
+Internalizing 'BZ2_crc32Table' ExternalLinkage DefaultVisibility
+Internalizing 'BZ2_rNums' ExternalLinkage DefaultVisibility
+...progress...
+Progress: internalized functions = 34 internalized globals = 4
+/usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/bzip2/slash/bzip2.a.bc -o=/occam/examples/trimmer/bzip2/slash/bzip2.a.i.bc -Pinternalize -Pinternalize-wrt-interfaces main.iface => 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -disable-simplify-libcalls --disable-slp-vectorization /occam/examples/trimmer/bzip2/slash/bzip2.a.i.bc -o /tmp/tmpMkIlKl.bc -O3
+
+EXECUTED: /usr/lib/llvm-10/bin/opt -disable-simplify-libcalls --disable-slp-vectorization /occam/examples/trimmer/bzip2/slash/bzip2.a.i.bc -o /tmp/tmpMkIlKl.bc -O3 WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /tmp/tmphKcH_Y.bc -o=/tmp/tmp7y7QT9.bc -Ppeval -Ppeval-policy=aggressive -Ppeval-opt
+
+=== Begin intra-module specialization ===
+Intra-specializing call to 'cleanUpAndFail' in function 'mySIGSEGVorSIGBUScatcher' on arguments [0=(i32 2)]
+Intra-specializing call to 'cleanUpAndFail' in function 'mySIGSEGVorSIGBUScatcher' on arguments [0=(i32 3)]
+Intra-specializing call to 'setExit' in function 'copyFileName' on arguments [0=(i32 1)]
+Intra-specializing call to 'snocString' in function 'snocString' on arguments [0=(%struct.zzzz* null)]
+Intra-specializing call to 'cleanUpAndFail' in function 'mySignalCatcher' on arguments [0=(i32 1)]
+Intra-specializing call to 'hasSuffix' in function 'compress' on arguments [1=(i8* getelementptr inbounds ([5 x i8], [5 x i8]* @.str.3, i64 0, i64 0))]
+Intra-specializing call to 'hasSuffix' in function 'compress' on arguments [1=(i8* getelementptr inbounds ([6 x i8], [6 x i8]* @.str.2, i64 0, i64 0))]
+Intra-specializing call to 'panic' in function 'compress' on arguments [0=(i8* getelementptr inbounds ([22 x i8], [22 x i8]* @.str.69, i64 0, i64 0))]
+Intra-specializing call to 'setExit' in function 'compress' on arguments [0=(i32 1)]
+Intra-specializing call to 'setExit' in function 'compress' on arguments [0=(i32 1)]
+Intra-specializing call to 'setExit' in function 'compress' on arguments [0=(i32 1)]
+Intra-specializing call to 'setExit' in function 'compress' on arguments [0=(i32 1)]
+Intra-specializing call to 'setExit' in function 'compress' on arguments [0=(i32 1)]
+Intra-specializing call to 'setExit' in function 'compress' on arguments [0=(i32 1)]
+Intra-specializing call to 'setExit' in function 'compress' on arguments [0=(i32 1)]
+Intra-specializing call to 'setExit' in function 'compress' on arguments [0=(i32 1)]
+Intra-specializing call to 'setExit' in function 'compress' on arguments [0=(i32 1)]
+Intra-specializing call to 'setExit' in function 'compress' on arguments [0=(i32 1)]
+Intra-specializing call to 'hasSuffix' in function 'compress' on arguments [1=(i8* getelementptr inbounds ([4 x i8], [4 x i8]* @.str.1, i64 0, i64 0))]
+Intra-specializing call to 'hasSuffix' in function 'compress' on arguments [1=(i8* getelementptr inbounds ([5 x i8], [5 x i8]* @.str, i64 0, i64 0))]
+Intra-specializing call to 'setExit' in function 'compress' on arguments [0=(i32 1)]
+Intra-specializing call to 'copyFileName' in function 'compress' on arguments [1=(i8* getelementptr inbounds ([9 x i8], [9 x i8]* @.str.55, i64 0, i64 0))]
+Intra-specializing call to 'copyFileName' in function 'compress' on arguments [1=(i8* getelementptr inbounds ([9 x i8], [9 x i8]* @.str.55, i64 0, i64 0))]
+Intra-specializing call to 'copyFileName' in function 'compress' on arguments [1=(i8* getelementptr inbounds ([8 x i8], [8 x i8]* @.str.54, i64 0, i64 0))]
+Intra-specializing call to 'panic' in function 'compress' on arguments [0=(i8* getelementptr inbounds ([21 x i8], [21 x i8]* @.str.53, i64 0, i64 0))]
+Intra-specializing call to 'mapSuffix' in function 'uncompress' on arguments [0=(i8* getelementptr inbounds ([5 x i8], [5 x i8]* @.str.3, i64 0, i64 0)),1=(i8* getelementptr inbounds ([5 x i8], [5 x i8]* @.str.5, i64 0, i64 0))]
+Intra-specializing call to 'mapSuffix' in function 'uncompress' on arguments [0=(i8* getelementptr inbounds ([6 x i8], [6 x i8]* @.str.2, i64 0, i64 0)),1=(i8* getelementptr inbounds ([5 x i8], [5 x i8]* @.str.5, i64 0, i64 0))]
+Intra-specializing call to 'setExit' in function 'uncompress' on arguments [0=(i32 2)]
+Intra-specializing call to 'panic' in function 'uncompress' on arguments [0=(i8* getelementptr inbounds ([24 x i8], [24 x i8]* @.str.84, i64 0, i64 0))]
+Intra-specializing call to 'setExit' in function 'uncompress' on arguments [0=(i32 1)]
+Intra-specializing call to 'setExit' in function 'uncompress' on arguments [0=(i32 1)]
+Intra-specializing call to 'setExit' in function 'uncompress' on arguments [0=(i32 1)]
+Intra-specializing call to 'setExit' in function 'uncompress' on arguments [0=(i32 1)]
+Intra-specializing call to 'setExit' in function 'uncompress' on arguments [0=(i32 1)]
+Intra-specializing call to 'setExit' in function 'uncompress' on arguments [0=(i32 1)]
+Intra-specializing call to 'setExit' in function 'uncompress' on arguments [0=(i32 1)]
+Intra-specializing call to 'setExit' in function 'uncompress' on arguments [0=(i32 1)]
+Intra-specializing call to 'setExit' in function 'uncompress' on arguments [0=(i32 1)]
+Intra-specializing call to 'copyFileName' in function 'uncompress' on arguments [1=(i8* getelementptr inbounds ([9 x i8], [9 x i8]* @.str.55, i64 0, i64 0))]
+Intra-specializing call to 'mapSuffix' in function 'uncompress' on arguments [0=(i8* getelementptr inbounds ([4 x i8], [4 x i8]* @.str.1, i64 0, i64 0)),1=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.4, i64 0, i64 0))]
+Intra-specializing call to 'mapSuffix' in function 'uncompress' on arguments [0=(i8* getelementptr inbounds ([5 x i8], [5 x i8]* @.str, i64 0, i64 0)),1=(i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.4, i64 0, i64 0))]
+Intra-specializing call to 'copyFileName' in function 'uncompress' on arguments [1=(i8* getelementptr inbounds ([9 x i8], [9 x i8]* @.str.55, i64 0, i64 0))]
+Intra-specializing call to 'copyFileName' in function 'uncompress' on arguments [1=(i8* getelementptr inbounds ([8 x i8], [8 x i8]* @.str.54, i64 0, i64 0))]
+Intra-specializing call to 'panic' in function 'uncompress' on arguments [0=(i8* getelementptr inbounds ([23 x i8], [23 x i8]* @.str.79, i64 0, i64 0))]
+Intra-specializing call to 'panic' in function 'testf' on arguments [0=(i8* getelementptr inbounds ([19 x i8], [19 x i8]* @.str.96, i64 0, i64 0))]
+Intra-specializing call to 'setExit' in function 'testf' on arguments [0=(i32 1)]
+Intra-specializing call to 'setExit' in function 'testf' on arguments [0=(i32 1)]
+Intra-specializing call to 'setExit' in function 'testf' on arguments [0=(i32 1)]
+Intra-specializing call to 'setExit' in function 'testf' on arguments [0=(i32 1)]
+Intra-specializing call to 'copyFileName' in function 'testf' on arguments [1=(i8* getelementptr inbounds ([7 x i8], [7 x i8]* @.str.6, i64 0, i64 0))]
+Intra-specializing call to 'panic' in function 'testf' on arguments [0=(i8* getelementptr inbounds ([18 x i8], [18 x i8]* @.str.94, i64 0, i64 0))]
+Intra-specializing call to 'cleanUpAndFail' in function 'panic' on arguments [0=(i32 3)]
+Intra-specializing call to 'panic' in function 'testStream' on arguments [0=(i8* getelementptr inbounds ([22 x i8], [22 x i8]* @.str.104, i64 0, i64 0))]
+Intra-specializing call to 'panic' in function 'testStream' on arguments [0=(i8* getelementptr inbounds ([21 x i8], [21 x i8]* @.str.98, i64 0, i64 0))]
+Intra-specializing call to 'panic' in function 'testStream' on arguments [0=(i8* getelementptr inbounds ([21 x i8], [21 x i8]* @.str.98, i64 0, i64 0))]
+Intra-specializing call to 'BZ2_bzReadOpen' in function 'testStream' on arguments [5=(i32 0)]
+Intra-specializing call to 'setExit' in function 'configError' on arguments [0=(i32 3)]
+Intra-specializing call to 'cleanUpAndFail' in function 'ioError' on arguments [0=(i32 1)]
+Intra-specializing call to 'cleanUpAndFail' in function 'outOfMemory' on arguments [0=(i32 1)]
+Intra-specializing call to 'panic' in function 'uncompressStream' on arguments [0=(i8* getelementptr inbounds ([28 x i8], [28 x i8]* @.str.91, i64 0, i64 0))]
+Intra-specializing call to 'panic' in function 'uncompressStream' on arguments [0=(i8* getelementptr inbounds ([27 x i8], [27 x i8]* @.str.88, i64 0, i64 0))]
+Intra-specializing call to 'panic' in function 'uncompressStream' on arguments [0=(i8* getelementptr inbounds ([27 x i8], [27 x i8]* @.str.88, i64 0, i64 0))]
+Intra-specializing call to 'BZ2_bzReadOpen' in function 'uncompressStream' on arguments [5=(i32 0)]
+Intra-specializing call to 'cleanUpAndFail' in function 'crcError' on arguments [0=(i32 2)]
+Intra-specializing call to 'cleanUpAndFail' in function 'compressedStreamEOF' on arguments [0=(i32 2)]
+Intra-specializing call to 'panic' in function 'compressStream' on arguments [0=(i8* getelementptr inbounds ([26 x i8], [26 x i8]* @.str.76, i64 0, i64 0))]
+Intra-specializing call to 'BZ2_bzWriteClose64' in function 'compressStream' on arguments [2=(i32 1)]
+Intra-specializing call to 'BZ2_bzWriteClose64' in function 'compressStream' on arguments [2=(i32 0)]
+Intra-specializing call to 'myMalloc' in function 'mkCell' on arguments [0=(i32 16)]
+Intra-specializing call to 'BZ2_compressBlock' in function 'handle_compress' on arguments [1=(i8 0)]
+Intra-specializing call to 'BZ2_bzCompress' in function 'BZ2_bzWrite' on arguments [1=(i32 0)]
+Intra-specializing call to 'BZ2_bzCompress' in function 'BZ2_bzWriteClose64' on arguments [1=(i32 2)]
+Intra-specializing call to 'bsPutUChar' in function 'BZ2_compressBlock' on arguments [1=(i8 -112)]
+Intra-specializing call to 'bsPutUChar' in function 'BZ2_compressBlock' on arguments [1=(i8 80)]
+Intra-specializing call to 'bsPutUChar' in function 'BZ2_compressBlock' on arguments [1=(i8 56)]
+Intra-specializing call to 'bsPutUChar' in function 'BZ2_compressBlock' on arguments [1=(i8 69)]
+Intra-specializing call to 'bsPutUChar' in function 'BZ2_compressBlock' on arguments [1=(i8 114)]
+Intra-specializing call to 'bsPutUChar' in function 'BZ2_compressBlock' on arguments [1=(i8 23)]
+Intra-specializing call to 'bsW' in function 'BZ2_compressBlock' on arguments [1=(i32 24)]
+Intra-specializing call to 'bsW' in function 'BZ2_compressBlock' on arguments [1=(i32 1),2=(i32 0)]
+Intra-specializing call to 'bsPutUChar' in function 'BZ2_compressBlock' on arguments [1=(i8 89)]
+Intra-specializing call to 'bsPutUChar' in function 'BZ2_compressBlock' on arguments [1=(i8 83)]
+Intra-specializing call to 'bsPutUChar' in function 'BZ2_compressBlock' on arguments [1=(i8 38)]
+Intra-specializing call to 'bsPutUChar' in function 'BZ2_compressBlock' on arguments [1=(i8 89)]
+Intra-specializing call to 'bsPutUChar' in function 'BZ2_compressBlock' on arguments [1=(i8 65)]
+Intra-specializing call to 'bsPutUChar' in function 'BZ2_compressBlock' on arguments [1=(i8 49)]
+Intra-specializing call to 'bsPutUChar' in function 'BZ2_compressBlock' on arguments [1=(i8 104)]
+Intra-specializing call to 'bsPutUChar' in function 'BZ2_compressBlock' on arguments [1=(i8 90)]
+Intra-specializing call to 'bsPutUChar' in function 'BZ2_compressBlock' on arguments [1=(i8 66)]
+Intra-specializing call to 'bsW' in function 'bsPutUChar' on arguments [1=(i32 8)]
+Intra-specializing call to 'bsW' in function 'bsPutUInt32' on arguments [1=(i32 8)]
+Intra-specializing call to 'bsW' in function 'bsPutUInt32' on arguments [1=(i32 8)]
+Intra-specializing call to 'bsW' in function 'bsPutUInt32' on arguments [1=(i32 8)]
+Intra-specializing call to 'bsW' in function 'bsPutUInt32' on arguments [1=(i32 8)]
+Intra-specializing call to 'BZ2_bz__AssertH__fail' in function 'sendMTFValues' on arguments [0=(i32 3007)]
+Intra-specializing call to 'BZ2_bz__AssertH__fail' in function 'sendMTFValues' on arguments [0=(i32 3006)]
+Intra-specializing call to 'bsW' in function 'sendMTFValues' on arguments [1=(i32 5)]
+Intra-specializing call to 'bsW' in function 'sendMTFValues' on arguments [1=(i32 2),2=(i32 2)]
+Intra-specializing call to 'bsW' in function 'sendMTFValues' on arguments [1=(i32 2),2=(i32 3)]
+Intra-specializing call to 'bsW' in function 'sendMTFValues' on arguments [1=(i32 1),2=(i32 0)]
+Intra-specializing call to 'bsW' in function 'sendMTFValues' on arguments [1=(i32 5)]
+Intra-specializing call to 'bsW' in function 'sendMTFValues' on arguments [1=(i32 1),2=(i32 0)]
+Intra-specializing call to 'bsW' in function 'sendMTFValues' on arguments [1=(i32 1),2=(i32 1)]
+Intra-specializing call to 'bsW' in function 'sendMTFValues' on arguments [1=(i32 15)]
+Intra-specializing call to 'bsW' in function 'sendMTFValues' on arguments [1=(i32 3)]
+Intra-specializing call to 'bsW' in function 'sendMTFValues' on arguments [1=(i32 1)]
+Intra-specializing call to 'bsW' in function 'sendMTFValues' on arguments [1=(i32 1)]
+Intra-specializing call to 'bsW' in function 'sendMTFValues' on arguments [1=(i32 1)]
+Intra-specializing call to 'bsW' in function 'sendMTFValues' on arguments [1=(i32 1)]
+Intra-specializing call to 'bsW' in function 'sendMTFValues' on arguments [1=(i32 1)]
+Intra-specializing call to 'bsW' in function 'sendMTFValues' on arguments [1=(i32 1)]
+Intra-specializing call to 'bsW' in function 'sendMTFValues' on arguments [1=(i32 1)]
+Intra-specializing call to 'bsW' in function 'sendMTFValues' on arguments [1=(i32 1)]
+Intra-specializing call to 'bsW' in function 'sendMTFValues' on arguments [1=(i32 1)]
+Intra-specializing call to 'bsW' in function 'sendMTFValues' on arguments [1=(i32 1)]
+Intra-specializing call to 'bsW' in function 'sendMTFValues' on arguments [1=(i32 1)]
+Intra-specializing call to 'bsW' in function 'sendMTFValues' on arguments [1=(i32 1)]
+Intra-specializing call to 'bsW' in function 'sendMTFValues' on arguments [1=(i32 1)]
+Intra-specializing call to 'bsW' in function 'sendMTFValues' on arguments [1=(i32 1)]
+Intra-specializing call to 'bsW' in function 'sendMTFValues' on arguments [1=(i32 1)]
+Intra-specializing call to 'bsW' in function 'sendMTFValues' on arguments [1=(i32 1)]
+Intra-specializing call to 'bsW' in function 'sendMTFValues' on arguments [1=(i32 1)]
+Intra-specializing call to 'bsW' in function 'sendMTFValues' on arguments [1=(i32 1)]
+Intra-specializing call to 'bsW' in function 'sendMTFValues' on arguments [1=(i32 1)]
+Intra-specializing call to 'bsW' in function 'sendMTFValues' on arguments [1=(i32 1)]
+Intra-specializing call to 'bsW' in function 'sendMTFValues' on arguments [1=(i32 1)]
+Intra-specializing call to 'bsW' in function 'sendMTFValues' on arguments [1=(i32 1)]
+Intra-specializing call to 'bsW' in function 'sendMTFValues' on arguments [1=(i32 1)]
+Intra-specializing call to 'bsW' in function 'sendMTFValues' on arguments [1=(i32 1)]
+Intra-specializing call to 'bsW' in function 'sendMTFValues' on arguments [1=(i32 1)]
+Intra-specializing call to 'bsW' in function 'sendMTFValues' on arguments [1=(i32 1)]
+Intra-specializing call to 'bsW' in function 'sendMTFValues' on arguments [1=(i32 1)]
+Intra-specializing call to 'bsW' in function 'sendMTFValues' on arguments [1=(i32 1)]
+Intra-specializing call to 'bsW' in function 'sendMTFValues' on arguments [1=(i32 1)]
+Intra-specializing call to 'bsW' in function 'sendMTFValues' on arguments [1=(i32 1)]
+Intra-specializing call to 'bsW' in function 'sendMTFValues' on arguments [1=(i32 1)]
+Intra-specializing call to 'bsW' in function 'sendMTFValues' on arguments [1=(i32 1)]
+Intra-specializing call to 'BZ2_hbAssignCodes' in function 'sendMTFValues' on arguments [2=(i32 32),3=(i32 0)]
+Intra-specializing call to 'BZ2_bz__AssertH__fail' in function 'sendMTFValues' on arguments [0=(i32 3005)]
+Intra-specializing call to 'BZ2_bz__AssertH__fail' in function 'sendMTFValues' on arguments [0=(i32 3004)]
+Intra-specializing call to 'BZ2_bz__AssertH__fail' in function 'sendMTFValues' on arguments [0=(i32 3003)]
+Intra-specializing call to 'BZ2_bz__AssertH__fail' in function 'sendMTFValues' on arguments [0=(i32 3001)]
+Intra-specializing call to 'BZ2_bz__AssertH__fail' in function 'BZ2_decompress' on arguments [0=(i32 4001)]
+Intra-specializing call to 'BZ2_hbCreateDecodeTables' in function 'BZ2_decompress' on arguments [4=(i32 32),5=(i32 0)]
+Intra-specializing call to 'BZ2_bz__AssertH__fail' in function 'BZ2_blockSort' on arguments [0=(i32 1003)]
+Intra-specializing call to 'BZ2_bz__AssertH__fail' in function 'fallbackSort' on arguments [0=(i32 1005)]
+Intra-specializing call to 'BZ2_bz__AssertH__fail' in function 'mainSort' on arguments [0=(i32 1002)]
+Intra-specializing call to 'BZ2_bz__AssertH__fail' in function 'mainSort' on arguments [0=(i32 1007)]
+Intra-specializing call to 'BZ2_bz__AssertH__fail' in function 'mainSort' on arguments [0=(i32 1006)]
+Intra-specializing call to 'BZ2_bz__AssertH__fail' in function 'mainQSort3' on arguments [0=(i32 1001)]
+Intra-specializing call to 'BZ2_bz__AssertH__fail' in function 'fallbackQSort3' on arguments [0=(i32 1004)]
+Intra-specializing call to 'BZ2_bz__AssertH__fail' in function 'BZ2_hbMakeCodeLengths' on arguments [0=(i32 2002)]
+Intra-specializing call to 'BZ2_bz__AssertH__fail' in function 'BZ2_hbMakeCodeLengths' on arguments [0=(i32 2001)]
+Intra-specializing call to 'setExit' in function 'main' on arguments [0=(i32 2)]
+Intra-specializing call to 'testf' in function 'main' on arguments [0=(i8* null)]
+Intra-specializing call to 'setExit' in function 'main' on arguments [0=(i32 2)]
+Intra-specializing call to 'uncompress' in function 'main' on arguments [0=(i8* null)]
+Intra-specializing call to 'compress' in function 'main' on arguments [0=(i8* null)]
+Intra-specializing call to 'snocString' in function 'main' on arguments [1=(i8* getelementptr inbounds ([14 x i8], [14 x i8]* @2, i64 0, i64 0))]
+Intra-specializing call to 'snocString' in function 'main' on arguments [1=(i8* getelementptr inbounds ([5 x i8], [5 x i8]* @1, i64 0, i64 0))]
+Intra-specializing call to 'addFlagsFromEnvVar' in function 'main' on arguments [1=(i8* getelementptr inbounds ([5 x i8], [5 x i8]* @.str.8, i64 0, i64 0))]
+Intra-specializing call to 'addFlagsFromEnvVar' in function 'main' on arguments [1=(i8* getelementptr inbounds ([6 x i8], [6 x i8]* @.str.7, i64 0, i64 0))]
+Intra-specializing call to 'copyFileName' in function 'main' on arguments [1=(i8* getelementptr inbounds ([6 x i8], [6 x i8]* @0, i64 0, i64 0))]
+Intra-specializing call to 'copyFileName' in function 'main' on arguments [1=(i8* getelementptr inbounds ([7 x i8], [7 x i8]* @.str.6, i64 0, i64 0))]
+Intra-specializing call to 'copyFileName' in function 'main' on arguments [1=(i8* getelementptr inbounds ([7 x i8], [7 x i8]* @.str.6, i64 0, i64 0))]
+Intra-specializing call to 'setExit' in function '__occam_spec.cleanUpAndFail(0x2)' on arguments [0=(i32 2)]
+Intra-specializing call to 'setExit' in function '__occam_spec.cleanUpAndFail(0x3)' on arguments [0=(i32 3)]
+Intra-specializing call to 'snocString' in function '__occam_spec.snocString(null,?)' on arguments [0=(%struct.zzzz* null)]
+Intra-specializing call to 'setExit' in function '__occam_spec.cleanUpAndFail(0x1)' on arguments [0=(i32 1)]
+Intra-specializing call to 'cleanUpAndFail' in function '__occam_spec.panic(S:AB4C79BA)' on arguments [0=(i32 3)]
+Intra-specializing call to 'cleanUpAndFail' in function '__occam_spec.panic(S:9A98AAF)' on arguments [0=(i32 3)]
+Intra-specializing call to 'hasSuffix' in function '__occam_spec.mapSuffix(S:381B3BE,S:381AE75)' on arguments [1=(i8* getelementptr inbounds ([5 x i8], [5 x i8]* @.str.3, i64 0, i64 0))]
+Intra-specializing call to 'hasSuffix' in function '__occam_spec.mapSuffix(S:73B831F0,S:381AE75)' on arguments [1=(i8* getelementptr inbounds ([6 x i8], [6 x i8]* @.str.2, i64 0, i64 0))]
+Intra-specializing call to 'cleanUpAndFail' in function '__occam_spec.panic(S:430A057D)' on arguments [0=(i32 3)]
+Intra-specializing call to 'hasSuffix' in function '__occam_spec.mapSuffix(S:1AEA0A,S:0)' on arguments [1=(i8* getelementptr inbounds ([4 x i8], [4 x i8]* @.str.1, i64 0, i64 0))]
+Intra-specializing call to 'hasSuffix' in function '__occam_spec.mapSuffix(S:37831BC,S:0)' on arguments [1=(i8* getelementptr inbounds ([5 x i8], [5 x i8]* @.str, i64 0, i64 0))]
+Intra-specializing call to 'cleanUpAndFail' in function '__occam_spec.panic(S:D0332A12)' on arguments [0=(i32 3)]
+Intra-specializing call to 'cleanUpAndFail' in function '__occam_spec.panic(S:B7250CB4)' on arguments [0=(i32 3)]
+Intra-specializing call to 'cleanUpAndFail' in function '__occam_spec.panic(S:6EDEA669)' on arguments [0=(i32 3)]
+Intra-specializing call to 'BZ2_bzCompress' in function '__occam_spec.BZ2_bzWriteClose64(?,?,0x1,?,?,?,?)' on arguments [1=(i32 2)]
+Intra-specializing call to 'BZ2_bzCompress' in function '__occam_spec.BZ2_bzWriteClose64(?,?,0x0,?,?,?,?)' on arguments [1=(i32 2)]
+Intra-specializing call to 'bsPutUChar' in function '__occam_spec.BZ2_compressBlock(?,0x0)' on arguments [1=(i8 -112)]
+Intra-specializing call to 'bsPutUChar' in function '__occam_spec.BZ2_compressBlock(?,0x0)' on arguments [1=(i8 80)]
+Intra-specializing call to 'bsPutUChar' in function '__occam_spec.BZ2_compressBlock(?,0x0)' on arguments [1=(i8 56)]
+Intra-specializing call to 'bsPutUChar' in function '__occam_spec.BZ2_compressBlock(?,0x0)' on arguments [1=(i8 69)]
+Intra-specializing call to 'bsPutUChar' in function '__occam_spec.BZ2_compressBlock(?,0x0)' on arguments [1=(i8 114)]
+Intra-specializing call to 'bsPutUChar' in function '__occam_spec.BZ2_compressBlock(?,0x0)' on arguments [1=(i8 23)]
+Intra-specializing call to 'bsW' in function '__occam_spec.BZ2_compressBlock(?,0x0)' on arguments [1=(i32 24)]
+Intra-specializing call to 'bsW' in function '__occam_spec.BZ2_compressBlock(?,0x0)' on arguments [1=(i32 1),2=(i32 0)]
+Intra-specializing call to 'bsPutUChar' in function '__occam_spec.BZ2_compressBlock(?,0x0)' on arguments [1=(i8 89)]
+Intra-specializing call to 'bsPutUChar' in function '__occam_spec.BZ2_compressBlock(?,0x0)' on arguments [1=(i8 83)]
+Intra-specializing call to 'bsPutUChar' in function '__occam_spec.BZ2_compressBlock(?,0x0)' on arguments [1=(i8 38)]
+Intra-specializing call to 'bsPutUChar' in function '__occam_spec.BZ2_compressBlock(?,0x0)' on arguments [1=(i8 89)]
+Intra-specializing call to 'bsPutUChar' in function '__occam_spec.BZ2_compressBlock(?,0x0)' on arguments [1=(i8 65)]
+Intra-specializing call to 'bsPutUChar' in function '__occam_spec.BZ2_compressBlock(?,0x0)' on arguments [1=(i8 49)]
+Intra-specializing call to 'bsPutUChar' in function '__occam_spec.BZ2_compressBlock(?,0x0)' on arguments [1=(i8 104)]
+Intra-specializing call to 'bsPutUChar' in function '__occam_spec.BZ2_compressBlock(?,0x0)' on arguments [1=(i8 90)]
+Intra-specializing call to 'bsPutUChar' in function '__occam_spec.BZ2_compressBlock(?,0x0)' on arguments [1=(i8 66)]
+Intra-specializing call to 'bsW' in function '__occam_spec.bsPutUChar(?,0x-70)' on arguments [1=(i32 8)]
+Intra-specializing call to 'bsW' in function '__occam_spec.bsPutUChar(?,0x50)' on arguments [1=(i32 8)]
+Intra-specializing call to 'bsW' in function '__occam_spec.bsPutUChar(?,0x38)' on arguments [1=(i32 8)]
+Intra-specializing call to 'bsW' in function '__occam_spec.bsPutUChar(?,0x45)' on arguments [1=(i32 8)]
+Intra-specializing call to 'bsW' in function '__occam_spec.bsPutUChar(?,0x72)' on arguments [1=(i32 8)]
+Intra-specializing call to 'bsW' in function '__occam_spec.bsPutUChar(?,0x17)' on arguments [1=(i32 8)]
+Intra-specializing call to 'bsW' in function '__occam_spec.bsPutUChar(?,0x59)' on arguments [1=(i32 8)]
+Intra-specializing call to 'bsW' in function '__occam_spec.bsPutUChar(?,0x53)' on arguments [1=(i32 8)]
+Intra-specializing call to 'bsW' in function '__occam_spec.bsPutUChar(?,0x26)' on arguments [1=(i32 8)]
+Intra-specializing call to 'bsW' in function '__occam_spec.bsPutUChar(?,0x41)' on arguments [1=(i32 8)]
+Intra-specializing call to 'bsW' in function '__occam_spec.bsPutUChar(?,0x31)' on arguments [1=(i32 8)]
+Intra-specializing call to 'bsW' in function '__occam_spec.bsPutUChar(?,0x68)' on arguments [1=(i32 8)]
+Intra-specializing call to 'bsW' in function '__occam_spec.bsPutUChar(?,0x5A)' on arguments [1=(i32 8)]
+Intra-specializing call to 'bsW' in function '__occam_spec.bsPutUChar(?,0x42)' on arguments [1=(i32 8)]
+Intra-specializing call to 'copyFileName' in function '__occam_spec.uncompress(null)' on arguments [1=(i8* null)]
+Intra-specializing call to 'copyFileName' in function '__occam_spec.uncompress(null)' on arguments [1=(i8* null)]
+Intra-specializing call to 'copyFileName' in function '__occam_spec.uncompress(null)' on arguments [1=(i8* null)]
+Intra-specializing call to 'copyFileName' in function '__occam_spec.compress(null)' on arguments [1=(i8* null)]
+Intra-specializing call to 'copyFileName' in function '__occam_spec.compress(null)' on arguments [1=(i8* null)]
+Intra-specializing call to 'copyFileName' in function '__occam_spec.compress(null)' on arguments [1=(i8* null)]
+Intra-specializing call to '__occam_spec.snocString(null,?)' in function '__occam_spec.snocString(?,S:1BBC15B2)' on arguments [0=(i8* getelementptr inbounds ([14 x i8], [14 x i8]* @2, i64 0, i64 0))]
+Intra-specializing call to '__occam_spec.snocString(null,?)' in function '__occam_spec.snocString(?,S:367F548)' on arguments [0=(i8* getelementptr inbounds ([5 x i8], [5 x i8]* @1, i64 0, i64 0))]
+Intra-specializing call to '__occam_spec.snocString(null,?)' in function '__occam_spec.snocString(null,S:1BBC15B2)' on arguments [0=(i8* getelementptr inbounds ([14 x i8], [14 x i8]* @2, i64 0, i64 0))]
+Intra-specializing call to '__occam_spec.snocString(null,?)' in function '__occam_spec.snocString(null,S:367F548)' on arguments [0=(i8* getelementptr inbounds ([5 x i8], [5 x i8]* @1, i64 0, i64 0))]
+...progress...
+Specialized 0 functions.
+ === End intra-module specialization ===
+/usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /tmp/tmphKcH_Y.bc -o=/tmp/tmp7y7QT9.bc -Ppeval -Ppeval-policy=aggressive -Ppeval-opt => 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -disable-simplify-libcalls --disable-slp-vectorization /tmp/tmpMkIlKl.bc -o /tmp/tmphKcH_Y.bc -O3
+
+EXECUTED: /usr/lib/llvm-10/bin/opt -disable-simplify-libcalls --disable-slp-vectorization /tmp/tmpMkIlKl.bc -o /tmp/tmphKcH_Y.bc -O3 WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /tmp/tmphKcH_Y.bc -o=/tmp/tmp7y7QT9.bc -Ppeval -Ppeval-policy=aggressive -Ppeval-opt
+
+=== Begin intra-module specialization ===
+Intra-specializing call to '__occam_spec.bsW(?,0x8,?)' in function '__occam_spec.bsPutUChar(?,0x-70)' on arguments [1=(i32 144)]
+Intra-specializing call to '__occam_spec.bsW(?,0x8,?)' in function '__occam_spec.bsPutUChar(?,0x50)' on arguments [1=(i32 80)]
+Intra-specializing call to '__occam_spec.bsW(?,0x8,?)' in function '__occam_spec.bsPutUChar(?,0x38)' on arguments [1=(i32 56)]
+Intra-specializing call to '__occam_spec.bsW(?,0x8,?)' in function '__occam_spec.bsPutUChar(?,0x45)' on arguments [1=(i32 69)]
+Intra-specializing call to '__occam_spec.bsW(?,0x8,?)' in function '__occam_spec.bsPutUChar(?,0x72)' on arguments [1=(i32 114)]
+Intra-specializing call to '__occam_spec.bsW(?,0x8,?)' in function '__occam_spec.bsPutUChar(?,0x17)' on arguments [1=(i32 23)]
+Intra-specializing call to '__occam_spec.bsW(?,0x8,?)' in function '__occam_spec.bsPutUChar(?,0x59)' on arguments [1=(i32 89)]
+Intra-specializing call to '__occam_spec.bsW(?,0x8,?)' in function '__occam_spec.bsPutUChar(?,0x53)' on arguments [1=(i32 83)]
+Intra-specializing call to '__occam_spec.bsW(?,0x8,?)' in function '__occam_spec.bsPutUChar(?,0x26)' on arguments [1=(i32 38)]
+Intra-specializing call to '__occam_spec.bsW(?,0x8,?)' in function '__occam_spec.bsPutUChar(?,0x41)' on arguments [1=(i32 65)]
+Intra-specializing call to '__occam_spec.bsW(?,0x8,?)' in function '__occam_spec.bsPutUChar(?,0x31)' on arguments [1=(i32 49)]
+Intra-specializing call to '__occam_spec.bsW(?,0x8,?)' in function '__occam_spec.bsPutUChar(?,0x68)' on arguments [1=(i32 104)]
+Intra-specializing call to '__occam_spec.bsW(?,0x8,?)' in function '__occam_spec.bsPutUChar(?,0x5A)' on arguments [1=(i32 90)]
+Intra-specializing call to '__occam_spec.bsW(?,0x8,?)' in function '__occam_spec.bsPutUChar(?,0x42)' on arguments [1=(i32 66)]
+...progress...
+Specialized 0 functions.
+ === End intra-module specialization ===
+/usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /tmp/tmphKcH_Y.bc -o=/tmp/tmp7y7QT9.bc -Ppeval -Ppeval-policy=aggressive -Ppeval-opt => 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -disable-simplify-libcalls --disable-slp-vectorization /tmp/tmpMkIlKl.bc -o /tmp/tmphKcH_Y.bc -O3
+
+EXECUTED: /usr/lib/llvm-10/bin/opt -disable-simplify-libcalls --disable-slp-vectorization /tmp/tmpMkIlKl.bc -o /tmp/tmphKcH_Y.bc -O3 WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /tmp/tmphKcH_Y.bc -o=/tmp/tmp7y7QT9.bc -Ppeval -Ppeval-policy=aggressive -Ppeval-opt
+
+=== Begin intra-module specialization ===
+...no progress...
+No specialization took place
+ === End intra-module specialization ===
+/usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /tmp/tmphKcH_Y.bc -o=/tmp/tmp7y7QT9.bc -Ppeval -Ppeval-policy=aggressive -Ppeval-opt => 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/bzip2/slash/bzip2.a.i.p.bc -o=/dev/null -Pinterface -Pinterface-output /tmp/tmpJcN6yn.iface -Pinterface-entry /tmp/tmpJcN6yn.iface
+
+GatherInterfacePass::runOnModule: /occam/examples/trimmer/bzip2/slash/bzip2.a.i.p.bc
+Reading interface from '/tmp/tmpJcN6yn.iface'...success
+External call to malloc
+External call to signal
+External call to signal
+External call to strcmp
+External call to strlen
+External call to strstr
+External call to strstr
+External call to strstr
+External call to strstr
+External call to strstr
+External call to strstr
+External call to strcmp
+External call to exit
+External call to fprintf
+External call to exit
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to exit
+External call to strncmp
+External call to fprintf
+External call to exit
+External call to fprintf
+External call to exit
+External call to signal
+External call to signal
+External call to signal
+External call to strcmp
+External call to strcmp
+External call to exit
+External call to strcmp
+External call to fprintf
+External call to exit
+External call to free
+External call to free
+External call to strlen
+External call to fprintf
+External call to exit
+External call to strncpy
+Added reference to function signal
+Added reference to function strcmp
+Added reference to function strlen
+Added reference to function strstr
+Added reference to function exit
+Added reference to function fprintf
+Added reference to function strncmp
+Added reference to function free
+Added reference to function __errno_location
+Added reference to function strerror
+Added reference to function stat64
+Added reference to function fileno
+Added reference to function isatty
+Added reference to function fopen64
+Added reference to function fflush
+Added reference to function ferror
+Added reference to function fclose
+Added reference to function remove
+Added reference to function perror
+Added reference to function fgetc
+Added reference to function ungetc
+Added reference to function strcat
+Added reference to function utime
+Added reference to function fwrite
+Added reference to function rewind
+Added reference to function fread
+Added reference to function fchmod
+Added reference to function fchown
+Added reference to function open64
+Added reference to function fdopen
+Added reference to function close
+Added reference to function lstat64
+Added reference to function strcpy
+Added reference to function malloc
+Added reference to function getenv
+Added reference to function __ctype_b_loc
+Added reference to function strncpy
+Added reference to global stderr
+Added reference to global stdin
+Added reference to global stdout
+Generated interface for /occam/examples/trimmer/bzip2/slash/bzip2.a.i.p.bc
+## External calls:
+	strstr(?,S:18F6CC56)
+	strstr(?,S:CBFC8FB6)
+	strstr(?,S:20561B04)
+	strstr(?,S:D59EEE84)
+	strstr(?,S:8D7A292)
+	strstr(?,S:6827A12)
+	free(?)
+	free(?)
+	strncpy(?,S:FC797E1,0x400)
+	strncmp(?,S:C53A,0x2)
+	malloc(0x18)
+	strcmp(?,S:C53A)
+	strcmp(?,S:C53A)
+	strcmp(?,S:C53A)
+	strcmp(?,S:ABC26D7D)
+	strcmp(?,S:8F9F0E6F)
+	strcmp(?,S:77E84886)
+	strcmp(?,S:5961EE9)
+	strcmp(?,S:F961471A)
+	strcmp(?,S:F8BE2E7F)
+	strcmp(?,S:23BBD2D3)
+	strcmp(?,S:1FA68BE2)
+	strcmp(?,S:87160BA0)
+	strcmp(?,S:5C74C31D)
+	strcmp(?,S:64155761)
+	strcmp(?,S:F3F39796)
+	strcmp(?,S:F439C816)
+	strcmp(?,S:F861BE88)
+	strcmp(?,S:F81B8E08)
+	strcmp(?,S:85E5C530)
+	strcmp(?,S:F88802C3)
+	strcmp(?,S:C53A)
+	strcmp(?,S:C53A)
+	strcmp(?,S:C53A)
+	exit(0x0)
+	exit(0x1)
+	exit(0x0)
+	exit(0x1)
+	exit(0x1)
+	exit(?)
+	exit(?)
+	exit(?)
+	strlen(?)
+	strlen(S:FC797E1)
+	fprintf(?,S:85EC907C,?,?)
+	fprintf(?,S:85EC907C,?,?)
+	fprintf(?,S:E18410B,?)
+	fprintf(?,S:3D570446)
+	fprintf(?,S:BB141611,S:FC797E1,0x400)
+	signal(0xB,mySIGSEGVorSIGBUScatcher)
+	signal(0x7,mySIGSEGVorSIGBUScatcher)
+	signal(0x2,mySignalCatcher)
+	signal(0xF,mySignalCatcher)
+	signal(0x1,mySignalCatcher)
+## External symbols:
+	__ctype_b_loc
+	__errno_location
+	close
+	exit
+	fchmod
+	fchown
+	fclose
+	fdopen
+	ferror
+	fflush
+	fgetc
+	fileno
+	fopen64
+	fprintf
+	fread
+	free
+	fwrite
+	getenv
+	isatty
+	lstat64
+	malloc
+	open64
+	perror
+	remove
+	rewind
+	signal
+	stat64
+	stderr
+	stdin
+	stdout
+	strcat
+	strcmp
+	strcpy
+	strerror
+	strlen
+	strncmp
+	strncpy
+	strstr
+	ungetc
+	utime
+
+EXECUTED: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/bzip2/slash/bzip2.a.i.p.bc -o=/dev/null -Pinterface -Pinterface-output /tmp/tmpJcN6yn.iface -Pinterface-entry /tmp/tmpJcN6yn.iface WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/bzip2/slash/bzip2.a.i.p.bc -o=/dev/null -Pinterface -Pinterface-output /tmp/tmpJcN6yn.iface -Pinterface-entry /tmp/tmpJcN6yn.iface
+
+GatherInterfacePass::runOnModule: /occam/examples/trimmer/bzip2/slash/bzip2.a.i.p.bc
+Reading interface from '/tmp/tmpJcN6yn.iface'...success
+External call to malloc
+External call to signal
+External call to signal
+External call to strcmp
+External call to strlen
+External call to strstr
+External call to strstr
+External call to strstr
+External call to strstr
+External call to strstr
+External call to strstr
+External call to strcmp
+External call to exit
+External call to fprintf
+External call to exit
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to exit
+External call to strncmp
+External call to fprintf
+External call to exit
+External call to fprintf
+External call to exit
+External call to signal
+External call to signal
+External call to signal
+External call to strcmp
+External call to strcmp
+External call to exit
+External call to strcmp
+External call to fprintf
+External call to exit
+External call to free
+External call to free
+External call to strlen
+External call to fprintf
+External call to exit
+External call to strncpy
+Added reference to function signal
+Added reference to function strcmp
+Added reference to function strlen
+Added reference to function strstr
+Added reference to function exit
+Added reference to function fprintf
+Added reference to function strncmp
+Added reference to function free
+Added reference to function __errno_location
+Added reference to function strerror
+Added reference to function stat64
+Added reference to function fileno
+Added reference to function isatty
+Added reference to function fopen64
+Added reference to function fflush
+Added reference to function ferror
+Added reference to function fclose
+Added reference to function remove
+Added reference to function perror
+Added reference to function fgetc
+Added reference to function ungetc
+Added reference to function strcat
+Added reference to function utime
+Added reference to function fwrite
+Added reference to function rewind
+Added reference to function fread
+Added reference to function fchmod
+Added reference to function fchown
+Added reference to function open64
+Added reference to function fdopen
+Added reference to function close
+Added reference to function lstat64
+Added reference to function strcpy
+Added reference to function malloc
+Added reference to function getenv
+Added reference to function __ctype_b_loc
+Added reference to function strncpy
+Added reference to global stderr
+Added reference to global stdin
+Added reference to global stdout
+Generated interface for /occam/examples/trimmer/bzip2/slash/bzip2.a.i.p.bc
+## External calls:
+	strstr(?,S:18F6CC56)
+	strstr(?,S:CBFC8FB6)
+	strstr(?,S:20561B04)
+	strstr(?,S:D59EEE84)
+	strstr(?,S:8D7A292)
+	strstr(?,S:6827A12)
+	free(?)
+	free(?)
+	strncpy(?,S:FC797E1,0x400)
+	strncmp(?,S:C53A,0x2)
+	malloc(0x18)
+	strcmp(?,S:C53A)
+	strcmp(?,S:C53A)
+	strcmp(?,S:C53A)
+	strcmp(?,S:ABC26D7D)
+	strcmp(?,S:8F9F0E6F)
+	strcmp(?,S:77E84886)
+	strcmp(?,S:5961EE9)
+	strcmp(?,S:F961471A)
+	strcmp(?,S:F8BE2E7F)
+	strcmp(?,S:23BBD2D3)
+	strcmp(?,S:1FA68BE2)
+	strcmp(?,S:87160BA0)
+	strcmp(?,S:5C74C31D)
+	strcmp(?,S:64155761)
+	strcmp(?,S:F3F39796)
+	strcmp(?,S:F439C816)
+	strcmp(?,S:F861BE88)
+	strcmp(?,S:F81B8E08)
+	strcmp(?,S:85E5C530)
+	strcmp(?,S:F88802C3)
+	strcmp(?,S:C53A)
+	strcmp(?,S:C53A)
+	strcmp(?,S:C53A)
+	exit(0x0)
+	exit(0x1)
+	exit(0x0)
+	exit(0x1)
+	exit(0x1)
+	exit(?)
+	exit(?)
+	exit(?)
+	strlen(?)
+	strlen(S:FC797E1)
+	fprintf(?,S:85EC907C,?,?)
+	fprintf(?,S:85EC907C,?,?)
+	fprintf(?,S:E18410B,?)
+	fprintf(?,S:3D570446)
+	fprintf(?,S:BB141611,S:FC797E1,0x400)
+	signal(0xB,mySIGSEGVorSIGBUScatcher)
+	signal(0x7,mySIGSEGVorSIGBUScatcher)
+	signal(0x2,mySignalCatcher)
+	signal(0xF,mySignalCatcher)
+	signal(0x1,mySignalCatcher)
+## External symbols:
+	__ctype_b_loc
+	__errno_location
+	close
+	exit
+	fchmod
+	fchown
+	fclose
+	fdopen
+	ferror
+	fflush
+	fgetc
+	fileno
+	fopen64
+	fprintf
+	fread
+	free
+	fwrite
+	getenv
+	isatty
+	lstat64
+	malloc
+	open64
+	perror
+	remove
+	rewind
+	signal
+	stat64
+	stderr
+	stdin
+	stdout
+	strcat
+	strcmp
+	strcpy
+	strerror
+	strlen
+	strncmp
+	strncpy
+	strstr
+	ungetc
+	utime
+
+EXECUTED: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/bzip2/slash/bzip2.a.i.p.bc -o=/dev/null -Pinterface -Pinterface-output /tmp/tmpJcN6yn.iface -Pinterface-entry /tmp/tmpJcN6yn.iface WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/bzip2/slash/bzip2.a.i.p.bc -o=/dev/null -Pinterface -Pinterface-output bzip2.02.iface
+
+GatherInterfacePass::runOnModule: /occam/examples/trimmer/bzip2/slash/bzip2.a.i.p.bc
+External call to fprintf
+External call to fprintf
+Added reference to function signal
+Added reference to function strcmp
+Added reference to function strlen
+Added reference to function strstr
+Added reference to function exit
+Added reference to function fprintf
+Added reference to function strncmp
+Added reference to function free
+Added reference to function __errno_location
+Added reference to function strerror
+Added reference to function stat64
+Added reference to function fileno
+Added reference to function isatty
+Added reference to function fopen64
+Added reference to function fflush
+Added reference to function ferror
+Added reference to function fclose
+Added reference to function remove
+Added reference to function perror
+Added reference to function fgetc
+Added reference to function ungetc
+Added reference to function strcat
+Added reference to function utime
+Added reference to function fwrite
+Added reference to function rewind
+Added reference to function fread
+Added reference to function fchmod
+Added reference to function fchown
+Added reference to function open64
+Added reference to function fdopen
+Added reference to function close
+Added reference to function lstat64
+Added reference to function strcpy
+Added reference to function malloc
+Added reference to function getenv
+Added reference to function __ctype_b_loc
+Added reference to function strncpy
+Added reference to global stderr
+Added reference to global stdin
+Added reference to global stdout
+Generated interface for /occam/examples/trimmer/bzip2/slash/bzip2.a.i.p.bc
+## External calls:
+	fprintf(?,?,?)
+	fprintf(?,S:71E79C8A,?,?)
+## External symbols:
+	__ctype_b_loc
+	__errno_location
+	close
+	exit
+	fchmod
+	fchown
+	fclose
+	fdopen
+	ferror
+	fflush
+	fgetc
+	fileno
+	fopen64
+	fprintf
+	fread
+	free
+	fwrite
+	getenv
+	isatty
+	lstat64
+	malloc
+	open64
+	perror
+	remove
+	rewind
+	signal
+	stat64
+	stderr
+	stdin
+	stdout
+	strcat
+	strcmp
+	strcpy
+	strerror
+	strlen
+	strncmp
+	strncpy
+	strstr
+	ungetc
+	utime
+
+EXECUTED: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/bzip2/slash/bzip2.a.i.p.bc -o=/dev/null -Pinterface -Pinterface-output bzip2.02.iface WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/bzip2/slash/bzip2.a.i.p.bc -o=/occam/examples/trimmer/bzip2/slash/bzip2.a.i.p.i.bc -Pinternalize -Pinternalize-wrt-interfaces main.iface
+
+InternalizePass
+Reading file 'main.iface'...success
+Done reading.
+InternalizePass::runOnModule: /occam/examples/trimmer/bzip2/slash/bzip2.a.i.p.bc
+...no progress...
+/usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/bzip2/slash/bzip2.a.i.p.bc -o=/occam/examples/trimmer/bzip2/slash/bzip2.a.i.p.i.bc -Pinternalize -Pinternalize-wrt-interfaces main.iface => 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/bzip2/slash/bzip2.a.i.p.i.bc -o=/dev/null -Pinterface -Pinterface-output /tmp/tmpFXCZwy.iface -Pinterface-entry /tmp/tmpFXCZwy.iface
+
+GatherInterfacePass::runOnModule: /occam/examples/trimmer/bzip2/slash/bzip2.a.i.p.i.bc
+Reading interface from '/tmp/tmpFXCZwy.iface'...success
+External call to malloc
+External call to signal
+External call to signal
+External call to strcmp
+External call to strlen
+External call to strstr
+External call to strstr
+External call to strstr
+External call to strstr
+External call to strstr
+External call to strstr
+External call to strcmp
+External call to exit
+External call to fprintf
+External call to exit
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to exit
+External call to strncmp
+External call to fprintf
+External call to exit
+External call to fprintf
+External call to exit
+External call to signal
+External call to signal
+External call to signal
+External call to strcmp
+External call to strcmp
+External call to exit
+External call to strcmp
+External call to fprintf
+External call to exit
+External call to free
+External call to free
+External call to strlen
+External call to fprintf
+External call to exit
+External call to strncpy
+Added reference to function signal
+Added reference to function strcmp
+Added reference to function strlen
+Added reference to function strstr
+Added reference to function exit
+Added reference to function fprintf
+Added reference to function strncmp
+Added reference to function free
+Added reference to function __errno_location
+Added reference to function strerror
+Added reference to function stat64
+Added reference to function fileno
+Added reference to function isatty
+Added reference to function fopen64
+Added reference to function fflush
+Added reference to function ferror
+Added reference to function fclose
+Added reference to function remove
+Added reference to function perror
+Added reference to function fgetc
+Added reference to function ungetc
+Added reference to function strcat
+Added reference to function utime
+Added reference to function fwrite
+Added reference to function rewind
+Added reference to function fread
+Added reference to function fchmod
+Added reference to function fchown
+Added reference to function open64
+Added reference to function fdopen
+Added reference to function close
+Added reference to function lstat64
+Added reference to function strcpy
+Added reference to function malloc
+Added reference to function getenv
+Added reference to function __ctype_b_loc
+Added reference to function strncpy
+Added reference to global stderr
+Added reference to global stdin
+Added reference to global stdout
+Generated interface for /occam/examples/trimmer/bzip2/slash/bzip2.a.i.p.i.bc
+## External calls:
+	strstr(?,S:18F6CC56)
+	strstr(?,S:CBFC8FB6)
+	strstr(?,S:20561B04)
+	strstr(?,S:D59EEE84)
+	strstr(?,S:8D7A292)
+	strstr(?,S:6827A12)
+	free(?)
+	free(?)
+	strncpy(?,S:FC797E1,0x400)
+	strncmp(?,S:C53A,0x2)
+	malloc(0x18)
+	strcmp(?,S:C53A)
+	strcmp(?,S:C53A)
+	strcmp(?,S:C53A)
+	strcmp(?,S:ABC26D7D)
+	strcmp(?,S:8F9F0E6F)
+	strcmp(?,S:77E84886)
+	strcmp(?,S:5961EE9)
+	strcmp(?,S:F961471A)
+	strcmp(?,S:F8BE2E7F)
+	strcmp(?,S:23BBD2D3)
+	strcmp(?,S:1FA68BE2)
+	strcmp(?,S:87160BA0)
+	strcmp(?,S:5C74C31D)
+	strcmp(?,S:64155761)
+	strcmp(?,S:F3F39796)
+	strcmp(?,S:F439C816)
+	strcmp(?,S:F861BE88)
+	strcmp(?,S:F81B8E08)
+	strcmp(?,S:85E5C530)
+	strcmp(?,S:F88802C3)
+	strcmp(?,S:C53A)
+	strcmp(?,S:C53A)
+	strcmp(?,S:C53A)
+	exit(0x0)
+	exit(0x1)
+	exit(0x0)
+	exit(0x1)
+	exit(0x1)
+	exit(?)
+	exit(?)
+	exit(?)
+	strlen(?)
+	strlen(S:FC797E1)
+	fprintf(?,S:85EC907C,?,?)
+	fprintf(?,S:85EC907C,?,?)
+	fprintf(?,S:E18410B,?)
+	fprintf(?,S:3D570446)
+	fprintf(?,S:BB141611,S:FC797E1,0x400)
+	signal(0xB,mySIGSEGVorSIGBUScatcher)
+	signal(0x7,mySIGSEGVorSIGBUScatcher)
+	signal(0x2,mySignalCatcher)
+	signal(0xF,mySignalCatcher)
+	signal(0x1,mySignalCatcher)
+## External symbols:
+	__ctype_b_loc
+	__errno_location
+	close
+	exit
+	fchmod
+	fchown
+	fclose
+	fdopen
+	ferror
+	fflush
+	fgetc
+	fileno
+	fopen64
+	fprintf
+	fread
+	free
+	fwrite
+	getenv
+	isatty
+	lstat64
+	malloc
+	open64
+	perror
+	remove
+	rewind
+	signal
+	stat64
+	stderr
+	stdin
+	stdout
+	strcat
+	strcmp
+	strcpy
+	strerror
+	strlen
+	strncmp
+	strncpy
+	strstr
+	ungetc
+	utime
+
+EXECUTED: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/bzip2/slash/bzip2.a.i.p.i.bc -o=/dev/null -Pinterface -Pinterface-output /tmp/tmpFXCZwy.iface -Pinterface-entry /tmp/tmpFXCZwy.iface WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/bzip2/slash/bzip2.a.i.p.i.bc -o=/dev/null -Pinterface -Pinterface-output /tmp/tmpFXCZwy.iface -Pinterface-entry /tmp/tmpFXCZwy.iface
+
+GatherInterfacePass::runOnModule: /occam/examples/trimmer/bzip2/slash/bzip2.a.i.p.i.bc
+Reading interface from '/tmp/tmpFXCZwy.iface'...success
+External call to malloc
+External call to signal
+External call to signal
+External call to strcmp
+External call to strlen
+External call to strstr
+External call to strstr
+External call to strstr
+External call to strstr
+External call to strstr
+External call to strstr
+External call to strcmp
+External call to exit
+External call to fprintf
+External call to exit
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to strcmp
+External call to exit
+External call to strncmp
+External call to fprintf
+External call to exit
+External call to fprintf
+External call to exit
+External call to signal
+External call to signal
+External call to signal
+External call to strcmp
+External call to strcmp
+External call to exit
+External call to strcmp
+External call to fprintf
+External call to exit
+External call to free
+External call to free
+External call to strlen
+External call to fprintf
+External call to exit
+External call to strncpy
+Added reference to function signal
+Added reference to function strcmp
+Added reference to function strlen
+Added reference to function strstr
+Added reference to function exit
+Added reference to function fprintf
+Added reference to function strncmp
+Added reference to function free
+Added reference to function __errno_location
+Added reference to function strerror
+Added reference to function stat64
+Added reference to function fileno
+Added reference to function isatty
+Added reference to function fopen64
+Added reference to function fflush
+Added reference to function ferror
+Added reference to function fclose
+Added reference to function remove
+Added reference to function perror
+Added reference to function fgetc
+Added reference to function ungetc
+Added reference to function strcat
+Added reference to function utime
+Added reference to function fwrite
+Added reference to function rewind
+Added reference to function fread
+Added reference to function fchmod
+Added reference to function fchown
+Added reference to function open64
+Added reference to function fdopen
+Added reference to function close
+Added reference to function lstat64
+Added reference to function strcpy
+Added reference to function malloc
+Added reference to function getenv
+Added reference to function __ctype_b_loc
+Added reference to function strncpy
+Added reference to global stderr
+Added reference to global stdin
+Added reference to global stdout
+Generated interface for /occam/examples/trimmer/bzip2/slash/bzip2.a.i.p.i.bc
+## External calls:
+	strstr(?,S:18F6CC56)
+	strstr(?,S:CBFC8FB6)
+	strstr(?,S:20561B04)
+	strstr(?,S:D59EEE84)
+	strstr(?,S:8D7A292)
+	strstr(?,S:6827A12)
+	free(?)
+	free(?)
+	strncpy(?,S:FC797E1,0x400)
+	strncmp(?,S:C53A,0x2)
+	malloc(0x18)
+	strcmp(?,S:C53A)
+	strcmp(?,S:C53A)
+	strcmp(?,S:C53A)
+	strcmp(?,S:ABC26D7D)
+	strcmp(?,S:8F9F0E6F)
+	strcmp(?,S:77E84886)
+	strcmp(?,S:5961EE9)
+	strcmp(?,S:F961471A)
+	strcmp(?,S:F8BE2E7F)
+	strcmp(?,S:23BBD2D3)
+	strcmp(?,S:1FA68BE2)
+	strcmp(?,S:87160BA0)
+	strcmp(?,S:5C74C31D)
+	strcmp(?,S:64155761)
+	strcmp(?,S:F3F39796)
+	strcmp(?,S:F439C816)
+	strcmp(?,S:F861BE88)
+	strcmp(?,S:F81B8E08)
+	strcmp(?,S:85E5C530)
+	strcmp(?,S:F88802C3)
+	strcmp(?,S:C53A)
+	strcmp(?,S:C53A)
+	strcmp(?,S:C53A)
+	exit(0x0)
+	exit(0x1)
+	exit(0x0)
+	exit(0x1)
+	exit(0x1)
+	exit(?)
+	exit(?)
+	exit(?)
+	strlen(?)
+	strlen(S:FC797E1)
+	fprintf(?,S:85EC907C,?,?)
+	fprintf(?,S:85EC907C,?,?)
+	fprintf(?,S:E18410B,?)
+	fprintf(?,S:3D570446)
+	fprintf(?,S:BB141611,S:FC797E1,0x400)
+	signal(0xB,mySIGSEGVorSIGBUScatcher)
+	signal(0x7,mySIGSEGVorSIGBUScatcher)
+	signal(0x2,mySignalCatcher)
+	signal(0xF,mySignalCatcher)
+	signal(0x1,mySignalCatcher)
+## External symbols:
+	__ctype_b_loc
+	__errno_location
+	close
+	exit
+	fchmod
+	fchown
+	fclose
+	fdopen
+	ferror
+	fflush
+	fgetc
+	fileno
+	fopen64
+	fprintf
+	fread
+	free
+	fwrite
+	getenv
+	isatty
+	lstat64
+	malloc
+	open64
+	perror
+	remove
+	rewind
+	signal
+	stat64
+	stderr
+	stdin
+	stdout
+	strcat
+	strcmp
+	strcpy
+	strerror
+	strlen
+	strncmp
+	strncpy
+	strstr
+	ungetc
+	utime
+
+EXECUTED: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/bzip2/slash/bzip2.a.i.p.i.bc -o=/dev/null -Pinterface -Pinterface-output /tmp/tmpFXCZwy.iface -Pinterface-entry /tmp/tmpFXCZwy.iface WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/bzip2/slash/bzip2.a.i.p.i.bc -o=/occam/examples/trimmer/bzip2/slash/bzip2.a.i.p.i.h.bc -Pinternalize -Pinternalize-wrt-interfaces interface_after.01.iface
+
+InternalizePass
+Reading file 'interface_after.01.iface'...success
+Done reading.
+InternalizePass::runOnModule: /occam/examples/trimmer/bzip2/slash/bzip2.a.i.p.i.bc
+...no progress...
+/usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/bzip2/slash/bzip2.a.i.p.i.bc -o=/occam/examples/trimmer/bzip2/slash/bzip2.a.i.p.i.h.bc -Pinternalize -Pinternalize-wrt-interfaces interface_after.01.iface => 0
+
+EXECUTING: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/bzip2/slash/bzip2.a.i.p.i.h.bc -o=/dev/null -Pprofiler -profile-verbose=false -profile-loops=true -profile-safe-pointers=true -profile-outfile=/tmp/tmpATqxsV
+
+EXECUTED: /usr/lib/llvm-10/bin/opt -load=/occam/lib/libSeaDsa.so -load=/occam/lib/libprevirt.so /occam/examples/trimmer/bzip2/slash/bzip2.a.i.p.i.h.bc -o=/dev/null -Pprofiler -profile-verbose=false -profile-loops=true -profile-safe-pointers=true -profile-outfile=/tmp/tmpATqxsV WHICH RETURNED 0
+
+EXECUTING: /usr/lib/llvm-10/bin/clang++ /occam/examples/trimmer/bzip2/slash/bzip2.a.i.p.i.h.bc -o bzip2_fin -lbz2 -O3
+
+EXECUTED: /usr/lib/llvm-10/bin/clang++ /occam/examples/trimmer/bzip2/slash/bzip2.a.i.p.i.h.bc -o bzip2_fin -lbz2 -O3 WHICH RETURNED 0
+
