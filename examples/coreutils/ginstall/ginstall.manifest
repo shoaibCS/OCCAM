@@ -1,0 +1,9 @@
+{"binary": "ginstall_fin",
+"native_libs":[],
+"name": "ginstall",
+"static_args": [],
+"modules": [],
+"ldflags": [],
+"main": "ginstall.bc"
+}
+

@@ -1,0 +1,9 @@
+{"binary": "mknod_fin",
+"native_libs":[],
+"name": "mknod",
+"static_args": [],
+"modules": [],
+"ldflags": [],
+"main": "mknod.bc"
+}
+
