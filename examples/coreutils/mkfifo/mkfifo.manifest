@@ -3,7 +3,7 @@
 "name": "mkfifo",
 "static_args": [],
 "modules": [],
-"ldflags": [],
+"ldflags": ["-lselinux","-lpcre","-ldl","-lpthread"],
 "main": "mkfifo.bc"
 }
 

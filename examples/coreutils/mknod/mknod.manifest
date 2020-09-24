@@ -3,7 +3,7 @@
 "name": "mknod",
 "static_args": [],
 "modules": [],
-"ldflags": [],
+"ldflags": ["-lselinux","-lpcre","-ldl","-lpthread"],
 "main": "mknod.bc"
 }
 

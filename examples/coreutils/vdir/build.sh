@@ -99,7 +99,7 @@ then
 "name": "vdir",
 "static_args": [],
 "modules": ["libc.a.bc"],
-"ldflags": [],
+"ldflags": ["-lselinux","-lpcre","-ldl","-lpthread"],
 "main": "vdir.bc"
 }
 
@@ -111,7 +111,7 @@ else
 "name": "vdir",
 "static_args": [],
 "modules": [],
-"ldflags": [],
+"ldflags": ["-lselinux","-lpcre","-ldl","-lpthread"],
 "main": "vdir.bc"
 }
 

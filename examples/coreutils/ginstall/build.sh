@@ -99,7 +99,7 @@ then
 "name": "ginstall",
 "static_args": [],
 "modules": ["libc.a.bc"],
-"ldflags": [],
+"ldflags": ["-lselinux","-lpcre","-ldl","-lpthread", "-lacl", "-lattr" ],
 "main": "ginstall.bc"
 }
 
@@ -111,7 +111,7 @@ else
 "name": "ginstall",
 "static_args": [],
 "modules": [],
-"ldflags": [],
+"ldflags": ["-lselinux","-lpcre","-ldl","-lpthread", "-lacl", "-lattr" ],
 "main": "ginstall.bc"
 }
 

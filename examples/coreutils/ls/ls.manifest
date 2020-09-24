@@ -3,7 +3,7 @@
 "name": "ls",
 "static_args": [],
 "modules": [],
-"ldflags": [],
+"ldflags": ["-lselinux","-lpcre","-ldl","-lpthread"],
 "main": "ls.bc"
 }
 

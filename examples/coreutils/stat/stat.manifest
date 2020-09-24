@@ -3,7 +3,7 @@
 "name": "stat",
 "static_args": [],
 "modules": [],
-"ldflags": [],
+"ldflags": ["-lselinux","-lpcre","-ldl","-lpthread"],
 "main": "stat.bc"
 }
 

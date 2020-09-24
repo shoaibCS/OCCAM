@@ -99,7 +99,7 @@ then
 "name": "mv",
 "static_args": [],
 "modules": ["libc.a.bc"],
-"ldflags": [],
+"ldflags": ["-lselinux","-lpcre","-ldl","-lpthread", "-lacl", "-lattr" ],
 "main": "mv.bc"
 }
 
@@ -111,7 +111,7 @@ else
 "name": "mv",
 "static_args": [],
 "modules": [],
-"ldflags": [],
+"ldflags": ["-lselinux","-lpcre","-ldl","-lpthread", "-lacl", "-lattr" ],
 "main": "mv.bc"
 }
 

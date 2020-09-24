@@ -99,7 +99,7 @@ then
 "name": "cp",
 "static_args": [],
 "modules": ["libc.a.bc"],
-"ldflags": [],
+"ldflags": ["-lselinux","-lpcre","-ldl","-lpthread", "-lacl", "-lattr" ],
 "main": "cp.bc"
 }
 
@@ -111,7 +111,7 @@ else
 "name": "cp",
 "static_args": [],
 "modules": [],
-"ldflags": [],
+"ldflags": ["-lselinux","-lpcre","-ldl","-lpthread", "-lacl", "-lattr" ],
 "main": "cp.bc"
 }
 

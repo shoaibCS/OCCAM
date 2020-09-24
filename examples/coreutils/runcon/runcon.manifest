@@ -3,7 +3,7 @@
 "name": "runcon",
 "static_args": [],
 "modules": [],
-"ldflags": [],
+"ldflags": ["-lselinux","-lpcre","-ldl","-lpthread"],
 "main": "runcon.bc"
 }
 

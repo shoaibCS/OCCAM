@@ -3,7 +3,7 @@
 "name": "ginstall",
 "static_args": [],
 "modules": [],
-"ldflags": [],
+"ldflags": ["-lselinux","-lpcre","-ldl","-lpthread", "-lacl", "-lattr" ],
 "main": "ginstall.bc"
 }
 

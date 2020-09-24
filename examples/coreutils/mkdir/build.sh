@@ -99,7 +99,7 @@ then
 "name": "mkdir",
 "static_args": [],
 "modules": ["libc.a.bc"],
-"ldflags": [],
+"ldflags": ["-lselinux","-lpcre","-ldl","-lpthread"],
 "main": "mkdir.bc"
 }
 
@@ -111,7 +111,7 @@ else
 "name": "mkdir",
 "static_args": [],
 "modules": [],
-"ldflags": [],
+"ldflags": ["-lselinux","-lpcre","-ldl","-lpthread"],
 "main": "mkdir.bc"
 }
 

@@ -99,7 +99,7 @@ then
 "name": "runcon",
 "static_args": [],
 "modules": ["libc.a.bc"],
-"ldflags": [],
+"ldflags": ["-lselinux","-lpcre","-ldl","-lpthread"],
 "main": "runcon.bc"
 }
 
@@ -111,7 +111,7 @@ else
 "name": "runcon",
 "static_args": [],
 "modules": [],
-"ldflags": [],
+"ldflags": ["-lselinux","-lpcre","-ldl","-lpthread"],
 "main": "runcon.bc"
 }
 

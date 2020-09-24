@@ -99,7 +99,7 @@ then
 "name": "ls",
 "static_args": [],
 "modules": ["libc.a.bc"],
-"ldflags": [],
+"ldflags": ["-lselinux","-lpcre","-ldl","-lpthread"],
 "main": "ls.bc"
 }
 
@@ -111,7 +111,7 @@ else
 "name": "ls",
 "static_args": [],
 "modules": [],
-"ldflags": [],
+"ldflags": ["-lselinux","-lpcre","-ldl","-lpthread"],
 "main": "ls.bc"
 }
 
