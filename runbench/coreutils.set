@@ -221,11 +221,6 @@
             "execname": "test"
         }, 
         {
-            "dirname": "examples/coreutils/libstdbuf", 
-            "enabled": "true", 
-            "execname": "libstdbuf"
-        }, 
-        {
             "dirname": "examples/coreutils/fmt", 
             "enabled": "true", 
             "execname": "fmt"
@@ -317,7 +312,7 @@
         }, 
         {
             "dirname": "examples/coreutils/factor", 
-            "enabled": "true", 
+            "enabled": "false", 
             "execname": "factor"
         }, 
         {
@@ -409,16 +404,6 @@
             "dirname": "examples/coreutils/dircolors", 
             "enabled": "true", 
             "execname": "dircolors"
-        }, 
-        {
-            "dirname": "examples/coreutils/dcgen", 
-            "enabled": "true", 
-            "execname": "dcgen"
-        }, 
-        {
-            "dirname": "examples/coreutils/du-tests", 
-            "enabled": "true", 
-            "execname": "du-tests"
         }, 
         {
             "dirname": "examples/coreutils/rm", 
