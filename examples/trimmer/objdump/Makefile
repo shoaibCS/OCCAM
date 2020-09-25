@@ -8,6 +8,10 @@ OBJDUMP_TAR=${OBJDUMP_NAME}.tar.gz
 
 OBJDUMP_MANIFEST=${OBJDUMP}.manifest
 
+HELPER_SCRIPT=./build.sh
+HELPER_TAR=helper_scripts_and_files.tar.gz
+
+
 OUT_DIR?=trimmer
 LOG_FILE?=logs
 
@@ -23,7 +27,8 @@ compress: ${OUT_DIR}
 	python ${TRIMMER_HOME}/tool/trimmer.py ${OBJDUMP_MANIFEST} ./work_dir readelf 2> ${LOG_FILE}
 
 .PHONY: ${OBJDUMP_BITCODE}
-${OBJDUMP_BITCODE}: ${OBJDUMP_NAME}
+${OBJDUMP_BITCODE}: ${OBJDUMP_NAME} ${HELPER_SCRIPT}
+
 	cd ${OBJDUMP_NAME} && \
 	CC=${BITCODE_WRAPPER} CFLAGS="-DHAVE_CONFIG_H -O0 -fno-inline -fno-inline-functions -Xclang -disable-O0-optnone" ./configure && \
 	CC=${BITCODE_WRAPPER} make && \
@@ -37,7 +42,10 @@ ${OUT_DIR}:
 ${OBJDUMP_NAME}:
 	tar -xvzf ./${OBJDUMP_TAR}
 
+${HELPER_SCRIPT}:
+	tar -xvf ./${HELPER_TAR}
+
 clean:
 	rm -rf ${OBJDUMP_NAME}
-	rm *.bc *_slashed *_slashed_stripped
+	rm *.bc *_slashed *_slashed_stripped build.sh name
 	rm -r ${OUT_DIR}

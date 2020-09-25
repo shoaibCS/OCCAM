@@ -7,6 +7,9 @@ DNSPROXY_TAR=${DNSPROXY_NAME}.tar.gz
 DNSPROXY_MANIFEST=${DNSPROXY}.manifest
 DNSPROXY_CONF=./dnsproxy.conf
 
+HELPER_SCRIPT=./build.sh
+HELPER_TAR=helper_scripts_and_files.tar.gz
+
 
 OUT_DIR?=trimmer
 LOG_FILE?=logs
@@ -23,7 +26,7 @@ dns: ${OUT_DIR} ${DNSPROXY_BITCODE}
 	python ${TRIMMER_HOME}/tool/trimmer.py ${DNSPROXY_MANIFEST} ./ 2> ${LOG_FILE}
 
 
-${DNSPROXY_BITCODE}: ${DNSPROXY_NAME}
+${DNSPROXY_BITCODE}: ${DNSPROXY_NAME} ${HELPER_SCRIPT}
 	cd ${DNSPROXY_NAME} && \
 	CC=${BITCODE_WRAPPER} CFLAGS="-DHAVE_CONFIG_H -DVERSION="\"1.17\"" -Xclang -disable-O0-optnone " ./configure && \
 	CC=${BITCODE_WRAPPER} make && \
@@ -36,7 +39,10 @@ ${OUT_DIR}:
 ${DNSPROXY_NAME}:
 	tar -xvzf ./${DNSPROXY_TAR}
 
+${HELPER_SCRIPT}:
+	tar -xvf ./${HELPER_TAR}
+
 clean:
-	rm -r ${DNSPROXY_NAME}
-	rm *.bc *_slashed *_slashed_stripped
-	rm -r ${OUT_DIR}
+	rm -rf ${DNSPROXY_NAME} dnsproxy
+	rm -rf *.bc *slash* build.sh *conf
+	rm -rf ${OUT_DIR}

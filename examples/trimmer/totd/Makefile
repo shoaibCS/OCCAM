@@ -8,6 +8,9 @@ TOTD_MANIFEST=${TOTD}.manifest
 TOTD_CONF1=./totdipv6.conf
 TOTD_CONF2=./totdipv4.conf
 
+HELPER_SCRIPT=./build.sh
+HELPER_TAR=helper_scripts_and_files.tar.gz
+
 OUT_DIR?=trimmer
 LOG_FILE?=logs
 
@@ -29,7 +32,7 @@ ipv4: ${OUT_DIR} ${TOTD_BITCODE}
 	cd ${OUT_DIR} && \echo '{"binary": "totd_fin", "native_libs": [], "name": "totd", "args": ["-c", "totdipv4.conf", "-d2"],"modules": [], "ldflags": [], "main": "totd.bc","config_files":["totdipv4.conf"]}' > ${TOTD_MANIFEST} && \
 	python ${TRIMMER_HOME}/tool/trimmer.py ${TOTD_MANIFEST} ./ no-optimization 2> ${LOG_FILE}
 
-${TOTD_BITCODE}: ${TOTD_NAME}
+${TOTD_BITCODE}: ${TOTD_NAME} ${HELPER_SCRIPT}
 	cd ${TOTD_NAME} && \
 	sed -i 's/-g -O2/ -Xclang -disable-O0-optnone -O0/g' ./Makefile && \
 	sed -i 's/CC = gcc/CC? = gcc/g' ./Makefile && \
@@ -43,7 +46,10 @@ ${OUT_DIR}:
 ${TOTD_NAME}:
 	tar -xvzf ./${TOTD_TAR}
 
+${HELPER_SCRIPT}:
+	tar -xvf ./${HELPER_TAR}
+
 clean:
-	rm -r ${TOTD_NAME}
-	rm *.bc *_slashed *_slashed_stripped
-	rm -r ${OUT_DIR}
+	rm -rf ${TOTD_NAME}
+	rm -rf *.bc *_slashed *_slashed_stripped build.sh *conf*
+	rm -rf ${OUT_DIR}

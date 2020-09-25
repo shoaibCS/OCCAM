@@ -6,6 +6,10 @@ MEMCACHED_TAR=${MEMCACHED_NAME}.tar.gz
 
 MEMCACHED_MANIFEST=${MEMCACHED}.manifest
 
+HELPER_SCRIPT=./build.sh
+HELPER_TAR=helper_scripts_and_files.tar.gz
+
+
 OUT_DIR?=trimmer
 LOG_FILE?=logs
 
@@ -24,7 +28,7 @@ compress: ${OUT_DIR}
 	python ${TRIMMER_HOME}/tool/trimmer.py ${MEMCACHED_MANIFEST} ./  2> ${LOG_FILE}
 
 .PHONY: ${MEMCACHED_BITCODE}
-${MEMCACHED_BITCODE}: ${MEMCACHED_NAME}
+${MEMCACHED_BITCODE}: ${MEMCACHED_NAME} ${HELPER_SCRIPT}
 	cd ${MEMCACHED_NAME} && \
 	CC=${BITCODE_WRAPPER} ./configure && \
 	sed -i 's/CFLAGS = -g -O2 -pthread -Wall -Werror -pedantic -Wmissing-prototypes -Wmissing-declarations -Wredundant-decls/CFLAGS = -Xclang -disable-O0-optnone -O0 -pthread/g' ./Makefile && \
@@ -39,7 +43,10 @@ ${OUT_DIR}:
 ${MEMCACHED_NAME}:
 	tar -xvzf ./${MEMCACHED_TAR}
 
+${HELPER_SCRIPT}:
+	tar -xvf ./${HELPER_TAR}
+
 clean:
-	rm -rf ${MEMCACHED_NAME}
-	rm *.bc *_slashed *_slashed_stripped
-	rm -r ${OUT_DIR}
+	rm -rf ${MEMCACHED_NAME} memcached
+	rm -rf *.bc *slash* build.sh
+	rm -rf ${OUT_DIR}

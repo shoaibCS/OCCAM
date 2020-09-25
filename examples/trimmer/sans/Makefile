@@ -5,6 +5,9 @@ SANS_TAR=${SANS_NAME}.tar.gz
 
 SANS_MANIFEST=${SANS}.manifest
 
+HELPER_SCRIPT=./build.sh
+HELPER_TAR=helper_scripts_and_files.tar.gz
+
 OUT_DIR?=trimmer
 LOG_FILE?=logs
 
@@ -36,7 +39,7 @@ tcp: ${OUT_DIR}
 
 
 .PHONY: ${SANS_BITCODE}
-${SANS_BITCODE}: ${SANS_NAME}
+${SANS_BITCODE}: ${SANS_NAME} ${HELPER_SCRIPT}
 	cd ${SANS_NAME} && \
 	CC=${BITCODE_WRAPPER} CFLAGS="-O0 -fno-inline -fno-inline-functions -Xclang -disable-O0-optnone" ./configure && \
 	CC=${BITCODE_WRAPPER} make && \
@@ -49,10 +52,11 @@ ${OUT_DIR}:
 
 ${SANS_NAME}:
 	tar -xvzf ./${SANS_TAR}
-
+${HELPER_SCRIPT}:
+	tar -xvf ./${HELPER_TAR}
 clean:
 	rm -rf ${SANS_NAME}
-	rm *.bc *_slashed *_slashed_stripped
+	rm -rf *.bc *_slashed *_slashed_stripped build.sh *conf* *manifest*
 	rm -rf ${OUT_DIR}
 	rm -rf slash
 	rm -rf sans_slashed

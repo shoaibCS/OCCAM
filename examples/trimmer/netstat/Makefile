@@ -6,14 +6,17 @@ NETSTAT_TAR=${NETSTAT_NAME}.tar.gz
 
 NETSTAT_MANIFEST=${NETSTAT}.manifest
 
+HELPER_SCRIPT=./build.sh
+HELPER_TAR=helper_scripts_and_files.tar.gz
 
-OUT_DIR?=trimmer
+
+OUT_DIR?=slash
 LOG_FILE?=logs
 
 BITCODE_WRAPPER?=gclang
 BITCODE_EXTRACT?=get-bc
 OPT_NAME=opt
-CFLAGS = -mem2reg -O2 -loops -lcssa -loop-simplify -loop-rotate -indvars
+CFLAGS = -mem2reg -loops -lcssa -loop-simplify -loop-rotate -indvars
 
 
 all: ${NETSTAT_BITCODE}
@@ -24,10 +27,29 @@ netstat: ${OUT_DIR}
 	echo '{"binary": "netstat_fin", "native_libs": [], "name": "netstat", "args": ["-a", "-e","-p","-s"], "modules": [], "ldflags": [], "main": "netstat.bc", "config_files": []}' > ${NETSTAT_MANIFEST} && \
 	python ${TRIMMER_HOME}/tool/trimmer.py ${NETSTAT_MANIFEST} ./work_dir  2> ${LOG_FILE}
 
+test_netstat:
+	@echo "\t\tTest Netstat" && \
+	${NETSTAT_NAME}/netstat -a -e -p -s > o_out && \
+	${OUT_DIR}/netstat_fin_stripped > t_out
+	@echo "Output comparison to Baseline:"
+	@cmp -s ./o_out t_out; \
+	RETVAL=$$?; \
+	if [ $$RETVAL -eq 0 ]; then \
+		echo "\tnetstat test baseline compare? Passed!"; \
+	else \
+		echo "\tnetstat test baseline compare? Failed!"; \
+	fi
+	@rm o_out
+	@rm t_out
+
+
+
 .PHONY: ${NETSTAT_BITCODE}
-${NETSTAT_BITCODE}: ${NETSTAT_NAME}
+${NETSTAT_BITCODE}: ${NETSTAT_NAME} ${HELPER_SCRIPT}
+	cp optnone.patch ${NETSTAT_NAME} && \
 	cd ${NETSTAT_NAME} && \
 	sed -i 's/CC	= gcc//g' ./Makefile && \
+	patch -R Makefile optnone.patch && \
 	CC=${BITCODE_WRAPPER} make && \
 	${BITCODE_EXTRACT} ${NETSTAT} && \
 	${OPT_NAME} ${CFLAGS} ${NETSTAT_BITCODE} -o ${NETSTAT_BITCODE} && \
@@ -40,6 +62,11 @@ ${OUT_DIR}:
 ${NETSTAT_NAME}:
 	tar -xvzf ./${NETSTAT_TAR}
 
+${HELPER_SCRIPT}:
+	tar -xvf ./${HELPER_TAR}
+
+
 clean:
-	rm *.bc *_slashed *_slashed_stripped
+	rm -rf ${NETSTAT_NAME}
+	rm -rf *.bc *slash* *patch netstat build.sh
 	rm -r ${OUT_DIR}

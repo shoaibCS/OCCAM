@@ -6,6 +6,9 @@ NETPERF_TAR=${NETPERF_NAME}.tar.gz
 
 NETPERF_MANIFEST=${NETPERF}.manifest
 
+HELPER_SCRIPT=./build.sh
+HELPER_TAR=helper_scripts_and_files.tar.gz
+
 
 OUT_DIR?=trimmer
 LOG_FILE?=logs
@@ -25,9 +28,10 @@ netperf: ${OUT_DIR}
 	python ${TRIMMER_HOME}/tool/trimmer.py ${NETPERF_MANIFEST} ./  2> ${LOG_FILE}
 
 .PHONY: ${NETPERF_BITCODE}
-${NETPERF_BITCODE}: ${NETPERF_NAME}
+${NETPERF_BITCODE}: ${NETPERF_NAME} ${HELPER_SCRIPT}
+
 	cd ${NETPERF_NAME} && \
-	CC=${BITCODE_WRAPPER} ./configure && \
+	CC=${BITCODE_WRAPPER} ./configure --enable-demo=yes && \
 	sed -i 's/CC = gcc//g' ./Makefile && \
 	sed -i 's/CC = gcc//g' ./src/Makefile && \
 	sed -i 's/-g -O2/-g -Xclang -disable-O0-optnone -O0/g' src/Makefile && \
@@ -44,7 +48,11 @@ ${OUT_DIR}:
 ${NETPERF_NAME}:
 	tar -xvzf ./${NETPERF_TAR}
 
+${HELPER_SCRIPT}:
+	tar -xvf ./${HELPER_TAR}
+
+
 clean:
 	rm -rf ${NETPERF_NAME}
-	rm *.bc *_slashed *_slashed_stripped
+	rm -rf *.bc *_slashed *_slashed_stripped build.sh
 	rm -r ${OUT_DIR}

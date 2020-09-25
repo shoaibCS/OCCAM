@@ -7,6 +7,10 @@ THTTPD_PATCH=thttpd.patch
 
 THTTPD_MANIFEST=${THTTPD}.manifest
 
+HELPER_SCRIPT=./build.sh
+HELPER_TAR=helper_scripts_and_files.tar.gz
+
+
 OUT_DIR?=trimmer
 LOG_FILE?=logs
 
@@ -23,7 +27,7 @@ compress: ${OUT_DIR}
 	python ${TRIMMER_HOME}/tool/trimmer.py ${THTTPD_MANIFEST} ./ 2> ${LOG_FILE}
 
 .PHONY: ${THTTPD_BITCODE}
-${THTTPD_BITCODE}: ${THTTPD_NAME}
+${THTTPD_BITCODE}: ${THTTPD_NAME} ${HELPER_SCRIPT}
 	cp ${THTTPD_PATCH} ${THTTPD_NAME} && \
 	cd ${THTTPD_NAME} && \
 	patch -p0 -f < ./${THTTPD_PATCH} && \
@@ -38,7 +42,10 @@ ${OUT_DIR}:
 ${THTTPD_NAME}:
 	tar -xvzf ./${THTTPD_TAR}
 
+${HELPER_SCRIPT}:
+	tar -xvf ./${HELPER_TAR}
+
 clean:
 	rm -rf ${THTTPD_NAME}
-	rm *.bc *_slashed *_slashed_stripped
-	rm -r ${OUT_DIR}
+	rm -rf *.bc slash *_slashed *_slashed_stripped thttpd *conf *manifest *patch build.sh workdir
+	rm -rf ${OUT_DIR}

@@ -8,7 +8,11 @@ AIRCRACK-NG_TAR=${AIRCRACK-NG_NAME}.tar.gz
 
 AIRCRACK-NG_MANIFEST=${AIRCRACK-NG}.manifest
 
-OUT_DIR?=trimmer
+HELPER_SCRIPT=./build.sh
+HELPER_TAR=helper_scripts_and_files.tar.gz
+
+
+OUT_DIR?=slash
 LOG_FILE?=logs
 
 BITCODE_WRAPPER?=gclang
@@ -32,10 +36,13 @@ airtun: ${OUT_DIR}
 	python ${TRIMMER_HOME}/tool/trimmer.py ${AIRTUN-NG_MANIFEST} ./  2> ${LOG_FILE}
 
 .PHONY: ${AIRCRACK-NG_BITCODE}
-${AIRCRACK-NG_BITCODE}: ${AIRCRACK-NG_NAME}
+${AIRCRACK-NG_BITCODE}: ${AIRCRACK-NG_NAME} ${HELPER_SCRIPT}
+	cp crypto.patch ${AIRCRACK-NG_NAME}/src/ && \
+	patch ${AIRCRACK-NG_NAME}/src/crypto.c crypto.patch && \
 	cd ${AIRCRACK-NG_NAME} && \
-	sed -i 's/CC		= gcc/CC=wllvm/g' ./Makefile && \
-	sed -i 's/CC		= gcc/CC=wllvm/g' ./src/Makefile && find ./ -type f -exec sed -i -e s/"\-D_FILE_OFFSET_BITS"/"\-Xclang \-disable\-O0\-optnone \-O0 \-D_FILE_OFFSET_BITS"/g {} \; && make clean && \
+	sed -i 's/CC		= gcc/CC=gclang/g' ./Makefile && \
+	sed -i 's/wllvm/gclang/g' src/osdep/Makefile &&\
+	sed -i 's/CC		= gcc/CC=gclang/g' ./src/Makefile && find ./ -type f -exec sed -i -e s/"\-D_FILE_OFFSET_BITS"/"\-Xclang \-disable\-O0\-optnone \-O0 \-D_FILE_OFFSET_BITS"/g {} \; && make clean && \
 	CC=${BITCODE_WRAPPER} make && \
 	${BITCODE_EXTRACT} src/${AIRCRACK-NG} && \
 	${OPT_NAME} ${CFLAGS} src/${AIRCRACK-NG_BITCODE} -o src/${AIRCRACK-NG_BITCODE} && \
@@ -48,6 +55,24 @@ ${OUT_DIR}:
 ${AIRCRACK-NG_NAME}:
 	tar -xvzf ./${AIRCRACK-NG_TAR}
 
+CHECK_AIRCRACK=$(shell cd ${OUT_DIR}/ && ./aircrack-ng_fin_stripped | grep 'biscotte')
+
+test_aircrack_crack:
+	@echo "\t\tTest Aircrack-ng"
+	@echo "Checking if aircrack output valid:"
+	@cp ${AIRCRACK-NG_NAME}/test/password.lst ${OUT_DIR}/ && \
+	cp ${AIRCRACK-NG_NAME}/test/wpa.cap ${OUT_DIR}/
+ifeq ('$(CHECK_AIRCRACK)',)
+	@echo "\taircrack test valid? Failed!"
+else
+	@echo "\taircrack test valid? Passed!"
+endif
+
+${HELPER_SCRIPT}:
+	tar -xvf ./${HELPER_TAR}
+
+
 clean:
-	rm *.bc *_slashed *_slashed_stripped
-	rm -r ${OUT_DIR}
+	rm -rf ${AIRCRACK-NG_NAME}
+	rm -rf *.bc *slash* build.sh *patch sha1-sse2.S 
+	rm -rf ${OUT_DIR}

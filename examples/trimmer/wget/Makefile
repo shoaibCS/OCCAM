@@ -8,14 +8,15 @@ WGET_PATCH=wget.patch
 
 WGET_MANIFEST=${WGET}.manifest
 
-OUT_DIR?=trimmer
+HELPER_SCRIPT=./build.sh
+HELPER_TAR=helper_scripts_and_files.tar.gz
+
+
+OUT_DIR?=slash
 LOG_FILE?=logs
 
 BITCODE_WRAPPER?=gclang
 BITCODE_EXTRACT?=get-bc
-OPT_NAME=opt-10
-CFLAGS = -mem2reg -loops -lcssa -loop-simplify -loop-rotate -indvars
-
 
 all: ${WGET_BITCODE}
 
@@ -23,11 +24,38 @@ compress: ${OUT_DIR}
 	cp ${WGET_BITCODE} ${OUT_DIR} && \
 	cp wgetrc ${OUT_DIR} && \
 	cd ${OUT_DIR} && \
-  	echo '{"binary": "wget_fin", "native_libs":[],"name": "wget", "args": ["--config=wgetrc","_" ], "modules": [], "ldflags": ["-luuid","-lgnutls","-lpcre", "-lnettle", "-lidn", "-lz", "-lpthread"], "main": "wget.bc", "config_files": ["wgetrc"]}' > ${WGET_MANIFEST} && \
-	python ${TRIMMER_HOME}/tool/trimmer.py ${WGET_MANIFEST} ./ modData 1 2> ${LOG_FILE}
+  echo '{"binary": "wget_fin", "native_libs":[],"name": "wget", "args": ["--config=wgetrc","_" ], "modules": [], "ldflags": ["-luuid","-lgnutls","-lpcre", "-lnettle", "-lidn", "-lz", "-lpthread"], "main": "wget.bc", "config_files": ["wgetrc"]}' > ${WGET_MANIFEST} && \
+	python ${TRIMMER_HOME}/tool/trimmer.py ${WGET_MANIFEST} ./work_dir useGlob useRegOffset exceedLimit 300 optLevel none 2> ${LOG_FILE}
+
+test_compress:
+	@echo "\t\tTest Wget"
+	cd ${OUT_DIR}/ && \
+	./wget_fin_stripped a https://releases.llvm.org/7.0.0/cfe-7.0.0.src.tar.xz && \
+	@echo "File Existence Check" && \
+	test -f cfe-7.0.0.src.tar.xz && echo "\twget test file exist? Passed!" || echo "\twget test file exist? Failed!" 
+	
+	cp wgetrc ${WGET_NAME}/src 
+	cd ${WGET_NAME}/src && \
+	./wget --config=wgetrc https://releases.llvm.org/7.0.0/cfe-7.0.0.src.tar.xz
+
+	echo "Output comparison to Baseline:"
+	@cmp -s ${WGET_NAME}/src/cfe-7.0.0.src.tar.xz ${OUT_DIR}/cfe-7.0.0.src.tar.xz; \
+	RETVAL=$$?; \
+	if [ $$RETVAL -eq 0 ]; then \
+		echo "\twget test baseline compare? Passed!"; \
+	else \
+		echo "\twget test baseline compare? Failed!"; \
+	fi
+
+	
+	
+
+
+
+
 
 .PHONY: ${WGET_BITCODE}
-${WGET_BITCODE}: ${WGET_NAME}
+${WGET_BITCODE}: ${WGET_NAME} ${HELPER_SCRIPT}
 	cp ${WGET_PATCH} ${WGET_NAME} && \
 	cd ${WGET_NAME} && \
 	patch -p0 -f -R -i ./${WGET_PATCH} && \
@@ -35,7 +63,6 @@ ${WGET_BITCODE}: ${WGET_NAME}
 	CC=${BITCODE_WRAPPER} make && \
 	cd src && \
 	${BITCODE_EXTRACT} ${WGET} && \
-	${OPT_NAME} ${CFLAGS} ${WGET_BITCODE} -o ${WGET_BITCODE} && \
 	mv ${WGET_BITCODE} ../../
 		
 ${OUT_DIR}:
@@ -44,7 +71,11 @@ ${OUT_DIR}:
 ${WGET_NAME}:
 	tar -xvzf ./${WGET_TAR}
 
+${HELPER_SCRIPT}:
+	tar -xvf ./${HELPER_TAR}
+
+
 clean:
 	rm -rf ${WGET_NAME}
-	rm *.bc *_slashed *_slashed_stripped
-	rm -r ${OUT_DIR}
+	rm -rf *.bc *slash* build.sh notes.sh wget.patch wgetrc
+	rm -rf ${OUT_DIR}
